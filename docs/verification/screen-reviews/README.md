@@ -1,0 +1,32 @@
+# screen-reviews 검증 결과
+
+저장된 JSON·테스트 로그는 해당 검증 실행 당시의 증거입니다. 재실행 시 지정된 격리 환경과 스크립트 조건을 확인하세요.
+
+[전체 문서 안내](../../README.md)
+
+- [01-marketing-browser.json](01-marketing-browser.json)
+- [01-marketing-results.json](01-marketing-results.json)
+- [01-marketing-tests.txt](01-marketing-tests.txt)
+- [02-scm-browser.json](02-scm-browser.json)
+- [02-scm-evidence.json](02-scm-evidence.json)
+- [02-scm-results.json](02-scm-results.json)
+- [02-scm-tests.txt](02-scm-tests.txt)
+- [03-finance-browser.json](03-finance-browser.json)
+- [03-finance-evidence.json](03-finance-evidence.json)
+- [03-finance-handoff.json](03-finance-handoff.json)
+- [03-finance-results.json](03-finance-results.json)
+- [03-finance-tests.txt](03-finance-tests.txt)
+- [04-approval-evidence.json](04-approval-evidence.json)
+- [13-screen-browser.json](13-screen-browser.json)
+- [13-screen-empty-error.json](13-screen-empty-error.json)
+- [13-screen-role-flow.json](13-screen-role-flow.json)
+- [13-screen-scenarios.json](13-screen-scenarios.json)
+- [13-screen-source-audit.json](13-screen-source-audit.json)
+- [13-screen-tests.txt](13-screen-tests.txt)
+- [14-original-ceo-flow.json](14-original-ceo-flow.json)
+- [14-original-role-flow.json](14-original-role-flow.json)
+- [14-source-live.json](14-source-live.json)
+- [14-visual-parity.json](14-visual-parity.json)
+- [14-visual-tests.txt](14-visual-tests.txt)
+- [ui-reset-results.json](ui-reset-results.json)
+- [ui-reset-tests.txt](ui-reset-tests.txt)

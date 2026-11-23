@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "app_port": 8088,
+  "db_port": 55435,
+  "database": "새 별도 테스트 DB · 모의 캠페인 3건",
+  "tests": 110,
+  "checks": [
+    {
+      "role": "마케팅",
+      "todo": 3,
+      "processed": 0,
+      "detail_consistent": true
+    },
+    {
+      "role": "SCM",
+      "todo": 1,
+      "processed": 2,
+      "detail_consistent": true
+    },
+    {
+      "role": "재무",
+      "todo": 1,
+      "processed": 1,
+      "detail_consistent": true
+    },
+    {
+      "role": "승인권자",
+      "todo": 1,
+      "processed": 0,
+      "detail_consistent": true
+    }
+  ],
+  "original_runtime": "기존 앱 리스너 없음 · 이전 임시 패키지/DB 실행 환경 없음",
+  "correction": "목록 ID·버전 메타데이터를 승인 검증 입력에서 제외. 목록/상세 상태 일치 확인."
+}

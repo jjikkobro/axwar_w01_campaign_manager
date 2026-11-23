@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "empty_screens": 13,
+  "failure_message": true,
+  "retry_recovery": true,
+  "browser_errors": [],
+  "method": "브라우저 읽기 응답만 대체, DB 수정 없음"
+}

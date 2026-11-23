@@ -1,0 +1,9 @@
+{
+  "url": "http://127.0.0.1:8088",
+  "roles": 4,
+  "same_revision": true,
+  "live_lead_time_days": 42,
+  "marketing_schedule_visible": true,
+  "case_versions_unchanged": true,
+  "errors": []
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:8088",
+  "roles": [
+    {
+      "role": "마케팅",
+      "todo": 6,
+      "processed": 0,
+      "two_sections": true
+    },
+    {
+      "role": "SCM",
+      "todo": 2,
+      "processed": 4,
+      "two_sections": true
+    },
+    {
+      "role": "재무",
+      "todo": 4,
+      "processed": 1,
+      "two_sections": true
+    },
+    {
+      "role": "승인권자",
+      "todo": 0,
+      "processed": 5,
+      "two_sections": true
+    }
+  ],
+  "admin_separate_work_visible": true,
+  "legacy_and_create_links": true,
+  "mobile_no_page_overflow": true,
+  "empty_error_states": true,
+  "read_only_case_versions_unchanged": true,
+  "posts": [],
+  "browser_errors": []
+}

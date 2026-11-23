@@ -1,0 +1,5488 @@
+{
+  "base": "http://127.0.0.1:8083",
+  "provenance": "모의 회신 / 계산 결과",
+  "scenarios": [
+    {
+      "name": "정상",
+      "input": {
+        "title": "최종 시연 1 · 하회구간 밖 발주",
+        "sku_id": "SKU-1001",
+        "as_of": "2026-07-01",
+        "start": "2026-07-20",
+        "end": "2026-07-26",
+        "quantity": 1000,
+        "demand_status": "가정",
+        "evidence": "시연 가정. 실제 수요확약 아님.",
+        "approval_type": "재고발주",
+        "requested_amount": 1000000,
+        "requested_payment_date": "2026-09-21",
+        "contract_deadline": "2026-07-03"
+      },
+      "observations": [
+        "하회구간 밖 → SCM 전결 → 사람 승인 → 모의 발주·회신 완료"
+      ],
+      "cases": [
+        {
+          "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "workflow_status": "회신 기록 완료",
+          "routing": {
+            "authority": "SCM 전결",
+            "normal": "SCM 전결",
+            "status": "평시 승인 대상",
+            "blocked": false,
+            "reason": [
+              "신규 약정"
+            ],
+            "payment_date": "2026-09-21",
+            "adjusted_payment_date": "2026-09-21",
+            "new_commitment": true,
+            "assessment_confirmed": true,
+            "scenario": "exclude_pay",
+            "provenance": "계산 결과",
+            "classification_provenance": "내부 통제",
+            "rule_version": "W01-2026-11-09.2"
+          },
+          "tasks": [
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:classification",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "classification",
+              "role": "재무",
+              "title": "신규약정 여부·유출일 확인",
+              "created_at": "2026-11-09T08:25:03.806473+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0021",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:25:03.800229+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0022",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:25:03.803311+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0023",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:25:03.804396+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0024",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:25:03.805573+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0003",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ar:MAR-0003",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0003",
+              "record_id": "ar:MAR-0003",
+              "created_at": "2026-11-09T08:25:03.792665+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0009",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ar:MAR-0009",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0009",
+              "record_id": "ar:MAR-0009",
+              "created_at": "2026-11-09T08:25:03.793572+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0012",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ar:MAR-0012",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0012",
+              "record_id": "ar:MAR-0012",
+              "created_at": "2026-11-09T08:25:03.794477+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0015",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ar:MAR-0015",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0015",
+              "record_id": "ar:MAR-0015",
+              "created_at": "2026-11-09T08:25:03.795266+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0018",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ar:MAR-0018",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0018",
+              "record_id": "ar:MAR-0018",
+              "created_at": "2026-11-09T08:25:03.796206+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0021",
+              "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+              "key": "overdue:ar:MAR-0021",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0021",
+              "record_id": "ar:MAR-0021",
+              "created_at": "2026-11-09T08:25:03.797734+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0021",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:24:55.407456+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0022",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:24:55.408332+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0023",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:24:55.409187+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0024",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:24:55.410050+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0003",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0003",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0003",
+              "record_id": "ar:MAR-0003",
+              "created_at": "2026-11-09T08:24:55.400430+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0009",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0009",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0009",
+              "record_id": "ar:MAR-0009",
+              "created_at": "2026-11-09T08:24:55.402621+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0012",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0012",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0012",
+              "record_id": "ar:MAR-0012",
+              "created_at": "2026-11-09T08:24:55.403499+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0015",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0015",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0015",
+              "record_id": "ar:MAR-0015",
+              "created_at": "2026-11-09T08:24:55.404323+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0018",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0018",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0018",
+              "record_id": "ar:MAR-0018",
+              "created_at": "2026-11-09T08:24:55.405202+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0021",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0021",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0021",
+              "record_id": "ar:MAR-0021",
+              "created_at": "2026-11-09T08:24:55.406288+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            }
+          ]
+        }
+      ],
+      "history": [
+        {
+          "seq": 12,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "마케팅",
+          "event": "캠페인 검토 요청",
+          "detail": {
+            "case": {
+              "end": "2026-07-26",
+              "as_of": "2026-07-01",
+              "start": "2026-07-20",
+              "title": "최종 시연 1 · 하회구간 밖 발주",
+              "sku_id": "SKU-1001",
+              "status": "접수",
+              "replies": [],
+              "approval": null,
+              "evidence": "시연 가정. 실제 수요확약 아님.",
+              "quantity": 1000,
+              "created_at": "2026-11-09T08:25:03Z",
+              "annual_amount": null,
+              "approval_type": "재고발주",
+              "demand_status": "가정",
+              "proposal_total": null,
+              "requested_amount": 1000000,
+              "value_provenance": {
+                "request": "참가자 가정",
+                "approval_rules": "내부 통제",
+                "demand_evidence": "시연 가정. 실제 수요확약 아님."
+              },
+              "contract_deadline": "2026-07-03",
+              "requested_payment_date": "2026-09-21"
+            }
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 13,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:03.787253+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 여부 미확인: 보수적으로 신규 가능성 검토, 승인 차단"
+              ],
+              "status": "재무 확인 대기",
+              "blocked": true,
+              "scenario": "exclude_pay",
+              "authority": "SCM 전결",
+              "provenance": "계산 결과",
+              "payment_date": "2026-09-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": false,
+              "adjusted_payment_date": "2026-09-21",
+              "classification_provenance": "내부 통제"
+            },
+            "before": null,
+            "reason": "검토 건 접수",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 14,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0003",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0003",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0003",
+            "record_id": "ar:MAR-0003",
+            "created_at": "2026-11-09T08:25:03.792665+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 15,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0009",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0009",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0009",
+            "record_id": "ar:MAR-0009",
+            "created_at": "2026-11-09T08:25:03.793572+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 16,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0012",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0012",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0012",
+            "record_id": "ar:MAR-0012",
+            "created_at": "2026-11-09T08:25:03.794477+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 17,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0015",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0015",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0015",
+            "record_id": "ar:MAR-0015",
+            "created_at": "2026-11-09T08:25:03.795266+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 18,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0018",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0018",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0018",
+            "record_id": "ar:MAR-0018",
+            "created_at": "2026-11-09T08:25:03.796206+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 19,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0021",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0021",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0021",
+            "record_id": "ar:MAR-0021",
+            "created_at": "2026-11-09T08:25:03.797734+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 20,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0021",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0021",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0021",
+            "record_id": "ap:MAP-0021",
+            "created_at": "2026-11-09T08:25:03.800229+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 21,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0022",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0022",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0022",
+            "record_id": "ap:MAP-0022",
+            "created_at": "2026-11-09T08:25:03.803311+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 22,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0023",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0023",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0023",
+            "record_id": "ap:MAP-0023",
+            "created_at": "2026-11-09T08:25:03.804396+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 23,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0024",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0024",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0024",
+            "record_id": "ap:MAP-0024",
+            "created_at": "2026-11-09T08:25:03.805573+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 24,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "classification",
+            "role": "재무",
+            "title": "신규약정 여부·유출일 확인",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:classification",
+            "created_at": "2026-11-09T08:25:03.806473+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:03.773307+09:00"
+        },
+        {
+          "seq": 25,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "SCM",
+          "event": "회신 대기",
+          "detail": {
+            "note": "마케팅·SCM·재무 협조 요청",
+            "scope": "",
+            "action": "request",
+            "cash_min": 1467664440,
+            "first_short": "2026-07-20",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:03.859181+09:00"
+        },
+        {
+          "seq": 26,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "마케팅",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:03Z",
+            "role": "마케팅",
+            "result": "확인",
+            "message": "추가 1000개는 참가자 가정, 일정 조정 가능",
+            "provenance": "모의 회신",
+            "after_order": false,
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:03.925307+09:00"
+        },
+        {
+          "seq": 27,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "SCM",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:03Z",
+            "qty": 24000,
+            "role": "SCM",
+            "po_id": "SPO-0001",
+            "result": "확인",
+            "message": "모의 공급 확인. 실제 공급 확약 아님.",
+            "confirmed": true,
+            "provenance": "모의 회신",
+            "after_order": false,
+            "available_date": "2026-07-15",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:03.994964+09:00"
+        },
+        {
+          "seq": 28,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "재무",
+          "event": "약정 유출일·신규 여부 확정",
+          "detail": {
+            "at": "2026-11-09T08:25:04.058711+00:00",
+            "after": {
+              "at": "2026-11-09T08:25:04.058711+00:00",
+              "role": "재무",
+              "amount": 1000000,
+              "change": "추가발주",
+              "reason": "원본 발주와 별도인 증가 유출분 확인",
+              "opinion": "기존 현금 하회 위험과 증가 유출분 검토",
+              "evidence": "가상 신규 발주 지급 협의 회신",
+              "provenance": "부서 주장",
+              "alternatives": "지급일 분할 협의 또는 발주 감량. 확정 전 자동 집행 금지",
+              "payment_date": "2026-09-21",
+              "decision_maker": "재무 시연 담당자",
+              "classification_provenance": "내부 통제"
+            },
+            "before": null,
+            "reason": "원본 발주와 별도인 증가 유출분 확인",
+            "evidence": "가상 신규 발주 지급 협의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "at": "2026-11-09 17:25:04.055913+09:00"
+        },
+        {
+          "seq": 29,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:04.064021+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정"
+              ],
+              "status": "평시 승인 대상",
+              "blocked": false,
+              "scenario": "exclude_pay",
+              "authority": "SCM 전결",
+              "provenance": "계산 결과",
+              "payment_date": "2026-09-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-09-21",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 여부 미확인: 보수적으로 신규 가능성 검토, 승인 차단"
+              ],
+              "status": "재무 확인 대기",
+              "blocked": true,
+              "scenario": "exclude_pay",
+              "authority": "SCM 전결",
+              "provenance": "계산 결과",
+              "payment_date": "2026-09-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": false,
+              "adjusted_payment_date": "2026-09-21",
+              "classification_provenance": "내부 통제"
+            },
+            "reason": "재무 약정 분류 변경",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:04.055913+09:00"
+        },
+        {
+          "seq": 30,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "재무 약정 분류 변경",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:classification",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.055913+09:00"
+        },
+        {
+          "seq": 31,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "SCM",
+          "event": "승인 대기",
+          "detail": {
+            "note": "부서 근거·재무 의견 첨부 상신",
+            "scope": "",
+            "action": "submit",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.139237+09:00"
+        },
+        {
+          "seq": 32,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "승인권자",
+          "event": "승인",
+          "detail": {
+            "note": "모의 사람 승인. 공급·현금 제약 검토. 실제 집행 아님.",
+            "scope": "SCM 전결",
+            "action": "approve",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.207503+09:00"
+        },
+        {
+          "seq": 33,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "SCM",
+          "event": "발주 전달",
+          "detail": {
+            "note": "승인된 범위 모의 발주 전달",
+            "scope": "",
+            "action": "order",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 34,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0003",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 35,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0009",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 36,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0012",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 37,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0015",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 38,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0018",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 39,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ar:MAR-0021",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 40,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0021",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 41,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0022",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 42,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0023",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 43,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81:overdue:ap:MAP-0024",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.275272+09:00"
+        },
+        {
+          "seq": 44,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "SCM",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:04Z",
+            "qty": 24000,
+            "role": "SCM",
+            "po_id": "SPO-0001",
+            "result": "확인",
+            "message": "발주 전달 후 모의 공급자 회신",
+            "confirmed": true,
+            "provenance": "모의 회신",
+            "after_order": true,
+            "available_date": "2026-07-15",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.345011+09:00"
+        },
+        {
+          "seq": 45,
+          "case_id": "b7acb94f-ffc5-4676-86e2-4633f8c92f81",
+          "role": "SCM",
+          "event": "회신 기록 완료",
+          "detail": {
+            "note": "일정표·회신 기록 완료. 실제 입고·판매 완료 아님.",
+            "scope": "",
+            "action": "complete",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.410536+09:00"
+        }
+      ]
+    },
+    {
+      "name": "확장·부서영향",
+      "input": {
+        "title": "최종 시연 2 · 더마 신규 발주",
+        "sku_id": "SKU-1001",
+        "as_of": "2026-07-01",
+        "start": "2026-07-20",
+        "end": "2026-07-26",
+        "quantity": 1000,
+        "demand_status": "가정",
+        "evidence": "시연 가정. 실제 수요확약 아님.",
+        "approval_type": "재고발주",
+        "requested_amount": 1000000,
+        "requested_payment_date": "2026-07-21",
+        "contract_deadline": "2026-07-03"
+      },
+      "observations": [
+        "평시 SCM → CEO 상신",
+        "재무 의견 첨부",
+        "조건부 승인 → 조건 작업 생성·발주 차단",
+        "반려 → 보완 작업 생성",
+        "사람 재승인 후 모의 발주·회신 완료"
+      ],
+      "cases": [
+        {
+          "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "workflow_status": "회신 기록 완료",
+          "routing": {
+            "authority": "CEO/이사회",
+            "normal": "SCM 전결",
+            "status": "CEO 상신 대상",
+            "blocked": false,
+            "reason": [
+              "신규 약정",
+              "확정 시나리오 하회구간 적용"
+            ],
+            "payment_date": "2026-07-21",
+            "adjusted_payment_date": "2026-07-21",
+            "new_commitment": true,
+            "assessment_confirmed": true,
+            "scenario": "exclude_pay",
+            "provenance": "계산 결과",
+            "classification_provenance": "내부 통제",
+            "rule_version": "W01-2026-11-09.2"
+          },
+          "tasks": [
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:classification",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "classification",
+              "role": "재무",
+              "title": "신규약정 여부·유출일 확인",
+              "created_at": "2026-11-09T08:25:04.571776+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:conditions",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "conditions",
+              "role": "SCM",
+              "title": "승인 조건 이행 근거 확보 후 사람 재승인",
+              "created_at": "2026-11-09T08:25:05.003080+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0021",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:25:04.568245+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0022",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:25:04.569169+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0023",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:25:04.570162+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0024",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:25:04.570944+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0003",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ar:MAR-0003",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0003",
+              "record_id": "ar:MAR-0003",
+              "created_at": "2026-11-09T08:25:04.558007+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0009",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ar:MAR-0009",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0009",
+              "record_id": "ar:MAR-0009",
+              "created_at": "2026-11-09T08:25:04.558844+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0012",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ar:MAR-0012",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0012",
+              "record_id": "ar:MAR-0012",
+              "created_at": "2026-11-09T08:25:04.559648+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0015",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ar:MAR-0015",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0015",
+              "record_id": "ar:MAR-0015",
+              "created_at": "2026-11-09T08:25:04.560503+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0018",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ar:MAR-0018",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0018",
+              "record_id": "ar:MAR-0018",
+              "created_at": "2026-11-09T08:25:04.561596+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0021",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "overdue:ar:MAR-0021",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0021",
+              "record_id": "ar:MAR-0021",
+              "created_at": "2026-11-09T08:25:04.562502+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:rework",
+              "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+              "key": "rework",
+              "role": "SCM",
+              "title": "반려·보완 사항 확인 후 재상신",
+              "created_at": "2026-11-09T08:25:05.216370+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0021",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:24:55.407456+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0022",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:24:55.408332+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0023",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:24:55.409187+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0024",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:24:55.410050+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0003",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0003",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0003",
+              "record_id": "ar:MAR-0003",
+              "created_at": "2026-11-09T08:24:55.400430+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0009",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0009",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0009",
+              "record_id": "ar:MAR-0009",
+              "created_at": "2026-11-09T08:24:55.402621+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0012",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0012",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0012",
+              "record_id": "ar:MAR-0012",
+              "created_at": "2026-11-09T08:24:55.403499+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0015",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0015",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0015",
+              "record_id": "ar:MAR-0015",
+              "created_at": "2026-11-09T08:24:55.404323+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0018",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0018",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0018",
+              "record_id": "ar:MAR-0018",
+              "created_at": "2026-11-09T08:24:55.405202+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0021",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0021",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0021",
+              "record_id": "ar:MAR-0021",
+              "created_at": "2026-11-09T08:24:55.406288+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            }
+          ]
+        }
+      ],
+      "history": [
+        {
+          "seq": 46,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "마케팅",
+          "event": "캠페인 검토 요청",
+          "detail": {
+            "case": {
+              "end": "2026-07-26",
+              "as_of": "2026-07-01",
+              "start": "2026-07-20",
+              "title": "최종 시연 2 · 더마 신규 발주",
+              "sku_id": "SKU-1001",
+              "status": "접수",
+              "replies": [],
+              "approval": null,
+              "evidence": "시연 가정. 실제 수요확약 아님.",
+              "quantity": 1000,
+              "created_at": "2026-11-09T08:25:04Z",
+              "annual_amount": null,
+              "approval_type": "재고발주",
+              "demand_status": "가정",
+              "proposal_total": null,
+              "requested_amount": 1000000,
+              "value_provenance": {
+                "request": "참가자 가정",
+                "approval_rules": "내부 통제",
+                "demand_evidence": "시연 가정. 실제 수요확약 아님."
+              },
+              "contract_deadline": "2026-07-03",
+              "requested_payment_date": "2026-07-21"
+            }
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 47,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:04.553938+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 여부 미확인: 보수적으로 신규 가능성 검토, 승인 차단",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": true,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": false,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "before": null,
+            "reason": "검토 건 접수",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 48,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0003",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0003",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0003",
+            "record_id": "ar:MAR-0003",
+            "created_at": "2026-11-09T08:25:04.558007+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 49,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0009",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0009",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0009",
+            "record_id": "ar:MAR-0009",
+            "created_at": "2026-11-09T08:25:04.558844+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 50,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0012",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0012",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0012",
+            "record_id": "ar:MAR-0012",
+            "created_at": "2026-11-09T08:25:04.559648+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 51,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0015",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0015",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0015",
+            "record_id": "ar:MAR-0015",
+            "created_at": "2026-11-09T08:25:04.560503+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 52,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0018",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0018",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0018",
+            "record_id": "ar:MAR-0018",
+            "created_at": "2026-11-09T08:25:04.561596+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 53,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0021",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0021",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0021",
+            "record_id": "ar:MAR-0021",
+            "created_at": "2026-11-09T08:25:04.562502+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 54,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0021",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0021",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0021",
+            "record_id": "ap:MAP-0021",
+            "created_at": "2026-11-09T08:25:04.568245+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 55,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0022",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0022",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0022",
+            "record_id": "ap:MAP-0022",
+            "created_at": "2026-11-09T08:25:04.569169+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 56,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0023",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0023",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0023",
+            "record_id": "ap:MAP-0023",
+            "created_at": "2026-11-09T08:25:04.570162+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 57,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0024",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0024",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0024",
+            "record_id": "ap:MAP-0024",
+            "created_at": "2026-11-09T08:25:04.570944+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 58,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "classification",
+            "role": "재무",
+            "title": "신규약정 여부·유출일 확인",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:classification",
+            "created_at": "2026-11-09T08:25:04.571776+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.542968+09:00"
+        },
+        {
+          "seq": 59,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "SCM",
+          "event": "회신 대기",
+          "detail": {
+            "note": "마케팅·SCM·재무 협조 요청",
+            "scope": "",
+            "action": "request",
+            "cash_min": 1467664440,
+            "first_short": "2026-07-20",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.621154+09:00"
+        },
+        {
+          "seq": 60,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "마케팅",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:04Z",
+            "role": "마케팅",
+            "result": "확인",
+            "message": "추가 1000개는 참가자 가정, 일정 조정 가능",
+            "provenance": "모의 회신",
+            "after_order": false,
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.686156+09:00"
+        },
+        {
+          "seq": 61,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "SCM",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:04Z",
+            "qty": 24000,
+            "role": "SCM",
+            "po_id": "SPO-0001",
+            "result": "확인",
+            "message": "모의 공급 확인. 실제 공급 확약 아님.",
+            "confirmed": true,
+            "provenance": "모의 회신",
+            "after_order": false,
+            "available_date": "2026-07-15",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.748501+09:00"
+        },
+        {
+          "seq": 62,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "재무",
+          "event": "약정 유출일·신규 여부 확정",
+          "detail": {
+            "at": "2026-11-09T08:25:04.826340+00:00",
+            "after": {
+              "at": "2026-11-09T08:25:04.826340+00:00",
+              "role": "재무",
+              "amount": 1000000,
+              "change": "추가발주",
+              "reason": "원본 발주와 별도인 증가 유출분 확인",
+              "opinion": "기존 현금 하회 위험과 증가 유출분 검토",
+              "evidence": "가상 신규 발주 지급 협의 회신",
+              "provenance": "부서 주장",
+              "alternatives": "지급일 분할 협의 또는 발주 감량. 확정 전 자동 집행 금지",
+              "payment_date": "2026-07-21",
+              "decision_maker": "재무 시연 담당자",
+              "classification_provenance": "내부 통제"
+            },
+            "before": null,
+            "reason": "원본 발주와 별도인 증가 유출분 확인",
+            "evidence": "가상 신규 발주 지급 협의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "at": "2026-11-09 17:25:04.823945+09:00"
+        },
+        {
+          "seq": 63,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:04.833680+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": false,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 여부 미확인: 보수적으로 신규 가능성 검토, 승인 차단",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": true,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": false,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "reason": "재무 약정 분류 변경",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:04.823945+09:00"
+        },
+        {
+          "seq": 64,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "재무 약정 분류 변경",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:classification",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:04.823945+09:00"
+        },
+        {
+          "seq": 65,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "SCM",
+          "event": "승인 대기",
+          "detail": {
+            "note": "평시 SCM이나 현금 하회구간 신규 약정으로 CEO 상신",
+            "scope": "",
+            "action": "submit",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.903583+09:00"
+        },
+        {
+          "seq": 66,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "승인권자",
+          "event": "조건부 승인",
+          "detail": {
+            "note": "모의 조건부 승인: 지급조건 확인 후 재상신",
+            "scope": "CEO/이사회",
+            "action": "conditional",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:04.981481+09:00"
+        },
+        {
+          "seq": 67,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "conditions",
+            "role": "SCM",
+            "title": "승인 조건 이행 근거 확보 후 사람 재승인",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:conditions",
+            "created_at": "2026-11-09T08:25:05.003080+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:04.981481+09:00"
+        },
+        {
+          "seq": 68,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "SCM",
+          "event": "승인 대기",
+          "detail": {
+            "note": "조건 이행 근거를 사람이 확인하고 재상신",
+            "scope": "",
+            "action": "submit",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:05.128151+09:00"
+        },
+        {
+          "seq": 69,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:conditions",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.128151+09:00"
+        },
+        {
+          "seq": 70,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "승인권자",
+          "event": "보완 필요",
+          "detail": {
+            "note": "모의 반려: 추가 지급 협의 필요",
+            "scope": "",
+            "action": "reject",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:05.194978+09:00"
+        },
+        {
+          "seq": 71,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "rework",
+            "role": "SCM",
+            "title": "반려·보완 사항 확인 후 재상신",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:rework",
+            "created_at": "2026-11-09T08:25:05.216370+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.194978+09:00"
+        },
+        {
+          "seq": 72,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "SCM",
+          "event": "승인 대기",
+          "detail": {
+            "note": "부서 근거·재무 의견 첨부 상신",
+            "scope": "",
+            "action": "submit",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:05.298791+09:00"
+        },
+        {
+          "seq": 73,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:rework",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.298791+09:00"
+        },
+        {
+          "seq": 74,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "승인권자",
+          "event": "승인",
+          "detail": {
+            "note": "모의 사람 승인. 공급·현금 제약 검토. 실제 집행 아님.",
+            "scope": "CEO/이사회",
+            "action": "approve",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:05.370426+09:00"
+        },
+        {
+          "seq": 75,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "SCM",
+          "event": "발주 전달",
+          "detail": {
+            "note": "승인된 범위 모의 발주 전달",
+            "scope": "",
+            "action": "order",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 76,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0003",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 77,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0009",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 78,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0012",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 79,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0015",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 80,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0018",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 81,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ar:MAR-0021",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 82,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0021",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 83,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0022",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 84,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0023",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 85,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "부서 회신·결정 반영",
+            "task_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c:overdue:ap:MAP-0024",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:05.457276+09:00"
+        },
+        {
+          "seq": 86,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "SCM",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:05Z",
+            "qty": 24000,
+            "role": "SCM",
+            "po_id": "SPO-0001",
+            "result": "확인",
+            "message": "발주 전달 후 모의 공급자 회신",
+            "confirmed": true,
+            "provenance": "모의 회신",
+            "after_order": true,
+            "available_date": "2026-07-15",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:05.526822+09:00"
+        },
+        {
+          "seq": 87,
+          "case_id": "af1c04b9-5013-43b3-9a07-08ae97daa39c",
+          "role": "SCM",
+          "event": "회신 기록 완료",
+          "detail": {
+            "note": "일정표·회신 기록 완료. 실제 입고·판매 완료 아님.",
+            "scope": "",
+            "action": "complete",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:05.592267+09:00"
+        }
+      ]
+    },
+    {
+      "name": "변경",
+      "input": {
+        "title": "최종 시연 3A · 변경되는 결재선",
+        "sku_id": "SKU-1001",
+        "as_of": "2026-07-01",
+        "start": "2026-07-20",
+        "end": "2026-07-26",
+        "quantity": 1000,
+        "demand_status": "가정",
+        "evidence": "시연 가정. 실제 수요확약 아님.",
+        "approval_type": "재고발주",
+        "requested_amount": 1000000,
+        "requested_payment_date": "2026-08-25",
+        "contract_deadline": "2026-07-03"
+      },
+      "observations": {
+        "before": {
+          "e15227fc-1a0a-4410-bbb2-0ed523fd2780": {
+            "authority": "CEO/이사회",
+            "normal": "SCM 전결",
+            "status": "CEO 상신 대상",
+            "blocked": false,
+            "reason": [
+              "신규 약정",
+              "확정 시나리오 하회구간 적용"
+            ],
+            "payment_date": "2026-08-25",
+            "adjusted_payment_date": "2026-08-25",
+            "new_commitment": true,
+            "assessment_confirmed": true,
+            "scenario": "exclude_pay",
+            "provenance": "계산 결과",
+            "classification_provenance": "내부 통제",
+            "rule_version": "W01-2026-11-09.2"
+          },
+          "aa8bf7ea-92fb-4f8b-b0b4-fab156703525": {
+            "authority": "CEO/이사회",
+            "normal": "SCM 전결",
+            "status": "CEO 상신 대상",
+            "blocked": false,
+            "reason": [
+              "신규 약정",
+              "확정 시나리오 하회구간 적용"
+            ],
+            "payment_date": "2026-07-21",
+            "adjusted_payment_date": "2026-07-21",
+            "new_commitment": true,
+            "assessment_confirmed": true,
+            "scenario": "exclude_pay",
+            "provenance": "계산 결과",
+            "classification_provenance": "내부 통제",
+            "rule_version": "W01-2026-11-09.2"
+          }
+        },
+        "after": {
+          "e15227fc-1a0a-4410-bbb2-0ed523fd2780": {
+            "authority": "SCM 전결",
+            "normal": "SCM 전결",
+            "status": "평시 승인 대상",
+            "blocked": false,
+            "reason": [
+              "신규 약정"
+            ],
+            "payment_date": "2026-08-25",
+            "adjusted_payment_date": "2026-08-25",
+            "new_commitment": true,
+            "assessment_confirmed": true,
+            "scenario": "collect_pay",
+            "provenance": "계산 결과",
+            "classification_provenance": "내부 통제",
+            "rule_version": "W01-2026-11-09.2"
+          },
+          "aa8bf7ea-92fb-4f8b-b0b4-fab156703525": {
+            "authority": "CEO/이사회",
+            "normal": "SCM 전결",
+            "status": "CEO 상신 대상",
+            "blocked": false,
+            "reason": [
+              "신규 약정",
+              "확정 시나리오 하회구간 적용"
+            ],
+            "payment_date": "2026-07-21",
+            "adjusted_payment_date": "2026-07-21",
+            "new_commitment": true,
+            "assessment_confirmed": true,
+            "scenario": "collect_pay",
+            "provenance": "계산 결과",
+            "classification_provenance": "내부 통제",
+            "rule_version": "W01-2026-11-09.2"
+          }
+        },
+        "note": "6건 회수 확인 → 공식 시나리오 변경 → 8/25 경로 변경, 7/21 경로 유지"
+      },
+      "cases": [
+        {
+          "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "workflow_status": "재검토 필요",
+          "routing": {
+            "authority": "SCM 전결",
+            "normal": "SCM 전결",
+            "status": "평시 승인 대상",
+            "blocked": false,
+            "reason": [
+              "신규 약정"
+            ],
+            "payment_date": "2026-08-25",
+            "adjusted_payment_date": "2026-08-25",
+            "new_commitment": true,
+            "assessment_confirmed": true,
+            "scenario": "collect_pay",
+            "provenance": "계산 결과",
+            "classification_provenance": "내부 통제",
+            "rule_version": "W01-2026-11-09.2"
+          },
+          "tasks": [
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:classification",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "classification",
+              "role": "재무",
+              "title": "신규약정 여부·유출일 확인",
+              "created_at": "2026-11-09T08:25:05.753020+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:forecast",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "due": "2026-07-03",
+              "key": "forecast",
+              "role": "재무",
+              "title": "수시 재전망 시나리오 확정 요청",
+              "urgent": true,
+              "created_at": "2026-11-09T08:25:06.759499+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ap:MAP-0021",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:25:05.744542+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ap:MAP-0022",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:25:05.745505+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ap:MAP-0023",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:25:05.750127+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ap:MAP-0024",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:25:05.752059+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0003",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ar:MAR-0003",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0003",
+              "record_id": "ar:MAR-0003",
+              "created_at": "2026-11-09T08:25:05.738223+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0009",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ar:MAR-0009",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0009",
+              "record_id": "ar:MAR-0009",
+              "created_at": "2026-11-09T08:25:05.739344+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0012",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ar:MAR-0012",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0012",
+              "record_id": "ar:MAR-0012",
+              "created_at": "2026-11-09T08:25:05.740347+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0015",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ar:MAR-0015",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0015",
+              "record_id": "ar:MAR-0015",
+              "created_at": "2026-11-09T08:25:05.741326+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0018",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ar:MAR-0018",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0018",
+              "record_id": "ar:MAR-0018",
+              "created_at": "2026-11-09T08:25:05.742552+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0021",
+              "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+              "key": "overdue:ar:MAR-0021",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0021",
+              "record_id": "ar:MAR-0021",
+              "created_at": "2026-11-09T08:25:05.743486+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0021",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:24:55.407456+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0022",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:24:55.408332+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0023",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:24:55.409187+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0024",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:24:55.410050+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0003",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0003",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0003",
+              "record_id": "ar:MAR-0003",
+              "created_at": "2026-11-09T08:24:55.400430+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0009",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0009",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0009",
+              "record_id": "ar:MAR-0009",
+              "created_at": "2026-11-09T08:24:55.402621+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0012",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0012",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0012",
+              "record_id": "ar:MAR-0012",
+              "created_at": "2026-11-09T08:24:55.403499+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0015",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0015",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0015",
+              "record_id": "ar:MAR-0015",
+              "created_at": "2026-11-09T08:24:55.404323+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0018",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0018",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0018",
+              "record_id": "ar:MAR-0018",
+              "created_at": "2026-11-09T08:24:55.405202+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0021",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0021",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0021",
+              "record_id": "ar:MAR-0021",
+              "created_at": "2026-11-09T08:24:55.406288+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            }
+          ]
+        },
+        {
+          "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "workflow_status": "재검토 필요",
+          "routing": {
+            "authority": "CEO/이사회",
+            "normal": "SCM 전결",
+            "status": "CEO 상신 대상",
+            "blocked": false,
+            "reason": [
+              "신규 약정",
+              "확정 시나리오 하회구간 적용"
+            ],
+            "payment_date": "2026-07-21",
+            "adjusted_payment_date": "2026-07-21",
+            "new_commitment": true,
+            "assessment_confirmed": true,
+            "scenario": "collect_pay",
+            "provenance": "계산 결과",
+            "classification_provenance": "내부 통제",
+            "rule_version": "W01-2026-11-09.2"
+          },
+          "tasks": [
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:classification",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "classification",
+              "role": "재무",
+              "title": "신규약정 여부·유출일 확인",
+              "created_at": "2026-11-09T08:25:05.810813+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:forecast",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "due": "2026-07-03",
+              "key": "forecast",
+              "role": "재무",
+              "title": "수시 재전망 시나리오 확정 요청",
+              "urgent": true,
+              "created_at": "2026-11-09T08:25:06.763630+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ap:MAP-0021",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:25:05.807284+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ap:MAP-0022",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:25:05.808469+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ap:MAP-0023",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:25:05.809305+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ap:MAP-0024",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:25:05.810084+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0003",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ar:MAR-0003",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0003",
+              "record_id": "ar:MAR-0003",
+              "created_at": "2026-11-09T08:25:05.801688+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0009",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ar:MAR-0009",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0009",
+              "record_id": "ar:MAR-0009",
+              "created_at": "2026-11-09T08:25:05.802745+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0012",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ar:MAR-0012",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0012",
+              "record_id": "ar:MAR-0012",
+              "created_at": "2026-11-09T08:25:05.803612+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0015",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ar:MAR-0015",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0015",
+              "record_id": "ar:MAR-0015",
+              "created_at": "2026-11-09T08:25:05.804430+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0018",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ar:MAR-0018",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0018",
+              "record_id": "ar:MAR-0018",
+              "created_at": "2026-11-09T08:25:05.805468+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0021",
+              "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+              "key": "overdue:ar:MAR-0021",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0021",
+              "record_id": "ar:MAR-0021",
+              "created_at": "2026-11-09T08:25:05.806324+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0021",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:24:55.407456+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0022",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:24:55.408332+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0023",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:24:55.409187+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0024",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:24:55.410050+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0003",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0003",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0003",
+              "record_id": "ar:MAR-0003",
+              "created_at": "2026-11-09T08:24:55.400430+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0009",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0009",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0009",
+              "record_id": "ar:MAR-0009",
+              "created_at": "2026-11-09T08:24:55.402621+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0012",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0012",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0012",
+              "record_id": "ar:MAR-0012",
+              "created_at": "2026-11-09T08:24:55.403499+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0015",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0015",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0015",
+              "record_id": "ar:MAR-0015",
+              "created_at": "2026-11-09T08:24:55.404323+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0018",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0018",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0018",
+              "record_id": "ar:MAR-0018",
+              "created_at": "2026-11-09T08:24:55.405202+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0021",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0021",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0021",
+              "record_id": "ar:MAR-0021",
+              "created_at": "2026-11-09T08:24:55.406288+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            }
+          ]
+        }
+      ],
+      "history": [
+        {
+          "seq": 88,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "마케팅",
+          "event": "캠페인 검토 요청",
+          "detail": {
+            "case": {
+              "end": "2026-07-26",
+              "as_of": "2026-07-01",
+              "start": "2026-07-20",
+              "title": "최종 시연 3A · 변경되는 결재선",
+              "sku_id": "SKU-1001",
+              "status": "접수",
+              "replies": [],
+              "approval": null,
+              "evidence": "시연 가정. 실제 수요확약 아님.",
+              "quantity": 1000,
+              "created_at": "2026-11-09T08:25:05Z",
+              "annual_amount": null,
+              "approval_type": "재고발주",
+              "demand_status": "가정",
+              "proposal_total": null,
+              "requested_amount": 1000000,
+              "value_provenance": {
+                "request": "참가자 가정",
+                "approval_rules": "내부 통제",
+                "demand_evidence": "시연 가정. 실제 수요확약 아님."
+              },
+              "contract_deadline": "2026-07-03",
+              "requested_payment_date": "2026-08-25"
+            }
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 89,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:05.729159+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 여부 미확인: 보수적으로 신규 가능성 검토, 승인 차단",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": true,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-08-25",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": false,
+              "adjusted_payment_date": "2026-08-25",
+              "classification_provenance": "내부 통제"
+            },
+            "before": null,
+            "reason": "검토 건 접수",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 90,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0003",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0003",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0003",
+            "record_id": "ar:MAR-0003",
+            "created_at": "2026-11-09T08:25:05.738223+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 91,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0009",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0009",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0009",
+            "record_id": "ar:MAR-0009",
+            "created_at": "2026-11-09T08:25:05.739344+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 92,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0012",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0012",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0012",
+            "record_id": "ar:MAR-0012",
+            "created_at": "2026-11-09T08:25:05.740347+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 93,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0015",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0015",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0015",
+            "record_id": "ar:MAR-0015",
+            "created_at": "2026-11-09T08:25:05.741326+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 94,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0018",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0018",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0018",
+            "record_id": "ar:MAR-0018",
+            "created_at": "2026-11-09T08:25:05.742552+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 95,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0021",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0021",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0021",
+            "record_id": "ar:MAR-0021",
+            "created_at": "2026-11-09T08:25:05.743486+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 96,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0021",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0021",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ap:MAP-0021",
+            "record_id": "ap:MAP-0021",
+            "created_at": "2026-11-09T08:25:05.744542+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 97,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0022",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0022",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ap:MAP-0022",
+            "record_id": "ap:MAP-0022",
+            "created_at": "2026-11-09T08:25:05.745505+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 98,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0023",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0023",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ap:MAP-0023",
+            "record_id": "ap:MAP-0023",
+            "created_at": "2026-11-09T08:25:05.750127+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 99,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0024",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0024",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ap:MAP-0024",
+            "record_id": "ap:MAP-0024",
+            "created_at": "2026-11-09T08:25:05.752059+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 100,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "classification",
+            "role": "재무",
+            "title": "신규약정 여부·유출일 확인",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:classification",
+            "created_at": "2026-11-09T08:25:05.753020+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.717633+09:00"
+        },
+        {
+          "seq": 101,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "마케팅",
+          "event": "캠페인 검토 요청",
+          "detail": {
+            "case": {
+              "end": "2026-07-26",
+              "as_of": "2026-07-01",
+              "start": "2026-07-20",
+              "title": "최종 시연 3B · 유지되는 결재선",
+              "sku_id": "SKU-1001",
+              "status": "접수",
+              "replies": [],
+              "approval": null,
+              "evidence": "시연 가정. 실제 수요확약 아님.",
+              "quantity": 1000,
+              "created_at": "2026-11-09T08:25:05Z",
+              "annual_amount": null,
+              "approval_type": "재고발주",
+              "demand_status": "가정",
+              "proposal_total": null,
+              "requested_amount": 1000000,
+              "value_provenance": {
+                "request": "참가자 가정",
+                "approval_rules": "내부 통제",
+                "demand_evidence": "시연 가정. 실제 수요확약 아님."
+              },
+              "contract_deadline": "2026-07-03",
+              "requested_payment_date": "2026-07-21"
+            }
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 102,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:05.792836+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 여부 미확인: 보수적으로 신규 가능성 검토, 승인 차단",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": true,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": false,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "before": null,
+            "reason": "검토 건 접수",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 103,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0003",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0003",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0003",
+            "record_id": "ar:MAR-0003",
+            "created_at": "2026-11-09T08:25:05.801688+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 104,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0009",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0009",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0009",
+            "record_id": "ar:MAR-0009",
+            "created_at": "2026-11-09T08:25:05.802745+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 105,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0012",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0012",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0012",
+            "record_id": "ar:MAR-0012",
+            "created_at": "2026-11-09T08:25:05.803612+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 106,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0015",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0015",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0015",
+            "record_id": "ar:MAR-0015",
+            "created_at": "2026-11-09T08:25:05.804430+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 107,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0018",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0018",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0018",
+            "record_id": "ar:MAR-0018",
+            "created_at": "2026-11-09T08:25:05.805468+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 108,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ar:MAR-0021",
+            "role": "재무",
+            "title": "연체 회수일 확인 · MAR-0021",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0021",
+            "record_id": "ar:MAR-0021",
+            "created_at": "2026-11-09T08:25:05.806324+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 109,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0021",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0021",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ap:MAP-0021",
+            "record_id": "ap:MAP-0021",
+            "created_at": "2026-11-09T08:25:05.807284+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 110,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0022",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0022",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ap:MAP-0022",
+            "record_id": "ap:MAP-0022",
+            "created_at": "2026-11-09T08:25:05.808469+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 111,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0023",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0023",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ap:MAP-0023",
+            "record_id": "ap:MAP-0023",
+            "created_at": "2026-11-09T08:25:05.809305+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 112,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0024",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0024",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ap:MAP-0024",
+            "record_id": "ap:MAP-0024",
+            "created_at": "2026-11-09T08:25:05.810084+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 113,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "classification",
+            "role": "재무",
+            "title": "신규약정 여부·유출일 확인",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:classification",
+            "created_at": "2026-11-09T08:25:05.810813+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:05.780872+09:00"
+        },
+        {
+          "seq": 114,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "SCM",
+          "event": "회신 대기",
+          "detail": {
+            "note": "마케팅·SCM·재무 협조 요청",
+            "scope": "",
+            "action": "request",
+            "cash_min": 1467664440,
+            "first_short": "2026-07-20",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:05.859504+09:00"
+        },
+        {
+          "seq": 115,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "마케팅",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:05Z",
+            "role": "마케팅",
+            "result": "확인",
+            "message": "추가 1000개는 참가자 가정, 일정 조정 가능",
+            "provenance": "모의 회신",
+            "after_order": false,
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:05.928250+09:00"
+        },
+        {
+          "seq": 116,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "SCM",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:06Z",
+            "qty": 24000,
+            "role": "SCM",
+            "po_id": "SPO-0001",
+            "result": "확인",
+            "message": "모의 공급 확인. 실제 공급 확약 아님.",
+            "confirmed": true,
+            "provenance": "모의 회신",
+            "after_order": false,
+            "available_date": "2026-07-15",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:06.008459+09:00"
+        },
+        {
+          "seq": 117,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "재무",
+          "event": "약정 유출일·신규 여부 확정",
+          "detail": {
+            "at": "2026-11-09T08:25:06.084836+00:00",
+            "after": {
+              "at": "2026-11-09T08:25:06.084836+00:00",
+              "role": "재무",
+              "amount": 1000000,
+              "change": "추가발주",
+              "reason": "원본 발주와 별도인 증가 유출분 확인",
+              "opinion": "기존 현금 하회 위험과 증가 유출분 검토",
+              "evidence": "가상 신규 발주 지급 협의 회신",
+              "provenance": "부서 주장",
+              "alternatives": "지급일 분할 협의 또는 발주 감량. 확정 전 자동 집행 금지",
+              "payment_date": "2026-08-25",
+              "decision_maker": "재무 시연 담당자",
+              "classification_provenance": "내부 통제"
+            },
+            "before": null,
+            "reason": "원본 발주와 별도인 증가 유출분 확인",
+            "evidence": "가상 신규 발주 지급 협의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "at": "2026-11-09 17:25:06.080916+09:00"
+        },
+        {
+          "seq": 118,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:06.091935+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": false,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-08-25",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-08-25",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 여부 미확인: 보수적으로 신규 가능성 검토, 승인 차단",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": true,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-08-25",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": false,
+              "adjusted_payment_date": "2026-08-25",
+              "classification_provenance": "내부 통제"
+            },
+            "reason": "재무 약정 분류 변경",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:06.080916+09:00"
+        },
+        {
+          "seq": 119,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "재무 약정 분류 변경",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:classification",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:06.080916+09:00"
+        },
+        {
+          "seq": 120,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "SCM",
+          "event": "회신 대기",
+          "detail": {
+            "note": "마케팅·SCM·재무 협조 요청",
+            "scope": "",
+            "action": "request",
+            "cash_min": 1467664440,
+            "first_short": "2026-07-20",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:06.162964+09:00"
+        },
+        {
+          "seq": 121,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "마케팅",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:06Z",
+            "role": "마케팅",
+            "result": "확인",
+            "message": "추가 1000개는 참가자 가정, 일정 조정 가능",
+            "provenance": "모의 회신",
+            "after_order": false,
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:06.260521+09:00"
+        },
+        {
+          "seq": 122,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "SCM",
+          "event": "협조 회신",
+          "detail": {
+            "at": "2026-11-09T08:25:06Z",
+            "qty": 24000,
+            "role": "SCM",
+            "po_id": "SPO-0001",
+            "result": "확인",
+            "message": "모의 공급 확인. 실제 공급 확약 아님.",
+            "confirmed": true,
+            "provenance": "모의 회신",
+            "after_order": false,
+            "available_date": "2026-07-15",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:06.360022+09:00"
+        },
+        {
+          "seq": 123,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "재무",
+          "event": "약정 유출일·신규 여부 확정",
+          "detail": {
+            "at": "2026-11-09T08:25:06.443229+00:00",
+            "after": {
+              "at": "2026-11-09T08:25:06.443229+00:00",
+              "role": "재무",
+              "amount": 1000000,
+              "change": "추가발주",
+              "reason": "원본 발주와 별도인 증가 유출분 확인",
+              "opinion": "기존 현금 하회 위험과 증가 유출분 검토",
+              "evidence": "가상 신규 발주 지급 협의 회신",
+              "provenance": "부서 주장",
+              "alternatives": "지급일 분할 협의 또는 발주 감량. 확정 전 자동 집행 금지",
+              "payment_date": "2026-07-21",
+              "decision_maker": "재무 시연 담당자",
+              "classification_provenance": "내부 통제"
+            },
+            "before": null,
+            "reason": "원본 발주와 별도인 증가 유출분 확인",
+            "evidence": "가상 신규 발주 지급 협의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "at": "2026-11-09 17:25:06.440561+09:00"
+        },
+        {
+          "seq": 124,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:06.451881+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": false,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 여부 미확인: 보수적으로 신규 가능성 검토, 승인 차단",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": true,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": false,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "reason": "재무 약정 분류 변경",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:06.440561+09:00"
+        },
+        {
+          "seq": 125,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "재무 약정 분류 변경",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:classification",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:06.440561+09:00"
+        },
+        {
+          "seq": 126,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "SCM",
+          "event": "승인 대기",
+          "detail": {
+            "note": "재무 변경 전 CEO 승인 대기",
+            "scope": "",
+            "action": "submit",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:06.513632+09:00"
+        },
+        {
+          "seq": 127,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "SCM",
+          "event": "승인 대기",
+          "detail": {
+            "note": "재무 변경 전 CEO 승인 대기",
+            "scope": "",
+            "action": "submit",
+            "cash_min": 1467664440,
+            "first_short": "2026-08-08",
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            }
+          },
+          "at": "2026-11-09 17:25:06.584559+09:00"
+        },
+        {
+          "seq": 130,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:06.749571+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "재무 미확정: 4개 시나리오 하회구간 합집합 적용"
+              ],
+              "status": "CEO 상신 대상(재무 확정 대기)",
+              "blocked": true,
+              "scenario": "4개 합집합",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-08-25",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-08-25",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": false,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-08-25",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-08-25",
+              "classification_provenance": "내부 통제"
+            },
+            "reason": "연체채권 회수 확인 모의 회신",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:06.730444+09:00"
+        },
+        {
+          "seq": 132,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:06.751733+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "재무 미확정: 4개 시나리오 하회구간 합집합 적용"
+              ],
+              "status": "CEO 상신 대상(재무 확정 대기)",
+              "blocked": true,
+              "scenario": "4개 합집합",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": false,
+              "scenario": "exclude_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "reason": "연체채권 회수 확인 모의 회신",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:06.730444+09:00"
+        },
+        {
+          "seq": 133,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "due": "2026-07-03",
+            "key": "forecast",
+            "role": "재무",
+            "title": "수시 재전망 시나리오 확정 요청",
+            "urgent": true,
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:forecast",
+            "created_at": "2026-11-09T08:25:06.759499+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:06.730444+09:00"
+        },
+        {
+          "seq": 134,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "due": "2026-07-03",
+            "key": "forecast",
+            "role": "재무",
+            "title": "수시 재전망 시나리오 확정 요청",
+            "urgent": true,
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:forecast",
+            "created_at": "2026-11-09T08:25:06.763630+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:06.730444+09:00"
+        },
+        {
+          "seq": 136,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0003",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:06.730444+09:00"
+        },
+        {
+          "seq": 137,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0003",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:06.730444+09:00"
+        },
+        {
+          "seq": 140,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0009",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:06.833341+09:00"
+        },
+        {
+          "seq": 141,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0009",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:06.833341+09:00"
+        },
+        {
+          "seq": 144,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0012",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:06.943226+09:00"
+        },
+        {
+          "seq": 145,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0012",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:06.943226+09:00"
+        },
+        {
+          "seq": 147,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:07.075295+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정"
+              ],
+              "status": "재무 확인 대기",
+              "blocked": true,
+              "scenario": "4개 합집합",
+              "authority": "SCM 전결",
+              "provenance": "계산 결과",
+              "payment_date": "2026-08-25",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-08-25",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "재무 미확정: 4개 시나리오 하회구간 합집합 적용"
+              ],
+              "status": "CEO 상신 대상(재무 확정 대기)",
+              "blocked": true,
+              "scenario": "4개 합집합",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-08-25",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-08-25",
+              "classification_provenance": "내부 통제"
+            },
+            "reason": "연체채권 회수 확인 모의 회신",
+            "provenance": "계산 결과",
+            "route_changed": true
+          },
+          "at": "2026-11-09 17:25:07.050914+09:00"
+        },
+        {
+          "seq": 149,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0015",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.050914+09:00"
+        },
+        {
+          "seq": 150,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0015",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.050914+09:00"
+        },
+        {
+          "seq": 153,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0018",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.151272+09:00"
+        },
+        {
+          "seq": 154,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0018",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.151272+09:00"
+        },
+        {
+          "seq": 157,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:overdue:ar:MAR-0021",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.227960+09:00"
+        },
+        {
+          "seq": 158,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "연체채권 회수 확인 모의 회신",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:overdue:ar:MAR-0021",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.227960+09:00"
+        },
+        {
+          "seq": 162,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:07.325194+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": false,
+              "scenario": "collect_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "재무 미확정: 4개 시나리오 하회구간 합집합 적용"
+              ],
+              "status": "CEO 상신 대상(재무 확정 대기)",
+              "blocked": true,
+              "scenario": "4개 합집합",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "reason": "검증 시나리오 확정",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:07.310198+09:00"
+        },
+        {
+          "seq": 163,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:07.326363+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정"
+              ],
+              "status": "평시 승인 대상",
+              "blocked": false,
+              "scenario": "collect_pay",
+              "authority": "SCM 전결",
+              "provenance": "계산 결과",
+              "payment_date": "2026-08-25",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-08-25",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정"
+              ],
+              "status": "재무 확인 대기",
+              "blocked": true,
+              "scenario": "4개 합집합",
+              "authority": "SCM 전결",
+              "provenance": "계산 결과",
+              "payment_date": "2026-08-25",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-08-25",
+              "classification_provenance": "내부 통제"
+            },
+            "reason": "검증 시나리오 확정",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:07.310198+09:00"
+        },
+        {
+          "seq": 164,
+          "case_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "검증 시나리오 확정",
+            "task_id": "e15227fc-1a0a-4410-bbb2-0ed523fd2780:forecast",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.310198+09:00"
+        },
+        {
+          "seq": 165,
+          "case_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "검증 시나리오 확정",
+            "task_id": "aa8bf7ea-92fb-4f8b-b0b4-fab156703525:forecast",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.310198+09:00"
+        }
+      ]
+    },
+    {
+      "name": "정보 부족",
+      "input": {
+        "title": "최종 시연 4 · 지급일 미확인",
+        "sku_id": "SKU-1001",
+        "as_of": "2026-07-01",
+        "start": "2026-07-20",
+        "end": "2026-07-26",
+        "quantity": 1000,
+        "demand_status": "가정",
+        "evidence": "시연 가정. 실제 수요확약 아님.",
+        "approval_type": "재고발주",
+        "requested_amount": 1000000,
+        "requested_payment_date": null,
+        "contract_deadline": "2026-07-03"
+      },
+      "observations": [
+        "지급일 없음 → 판정 불가·확인 작업",
+        "상신 차단",
+        "재무 회신 입력 → CEO 재판정·지급일 작업 완료"
+      ],
+      "cases": [
+        {
+          "id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "workflow_status": "검토 중",
+          "routing": {
+            "authority": "CEO/이사회",
+            "normal": "SCM 전결",
+            "status": "CEO 상신 대상",
+            "blocked": false,
+            "reason": [
+              "신규 약정",
+              "확정 시나리오 하회구간 적용"
+            ],
+            "payment_date": "2026-07-21",
+            "adjusted_payment_date": "2026-07-21",
+            "new_commitment": true,
+            "assessment_confirmed": true,
+            "scenario": "collect_pay",
+            "provenance": "계산 결과",
+            "classification_provenance": "내부 통제",
+            "rule_version": "W01-2026-11-09.2"
+          },
+          "tasks": [
+            {
+              "id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:classification",
+              "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+              "key": "classification",
+              "role": "재무",
+              "title": "신규약정 여부·유출일 확인",
+              "created_at": "2026-11-09T08:25:07.688611+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:overdue:ap:MAP-0021",
+              "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:25:07.676782+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:overdue:ap:MAP-0022",
+              "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:25:07.677704+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:overdue:ap:MAP-0023",
+              "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:25:07.685652+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:overdue:ap:MAP-0024",
+              "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:25:07.686654+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:payment",
+              "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+              "key": "payment",
+              "role": "재무",
+              "title": "약정 유출일·금액 확인 및 재판정",
+              "created_at": "2026-11-09T08:25:07.687721+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0021",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0021",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0021",
+              "record_id": "ap:MAP-0021",
+              "created_at": "2026-11-09T08:24:55.407456+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0022",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0022",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0022",
+              "record_id": "ap:MAP-0022",
+              "created_at": "2026-11-09T08:24:55.408332+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0023",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0023",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0023",
+              "record_id": "ap:MAP-0023",
+              "created_at": "2026-11-09T08:24:55.409187+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ap:MAP-0024",
+              "case_id": null,
+              "key": "overdue:ap:MAP-0024",
+              "role": "재무",
+              "title": "연체 지급일 확인 · MAP-0024",
+              "record_id": "ap:MAP-0024",
+              "created_at": "2026-11-09T08:24:55.410050+00:00",
+              "provenance": "내부 통제",
+              "status": "대기"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0003",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0003",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0003",
+              "record_id": "ar:MAR-0003",
+              "created_at": "2026-11-09T08:24:55.400430+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0009",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0009",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0009",
+              "record_id": "ar:MAR-0009",
+              "created_at": "2026-11-09T08:24:55.402621+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0012",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0012",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0012",
+              "record_id": "ar:MAR-0012",
+              "created_at": "2026-11-09T08:24:55.403499+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0015",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0015",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0015",
+              "record_id": "ar:MAR-0015",
+              "created_at": "2026-11-09T08:24:55.404323+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0018",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0018",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0018",
+              "record_id": "ar:MAR-0018",
+              "created_at": "2026-11-09T08:24:55.405202+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            },
+            {
+              "id": "global:overdue:ar:MAR-0021",
+              "case_id": null,
+              "key": "overdue:ar:MAR-0021",
+              "role": "재무",
+              "title": "연체 회수일 확인 · MAR-0021",
+              "record_id": "ar:MAR-0021",
+              "created_at": "2026-11-09T08:24:55.406288+00:00",
+              "provenance": "내부 통제",
+              "status": "완료"
+            }
+          ]
+        }
+      ],
+      "history": [
+        {
+          "seq": 166,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "마케팅",
+          "event": "캠페인 검토 요청",
+          "detail": {
+            "case": {
+              "end": "2026-07-26",
+              "as_of": "2026-07-01",
+              "start": "2026-07-20",
+              "title": "최종 시연 4 · 지급일 미확인",
+              "sku_id": "SKU-1001",
+              "status": "접수",
+              "replies": [],
+              "approval": null,
+              "evidence": "시연 가정. 실제 수요확약 아님.",
+              "quantity": 1000,
+              "created_at": "2026-11-09T08:25:07Z",
+              "annual_amount": null,
+              "approval_type": "재고발주",
+              "demand_status": "가정",
+              "proposal_total": null,
+              "requested_amount": 1000000,
+              "value_provenance": {
+                "request": "참가자 가정",
+                "approval_rules": "내부 통제",
+                "demand_evidence": "시연 가정. 실제 수요확약 아님."
+              },
+              "contract_deadline": "2026-07-03",
+              "requested_payment_date": null
+            }
+          },
+          "at": "2026-11-09 17:25:07.655201+09:00"
+        },
+        {
+          "seq": 167,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:07.668909+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "유출일 미확인 · 재무 확인요청 필요"
+              ],
+              "status": "판정 불가",
+              "blocked": true,
+              "authority": "판정 불가",
+              "provenance": "계산 결과",
+              "rule_version": "W01-2026-11-09.2"
+            },
+            "before": null,
+            "reason": "검토 건 접수",
+            "provenance": "계산 결과",
+            "route_changed": false
+          },
+          "at": "2026-11-09 17:25:07.655201+09:00"
+        },
+        {
+          "seq": 168,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0021",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0021",
+            "task_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:overdue:ap:MAP-0021",
+            "record_id": "ap:MAP-0021",
+            "created_at": "2026-11-09T08:25:07.676782+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:07.655201+09:00"
+        },
+        {
+          "seq": 169,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0022",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0022",
+            "task_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:overdue:ap:MAP-0022",
+            "record_id": "ap:MAP-0022",
+            "created_at": "2026-11-09T08:25:07.677704+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:07.655201+09:00"
+        },
+        {
+          "seq": 170,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0023",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0023",
+            "task_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:overdue:ap:MAP-0023",
+            "record_id": "ap:MAP-0023",
+            "created_at": "2026-11-09T08:25:07.685652+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:07.655201+09:00"
+        },
+        {
+          "seq": 171,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "overdue:ap:MAP-0024",
+            "role": "재무",
+            "title": "연체 지급일 확인 · MAP-0024",
+            "task_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:overdue:ap:MAP-0024",
+            "record_id": "ap:MAP-0024",
+            "created_at": "2026-11-09T08:25:07.686654+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:07.655201+09:00"
+        },
+        {
+          "seq": 172,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "payment",
+            "role": "재무",
+            "title": "약정 유출일·금액 확인 및 재판정",
+            "task_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:payment",
+            "created_at": "2026-11-09T08:25:07.687721+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:07.655201+09:00"
+        },
+        {
+          "seq": 173,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "detail": {
+            "key": "classification",
+            "role": "재무",
+            "title": "신규약정 여부·유출일 확인",
+            "task_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:classification",
+            "created_at": "2026-11-09T08:25:07.688611+00:00",
+            "provenance": "내부 통제"
+          },
+          "at": "2026-11-09 17:25:07.655201+09:00"
+        },
+        {
+          "seq": 174,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "재무",
+          "event": "약정 유출일·신규 여부 확정",
+          "detail": {
+            "at": "2026-11-09T08:25:07.890145+00:00",
+            "after": {
+              "at": "2026-11-09T08:25:07.890145+00:00",
+              "role": "재무",
+              "amount": 1000000,
+              "change": "추가발주",
+              "reason": "원본 발주와 별도인 증가 유출분 확인",
+              "opinion": "기존 현금 하회 위험과 증가 유출분 검토",
+              "evidence": "가상 신규 발주 지급 협의 회신",
+              "provenance": "부서 주장",
+              "alternatives": "지급일 분할 협의 또는 발주 감량. 확정 전 자동 집행 금지",
+              "payment_date": "2026-07-21",
+              "decision_maker": "재무 시연 담당자",
+              "classification_provenance": "내부 통제"
+            },
+            "before": null,
+            "reason": "원본 발주와 별도인 증가 유출분 확인",
+            "evidence": "가상 신규 발주 지급 협의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "at": "2026-11-09 17:25:07.887678+09:00"
+        },
+        {
+          "seq": 175,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "재무 시연 담당자",
+          "event": "결재선 재판정",
+          "detail": {
+            "at": "2026-11-09T08:25:07.897887+00:00",
+            "after": {
+              "normal": "SCM 전결",
+              "reason": [
+                "신규 약정",
+                "확정 시나리오 하회구간 적용"
+              ],
+              "status": "CEO 상신 대상",
+              "blocked": false,
+              "scenario": "collect_pay",
+              "authority": "CEO/이사회",
+              "provenance": "계산 결과",
+              "payment_date": "2026-07-21",
+              "rule_version": "W01-2026-11-09.2",
+              "new_commitment": true,
+              "assessment_confirmed": true,
+              "adjusted_payment_date": "2026-07-21",
+              "classification_provenance": "내부 통제"
+            },
+            "before": {
+              "normal": "SCM 전결",
+              "reason": [
+                "유출일 미확인 · 재무 확인요청 필요"
+              ],
+              "status": "판정 불가",
+              "blocked": true,
+              "authority": "판정 불가",
+              "provenance": "계산 결과",
+              "rule_version": "W01-2026-11-09.2"
+            },
+            "reason": "재무 약정 분류 변경",
+            "provenance": "계산 결과",
+            "route_changed": true
+          },
+          "at": "2026-11-09 17:25:07.887678+09:00"
+        },
+        {
+          "seq": 176,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "재무 약정 분류 변경",
+            "task_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:payment",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.887678+09:00"
+        },
+        {
+          "seq": 177,
+          "case_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e",
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "detail": {
+            "reason": "재무 약정 분류 변경",
+            "task_id": "c13ada3d-49e0-472a-a1fd-8348dd13529e:classification",
+            "provenance": "계산 결과"
+          },
+          "at": "2026-11-09 17:25:07.887678+09:00"
+        }
+      ]
+    }
+  ],
+  "finance_history": [
+    {
+      "seq": 1,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ar:MAR-0003",
+        "role": "재무",
+        "title": "연체 회수일 확인 · MAR-0003",
+        "task_id": "global:overdue:ar:MAR-0003",
+        "record_id": "ar:MAR-0003",
+        "created_at": "2026-11-09T08:24:55.400430+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 2,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ar:MAR-0009",
+        "role": "재무",
+        "title": "연체 회수일 확인 · MAR-0009",
+        "task_id": "global:overdue:ar:MAR-0009",
+        "record_id": "ar:MAR-0009",
+        "created_at": "2026-11-09T08:24:55.402621+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 3,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ar:MAR-0012",
+        "role": "재무",
+        "title": "연체 회수일 확인 · MAR-0012",
+        "task_id": "global:overdue:ar:MAR-0012",
+        "record_id": "ar:MAR-0012",
+        "created_at": "2026-11-09T08:24:55.403499+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 4,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ar:MAR-0015",
+        "role": "재무",
+        "title": "연체 회수일 확인 · MAR-0015",
+        "task_id": "global:overdue:ar:MAR-0015",
+        "record_id": "ar:MAR-0015",
+        "created_at": "2026-11-09T08:24:55.404323+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 5,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ar:MAR-0018",
+        "role": "재무",
+        "title": "연체 회수일 확인 · MAR-0018",
+        "task_id": "global:overdue:ar:MAR-0018",
+        "record_id": "ar:MAR-0018",
+        "created_at": "2026-11-09T08:24:55.405202+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 6,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ar:MAR-0021",
+        "role": "재무",
+        "title": "연체 회수일 확인 · MAR-0021",
+        "task_id": "global:overdue:ar:MAR-0021",
+        "record_id": "ar:MAR-0021",
+        "created_at": "2026-11-09T08:24:55.406288+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 7,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ap:MAP-0021",
+        "role": "재무",
+        "title": "연체 지급일 확인 · MAP-0021",
+        "task_id": "global:overdue:ap:MAP-0021",
+        "record_id": "ap:MAP-0021",
+        "created_at": "2026-11-09T08:24:55.407456+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 8,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ap:MAP-0022",
+        "role": "재무",
+        "title": "연체 지급일 확인 · MAP-0022",
+        "task_id": "global:overdue:ap:MAP-0022",
+        "record_id": "ap:MAP-0022",
+        "created_at": "2026-11-09T08:24:55.408332+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 9,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ap:MAP-0023",
+        "role": "재무",
+        "title": "연체 지급일 확인 · MAP-0023",
+        "task_id": "global:overdue:ap:MAP-0023",
+        "record_id": "ap:MAP-0023",
+        "created_at": "2026-11-09T08:24:55.409187+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 10,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "overdue:ap:MAP-0024",
+        "role": "재무",
+        "title": "연체 지급일 확인 · MAP-0024",
+        "task_id": "global:overdue:ap:MAP-0024",
+        "record_id": "ap:MAP-0024",
+        "created_at": "2026-11-09T08:24:55.410050+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-09 17:24:55.389292+09:00"
+    },
+    {
+      "seq": 11,
+      "case_id": null,
+      "role": "재무",
+      "event": "공식 재전망 시나리오 확정",
+      "detail": {
+        "at": "2026-11-09T08:25:03.733794+00:00",
+        "role": "재무",
+        "after": {
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": true,
+          "overrides": {},
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "before": {
+          "version": 1,
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {},
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "reason": "검증 시나리오 확정",
+        "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+        "provenance": "부서 주장",
+        "decision_maker": "재무 시연 담당자"
+      },
+      "at": "2026-11-09 17:25:03.731492+09:00"
+    },
+    {
+      "seq": 128,
+      "case_id": null,
+      "role": "재무",
+      "event": "연체 항목 확인 회신",
+      "detail": {
+        "at": "2026-11-09T08:25:06.733372+00:00",
+        "role": "재무",
+        "after": {
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "before": {
+          "version": 2,
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": true,
+          "overrides": {},
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "reason": "연체채권 회수 확인 모의 회신",
+        "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+        "provenance": "모의 회신",
+        "decision_maker": "재무 시연 담당자"
+      },
+      "at": "2026-11-09 17:25:06.730444+09:00"
+    },
+    {
+      "seq": 135,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 완료",
+      "detail": {
+        "reason": "연체채권 회수 확인 모의 회신",
+        "task_id": "global:overdue:ar:MAR-0003",
+        "provenance": "계산 결과"
+      },
+      "at": "2026-11-09 17:25:06.730444+09:00"
+    },
+    {
+      "seq": 138,
+      "case_id": null,
+      "role": "재무",
+      "event": "연체 항목 확인 회신",
+      "detail": {
+        "at": "2026-11-09T08:25:06.837315+00:00",
+        "role": "재무",
+        "after": {
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "before": {
+          "version": 3,
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "reason": "연체채권 회수 확인 모의 회신",
+        "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+        "provenance": "모의 회신",
+        "decision_maker": "재무 시연 담당자"
+      },
+      "at": "2026-11-09 17:25:06.833341+09:00"
+    },
+    {
+      "seq": 139,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 완료",
+      "detail": {
+        "reason": "연체채권 회수 확인 모의 회신",
+        "task_id": "global:overdue:ar:MAR-0009",
+        "provenance": "계산 결과"
+      },
+      "at": "2026-11-09 17:25:06.833341+09:00"
+    },
+    {
+      "seq": 142,
+      "case_id": null,
+      "role": "재무",
+      "event": "연체 항목 확인 회신",
+      "detail": {
+        "at": "2026-11-09T08:25:06.945469+00:00",
+        "role": "재무",
+        "after": {
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0012": {
+              "at": "2026-11-09T08:25:06.945469+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "before": {
+          "version": 4,
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "reason": "연체채권 회수 확인 모의 회신",
+        "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+        "provenance": "모의 회신",
+        "decision_maker": "재무 시연 담당자"
+      },
+      "at": "2026-11-09 17:25:06.943226+09:00"
+    },
+    {
+      "seq": 143,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 완료",
+      "detail": {
+        "reason": "연체채권 회수 확인 모의 회신",
+        "task_id": "global:overdue:ar:MAR-0012",
+        "provenance": "계산 결과"
+      },
+      "at": "2026-11-09 17:25:06.943226+09:00"
+    },
+    {
+      "seq": 146,
+      "case_id": null,
+      "role": "재무",
+      "event": "연체 항목 확인 회신",
+      "detail": {
+        "at": "2026-11-09T08:25:07.058989+00:00",
+        "role": "재무",
+        "after": {
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0012": {
+              "at": "2026-11-09T08:25:06.945469+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0015": {
+              "at": "2026-11-09T08:25:07.058989+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0015 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "before": {
+          "version": 5,
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0012": {
+              "at": "2026-11-09T08:25:06.945469+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "reason": "연체채권 회수 확인 모의 회신",
+        "evidence": "MAR-0015 전액 7/1 회수 가정 확인",
+        "provenance": "모의 회신",
+        "decision_maker": "재무 시연 담당자"
+      },
+      "at": "2026-11-09 17:25:07.050914+09:00"
+    },
+    {
+      "seq": 148,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 완료",
+      "detail": {
+        "reason": "연체채권 회수 확인 모의 회신",
+        "task_id": "global:overdue:ar:MAR-0015",
+        "provenance": "계산 결과"
+      },
+      "at": "2026-11-09 17:25:07.050914+09:00"
+    },
+    {
+      "seq": 151,
+      "case_id": null,
+      "role": "재무",
+      "event": "연체 항목 확인 회신",
+      "detail": {
+        "at": "2026-11-09T08:25:07.153357+00:00",
+        "role": "재무",
+        "after": {
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0012": {
+              "at": "2026-11-09T08:25:06.945469+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0015": {
+              "at": "2026-11-09T08:25:07.058989+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0015 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0018": {
+              "at": "2026-11-09T08:25:07.153357+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0018 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "before": {
+          "version": 6,
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0012": {
+              "at": "2026-11-09T08:25:06.945469+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0015": {
+              "at": "2026-11-09T08:25:07.058989+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0015 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "reason": "연체채권 회수 확인 모의 회신",
+        "evidence": "MAR-0018 전액 7/1 회수 가정 확인",
+        "provenance": "모의 회신",
+        "decision_maker": "재무 시연 담당자"
+      },
+      "at": "2026-11-09 17:25:07.151272+09:00"
+    },
+    {
+      "seq": 152,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 완료",
+      "detail": {
+        "reason": "연체채권 회수 확인 모의 회신",
+        "task_id": "global:overdue:ar:MAR-0018",
+        "provenance": "계산 결과"
+      },
+      "at": "2026-11-09 17:25:07.151272+09:00"
+    },
+    {
+      "seq": 155,
+      "case_id": null,
+      "role": "재무",
+      "event": "연체 항목 확인 회신",
+      "detail": {
+        "at": "2026-11-09T08:25:07.230299+00:00",
+        "role": "재무",
+        "after": {
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0012": {
+              "at": "2026-11-09T08:25:06.945469+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0015": {
+              "at": "2026-11-09T08:25:07.058989+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0015 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0018": {
+              "at": "2026-11-09T08:25:07.153357+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0018 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0021": {
+              "at": "2026-11-09T08:25:07.230299+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0021 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "before": {
+          "version": 7,
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0012": {
+              "at": "2026-11-09T08:25:06.945469+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0015": {
+              "at": "2026-11-09T08:25:07.058989+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0015 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0018": {
+              "at": "2026-11-09T08:25:07.153357+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0018 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "reason": "연체채권 회수 확인 모의 회신",
+        "evidence": "MAR-0021 전액 7/1 회수 가정 확인",
+        "provenance": "모의 회신",
+        "decision_maker": "재무 시연 담당자"
+      },
+      "at": "2026-11-09 17:25:07.227960+09:00"
+    },
+    {
+      "seq": 156,
+      "case_id": null,
+      "role": "시스템",
+      "event": "확인요청 작업 완료",
+      "detail": {
+        "reason": "연체채권 회수 확인 모의 회신",
+        "task_id": "global:overdue:ar:MAR-0021",
+        "provenance": "계산 결과"
+      },
+      "at": "2026-11-09 17:25:07.227960+09:00"
+    },
+    {
+      "seq": 159,
+      "case_id": null,
+      "role": "재무",
+      "event": "공식 재전망 시나리오 확정",
+      "detail": {
+        "at": "2026-11-09T08:25:07.312314+00:00",
+        "role": "재무",
+        "after": {
+          "decision": {
+            "at": "2026-11-09T08:25:07.312314+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "collect_pay",
+          "confirmed": true,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0012": {
+              "at": "2026-11-09T08:25:06.945469+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0015": {
+              "at": "2026-11-09T08:25:07.058989+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0015 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0018": {
+              "at": "2026-11-09T08:25:07.153357+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0018 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0021": {
+              "at": "2026-11-09T08:25:07.230299+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0021 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "before": {
+          "version": 8,
+          "decision": {
+            "at": "2026-11-09T08:25:03.733794+00:00",
+            "role": "재무",
+            "reason": "검증 시나리오 확정",
+            "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+            "decision_maker": "재무 시연 담당자"
+          },
+          "selected": "exclude_pay",
+          "confirmed": false,
+          "overrides": {
+            "ar:MAR-0003": {
+              "at": "2026-11-09T08:25:06.733372+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0003 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0009": {
+              "at": "2026-11-09T08:25:06.837315+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0009 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0012": {
+              "at": "2026-11-09T08:25:06.945469+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0012 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0015": {
+              "at": "2026-11-09T08:25:07.058989+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0015 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0018": {
+              "at": "2026-11-09T08:25:07.153357+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0018 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            },
+            "ar:MAR-0021": {
+              "at": "2026-11-09T08:25:07.230299+00:00",
+              "date": "2026-07-01",
+              "role": "재무",
+              "reason": "연체채권 회수 확인 모의 회신",
+              "evidence": "MAR-0021 전액 7/1 회수 가정 확인",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 시연 담당자"
+            }
+          },
+          "review_date": "2026-07-01",
+          "weekend_shift": false,
+          "next_review_date": "2026-07-08"
+        },
+        "reason": "검증 시나리오 확정",
+        "evidence": "원본 AR·AP·발주 스케줄 + 모의 회신",
+        "provenance": "부서 주장",
+        "decision_maker": "재무 시연 담당자"
+      },
+      "at": "2026-11-09 17:25:07.310198+09:00"
+    }
+  ],
+  "result": "4개 시나리오 통과"
+}

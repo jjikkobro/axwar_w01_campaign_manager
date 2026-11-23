@@ -1,0 +1,269 @@
+{
+  "source": "W01_screens",
+  "comparisons": [
+    {
+      "screen": "MKT_1_Proposal",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "ce98363b1571c0cf2200747eb5543a44eda572c4942db10aff52428db6fdac87",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "MKT_2_Wait",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "c644f5c87a210815e11b562eabea7f4a2bfe61339cccb5bd24b56d251b32eed0",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "MKT_3_Hold",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "5dd384c391fe2531f99a7c5ce3758772cb4ec8e86d36f52a68cca616037e7089",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "MKT_4_Close",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "b04385bf1d97882609dfbd2927d5d6e507a3a1d0f5e95342a5652658d0ac02ba",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_1_Check",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "fafd6788ad97166d6eee7de952b011b6bd4adad8c4a8101f8ecbce4b5875a3ab",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_2_WaitApproval",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "c1f552d26d3c1157c6babb1e3ee5582ca363d11a4e2bf105dac254e612e4330b",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_3_PO",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "626ec600cc8c60ee89fd83beeb7331569160d17819d742964a59f49d44b321b2",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_4_WaitReply",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "93240ef2e0aef4a6d3222c87ec002420879337213793ffc95514b53760781c7a",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_5_Receipt",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "92156bc0bdd292a354162a78f83a18fc48c6a7cba66c9fad3ead79059f83d6fb",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "FIN_1_Review",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "d9681c5b83d245bb40c07ed11ab530b384d679f40aaa11cb01e0450eaed69284",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "FIN_2_Wait",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "7c1728517b5d593c16a8fae1472c214b5aa75f5dd9057ba333c890dc7ecf30cd",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "APR_1_CEO",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "b1631bffe21b51b5fb836a42ce82ec86159038c90f05a5efe3a0a161d6b80562",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "APR_2_Normal",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "identical_png": true,
+      "sha256": "0ce1af97e12135f0e52e486ba6c6a74aa442211bd983196fb64f4a5b5df8f444",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "MKT_1_Proposal",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "61421b3f35fbc508b12d4d99107e9f6b967308ffe4e444db4b92eaf4fb36a8ef",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "MKT_2_Wait",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "5efdd193a7329b123b06c1ad057f69a1603296e46ac707240cff2dc10c134c01",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "MKT_3_Hold",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "0561492e292add09930d30f330d4e3fbf88146ca620bc8019f4f2289d1d89f3b",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "MKT_4_Close",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "d5f3a91eb7ad333ebf88a8d06bcbdef6364544f411edc7f3847661f264851180",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_1_Check",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "efe45ea20adc0ff7b67b9ce319e3aef2349d4cd18c8c7f8e66a932e9a1af13d2",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_2_WaitApproval",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "5166a62f80dbdc181d13a3fffa37735f74177b5e93827fcc44c4ff6be57fde6d",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_3_PO",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "49b21c7824944a566ee77227afd9cfbe2be4c74183bae36700d2498225bec40a",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_4_WaitReply",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "e9fdf487ef0251319f5f46922c9fd120c504500cb566a71326dbf8cf3e8e9b6b",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "SCM_5_Receipt",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "f825a7d612728071c5f2ec2290ee20349c5aa6ae3846ef6b08d435e824086dc3",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "FIN_1_Review",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "4b8ac28c69fff45baeb1c6b80f902393a108b0465dd8fbcb526e28e053a2dcdb",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "FIN_2_Wait",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "647316cae2bcc6461be4d9bb38a174097b7d782348d6ebdca31ec12d38f57f7f",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "APR_1_CEO",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "cff7b5a76ee91913cdb039c43843f2799f8d3c09c3f6e980abe61f32db632499",
+      "section_geometry_identical": true
+    },
+    {
+      "screen": "APR_2_Normal",
+      "viewport": [
+        390,
+        844
+      ],
+      "identical_png": true,
+      "sha256": "87a024b926fce626219570259a7277430dc7c670a3c4465be788c6d2786cfb0e",
+      "section_geometry_identical": true
+    }
+  ],
+  "passed": true,
+  "browser_errors": [],
+  "source_files_unchanged": true,
+  "scope": "원본 Design Component를 지원하는 동일 로컬 바인더/브라우저에서 동일 초기 상태 비교. 실데이터 텍스트/행 수에 따른 차이는 별도."
+}

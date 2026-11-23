@@ -1,0 +1,707 @@
+{
+  "plans": {
+    "source": "01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_budget_plan_ms.csv",
+    "provenance": "원본 사실",
+    "sha256": "c1696151998b68e3d8fa5e38e0d4f8fa91c0b4c45bffd743e4b59fd88cbf9df5",
+    "rows": [
+      {
+        "plan_id": "PLAN-001",
+        "campaign_id": "CMP-0003",
+        "requested_budget_krw": "18962703",
+        "expected_gmv_krw": "213330410",
+        "settlement_date": "2026-07-27",
+        "contract_deadline": "2026-07-17"
+      },
+      {
+        "plan_id": "PLAN-002",
+        "campaign_id": "CMP-0002",
+        "requested_budget_krw": "16801646",
+        "expected_gmv_krw": "189018519",
+        "settlement_date": "2026-08-06",
+        "contract_deadline": "2026-07-17"
+      },
+      {
+        "plan_id": "PLAN-003",
+        "campaign_id": "CMP-0001",
+        "requested_budget_krw": "14926612",
+        "expected_gmv_krw": "167924383",
+        "settlement_date": "2026-08-17",
+        "contract_deadline": "2026-07-17"
+      },
+      {
+        "plan_id": "PLAN-004",
+        "campaign_id": "CMP-0009",
+        "requested_budget_krw": "10180328",
+        "expected_gmv_krw": "114528685",
+        "settlement_date": "2026-08-28",
+        "contract_deadline": "2026-07-17"
+      },
+      {
+        "plan_id": "PLAN-005",
+        "campaign_id": "CMP-0014",
+        "requested_budget_krw": "10031001",
+        "expected_gmv_krw": "112848761",
+        "settlement_date": "2026-09-08",
+        "contract_deadline": "2026-07-17"
+      },
+      {
+        "plan_id": "PLAN-006",
+        "campaign_id": "CMP-0008",
+        "requested_budget_krw": "9016502",
+        "expected_gmv_krw": "93921896",
+        "settlement_date": "2026-09-21",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-007",
+        "campaign_id": "CMP-0013",
+        "requested_budget_krw": "8838528",
+        "expected_gmv_krw": "92067998",
+        "settlement_date": "2026-07-17",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-008",
+        "campaign_id": "CMP-0007",
+        "requested_budget_krw": "8132039",
+        "expected_gmv_krw": "84708740",
+        "settlement_date": "2026-07-28",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-009",
+        "campaign_id": "CMP-0012",
+        "requested_budget_krw": "7836774",
+        "expected_gmv_krw": "81633058",
+        "settlement_date": "2026-08-10",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-010",
+        "campaign_id": "CMP-0019",
+        "requested_budget_krw": "7483054",
+        "expected_gmv_krw": "77948479",
+        "settlement_date": "2026-08-19",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-011",
+        "campaign_id": "CMP-0018",
+        "requested_budget_krw": "6785231",
+        "expected_gmv_krw": "70679488",
+        "settlement_date": "2026-08-31",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-012",
+        "campaign_id": "CMP-0017",
+        "requested_budget_krw": "6116688",
+        "expected_gmv_krw": "63715505",
+        "settlement_date": "2026-09-10",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-013",
+        "campaign_id": "CMP-0011",
+        "requested_budget_krw": "5624379",
+        "expected_gmv_krw": "58587278",
+        "settlement_date": "2026-09-21",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-014",
+        "campaign_id": "CMP-0006",
+        "requested_budget_krw": "5414940",
+        "expected_gmv_krw": "56405621",
+        "settlement_date": "2026-07-20",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-015",
+        "campaign_id": "CMP-0016",
+        "requested_budget_krw": "5375042",
+        "expected_gmv_krw": "55990019",
+        "settlement_date": "2026-07-30",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-016",
+        "campaign_id": "CMP-0025",
+        "requested_budget_krw": "5228580",
+        "expected_gmv_krw": "54464371",
+        "settlement_date": "2026-08-10",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-017",
+        "campaign_id": "CMP-0010",
+        "requested_budget_krw": "4882982",
+        "expected_gmv_krw": "50864399",
+        "settlement_date": "2026-08-21",
+        "contract_deadline": "2026-08-14"
+      },
+      {
+        "plan_id": "PLAN-018",
+        "campaign_id": "CMP-0015",
+        "requested_budget_krw": "4834768",
+        "expected_gmv_krw": "50362162",
+        "settlement_date": "2026-09-01",
+        "contract_deadline": "2026-09-11"
+      },
+      {
+        "plan_id": "PLAN-019",
+        "campaign_id": "CMP-0005",
+        "requested_budget_krw": "4807921",
+        "expected_gmv_krw": "50082515",
+        "settlement_date": "2026-09-14",
+        "contract_deadline": "2026-09-11"
+      },
+      {
+        "plan_id": "PLAN-020",
+        "campaign_id": "CMP-0024",
+        "requested_budget_krw": "4711056",
+        "expected_gmv_krw": "49073501",
+        "settlement_date": "2026-09-23",
+        "contract_deadline": "2026-09-11"
+      },
+      {
+        "plan_id": "PLAN-021",
+        "campaign_id": "CMP-0004",
+        "requested_budget_krw": "4378322",
+        "expected_gmv_krw": "40134615",
+        "settlement_date": "2026-07-21",
+        "contract_deadline": "2026-09-11"
+      },
+      {
+        "plan_id": "PLAN-022",
+        "campaign_id": "CMP-0023",
+        "requested_budget_krw": "2815033",
+        "expected_gmv_krw": "25804469",
+        "settlement_date": "2026-08-03",
+        "contract_deadline": "2026-09-11"
+      },
+      {
+        "plan_id": "PLAN-023",
+        "campaign_id": "CMP-0021",
+        "requested_budget_krw": "2727770",
+        "expected_gmv_krw": "25004559",
+        "settlement_date": "2026-08-12",
+        "contract_deadline": "2026-09-11"
+      },
+      {
+        "plan_id": "PLAN-024",
+        "campaign_id": "CMP-0022",
+        "requested_budget_krw": "2476699",
+        "expected_gmv_krw": "22703076",
+        "settlement_date": "2026-08-24",
+        "contract_deadline": "2026-09-11"
+      },
+      {
+        "plan_id": "PLAN-025",
+        "campaign_id": "CMP-0020",
+        "requested_budget_krw": "2414674",
+        "expected_gmv_krw": "22134516",
+        "settlement_date": "2026-09-03",
+        "contract_deadline": "2026-09-11"
+      }
+    ]
+  },
+  "campaigns": {
+    "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_campaign_ms.csv",
+    "provenance": "원본 사실",
+    "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+    "rows": [
+      {
+        "campaign_id": "CMP-0001",
+        "campaign_name": "혜인 색조 캠페인1",
+        "influencer_id": "INF-001",
+        "country": "국내",
+        "sns_channel": "YouTube",
+        "sns_format": "롱폼",
+        "sales_channel": "대형파트너",
+        "product_line": "색조",
+        "start_date": "2025-01-01",
+        "end_date": "2025-07-01",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0002",
+        "campaign_name": "혜인 색조 캠페인2",
+        "influencer_id": "INF-001",
+        "country": "국내",
+        "sns_channel": "YouTube",
+        "sns_format": "숏츠",
+        "sales_channel": "마켓플레이스",
+        "product_line": "색조",
+        "start_date": "2025-07-01",
+        "end_date": "2025-12-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0003",
+        "campaign_name": "혜인 기초 캠페인3",
+        "influencer_id": "INF-001",
+        "country": "국내",
+        "sns_channel": "YouTube",
+        "sns_format": "숏츠",
+        "sales_channel": "라이브",
+        "product_line": "기초",
+        "start_date": "2025-12-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0004",
+        "campaign_name": "초혜핏 선케어 캠페인1",
+        "influencer_id": "INF-002",
+        "country": "국내",
+        "sns_channel": "Instagram",
+        "sns_format": "피드",
+        "sales_channel": "자사몰",
+        "product_line": "선케어",
+        "start_date": "2025-01-01",
+        "end_date": "2025-07-01",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0005",
+        "campaign_name": "초혜핏 선케어 캠페인2",
+        "influencer_id": "INF-002",
+        "country": "국내",
+        "sns_channel": "Instagram",
+        "sns_format": "피드",
+        "sales_channel": "자사몰",
+        "product_line": "선케어",
+        "start_date": "2025-07-01",
+        "end_date": "2025-12-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0006",
+        "campaign_name": "초혜핏 색조 캠페인3",
+        "influencer_id": "INF-002",
+        "country": "국내",
+        "sns_channel": "Instagram",
+        "sns_format": "피드",
+        "sales_channel": "자사몰",
+        "product_line": "색조",
+        "start_date": "2025-12-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0007",
+        "campaign_name": "토모카 기초 캠페인1",
+        "influencer_id": "INF-003",
+        "country": "일본",
+        "sns_channel": "Instagram",
+        "sns_format": "릴스",
+        "sales_channel": "마켓플레이스",
+        "product_line": "기초",
+        "start_date": "2025-01-01",
+        "end_date": "2025-07-01",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0008",
+        "campaign_name": "토모카 색조 캠페인2",
+        "influencer_id": "INF-003",
+        "country": "일본",
+        "sns_channel": "Instagram",
+        "sns_format": "피드",
+        "sales_channel": "마켓플레이스",
+        "product_line": "색조",
+        "start_date": "2025-07-01",
+        "end_date": "2025-12-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0009",
+        "campaign_name": "토모카 기초 캠페인3",
+        "influencer_id": "INF-003",
+        "country": "일본",
+        "sns_channel": "Instagram",
+        "sns_format": "피드",
+        "sales_channel": "마켓플레이스",
+        "product_line": "기초",
+        "start_date": "2025-12-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0010",
+        "campaign_name": "유키뷰티 색조 캠페인1",
+        "influencer_id": "INF-004",
+        "country": "일본",
+        "sns_channel": "YouTube",
+        "sns_format": "숏츠",
+        "sales_channel": "마켓플레이스",
+        "product_line": "색조",
+        "start_date": "2025-01-01",
+        "end_date": "2025-09-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0011",
+        "campaign_name": "유키뷰티 기초 캠페인2",
+        "influencer_id": "INF-004",
+        "country": "일본",
+        "sns_channel": "YouTube",
+        "sns_format": "숏츠",
+        "sales_channel": "마켓플레이스",
+        "product_line": "기초",
+        "start_date": "2025-09-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0012",
+        "campaign_name": "Ava Glow 선케어 캠페인1",
+        "influencer_id": "INF-005",
+        "country": "미국",
+        "sns_channel": "TikTok",
+        "sns_format": "틱톡",
+        "sales_channel": "마켓플레이스",
+        "product_line": "선케어",
+        "start_date": "2025-01-01",
+        "end_date": "2025-07-01",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0013",
+        "campaign_name": "Ava Glow 기초 캠페인2",
+        "influencer_id": "INF-005",
+        "country": "미국",
+        "sns_channel": "TikTok",
+        "sns_format": "틱톡",
+        "sales_channel": "마켓플레이스",
+        "product_line": "기초",
+        "start_date": "2025-07-01",
+        "end_date": "2025-12-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0014",
+        "campaign_name": "Ava Glow 선케어 캠페인3",
+        "influencer_id": "INF-005",
+        "country": "미국",
+        "sns_channel": "TikTok",
+        "sns_format": "틱톡",
+        "sales_channel": "마켓플레이스",
+        "product_line": "선케어",
+        "start_date": "2025-12-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0015",
+        "campaign_name": "Mia Skin 색조 캠페인1",
+        "influencer_id": "INF-006",
+        "country": "미국",
+        "sns_channel": "Instagram",
+        "sns_format": "피드",
+        "sales_channel": "마켓플레이스",
+        "product_line": "색조",
+        "start_date": "2025-01-01",
+        "end_date": "2025-09-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0016",
+        "campaign_name": "Mia Skin 선케어 캠페인2",
+        "influencer_id": "INF-006",
+        "country": "미국",
+        "sns_channel": "Instagram",
+        "sns_format": "피드",
+        "sales_channel": "마켓플레이스",
+        "product_line": "선케어",
+        "start_date": "2025-09-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0017",
+        "campaign_name": "Lila SEA 기초 캠페인1",
+        "influencer_id": "INF-007",
+        "country": "동남아",
+        "sns_channel": "TikTok",
+        "sns_format": "틱톡",
+        "sales_channel": "마켓플레이스",
+        "product_line": "기초",
+        "start_date": "2025-01-01",
+        "end_date": "2025-07-01",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0018",
+        "campaign_name": "Lila SEA 더마 캠페인2",
+        "influencer_id": "INF-007",
+        "country": "동남아",
+        "sns_channel": "TikTok",
+        "sns_format": "틱톡",
+        "sales_channel": "마켓플레이스",
+        "product_line": "더마",
+        "start_date": "2025-07-01",
+        "end_date": "2025-12-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0019",
+        "campaign_name": "Lila SEA 선케어 캠페인3",
+        "influencer_id": "INF-007",
+        "country": "동남아",
+        "sns_channel": "TikTok",
+        "sns_format": "틱톡",
+        "sales_channel": "마켓플레이스",
+        "product_line": "선케어",
+        "start_date": "2025-12-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0020",
+        "campaign_name": "Nara Beauty 선케어 캠페인1",
+        "influencer_id": "INF-008",
+        "country": "동남아",
+        "sns_channel": "Instagram",
+        "sns_format": "릴스",
+        "sales_channel": "마켓플레이스",
+        "product_line": "선케어",
+        "start_date": "2025-01-01",
+        "end_date": "2025-09-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0021",
+        "campaign_name": "Nara Beauty 색조 캠페인2",
+        "influencer_id": "INF-008",
+        "country": "동남아",
+        "sns_channel": "Instagram",
+        "sns_format": "피드",
+        "sales_channel": "마켓플레이스",
+        "product_line": "색조",
+        "start_date": "2025-09-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0022",
+        "campaign_name": "보미 색조 캠페인1",
+        "influencer_id": "INF-009",
+        "country": "국내",
+        "sns_channel": "Instagram",
+        "sns_format": "릴스",
+        "sales_channel": "자사몰",
+        "product_line": "색조",
+        "start_date": "2025-01-01",
+        "end_date": "2025-09-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0023",
+        "campaign_name": "보미 색조 캠페인2",
+        "influencer_id": "INF-009",
+        "country": "국내",
+        "sns_channel": "Instagram",
+        "sns_format": "피드",
+        "sales_channel": "자사몰",
+        "product_line": "색조",
+        "start_date": "2025-09-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0024",
+        "campaign_name": "코코라운지 색조 캠페인1",
+        "influencer_id": "INF-010",
+        "country": "국내",
+        "sns_channel": "YouTube",
+        "sns_format": "롱폼",
+        "sales_channel": "자사몰",
+        "product_line": "색조",
+        "start_date": "2025-01-01",
+        "end_date": "2025-09-30",
+        "attribution_window_days": "7"
+      },
+      {
+        "campaign_id": "CMP-0025",
+        "campaign_name": "코코라운지 기초 캠페인2",
+        "influencer_id": "INF-010",
+        "country": "국내",
+        "sns_channel": "YouTube",
+        "sns_format": "숏츠",
+        "sales_channel": "자사몰",
+        "product_line": "기초",
+        "start_date": "2025-09-30",
+        "end_date": "2026-06-30",
+        "attribution_window_days": "7"
+      }
+    ]
+  },
+  "channels": {
+    "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_channel_ms.csv",
+    "provenance": "원본 사실",
+    "sha256": "a4dd2066bb0e22b8e9cb7ecd215600b0b8acd47b00510d03fc35db232b06cb1c",
+    "rows": [
+      {
+        "channel_id": "CH-01",
+        "channel_name": "마실 자사몰",
+        "channel_type": "자사몰",
+        "partner_code": "NONE",
+        "country": "국내",
+        "payment_terms_days": "0",
+        "effective_date": "2024-01-01"
+      },
+      {
+        "channel_id": "CH-02",
+        "channel_name": "메가마켓플레이스",
+        "channel_type": "마켓플레이스",
+        "partner_code": "LC-0002",
+        "country": "국내",
+        "payment_terms_days": "3",
+        "effective_date": "2024-01-01"
+      },
+      {
+        "channel_id": "CH-03",
+        "channel_name": "뷰티메가마트",
+        "channel_type": "대형파트너",
+        "partner_code": "LC-0001",
+        "country": "국내",
+        "payment_terms_days": "45",
+        "effective_date": "2024-01-01"
+      },
+      {
+        "channel_id": "CH-04",
+        "channel_name": "대리점 정산채널",
+        "channel_type": "대리점",
+        "partner_code": "LC-0003",
+        "country": "국내",
+        "payment_terms_days": "30",
+        "effective_date": "2024-01-01"
+      },
+      {
+        "channel_id": "CH-05",
+        "channel_name": "재팬뷰티몰",
+        "channel_type": "마켓플레이스",
+        "partner_code": "LC-0004",
+        "country": "일본",
+        "payment_terms_days": "7",
+        "effective_date": "2024-01-01"
+      },
+      {
+        "channel_id": "CH-06",
+        "channel_name": "US 마켓플레이스",
+        "channel_type": "마켓플레이스",
+        "partner_code": "LC-0005",
+        "country": "미국",
+        "payment_terms_days": "7",
+        "effective_date": "2024-01-01"
+      },
+      {
+        "channel_id": "CH-07",
+        "channel_name": "SEA 마켓플레이스",
+        "channel_type": "마켓플레이스",
+        "partner_code": "LC-0006",
+        "country": "동남아",
+        "payment_terms_days": "7",
+        "effective_date": "2024-01-01"
+      },
+      {
+        "channel_id": "CH-08",
+        "channel_name": "라이브커머스",
+        "channel_type": "라이브",
+        "partner_code": "NONE",
+        "country": "국내",
+        "payment_terms_days": "5",
+        "effective_date": "2024-01-01"
+      }
+    ]
+  },
+  "influencers": {
+    "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_influencer_ms.csv",
+    "provenance": "원본 사실",
+    "sha256": "5a6eb2c4b5942ae6485f85c353b2b196ddda8ce8eee787661c7fbc8054fdc8af",
+    "rows": [
+      {
+        "influencer_id": "INF-001",
+        "influencer_name": "혜인",
+        "tier": "대형",
+        "primary_country": "국내",
+        "platform": "YouTube",
+        "fee_type": "고정+성과"
+      },
+      {
+        "influencer_id": "INF-002",
+        "influencer_name": "초혜핏",
+        "tier": "중형",
+        "primary_country": "국내",
+        "platform": "Instagram",
+        "fee_type": "성과"
+      },
+      {
+        "influencer_id": "INF-003",
+        "influencer_name": "토모카",
+        "tier": "대형",
+        "primary_country": "일본",
+        "platform": "Instagram",
+        "fee_type": "고정"
+      },
+      {
+        "influencer_id": "INF-004",
+        "influencer_name": "유키뷰티",
+        "tier": "중형",
+        "primary_country": "일본",
+        "platform": "YouTube",
+        "fee_type": "혼합"
+      },
+      {
+        "influencer_id": "INF-005",
+        "influencer_name": "Ava Glow",
+        "tier": "대형",
+        "primary_country": "미국",
+        "platform": "TikTok",
+        "fee_type": "고정+성과"
+      },
+      {
+        "influencer_id": "INF-006",
+        "influencer_name": "Mia Skin",
+        "tier": "중형",
+        "primary_country": "미국",
+        "platform": "Instagram",
+        "fee_type": "성과"
+      },
+      {
+        "influencer_id": "INF-007",
+        "influencer_name": "Lila SEA",
+        "tier": "대형",
+        "primary_country": "동남아",
+        "platform": "TikTok",
+        "fee_type": "고정"
+      },
+      {
+        "influencer_id": "INF-008",
+        "influencer_name": "Nara Beauty",
+        "tier": "마이크로",
+        "primary_country": "동남아",
+        "platform": "Instagram",
+        "fee_type": "성과"
+      },
+      {
+        "influencer_id": "INF-009",
+        "influencer_name": "보미",
+        "tier": "마이크로",
+        "primary_country": "국내",
+        "platform": "Instagram",
+        "fee_type": "성과"
+      },
+      {
+        "influencer_id": "INF-010",
+        "influencer_name": "코코라운지",
+        "tier": "중형",
+        "primary_country": "국내",
+        "platform": "YouTube",
+        "fee_type": "혼합"
+      }
+    ]
+  }
+}

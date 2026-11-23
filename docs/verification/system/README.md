@@ -1,0 +1,16 @@
+# system 검증 결과
+
+저장된 JSON·테스트 로그는 해당 검증 실행 당시의 증거입니다. 재실행 시 지정된 격리 환경과 스크립트 조건을 확인하세요.
+
+[전체 문서 안내](../../README.md)
+
+- [LOCAL_PREVIEW_2026-11-11.json](LOCAL_PREVIEW_2026-11-11.json)
+- [LOCAL_PREVIEW_2026-11-12.json](LOCAL_PREVIEW_2026-11-12.json)
+- [REGRESSION_RESULTS.json](REGRESSION_RESULTS.json)
+- [SCENARIO_RESULTS.json](SCENARIO_RESULTS.json)
+- [TEST_OUTPUT.txt](TEST_OUTPUT.txt)
+- [UPGRADE_BROWSER.json](UPGRADE_BROWSER.json)
+- [UPGRADE_INTEGRITY.json](UPGRADE_INTEGRITY.json)
+- [UPGRADE_RESTART.json](UPGRADE_RESTART.json)
+- [UPGRADE_SCENARIOS.json](UPGRADE_SCENARIOS.json)
+- [UPGRADE_TESTS.txt](UPGRADE_TESTS.txt)

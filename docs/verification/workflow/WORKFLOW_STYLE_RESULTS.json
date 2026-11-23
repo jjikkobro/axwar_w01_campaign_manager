@@ -1,0 +1,16 @@
+{
+  "field_style": {
+    "height": 44,
+    "borderRadius": "8px",
+    "borderColor": "rgb(207, 213, 221)"
+  },
+  "money_format": "16,800",
+  "procurement_cost": 201600000,
+  "mobile_overflow": false,
+  "marketing_request_target_fixed": true,
+  "same_case_returned": true,
+  "marketing_edit_and_resubmit": true,
+  "after_stage": 2,
+  "new_case_created": false,
+  "browser_errors": []
+}

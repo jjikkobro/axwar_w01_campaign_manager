@@ -1,0 +1,18 @@
+{
+  "family": "IBM Plex Sans KR",
+  "weights": [
+    400,
+    500,
+    600,
+    700
+  ],
+  "source": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap",
+  "local_files": 4,
+  "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsanskr/OFL.txt",
+  "hashes": {
+    "aa858494016163f4eaac.ttf": "2cc7f1b8869faf35d6e95ce80cc923dea1d31c320a8606d6be8cd6bcd0f0ea3b",
+    "53b61c5f5822090bc46d.ttf": "330d7cfb40dd5f45f4e430f05fbf6663ef8d37f554d422a7aaaf4e0d253839c3",
+    "19253c52d5d7a3f43c2e.ttf": "a5fc4140a334ac3dec8076721daa713c22d5af01f7d12d8de80ea4e1262c2e2e",
+    "8684b21ea3d30040811e.ttf": "d6598cd8f336402e9fdbdf1b9dec18da4934d5904c4c62827006796a229a395b"
+  }
+}

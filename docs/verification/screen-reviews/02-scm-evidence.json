@@ -1,0 +1,253 @@
+{
+  "as_of": "2026-07-01",
+  "scope": "② SCM 시안의 정적 내용·원본 수치 교차검증. 앱·DB 변경 없음.",
+  "sales_policy": {
+    "completed_weeks": [
+      "2026-06-01",
+      "2026-06-08",
+      "2026-06-15",
+      "2026-06-22"
+    ],
+    "excluded_incomplete_week": "2026-06-29",
+    "provenance": "참가자 가정 · 기존 합의 계산 정책; 원본 최근 4주 산식과 주차 선택 기준을 구분"
+  },
+  "sources": {
+    "sales": {
+      "file": "02_masil/inventory/sku_weekly_sales_ms.csv",
+      "sha256": "a3fa428c227708fffaf78a52155a991b65d05075f8de04b85f944bd59cbaf54a"
+    },
+    "inventory": {
+      "file": "02_masil/inventory/sku_inventory_ms.csv",
+      "sha256": "5ee7162933b1e30d779625ce5c384b8acc1d6e51636c083f49aaa6dab02548f8"
+    },
+    "sku": {
+      "file": "02_masil/master/m_sku_ms.csv",
+      "sha256": "7df809c41142d702e09be67b510a65e6c638d59f1f0c43eb2d231c934faf1c64"
+    },
+    "purchase": {
+      "file": "02_masil/inventory/sc_purchase_orders_ms.csv",
+      "sha256": "2686b7e51395ff487b5cb37d7fe1a6f2f20c4ff77acea8164bee5e32918ebd44"
+    }
+  },
+  "sku_checks": [
+    {
+      "sku_id": "SKU-2001",
+      "inventory_original": {
+        "sku_id": "SKU-2001",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "25170",
+        "in_transit_qty": "1823",
+        "stock_cover_weeks": "5.7",
+        "source_line": 6
+      },
+      "sales_rows": [
+        {
+          "week": "2026-06-01",
+          "sku_id": "SKU-2001",
+          "sold_qty": "3276",
+          "source_line": 387
+        },
+        {
+          "week": "2026-06-08",
+          "sku_id": "SKU-2001",
+          "sold_qty": "3864",
+          "source_line": 388
+        },
+        {
+          "week": "2026-06-15",
+          "sku_id": "SKU-2001",
+          "sold_qty": "4591",
+          "source_line": 389
+        },
+        {
+          "week": "2026-06-22",
+          "sku_id": "SKU-2001",
+          "sold_qty": "4586",
+          "source_line": 390
+        }
+      ],
+      "completed_4w_avg": 4079.25,
+      "baseline_cover": 6.170251884537599,
+      "mockup_extra_weekly": 600,
+      "extra_provenance": "참가자 가정 · 시안 입력 예시 · 확정 수요 아님",
+      "sustained_extra_cover": 5.3790671581984295,
+      "existing_po": {
+        "po_id": "SPO-0005",
+        "sku_id": "SKU-2001",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-23",
+        "order_qty": "16000",
+        "moq": "16000",
+        "lead_time_weeks": "8",
+        "amount_krw": "201600000",
+        "payment_due_date": "2026-07-21",
+        "source_line": 6
+      },
+      "order_plus_lead_time_assumption": "2026-08-18",
+      "per_day_uniform_example": {
+        "campaign_start": "2026-07-13",
+        "campaign_end": "2026-07-19",
+        "receipts": 0,
+        "stock_at_campaign_end": 13497.75,
+        "first_negative_date": "2026-08-12",
+        "provenance": "참가자 가정 + 계산 결과",
+        "limitations": "입고일 미확인 물량 미반영; 일 균등 수요 가정; 캠페인 기간은 원본에 없는 설명용 가정. 실제 공급 가능·승인을 확정하지 않음."
+      }
+    },
+    {
+      "sku_id": "SKU-2002",
+      "inventory_original": {
+        "sku_id": "SKU-2002",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "19382",
+        "in_transit_qty": "1089",
+        "stock_cover_weeks": "4.9",
+        "source_line": 7
+      },
+      "sales_rows": [
+        {
+          "week": "2026-06-01",
+          "sku_id": "SKU-2002",
+          "sold_qty": "4724",
+          "source_line": 465
+        },
+        {
+          "week": "2026-06-08",
+          "sku_id": "SKU-2002",
+          "sold_qty": "4791",
+          "source_line": 466
+        },
+        {
+          "week": "2026-06-15",
+          "sku_id": "SKU-2002",
+          "sold_qty": "4266",
+          "source_line": 467
+        },
+        {
+          "week": "2026-06-22",
+          "sku_id": "SKU-2002",
+          "sold_qty": "3495",
+          "source_line": 468
+        }
+      ],
+      "completed_4w_avg": 4319.0,
+      "baseline_cover": 4.4876128733503124,
+      "mockup_extra_weekly": 1000,
+      "extra_provenance": "참가자 가정 · 시안 입력 예시 · 확정 수요 아님",
+      "sustained_extra_cover": 3.6439180297048317,
+      "existing_po": {
+        "po_id": "SPO-0006",
+        "sku_id": "SKU-2002",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-24",
+        "order_qty": "16000",
+        "moq": "16000",
+        "lead_time_weeks": "8",
+        "amount_krw": "201600000",
+        "payment_due_date": "2026-07-21",
+        "source_line": 7
+      },
+      "order_plus_lead_time_assumption": "2026-08-19",
+      "per_day_uniform_example": {
+        "campaign_start": "2026-07-13",
+        "campaign_end": "2026-07-19",
+        "receipts": 0,
+        "stock_at_campaign_end": 6659.0,
+        "first_negative_date": "2026-07-30",
+        "provenance": "참가자 가정 + 계산 결과",
+        "limitations": "입고일 미확인 물량 미반영; 일 균등 수요 가정; 캠페인 기간은 원본에 없는 설명용 가정. 실제 공급 가능·승인을 확정하지 않음."
+      }
+    },
+    {
+      "sku_id": "SKU-2003",
+      "inventory_original": {
+        "sku_id": "SKU-2003",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "22755",
+        "in_transit_qty": "2459",
+        "stock_cover_weeks": "5.9",
+        "source_line": 8
+      },
+      "sales_rows": [
+        {
+          "week": "2026-06-01",
+          "sku_id": "SKU-2003",
+          "sold_qty": "4157",
+          "source_line": 543
+        },
+        {
+          "week": "2026-06-08",
+          "sku_id": "SKU-2003",
+          "sold_qty": "3502",
+          "source_line": 544
+        },
+        {
+          "week": "2026-06-15",
+          "sku_id": "SKU-2003",
+          "sold_qty": "4333",
+          "source_line": 545
+        },
+        {
+          "week": "2026-06-22",
+          "sku_id": "SKU-2003",
+          "sold_qty": "3653",
+          "source_line": 546
+        }
+      ],
+      "completed_4w_avg": 3911.25,
+      "baseline_cover": 5.817833173537871,
+      "mockup_extra_weekly": 500,
+      "extra_provenance": "참가자 가정 · 시안 입력 예시 · 확정 수요 아님",
+      "sustained_extra_cover": 5.158401813544914,
+      "existing_po": {
+        "po_id": "SPO-0007",
+        "sku_id": "SKU-2003",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-24",
+        "order_qty": "16000",
+        "moq": "16000",
+        "lead_time_weeks": "8",
+        "amount_krw": "201600000",
+        "payment_due_date": "2026-07-21",
+        "source_line": 8
+      },
+      "order_plus_lead_time_assumption": "2026-08-19",
+      "per_day_uniform_example": {
+        "campaign_start": "2026-07-13",
+        "campaign_end": "2026-07-19",
+        "receipts": 0,
+        "stock_at_campaign_end": 11638.75,
+        "first_negative_date": "2026-08-09",
+        "provenance": "참가자 가정 + 계산 결과",
+        "limitations": "입고일 미확인 물량 미반영; 일 균등 수요 가정; 캠페인 기간은 원본에 없는 설명용 가정. 실제 공급 가능·승인을 확정하지 않음."
+      }
+    }
+  ],
+  "new_order_illustration": {
+    "historical_unit_price": 12600,
+    "historical_reference_po": "SPO-0006",
+    "moq": 16000,
+    "estimated_amount_if_new_quote_unchanged": 201600000,
+    "new_order_date_assumption": "2026-07-01",
+    "new_expected_receipt_assumption": "2026-08-26",
+    "confirmed_new_payment_date": null,
+    "target_quantity_confirmed": false,
+    "provenance": "역산 단가·입고 가정이며 신규 발주/가격/판매 가능일 확정 아님"
+  },
+  "rule_distinction": {
+    "stock_cover": "현재고/최근 4주 평균; 운송 중 제외",
+    "suggested_order": "max(Target Qty - available_qty - in_transit_qty,0); Target Qty 선택 필요",
+    "timed_supply": "발주·운송 중 물량 관계 미확인. 같은 물량 이중 가산 금지. 입고·검수·판매가능일 확인 필요"
+  },
+  "workflow_finding": {
+    "source_flow": "W01_t2 → W01_t3 → W01_gate",
+    "mockup_flow": "② 공급 불가 선택 → 보류·재검토 화면",
+    "finding": "원본에 없는 조기 분기. SCM 공급 검토·보완 요청과 승인권자의 정식 발주 미승인을 구분할 수정안 컨펌 필요"
+  },
+  "independent_check": {
+    "original_csv_decimal_vs_existing_engine": "3 SKU의 완료 4주 평균·7/19 재고 모두 일치",
+    "db_writes": false,
+    "application_changes": false,
+    "supplier_replies_created": false
+  }
+}

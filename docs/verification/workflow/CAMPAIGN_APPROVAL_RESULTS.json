@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "mode": "normal",
+      "width": 1440,
+      "single_campaign_choice": true,
+      "three_departments": true
+    },
+    {
+      "mode": "normal",
+      "width": 390,
+      "single_campaign_choice": true,
+      "three_departments": true
+    },
+    {
+      "mode": "ceo",
+      "width": 1440,
+      "single_campaign_choice": true,
+      "three_departments": true
+    },
+    {
+      "mode": "ceo",
+      "width": 390,
+      "single_campaign_choice": true,
+      "three_departments": true
+    }
+  ],
+  "single_decision_payload": true,
+  "normal_real_data": true,
+  "ceo_browser_fixture_from_actual_rules": true,
+  "server_tests": 128,
+  "browser_errors": [],
+  "case_versions_unchanged": true,
+  "mode": "평시 실제 자료·CEO 계산 픽스처·브라우저 전송 모의, DB 무변경"
+}

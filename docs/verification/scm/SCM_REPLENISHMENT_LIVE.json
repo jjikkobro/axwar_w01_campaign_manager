@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8088/campaign#screen=SCM_1_Check&case=4774d5b9-980c-456c-919b-d520870a6410",
+  "case_version": 4,
+  "case_unchanged": true,
+  "state": "SCM 검토 요청",
+  "recommendation": "정기 보충·추가 발주 검토 가능",
+  "policy": "SCM-REPLENISH-2",
+  "adopted_revalidated": true,
+  "demand_missing": false,
+  "demand_outside_range": false,
+  "demand_confirmation_pending": true,
+  "items": [
+    {
+      "sku_id": "SKU-3001",
+      "regular_qty": 0,
+      "incremental_qty": 0,
+      "campaign_min_with_extra": 8580.5357,
+      "pre_campaign_gap": null
+    },
+    {
+      "sku_id": "SKU-3002",
+      "regular_qty": 0,
+      "incremental_qty": 0,
+      "campaign_min_with_extra": 8466.7857,
+      "pre_campaign_gap": null
+    },
+    {
+      "sku_id": "SKU-3003",
+      "regular_qty": 79362,
+      "incremental_qty": 0,
+      "campaign_min_with_extra": 24261.6071,
+      "pre_campaign_gap": "2026-08-05"
+    }
+  ],
+  "errors": []
+}

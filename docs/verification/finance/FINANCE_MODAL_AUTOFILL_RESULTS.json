@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "known_fields_prefilled": [
+    "decision_maker",
+    "reason",
+    "evidence",
+    "alternatives",
+    "performance_basis",
+    "basis-0",
+    "date-0-0",
+    "amount-0-0",
+    "scope-0",
+    "scenario"
+  ],
+  "manual_values_preserved": true,
+  "unknown_values_not_invented": true,
+  "user_edits_in_payload": true,
+  "browser_errors": [],
+  "case_finance_versions_unchanged": true,
+  "mode": "실자료 조회 · 브라우저 전송 모의 · DB 변경 없음"
+}

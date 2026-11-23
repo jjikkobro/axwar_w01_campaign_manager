@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "id": "ec4b27e8-0af6-4c64-ad1f-17c961c10946",
+      "recommendation": "캠페인 승인 요청"
+    },
+    {
+      "id": "c5709312-0946-496f-b71a-0a37d60d5b25",
+      "recommendation": "캠페인 승인 요청"
+    },
+    {
+      "id": "06d6ebb0-cd45-44db-8135-26f6b99315af",
+      "recommendation": "캠페인 승인 요청"
+    }
+  ],
+  "scenario_switches": [
+    {
+      "scenario": "union",
+      "recommendation": "보완 후 평시 상신",
+      "ready": false
+    },
+    {
+      "scenario": "collect_pay",
+      "recommendation": "캠페인 승인 요청",
+      "ready": false
+    },
+    {
+      "scenario": "collect_exclude",
+      "recommendation": "캠페인 승인 요청",
+      "ready": false
+    },
+    {
+      "scenario": "exclude_exclude",
+      "recommendation": "캠페인 승인 요청",
+      "ready": false
+    },
+    {
+      "scenario": "exclude_pay",
+      "recommendation": "캠페인 승인 요청",
+      "ready": true
+    }
+  ],
+  "no_case_or_finance_mutation": true,
+  "posts": [],
+  "browser_errors": [],
+  "unit_tests": 124
+}

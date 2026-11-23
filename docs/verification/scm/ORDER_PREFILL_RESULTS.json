@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "known_fields": {
+    "p-owner": "담당자1",
+    "p-odate": "2026-07-01",
+    "p-due": "2026-09-21",
+    "p-reply": "2026-07-06",
+    "p-note": "캠페인: [모의] 기초 라인 캠페인 · SCM 검토 (2026-07-13 ~ 2026-07-19) / SKU-2002 16000EA · 승인 지급일 2026-09-21 / 요청 수량·판매가능일·지급일을 확인해 회신해 주세요. 승인 범위 변경은 재검토 후 반영합니다."
+  },
+  "approved_qty_price_payment_used": true,
+  "three_business_day_draft": "2026-07-06",
+  "unknown_payment_not_invented": true,
+  "existing_record_preferred": true,
+  "no_po_no_order": true,
+  "user_edits_preserved": true,
+  "browser_errors": [],
+  "case_versions_unchanged": true,
+  "mode": "실자료 조회 · 승인 발주 메모리 픽스처 · 브라우저 전송 모의 · DB 무변경"
+}

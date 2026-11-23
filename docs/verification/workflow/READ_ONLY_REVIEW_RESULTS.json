@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8088",
+  "cases": [
+    {
+      "role": "SCM",
+      "view": "MKT_1_Proposal",
+      "role_preserved": true,
+      "inputs_disabled": true,
+      "post_blocked": true,
+      "reload_preserved": true,
+      "return_to_own_review": true
+    },
+    {
+      "role": "재무",
+      "view": "MKT_1_Proposal",
+      "role_preserved": true,
+      "inputs_disabled": true,
+      "post_blocked": true,
+      "reload_preserved": true,
+      "return_to_own_review": true
+    },
+    {
+      "role": "재무",
+      "view": "SCM_1_Check",
+      "role_preserved": true,
+      "inputs_disabled": true,
+      "post_blocked": true,
+      "reload_preserved": true,
+      "return_to_own_review": true
+    }
+  ],
+  "consult_button_removed": true,
+  "no_post_requests": true,
+  "case_versions_unchanged": true,
+  "browser_errors": []
+}

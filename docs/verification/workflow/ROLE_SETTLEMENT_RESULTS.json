@@ -1,0 +1,14 @@
+{
+  "role_switch_in_readonly": true,
+  "switch_to_department_review": true,
+  "readonly_preserved_until_explicit_switch": true,
+  "marketing_predicted_payment": "2027-01-09",
+  "finance_prefilled_payment": "2027-01-09",
+  "recommendation": "해당 기간 현금 전망 필요",
+  "date_provenance_retained": true,
+  "finance_modal_prefilled": true,
+  "mobile_overflow": false,
+  "case_versions_unchanged": true,
+  "no_post_requests": true,
+  "errors": []
+}

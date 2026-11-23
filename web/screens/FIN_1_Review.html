@@ -1,0 +1,175 @@
+<div style="min-height: 2250px; background: #f3f5f8; font-family: 'IBM Plex Sans KR', system-ui, sans-serif; color: #1a1d23; font-size: 14px; line-height: 20px">
+<header style="background: #ffffff; border-bottom: 1px solid #dde2e8">
+<div style="max-width: 1392px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px"><div style="font-size: 16px; font-weight: 700">Aurora SCM</div><nav aria-label="주요 화면" style="display: flex; flex-wrap: wrap; gap: 4px"><a href="/" class="campaign-list-link">캠페인 목록</a></nav></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px"><span style="font-size: 13px; padding: 4px 10px; border-radius: 999px; background: #1a1d23; color: #ffffff">재무</span><span style="font-size: 13px; color: #5b6270">기준일 2026-07-01</span></div>
+</div>
+</header>
+<main style="max-width: 1392px; margin: 0 auto; padding: 20px 24px 40px; display: flex; flex-direction: column; gap: 16px">
+<nav aria-label="현업 절차 단계" style="display: flex; flex-wrap: wrap; gap: 6px">
+<a href="MKT_1_Proposal.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">① 기안 상신</span><span style="font-size: 11px; color: #1e6b3a">마케팅 · 완료</span></a>
+<a href="SCM_1_Check.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">② 재고·입고표 대조</span><span style="font-size: 11px; color: #1e6b3a">SCM · 완료</span></a>
+<a href="FIN_1_Review.dc.html" aria-current="step" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #1a1d23; color: #ffffff; border: 1px solid #1a1d23"><span style="font-size: 12px; font-weight: 700">③ 금액·승인권한 검토</span><span style="font-size: 11px; color: #d1d5db">재무 · 지금</span></a>
+<a href="{{nextHref}}" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">④ 승인 여부 결정</span><span style="font-size: 11px; color: #5b6270">{{nextRole}}</span></a>
+<a href="SCM_3_PO.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑤ 발주서 작성·전달</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="SCM_5_Receipt.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑥ 입고예정 회신 확인</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="MKT_4_Close.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑦ 일정표·발주 기록 정리</span><span style="font-size: 11px; color: #5b6270">마케팅</span></a>
+</nav>
+
+<section aria-label="검토 머리" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 20px 22px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; padding: 2px 10px; border-radius: 999px; font-weight: 600; background: {{statusChip.bg}}; color: {{statusChip.fg}}">{{statusChip.text}}</span></div><h1 style="margin: 0; font-size: 22px; line-height: 30px; font-weight: 700">금액·승인권한 검토</h1></div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px">
+<div role="group" aria-label="결재선 예시" style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 600">결재선 예시 <span style="font-weight: 400; color: #6b4e00">모의 · 기안 전환</span></span><div style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 10px; background: #eef0f3">
+<sc-for list="{{presets}}" as="k" hint-placeholder-count="3"><button type="button" aria-pressed="{{k.on}}" onClick="{{k.pick}}" style="min-height: 36px; padding: 0 12px; border: 0; border-radius: 8px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; background: {{k.bg}}; color: {{k.fg}}">{{k.label}}</button></sc-for>
+</div></div>
+<div role="group" aria-label="받은 SCM 판단 (예시 전환)" style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 600">받은 SCM 판단 <span style="font-weight: 400; color: #6b4e00">모의 · 예시 전환</span></span><div style="display: flex; gap: 4px; padding: 4px; border-radius: 10px; background: #eef0f3">
+<sc-for list="{{cases}}" as="k" hint-placeholder-count="2"><button type="button" aria-pressed="{{k.on}}" onClick="{{k.pick}}" style="min-height: 36px; padding: 0 14px; border: 0; border-radius: 8px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; background: {{k.bg}}; color: {{k.fg}}">{{k.label}}</button></sc-for>
+</div></div>
+<div style="display: flex; flex-direction: column; gap: 4px; width: 180px"><label for="f-owner" style="font-size: 12px; font-weight: 600">검토 담당자 <span style="color: #b42318">*</span></label><input id="f-owner" type="text" value="{{owner}}" onChange="{{onOwner}}" placeholder="이름" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+</div>
+</div>
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start">
+<div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+
+<section aria-label="받은 내용" style="background: #ffffff; border: 1px solid #c9d6ee; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">받은 내용 · {{inp.pid}}</h2><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">모의 · ①② 예시</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><a href="MKT_1_Proposal.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; color: #1f5fbf; font-size: 13px; font-weight: 600; text-decoration: none">① 기안</a><a href="SCM_1_Check.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; color: #1f5fbf; font-size: 13px; font-weight: 600; text-decoration: none">② SCM 대조</a></div>
+</div>
+<b style="font-size: 15px">{{inp.title}}</b>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<div style="flex: 1 1 140px; padding: 8px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">요청액 (표본)</span><b>{{inp.req}}원</b></div>
+<div style="flex: 1 1 120px; padding: 8px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">정산일</span><b>{{inp.settle}}</b></div>
+<div style="flex: 1 1 140px; padding: 8px 12px; border-radius: 10px; background: #fff1e0; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">계약 확정기한</span><b style="color: #9a3412">{{inp.dl}} (D-{{inp.dlD}})</b></div>
+<div style="flex: 1 1 200px; padding: 8px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">인플루언서 · 참조 캠페인</span><b>{{inp.infName}} ({{inp.inf}}) · {{inp.ref}}</b></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<div style="flex: 1 1 260px; padding: 10px 12px; border-radius: 10px; background: {{scm.bg}}; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #5b6270">② SCM 판단</span><b style="color: {{scm.fg}}">{{scm.label}}</b><span style="font-size: 12px; color: #374151">{{scm.note}}</span></div>
+<sc-if value="{{inp.linked}}" hint-placeholder-val="{{ true }}"><div style="flex: 1 1 260px; padding: 10px 12px; border-radius: 10px; background: #fff8ec; border: 1px solid #f0c98a; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #5b6270">연결 계약</span><b style="color: #7a3d00">INF-001 연간 전속계약 · 고정 피 연 28억 (풀스케일)</b><span style="font-size: 12px; color: #374151">통보 기한 2026-07-17 · 미통보 시 1년 자동 갱신</span></div></sc-if>
+<sc-if value="{{inp.noLink}}" hint-placeholder-val="{{ false }}"><div style="flex: 1 1 260px; padding: 10px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #5b6270">연결 계약</span><b>없음</b><span style="font-size: 12px; color: #374151">이 인플루언서는 전속계약 통보 대상이 아닙니다</span></div></sc-if>
+</div>
+</section>
+
+<section aria-label="현금 재전망" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">현금 재전망 · 13주</h2><span style="font-size: 12px; color: #5b6270">{{fc.version}}</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px"><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · fin_cash_daily · ar_aging · ap_aging(po_id=NONE) · sc_purchase_orders</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">계산 · calculation_definitions 1.2</span></div>
+</div>
+<h3 class="finance-subtitle">판단 결과 · 계산</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<div style="flex: 1 1 150px; padding: 10px 12px; border-radius: 10px; background: #fdecea; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">30억 미만 기간</span><b style="font-size: 17px; color: #b42318">{{fc.window}}</b></div>
+<div style="flex: 1 1 150px; padding: 10px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">최저 일말 잔액</span><b style="font-size: 17px">{{fc.min}}</b></div>
+
+<div style="flex: 1 1 180px; padding: 10px 12px; border-radius: 10px; background: {{fc.poBg}}; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">이 건 발주안 반영</span><b style="font-size: 15px">{{fc.poText}}</b></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<sc-for list="{{weeks}}" as="w" hint-placeholder-count="13">
+<div style="display: flex; align-items: center; gap: 10px; font-size: 12px">
+<span style="flex: 0 0 56px; color: #5b6270">{{w.label}}</span>
+<div style="position: relative; flex: 1 1 auto; height: 20px; background: #f6f7f9; border-radius: 4px">
+<div style="position: absolute; left: 0; top: 0; bottom: 0; width: {{w.pct}}%; background: {{w.color}}; border-radius: 4px"></div>
+<div style="position: absolute; left: {{w.line}}%; top: -2px; bottom: -2px; width: 2px; background: #1a1d23"></div>
+<sc-if value="{{w.hasOff}}" hint-placeholder-val="{{ true }}"><div aria-hidden="true" style="position: absolute; left: {{w.offPct}}%; top: 3px; width: 10px; height: 14px; margin-left: -5px; border-radius: 2px; border: 2px solid #1d4ed8; background: #ffffff; box-sizing: border-box"></div></sc-if>
+</div>
+<span style="flex: 0 0 120px; text-align: right; font-variant-numeric: tabular-nums; color: {{w.fg}}; font-weight: 600">{{w.text}}</span>
+</div>
+</sc-for>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; color: #5b6270; padding-top: 6px"><span>주간 최저 잔액</span><span>기준선 30억원</span><span>공식 전망 주차값</span></div>
+</div>
+<div class="finance-hints"><span>발주 누락 가능성 · 추정</span><span>회수조건 45→90일</span><span>전망 차이 원인 미확인</span></div>
+<div class="finance-facts" role="group" aria-label="현금 근거 데이터"><h3 class="finance-subtitle">근거 데이터</h3><sc-for list="{{cashFacts}}" as="f"><div class="finance-fact"><b>{{f.label}}</b><strong>{{f.value}}</strong><span>{{f.kind}}</span><small>{{f.source}}</small></div></sc-for></div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding-top: 12px; border-top: 1px solid #e3e7ec">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: #1a1d23; color: #ffffff">작성</span><b style="font-size: 14px">현금 부족 확인</b><span class="finance-caption">연체금 = 기한 지난 돈</span></div>
+<div style="border: 1px solid #e3e7ec; border-radius: 10px; overflow-x: auto">
+<table style="width: 100%; min-width: 640px; border-collapse: collapse; font-size: 13px">
+<thead><tr style="background: #f6f7f9; text-align: left"><th scope="col" style="padding: 8px 10px; font-weight: 600">적용</th><th scope="col" style="padding: 8px 10px; font-weight: 600">연체금 처리 가정</th><th scope="col" style="padding: 8px 10px; font-weight: 600">30억 미만 기간</th><th scope="col" style="padding: 8px 10px; font-weight: 600">최저 잔액</th></tr></thead>
+<tbody>
+<sc-for list="{{scen}}" as="x" hint-placeholder-count="5">
+<tr style="border-top: 1px solid #eef0f3; background: {{x.bg}}"><td style="padding: 6px 10px"><input type="radio" name="scen" aria-label="{{x.label}} 적용" checked="{{x.on}}" onChange="{{x.pick}}" style="width: 18px; height: 18px; margin: 0"></td><td style="padding: 6px 10px"><b>{{x.label}}</b> <span style="font-size: 12px; color: #5b6270">{{x.desc}}</span></td><td style="padding: 6px 10px; color: #b42318; font-weight: 600">{{x.window}}</td><td style="padding: 6px 10px; font-variant-numeric: tabular-nums">{{x.min}}</td></tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+<label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; cursor: pointer"><input type="checkbox" checked="{{winOk}}" onChange="{{toggleWin}}" style="width: 18px; height: 18px; margin: 0"><span><span>30억 미만 기간</span> <b>{{fc.window}}</b> <span>확인 완료</span></span></label>
+<div class="finance-hints"><span>회수 = 받을 돈</span><span>지급 = 줄 돈</span><span>제외 = 날짜 미확인</span><span>선택 후 근거 확인</span></div>
+</div>
+</section>
+
+<section aria-label="결재선 판정" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">지급일·결재선 확인</h2><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · approval_authority_policy 판단 순서 · covenant_terms_ms</span></div>
+<div class="finance-hints"><span>지급일·부족기간 비교</span><span>신규약정 상위승인 우선</span></div>
+<div class="finance-route-results" role="group" aria-label="결재 판단 결과"><h3 class="finance-subtitle">판단 결과</h3><sc-if value="{{financePreview}}"><span class="finance-caption">미저장 참고 판정</span></sc-if><sc-for list="{{commits}}" as="m"><div class="finance-route-row"><b>{{m.name}}</b><div><span class="finance-caption">구간 판정</span><strong style="color: {{m.inFg}}">{{m.inText}}</strong></div><div><span class="finance-caption">평시 결재선</span><span>{{m.normal}}</span></div><div><span class="finance-caption">적용 결재선</span><strong style="color: {{m.vFg}}">{{m.verdict}}</strong></div><small>{{m.rule}}</small></div></sc-for><sc-if value="{{noCommits}}"><p>검토 대상 미확인</p></sc-if><span class="finance-caption">사람의 승인 전 참고값</span></div><h3 class="finance-subtitle">근거 데이터 · 입력값</h3>
+<div style="border: 1px solid #e3e7ec; border-radius: 10px; overflow-x: auto">
+<table style="width: 100%; min-width: 520px; border-collapse: collapse; font-size: 13px; line-height: 18px">
+<thead><tr style="background: #f6f7f9; text-align: left"><th scope="col" style="padding: 10px; font-weight: 600">약정</th><th scope="col" style="padding: 10px; font-weight: 600">현금 유출일</th><th scope="col" style="padding: 10px; font-weight: 600">금액</th></tr></thead>
+<tbody>
+<sc-for list="{{commits}}" as="m" hint-placeholder-count="3">
+<tr style="border-top: 1px solid #eef0f3; vertical-align: top">
+<td style="padding: 10px"><div style="display: flex; flex-direction: column"><b>{{m.name}}</b><span style="font-size: 12px; color: #5b6270">{{m.from}}</span></div></td>
+<td style="padding: 10px"><div style="display: flex; flex-direction: column"><span>{{m.date}}</span><span style="font-size: 12px; color: #6b4e00">{{m.dateNote}}</span></div></td>
+<td style="padding: 10px"><div style="display: flex; flex-direction: column"><span>{{m.amt}}</span><span style="font-size: 12px; color: #5b6270">{{m.amtNote}}</span></div></td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+<div style="padding: 10px 12px; border-radius: 10px; background: {{dlBox.bg}}; font-size: 13px; color: {{dlBox.fg}}">{{deadlineNote}}</div>
+<label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; cursor: pointer"><input type="checkbox" checked="{{routeOk}}" onChange="{{toggleRoute}}" style="width: 18px; height: 18px; margin: 0"><span>약정별 판정을 확인했습니다 (결재선은 규정으로 정해지며, 바꾸는 버튼은 없습니다)</span></label>
+</section>
+
+<section aria-label="성과 비용표" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">성과·비용표</h2><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">계산 · calculation_definitions 1.4 · 1.7</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">표본 · 비중·순위로만 판단</span></div>
+<span style="font-size: 13px; color: #374151">신규 기안이라 이 캠페인의 성과는 아직 없습니다. 규정대로 참조 캠페인({{inp.ref}})과 같은 인플루언서({{inp.inf}})의 기존 실질 성과를 조회했습니다 (approval_authority_policy).</span>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{perf}}" as="p" hint-placeholder-count="6">
+<div style="padding: 10px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #5b6270">{{p.label}}</span><b style="font-size: 16px; color: {{p.fg}}">{{p.value}}</b><span style="font-size: 12px; color: #5b6270">{{p.note}}</span></div>
+</sc-for>
+</div>
+<span style="font-size: 12px; color: #5b6270">공헌이익 = GMV(쿠폰 반영 후) − 반품환불 − 원가 − 마케팅비(인플루언서·퍼포먼스·오프라인) − 채널수수료 − 배송비 − 반품물류비 · 귀속 7일 · 주문당 1개 판매 가정</span>
+</section>
+
+<section aria-label="상신 의견" style="background: #ffffff; border: 2px solid #1a1d23; border-radius: 14px; padding: 17px 21px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: #1a1d23; color: #ffffff">작성</span><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">상신 보고서 · 재무 의견</h2></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border: 1px solid #dde2e8; border-radius: 10px; overflow: hidden; font-size: 13px; line-height: 19px">
+<sc-for list="{{w5}}" as="r" hint-placeholder-count="6">
+<div style="display: flex; gap: 10px; padding: 10px 12px; border-bottom: 1px solid #eef0f3"><b style="flex: 0 0 56px; color: #5b6270">{{r.k}}</b><span>{{r.v}}</span></div>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border-radius: 12px; background: {{rec.bg}}; border: 1px solid {{rec.bd}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; font-weight: 700; color: #374151">시스템 추천</span><b style="font-size: 16px; color: {{rec.fg}}">{{rec.label}}</b><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap; background: #ffffff">계산 · 결정은 ④ 승인권자</span></div>
+<ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 20px; color: #374151"><sc-for list="{{rec.why}}" as="y" hint-placeholder-count="3"><li>{{y.t}}</li></sc-for></ul>
+</div>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 8px">
+<legend style="padding: 0; margin-bottom: 8px; font-size: 13px; font-weight: 600">재무 의견 <span style="color: #b42318">*</span></legend>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{opts}}" as="o" hint-placeholder-count="3">
+<label style="flex: 1 1 180px; display: flex; align-items: flex-start; gap: 10px; min-height: 56px; padding: 12px 14px; border-radius: 12px; border: 2px solid {{o.bd}}; background: {{o.bg}}; cursor: pointer"><input type="radio" name="fin-opinion" checked="{{o.on}}" onChange="{{o.pick}}" style="width: 18px; height: 18px; margin: 2px 0 0"><span style="display: flex; flex-direction: column; gap: 2px"><b>{{o.label}} <span style="font-size: 12px; color: #1d4ed8">{{o.tag}}</span></b><span style="font-size: 12px; color: #4b5563">{{o.desc}}</span></span></label>
+</sc-for>
+</div>
+</fieldset>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="f-reason" style="font-size: 13px; font-weight: 600">의견 사유 <span style="color: #b42318">{{reasonReq}}</span></label><textarea id="f-reason" onChange="{{onReason}}" placeholder="{{reasonPh}}" style="width: 100%; box-sizing: border-box; min-height: 72px; padding: 10px 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; line-height: 21px; color: #1a1d23; background: #ffffff; resize: vertical" value="{{reason}}"></textarea></div>
+</section>
+</div>
+
+<aside style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+
+<section aria-label="상신 전 점검" style="background: #ffffff; border: 2px solid #1f5fbf; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h2 style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 700">상신 전 점검</h2><span style="font-size: 12px; color: #5b6270">필수 {{doneCount}}/{{totalCount}}</span></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 19px">
+<sc-for list="{{checks}}" as="c" hint-placeholder-count="5">
+<li style="display: flex; align-items: flex-start; gap: 8px"><span style="flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 999px; font-size: 12px; font-weight: 700; background: {{c.bg}}; color: {{c.fg}}">{{c.mark}}</span><span style="color: {{c.text}}">{{c.label}}</span></li>
+</sc-for>
+</ul>
+<button type="button" onClick="{{submit}}" disabled="{{notReady}}" style="min-height: 48px; padding: 0 18px; border: 0; border-radius: 10px; background: {{submitBg}}; color: #ffffff; font: inherit; font-weight: 700; cursor: pointer">{{submitLabel}}</button>
+<span style="font-size: 12px; color: #5b6270">{{submitNote}}</span>
+<sc-if value="{{done}}" hint-placeholder-val="{{ false }}"><a href="FIN_2_Wait.dc.html" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; background: #1f5fbf; color: #ffffff; border: 0; font-weight: 700; text-decoration: none">결재 대기 · 감시 화면으로</a></sc-if>
+<sc-if value="{{done}}" hint-placeholder-val="{{ false }}"><a href="{{nextHref}}" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; border: 1px solid #1f5fbf; color: #1f5fbf; font-weight: 700; text-decoration: none">{{nextLabel}}</a></sc-if>
+</section>
+
+</aside>
+</div>
+</main>
+</div>

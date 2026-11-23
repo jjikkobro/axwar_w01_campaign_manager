@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "unit_tests": 132,
+  "real_campaign": {
+    "id": "06d6ebb0-cd45-44db-8135-26f6b99315af",
+    "stage": 6,
+    "status": "입고예정 회신 확인 대기",
+    "supply_confirmation_not_fabricated": true
+  },
+  "browser": {
+    "no_po_next_screen": "SCM_5_Receipt",
+    "no_po_product_rows": 1,
+    "premature_close_blocked": true,
+    "approved_po_submit_redirect": "SCM_5_Receipt",
+    "page_errors": []
+  },
+  "memory_fixture_flow": [
+    {
+      "operation": "order",
+      "before": 5,
+      "after": 6
+    },
+    {
+      "operation": "receipt",
+      "before": 6,
+      "after": 7
+    }
+  ],
+  "case_versions_unchanged_by_verification": true,
+  "mode": "실제 로컬 화면 조회 + 메모리 발주·회신 시연. 실제 캠페인의 승인·공급 회신 자동 생성 없음."
+}

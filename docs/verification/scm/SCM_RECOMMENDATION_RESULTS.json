@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "unit_tests": 174,
+  "order_editor_removed": true,
+  "ready_recommendation_uses_campaign_period": true,
+  "confirmed_receipt_shift": {
+    "type": "shift_campaign",
+    "text": "캠페인을 확인된 기존 입고(2026-08-06, SPO-0006) 이후 2026-08-06~2026-08-12로 옮기면, 입고 전 부족 구간과 캠페인 수요가 겹치지 않습니다. 변경 기간 최소 재고 1551.0EA로 재검산했습니다.",
+    "start": "2026-08-06",
+    "end": "2026-08-12",
+    "minimum": 1551.0,
+    "source": [
+      "SPO-0006"
+    ]
+  },
+  "adopted_estimate_survives_handoff": {
+    "qty": 12000,
+    "unit_price": 16800
+  },
+  "conditional_inbound_and_pre_campaign_shortage_unit_tested": true,
+  "browser_errors": [],
+  "mobile_overflow": false,
+  "database": "별도 로컬 검증 DB · 실제 8088 캠페인 변경 없음",
+  "current_preview": {
+    "base": "http://127.0.0.1:8088",
+    "order_editor_removed": true,
+    "ready_recommendation": "캠페인 기간 공급 가능",
+    "existing_campaigns_unchanged": true,
+    "browser_errors": []
+  }
+}

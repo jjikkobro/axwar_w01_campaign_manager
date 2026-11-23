@@ -1,0 +1,27 @@
+{
+  "formula": {
+    "id": "lead_time_days",
+    "before": "lead_weeks * 7",
+    "after": "lead_weeks * 5"
+  },
+  "revision_changed": true,
+  "roles_refreshed": [
+    "MKT_1_Proposal",
+    "SCM_1_Check",
+    "FIN_1_Review",
+    "APR_1_CEO"
+  ],
+  "marketing_draft_preserved": true,
+  "old_forecast_invalidated": true,
+  "old_revision_save_rejected": {
+    "error": "계산 기준이 변경되었습니다. 최신 산식으로 재계산한 뒤 처리하세요."
+  },
+  "same_sku": "SKU-3003",
+  "marketing_arrival": "2026-07-31",
+  "scm_arrival": "2026-07-31",
+  "same_formula_revision": true,
+  "actual_approval_or_order_created": false,
+  "formula_preview_case_count": 4,
+  "mobile_overflow": false,
+  "errors": []
+}

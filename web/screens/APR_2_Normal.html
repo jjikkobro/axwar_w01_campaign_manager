@@ -1,0 +1,68 @@
+<div style="min-height: 2200px; background: #f3f5f8; font-family: 'IBM Plex Sans KR', system-ui, sans-serif; color: #1a1d23; font-size: 14px; line-height: 20px">
+<header style="background: #ffffff; border-bottom: 1px solid #dde2e8">
+<div style="max-width: 1392px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px"><div style="font-size: 16px; font-weight: 700">Aurora SCM</div><nav aria-label="주요 화면" style="display: flex; flex-wrap: wrap; gap: 4px"><a href="/" class="campaign-list-link">캠페인 목록</a></nav></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px"><span style="font-size: 13px; padding: 4px 10px; border-radius: 999px; background: #1a1d23; color: #ffffff">승인권자</span><span style="font-size: 13px; color: #5b6270">기준일 2026-07-01</span></div>
+</div>
+</header>
+<main style="max-width: 1392px; margin: 0 auto; padding: 20px 24px 40px; display: flex; flex-direction: column; gap: 16px">
+<nav aria-label="현업 절차 단계" style="display: flex; flex-wrap: wrap; gap: 6px">
+<a href="MKT_1_Proposal.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">① 기안 상신</span><span style="font-size: 11px; color: #1e6b3a">마케팅 · 완료</span></a>
+<a href="SCM_1_Check.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">② 재고·입고표 대조</span><span style="font-size: 11px; color: #1e6b3a">SCM · 완료</span></a>
+<a href="FIN_1_Review.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">③ 금액·승인권한 검토</span><span style="font-size: 11px; color: #1e6b3a">재무 · 완료</span></a>
+<a href="APR_2_Normal.dc.html" aria-current="step" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #1a1d23; color: #ffffff; border: 1px solid #1a1d23"><span style="font-size: 12px; font-weight: 700">④ 승인 여부 결정</span><span style="font-size: 11px; color: #d1d5db">승인권자 · 평시 전결</span></a>
+<a href="SCM_3_PO.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑤ 발주서 작성·전달</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="SCM_5_Receipt.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑥ 입고예정 회신 확인</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="MKT_4_Close.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑦ 일정표·발주 기록 정리</span><span style="font-size: 11px; color: #5b6270">마케팅</span></a>
+</nav>
+<section aria-label="결재 머리" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 20px 22px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; padding: 2px 10px; border-radius: 999px; font-weight: 600; background: {{statusChip.bg}}; color: {{statusChip.fg}}">{{statusChip.text}}</span></div><span class="approval-request-type">{{approvalRequestType}}</span><h1 class="approval-request-name">{{approvalCampaignName}}</h1><p class="approval-request-intent">{{approvalRequestIntent}}</p></div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px"><div role="group" aria-label="결재자 전환" style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 600">결재자 <span style="font-weight: 400; color: #6b4e00">모의 · 예시 전환</span></span><div style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 10px; background: #eef0f3">
+<sc-for list="{{presets}}" as="k" hint-placeholder-count="3"><button type="button" aria-pressed="{{k.on}}" onClick="{{k.pick}}" style="min-height: 36px; padding: 0 12px; border: 0; border-radius: 8px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; background: {{k.bg}}; color: {{k.fg}}">{{k.label}}</button></sc-for>
+</div></div>
+<div style="display: flex; flex-direction: column; gap: 4px; width: 180px"><label for="a-owner" style="font-size: 12px; font-weight: 600">결재자 <span style="color: #b42318">*</span></label><input id="a-owner" type="text" value="{{owner}}" onChange="{{onOwner}}" placeholder="이름" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+</div>
+</div>
+<div class="approval-request-summary" role="group" aria-label="승인 요청 요약"><sc-for list="{{approvalRequestFacts}}" as="f"><div><span>{{f.label}}</span><b>{{f.value}}</b><small>{{f.note}}</small></div></sc-for></div>
+</section>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start">
+<div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section aria-label="결재 문서" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">상신 보고서 · {{doc.pid}}</h2><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">모의 · ③ 상신 예시</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><a href="MKT_1_Proposal.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; color: #1f5fbf; font-size: 13px; font-weight: 600; text-decoration: none">① 기안</a><a href="SCM_1_Check.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; color: #1f5fbf; font-size: 13px; font-weight: 600; text-decoration: none">② SCM 대조</a><a href="FIN_1_Review.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; color: #1f5fbf; font-size: 13px; font-weight: 600; text-decoration: none">③ 재무 검토</a></div>
+</div>
+<b style="font-size: 15px">{{doc.title}}</b>
+<div role="list" aria-label="결재선" style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{stamps}}" as="t" hint-placeholder-count="4">
+<div role="listitem" style="flex: 1 1 110px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px; border-radius: 10px; border: 1px solid {{t.bd}}; background: {{t.bg}}"><span style="font-size: 11px; color: #5b6270">{{t.role}}</span><b style="font-size: 13px; color: {{t.fg}}">{{t.who}}</b><span style="font-size: 11px; color: {{t.fg}}">{{t.state}}</span></div>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid #dde2e8; border-radius: 10px; overflow: hidden; font-size: 13px; line-height: 19px">
+<sc-for list="{{w5}}" as="r" hint-placeholder-count="6"><div style="display: flex; gap: 10px; padding: 10px 12px; border-bottom: 1px solid #eef0f3"><b style="flex: 0 0 56px; color: #5b6270">{{r.k}}</b><span>{{r.v}}</span></div></sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{facts}}" as="p" hint-placeholder-count="6"><div style="padding: 10px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #5b6270">{{p.label}}</span><b style="font-size: 16px; color: {{p.fg}}">{{p.value}}</b><span style="font-size: 11px; color: #5b6270">{{p.src}}</span></div></sc-for>
+</div>
+</section>
+
+<section aria-label="부서 검토 의견" class="approval-review-card"><h2>부서 검토 의견</h2><sc-for list="{{departmentReviews}}" as="r"><article class="approval-department"><div class="approval-department-head"><b>{{r.role}}</b><span>{{r.who}}</span><span class="approval-status">{{r.status}}</span></div><p>{{r.comment}}</p><details><summary>근거·조정안</summary><p>{{r.evidence}}</p><p>{{r.alternatives}}</p></details></article></sc-for></section>
+<section aria-label="캠페인 승인" class="approval-review-card approval-final"><h2>{{campaignDecisionTitle}}</h2><p class="approval-muted">{{approvalScope}}</p><div class="approval-options" role="radiogroup" aria-label="이번 캠페인 승인 여부"><sc-for list="{{campaignOptions}}" as="o"><label class="approval-option" style="border-color: {{o.border}}; background: {{o.background}}"><input type="radio" name="campaign-decision" checked="{{o.on}}" onChange="{{o.pick}}"><b>{{o.label}}</b></label></sc-for></div><sc-if value="{{campaignShowCondition}}"><label class="approval-field">승인 조건<input id="campaign-condition" value="{{campaignCondition}}" onChange="{{onCampaignCondition}}" placeholder="이행 후 재승인이 필요한 조건"></label></sc-if><label class="approval-field">{{campaignMemoLabel}}<textarea id="campaign-memo" value="{{campaignMemo}}" onChange="{{onCampaignMemo}}" placeholder="검토 의견을 기록하세요"></textarea></label><p class="approval-muted">{{approvalReadiness}}</p></section>
+</div>
+<aside style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section aria-label="확정 전 점검" style="background: #ffffff; border: 2px solid #1f5fbf; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h2 style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 700">확정 전 점검</h2><span style="font-size: 12px; color: #5b6270">필수 {{doneCount}}/{{totalCount}}</span></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 19px">
+<sc-for list="{{checks}}" as="c" hint-placeholder-count="4"><li style="display: flex; align-items: flex-start; gap: 8px"><span style="flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 999px; font-size: 12px; font-weight: 700; background: {{c.bg}}; color: {{c.fg}}">{{c.mark}}</span><span style="color: {{c.text}}">{{c.label}}</span></li></sc-for>
+</ul>
+<span style="font-size: 12px; color: #5b6270">{{submitNote}}</span>
+<sc-if value="{{done}}" hint-placeholder-val="{{ false }}"><div style="display: flex; flex-direction: column; gap: 6px">
+<sc-for list="{{nexts}}" as="n" hint-placeholder-count="2"><a href="{{n.href}}" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; border: 1px solid {{n.bd}}; color: {{n.fg}}; font-weight: 700; text-decoration: none">{{n.label}}</a></sc-for>
+</div></sc-if>
+<button type="button" class="approval-submit" onClick="{{submit}}" disabled="{{notReady}}">{{submitLabel}}</button>
+</section>
+</aside>
+</div>
+</main>
+</div>

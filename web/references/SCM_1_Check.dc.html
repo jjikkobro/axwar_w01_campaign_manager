@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>② SCM 재고·입고표 대조</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1f5fbf}a:hover{color:#174a95}
+</style>
+</helmet>
+<div style="min-height: 2100px; background: #f3f5f8; font-family: 'IBM Plex Sans KR', system-ui, sans-serif; color: #1a1d23; font-size: 14px; line-height: 20px">
+<header style="background: #ffffff; border-bottom: 1px solid #dde2e8">
+<div style="max-width: 1392px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px"><div style="font-size: 16px; font-weight: 700">W01 캠페인 운영</div><nav aria-label="주요 화면" style="display: flex; flex-wrap: wrap; gap: 4px"><a href="#" style="padding: 10px 12px; border-radius: 8px; color: #4b5563; text-decoration: none">캠페인</a><a href="#" aria-current="page" style="padding: 10px 12px; border-radius: 8px; color: #1a1d23; font-weight: 600; text-decoration: none; background: #eef2f8">내 할 일</a></nav></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px"><span style="font-size: 13px; padding: 4px 10px; border-radius: 999px; background: #1a1d23; color: #ffffff">SCM</span><span style="font-size: 13px; color: #5b6270">기준일 2026-07-01</span></div>
+</div>
+</header>
+<main style="max-width: 1392px; margin: 0 auto; padding: 20px 24px 40px; display: flex; flex-direction: column; gap: 16px">
+<nav aria-label="현업 절차 단계" style="display: flex; flex-wrap: wrap; gap: 6px">
+<a href="MKT_1_Proposal.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">① 기안 상신</span><span style="font-size: 11px; color: #1e6b3a">마케팅 · 완료</span></a>
+<a href="SCM_1_Check.dc.html" aria-current="step" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #1a1d23; color: #ffffff; border: 1px solid #1a1d23"><span style="font-size: 12px; font-weight: 700">② 재고·입고표 대조</span><span style="font-size: 11px; color: #d1d5db">SCM · 지금</span></a>
+<a href="FIN_1_Review.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">③ 금액·승인권한 검토</span><span style="font-size: 11px; color: #5b6270">재무</span></a>
+<a href="APR_1_CEO.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">④ 승인 여부 결정</span><span style="font-size: 11px; color: #5b6270">승인권자</span></a>
+<a href="SCM_3_PO.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑤ 발주서 작성·전달</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="SCM_5_Receipt.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑥ 입고예정 회신 확인</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="MKT_4_Close.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑦ 일정표·발주 기록 정리</span><span style="font-size: 11px; color: #5b6270">마케팅</span></a>
+</nav>
+
+<section aria-label="대조 머리" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 20px 22px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; padding: 2px 10px; border-radius: 999px; font-weight: 600; background: {{statusChip.bg}}; color: {{statusChip.fg}}">{{statusChip.text}}</span></div><h1 style="margin: 0; font-size: 22px; line-height: 30px; font-weight: 700">재고·입고표 대조</h1></div>
+<div style="display: flex; flex-direction: column; gap: 4px; width: 200px"><label for="s-owner" style="font-size: 12px; font-weight: 600">대조 담당자 <span style="color: #b42318">*</span></label><input id="s-owner" type="text" value="{{owner}}" onChange="{{onOwner}}" placeholder="이름" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+</div>
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start">
+<div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+
+<section aria-label="받은 기안" style="background: #ffffff; border: 1px solid #c9d6ee; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">받은 기안 · {{plan.id}}</h2><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">모의 · ① 기안 상신 예시</span></div>
+<a href="MKT_1_Proposal.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; color: #1f5fbf; font-size: 13px; font-weight: 600; text-decoration: none">① 기안 원문 보기</a>
+</div>
+<b style="font-size: 15px">{{plan.title}}</b>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<div style="flex: 1 1 120px; padding: 8px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">제품라인</span><b>{{plan.pl}}</b></div>
+<div style="flex: 1 1 200px; padding: 8px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">캠페인 기간</span><b>{{plan.start}} ~ {{plan.end}}</b></div>
+<div style="flex: 1 1 160px; padding: 8px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">판매채널 · 매체</span><b>{{plan.sales}} · {{plan.media}}</b></div>
+<div style="flex: 1 1 140px; padding: 8px 12px; border-radius: 10px; background: #fff1e0; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">계약 확정기한</span><b style="color: #9a3412">{{plan.dl}} ({{plan.dlD}})</b></div>
+</div>
+<span style="font-size: 12px; color: #374151">SKU 수요 가정: 작성자 {{plan.author}} · 기준시점 {{plan.asof}} · {{plan.assumeCount}}개 SKU <span style="color: #6b4e00">(보완 데이터 · W01 안내)</span></span>
+</section>
+
+<section aria-label="재고 입고 대조표" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">재고·입고 대조표</h2><span style="font-size: 12px; color: #5b6270">자동 계산 · 실제 규모(EA)</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px"><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · sku_inventory_ms (6/30)</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · sku_weekly_sales_ms 최근 4주</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · sc_purchase_orders_ms</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · m_sku_ms</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">보완 · ① SKU 수요 가정</span></div>
+<div style="border: 1px solid #e3e7ec; border-radius: 10px; overflow-x: auto">
+<table style="width: 100%; min-width: 1040px; border-collapse: collapse; font-size: 13px; line-height: 18px">
+<thead><tr style="background: #f6f7f9; text-align: left">
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec">SKU</th>
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec; text-align: right">현재고</th>
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec; text-align: right">이동 중</th>
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec; text-align: right">4주 평균/주</th>
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec; text-align: right">증가 수요/주 (①)</th>
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec">커버 현재 → 캠페인</th>
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec">기존 발주 · 입고 예상</th>
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec">품절 예상 (현재 발주 기준)</th>
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec">발주안 반영 후</th>
+<th scope="col" style="padding: 10px 10px; font-weight: 600; border-bottom: 1px solid #e3e7ec">판정</th>
+</tr></thead>
+<tbody>
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="3">
+<tr style="border-bottom: 1px solid #eef0f3; vertical-align: top">
+<td style="padding: 10px"><div style="display: flex; flex-direction: column"><b>{{r.id}}</b><span style="font-size: 12px; color: #5b6270">{{r.name}}</span></div></td>
+<td style="padding: 10px; text-align: right; font-variant-numeric: tabular-nums">{{r.oh}}</td>
+<td style="padding: 10px; text-align: right; font-variant-numeric: tabular-nums; color: #5b6270">{{r.it}}</td>
+<td style="padding: 10px; text-align: right; font-variant-numeric: tabular-nums">{{r.avg}}</td>
+<td style="padding: 10px; text-align: right; font-variant-numeric: tabular-nums">{{r.inc}}</td>
+<td style="padding: 10px"><div style="display: flex; flex-direction: column; gap: 4px"><span>{{r.cov0}}주 → <b style="color: {{r.covFg}}">{{r.cov1}}주</b></span><span style="font-size: 12px; color: {{r.covFg}}">안전재고 {{r.ss}}주 {{r.ssText}}</span></div></td>
+<td style="padding: 10px"><div style="display: flex; flex-direction: column"><span>{{r.poId}} · {{r.poQty}}EA</span><span style="font-size: 12px; color: #5b6270">{{r.poDate}} 발주 + {{r.poLt}}주 = <b>{{r.poEta}}</b></span></div></td>
+<td style="padding: 10px"><span style="display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; background: {{r.so0Bg}}; color: {{r.so0Fg}}">{{r.so0}}</span></td>
+<td style="padding: 10px"><span style="display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; background: {{r.so1Bg}}; color: {{r.so1Fg}}">{{r.so1}}</span></td>
+<td style="padding: 10px"><span style="display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; background: {{r.vBg}}; color: {{r.vFg}}; white-space: nowrap">{{r.v}}</span></td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #5b6270">
+<span>커버 = 현재고 ÷ (최근 4주 평균 + 증가 수요). 이동 중 재고는 커버에서 뺍니다 (calculation_definitions 1.3).</span>
+<span>품절 예상 = 일별로 현재고 − 판매 + 기존 발주 입고를 이어 계산한 결과입니다. 증가 수요는 캠페인 기간에만 더하고, 도착일을 모르는 이동 중 재고는 넣지 않습니다. <span style="color: #6b4e00">계산 가정</span></span>
+<span>기존 발주 입고 예상일은 원본에 칸이 없어 발주일 + 리드타임으로 계산합니다.</span>
+</div>
+</section>
+
+<section aria-label="SCM 판단" style="background: #ffffff; border: 2px solid #1a1d23; border-radius: 14px; padding: 17px 21px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: #1a1d23; color: #ffffff">작성</span><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">SCM 판단</h2></div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border-radius: 12px; background: {{rec.bg}}; border: 1px solid {{rec.bd}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; font-weight: 700; color: #374151">시스템 추천</span><b style="font-size: 16px; color: {{rec.fg}}">{{rec.label}}</b><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap; background: #ffffff">계산 · 추천은 참고, 결정은 SCM</span></div>
+<ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 20px; color: #374151">
+<sc-for list="{{rec.why}}" as="w" hint-placeholder-count="3"><li>{{w.t}}</li></sc-for>
+</ul>
+</div>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 8px">
+<legend style="padding: 0; margin-bottom: 8px; font-size: 13px; font-weight: 600">SCM 판단 <span style="color: #b42318">*</span></legend>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{opts}}" as="o" hint-placeholder-count="3">
+<label style="flex: 1 1 200px; display: flex; align-items: flex-start; gap: 10px; min-height: 64px; padding: 12px 14px; border-radius: 12px; border: 2px solid {{o.bd}}; background: {{o.bg}}; cursor: pointer"><input type="radio" name="scm-decision" checked="{{o.on}}" onChange="{{o.pick}}" style="width: 18px; height: 18px; margin: 2px 0 0"><span style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 14px">{{o.label}} <span style="font-size: 12px; color: #1d4ed8">{{o.recTag}}</span></b><span style="font-size: 12px; color: #4b5563">{{o.desc}}</span></span></label>
+</sc-for>
+</div>
+</fieldset>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="s-reason" style="font-size: 13px; font-weight: 600">사유 <span style="color: #b42318">{{reasonReq}}</span></label>
+<textarea id="s-reason" onChange="{{onReason}}" placeholder="{{reasonPh}}" style="width: 100%; box-sizing: border-box; min-height: 72px; padding: 10px 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; line-height: 21px; color: #1a1d23; background: #ffffff; resize: vertical" value="{{reason}}"></textarea>
+</div>
+<sc-if value="{{showAdj}}" hint-placeholder-val="{{ false }}">
+<fieldset style="margin: 0; padding: 14px 16px; border: 1px solid #f0c98a; border-radius: 12px; background: #fff8ec; display: flex; flex-direction: column; gap: 8px">
+<legend style="padding: 0 4px; font-size: 13px; font-weight: 700; color: #7a3d00">① 마케팅에 보낼 조정 요청 <span style="color: #b42318">*</span></legend>
+<span style="font-size: 12px; color: #5b6270">무엇을 바꾸면 공급이 맞는지 고르세요. W01 「발주가 어려울 때 무엇을 조정하는가」 · 보완 데이터</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{adjOpts}}" as="a" hint-placeholder-count="4">
+<label style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid {{a.bd}}; background: #ffffff; font-size: 14px; cursor: pointer"><input type="checkbox" checked="{{a.on}}" onChange="{{a.toggle}}" style="width: 18px; height: 18px; margin: 0"><span>{{a.label}}</span></label>
+</sc-for>
+</div>
+<span style="font-size: 12px; color: #374151">{{adjHint}}</span>
+</fieldset>
+</sc-if>
+</section>
+
+<sc-if value="{{showPo}}" hint-placeholder-val="{{ true }}">
+<section aria-label="발주안" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: #1a1d23; color: #ffffff">작성</span><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">발주안</h2><span style="font-size: 12px; color: #5b6270">승인 전이라 안입니다. 발주는 ⑤에서 합니다.</span></div>
+<b style="font-size: 15px">합계 {{po.total}}원 · {{po.count}}건</b>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px 16px">
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px"><label for="s-odate" style="font-size: 13px; font-weight: 600">발주 예정일 <span style="color: #b42318">*</span></label><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #6b4e00; white-space: nowrap">가정</span></div><input id="s-odate" type="date" min="2026-07-01" value="{{po.odate}}" onChange="{{onOdate}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><span style="font-size: 12px; color: #5b6270">승인 후 발주하는 날. 입고 예상일이 여기서 계산됩니다.</span></div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px"><label for="s-due" style="font-size: 13px; font-weight: 600">지급예정일 <span style="color: #b42318">*</span></label><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #6b4e00; white-space: nowrap">가정 · ⑥ 회신으로 확정</span></div><input id="s-due" type="date" min="2026-07-01" value="{{po.due}}" onChange="{{onDue}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><span style="font-size: 12px; color: #5b6270">원본에 새 발주 지급 규칙이 없습니다. 기존 14건은 모두 2026-07-21 지급입니다. ③ 재무가 이 날짜로 현금 구간을 대조합니다.</span></div>
+</div>
+<sc-for list="{{poRows}}" as="p" hint-placeholder-count="3">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 12px 14px; border: 1px solid {{p.bd}}; border-radius: 10px; background: {{p.bg}}">
+<label style="flex: 1 1 200px; min-width: 0; display: flex; align-items: center; gap: 10px; cursor: pointer"><input type="checkbox" checked="{{p.on}}" onChange="{{p.toggle}}" style="width: 18px; height: 18px; margin: 0"><span style="display: flex; flex-direction: column"><b>{{p.id}} {{p.name}}</b><span style="font-size: 12px; color: #5b6270">제안 {{p.sugg}}EA · MOQ {{p.moq}} · 리드타임 {{p.lt}}주 · {{p.src}}</span></span></label>
+<div style="flex: 0 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 4px"><label for="{{p.inputId}}" style="font-size: 12px; font-weight: 600">발주 수량 (EA)</label><input id="{{p.inputId}}" type="number" min="0" step="{{p.moqRaw}}" value="{{p.qty}}" onChange="{{p.onQty}}" disabled="{{p.off}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{p.qtyBd}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+<div style="flex: 0 1 150px; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #5b6270">금액 (단가 {{p.unit}}원)</span><b>{{p.amt}}원</b></div>
+<div style="flex: 0 1 120px; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #5b6270">입고 예상</span><b>{{p.eta}}</b></div>
+<span style="flex: 1 1 100%; font-size: 12px; color: {{p.noteFg}}">{{p.note}}</span>
+</div>
+</sc-for>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #5b6270">
+<span>제안 수량 = max(목표 수량 − 현재고 − 이동 중, 0) → MOQ 배수로 올림 (calculation_definitions 1.3).</span>
+<span>목표 수량 = (4주 평균 + 증가 수요) × 안전재고 상한 6주 <span style="color: #6b4e00">가정</span> · 단가 = 기존 발주 금액 ÷ 수량 <span style="color: #6b4e00">계산</span></span>
+</div>
+</section>
+</sc-if>
+</div>
+
+<aside style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+
+<section aria-label="전달 전 점검" style="background: #ffffff; border: 2px solid #1f5fbf; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h2 style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 700">전달 전 점검</h2><span style="font-size: 12px; color: #5b6270">필수 {{doneCount}}/{{totalCount}}</span></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 19px">
+<sc-for list="{{checks}}" as="c" hint-placeholder-count="5">
+<li style="display: flex; align-items: flex-start; gap: 8px"><span style="flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 999px; font-size: 12px; font-weight: 700; background: {{c.bg}}; color: {{c.fg}}">{{c.mark}}</span><span style="color: {{c.text}}">{{c.label}}</span></li>
+</sc-for>
+</ul>
+<button type="button" onClick="{{submit}}" disabled="{{notReady}}" style="min-height: 48px; padding: 0 18px; border: 0; border-radius: 10px; background: {{submitBg}}; color: #ffffff; font: inherit; font-weight: 700; cursor: pointer">{{submitLabel}}</button>
+<span style="font-size: 12px; color: #5b6270">{{submitNote}}</span>
+<sc-if value="{{done}}" hint-placeholder-val="{{ false }}"><a href="SCM_2_WaitApproval.dc.html" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; background: #1f5fbf; color: #ffffff; border: 0; font-weight: 700; text-decoration: none">결재 대기 화면으로 (다음 내 차례: ⑤)</a></sc-if>
+<sc-if value="{{done}}" hint-placeholder-val="{{ false }}"><a href="FIN_1_Review.dc.html" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; border: 1px solid #1f5fbf; color: #1f5fbf; font-weight: 700; text-decoration: none">③ 재무 검토 화면으로</a></sc-if>
+</section>
+
+</aside>
+</div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2100}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.SKU = [{"id":"SKU-1001","name":"더마 리페어 세럼","cat":"더마","ssMin":4,"ssMax":6,"moq":24000,"lt":12,"src":"Corevia","oh":23123,"it":15821,"avg":7910.5,"po":{"id":"SPO-0001","date":"2026-06-26","qty":24000,"lt":12,"amt":524160000,"due":"2026-07-21"}},{"id":"SKU-1002","name":"더마 카밍 크림","cat":"더마","ssMin":4,"ssMax":6,"moq":24000,"lt":12,"src":"Corevia","oh":21111,"it":14444,"avg":7222.0,"po":{"id":"SPO-0002","date":"2026-06-23","qty":24000,"lt":12,"amt":524160000,"due":"2026-07-21"}},{"id":"SKU-1003","name":"더마 배리어 로션","cat":"더마","ssMin":4,"ssMax":6,"moq":20000,"lt":12,"src":"Corevia","oh":16210,"it":598,"avg":3782.25,"po":{"id":"SPO-0003","date":"2026-06-22","qty":20000,"lt":12,"amt":436800000,"due":"2026-07-21"}},{"id":"SKU-1004","name":"더마 시카 앰플","cat":"더마","ssMin":4,"ssMax":6,"moq":20000,"lt":12,"src":"Corevia","oh":14359,"it":12998,"avg":6499.0,"po":{"id":"SPO-0004","date":"2026-06-23","qty":20000,"lt":12,"amt":436800000,"due":"2026-07-21"}},{"id":"SKU-2001","name":"기초 토너 대용량","cat":"기초","ssMin":4,"ssMax":6,"moq":16000,"lt":8,"src":"Corevia","oh":25170,"it":1823,"avg":4448.5,"po":{"id":"SPO-0005","date":"2026-06-23","qty":16000,"lt":8,"amt":201600000,"due":"2026-07-21"}},{"id":"SKU-2002","name":"기초 에센스","cat":"기초","ssMin":4,"ssMax":6,"moq":16000,"lt":8,"src":"Corevia","oh":19382,"it":1089,"avg":3928.0,"po":{"id":"SPO-0006","date":"2026-06-24","qty":16000,"lt":8,"amt":201600000,"due":"2026-07-21"}},{"id":"SKU-2003","name":"기초 수분크림","cat":"기초","ssMin":4,"ssMax":6,"moq":16000,"lt":8,"src":"Corevia","oh":22755,"it":2459,"avg":3840.5,"po":{"id":"SPO-0007","date":"2026-06-24","qty":16000,"lt":8,"amt":201600000,"due":"2026-07-21"}},{"id":"SKU-3001","name":"색조 벨벳 립","cat":"색조","ssMin":4,"ssMax":6,"moq":12000,"lt":6,"src":"Corevia","oh":14016,"it":16,"avg":882.5,"po":{"id":"SPO-0008","date":"2026-06-22","qty":12000,"lt":6,"amt":201600000,"due":"2026-07-21"}},{"id":"SKU-3002","name":"색조 글로우 쿠션","cat":"색조","ssMin":4,"ssMax":6,"moq":12000,"lt":6,"src":"Corevia","oh":15496,"it":857,"avg":869.25,"po":{"id":"SPO-0009","date":"2026-06-24","qty":12000,"lt":6,"amt":201600000,"due":"2026-07-21"}},{"id":"SKU-3003","name":"색조 아이팔레트","cat":"색조","ssMin":4,"ssMax":6,"moq":10000,"lt":6,"src":"Corevia","oh":21413,"it":3079,"avg":4279.75,"po":{"id":"SPO-0010","date":"2026-06-25","qty":10000,"lt":6,"amt":168000000,"due":"2026-07-21"}},{"id":"SKU-4001","name":"선케어 데일리 선스틱","cat":"선케어","ssMin":4,"ssMax":6,"moq":12000,"lt":8,"src":"Corevia","oh":16668,"it":3129,"avg":3936.75,"po":{"id":"SPO-0011","date":"2026-06-24","qty":12000,"lt":8,"amt":171360000,"due":"2026-07-21"}},{"id":"SKU-4002","name":"선케어 톤업 선크림","cat":"선케어","ssMin":4,"ssMax":6,"moq":12000,"lt":8,"src":"Corevia","oh":18803,"it":3473,"avg":3820.5,"po":{"id":"SPO-0012","date":"2026-06-25","qty":12000,"lt":8,"amt":171360000,"due":"2026-07-21"}},{"id":"SKU-5001","name":"헤어 리페어 샴푸","cat":"헤어","ssMin":4,"ssMax":6,"moq":16000,"lt":8,"src":"Corevia","oh":22819,"it":1779,"avg":4362.25,"po":{"id":"SPO-0013","date":"2026-06-22","qty":16000,"lt":8,"amt":147840000,"due":"2026-07-21"}},{"id":"SKU-5002","name":"바디 모이스처 워시","cat":"바디","ssMin":4,"ssMax":6,"moq":16000,"lt":8,"src":"Corevia","oh":18227,"it":3382,"avg":3503.75,"po":{"id":"SPO-0014","date":"2026-06-25","qty":16000,"lt":8,"amt":161280000,"due":"2026-07-21"}}];
+    this.PLAN = { id: 'PLAN-026', title: '혜인 기초 캠페인 하반기 확대 집행', pl: '기초', start: '2026-08-01', end: '2026-09-30', sales: '라이브', media: '인플루언서·퍼포먼스·오프라인', dl: '2026-07-17', author: '김마케', asof: '2026-07-01', dem: { 'SKU-2001': 600, 'SKU-2002': 1000, 'SKU-2003': 500 } };
+    this.state = { owner: '', decision: '', reason: '', adj: {}, poOn: null, qty: {}, odate: '2026-07-01', due: '', done: false, ver: 0, at: '' };
+  }
+  renderVals() {
+    const s = this.state, P = this.PLAN, TODAY = '2026-07-01';
+    const won = (n) => Math.round(Number(n) || 0).toLocaleString('ko-KR');
+    const has = (v) => String(v == null ? '' : v).trim() !== '';
+    const toD = (t) => { const a = t.split('-'); return Date.UTC(+a[0], +a[1] - 1, +a[2]); };
+    const iso = (ms) => new Date(ms).toISOString().slice(0, 10);
+    const md = (t) => { const a = t.split('-'); return (+a[1]) + '/' + (+a[2]); };
+    const addW = (t, w) => iso(toD(t) + w * 7 * 86400000);
+    const DAY = 86400000;
+    const OK = ['#e7f4ec', '#1e6b3a'], WARN = ['#fff1e0', '#9a3412'], BAD = ['#fdecea', '#b42318'], INFO = ['#eef0f3', '#374151'];
+    const skus = this.SKU.filter((k) => k.cat === P.pl);
+    // 일별 재고 예상: 현재고 − 판매 + 입고 (품절 시 판매 손실, 이동 중 재고 제외)
+    const simFull = (k, receipts, noCamp) => {
+      // 품절 구간 목록
+      const t0 = toD(TODAY), t1 = toD(P.end), cs = toD(P.start), inc = noCamp ? 0 : (P.dem[k.id] || 0);
+      let st = k.oh, out = false, segs = [], cur = null;
+      for (let t = t0; t <= t1; t += DAY) {
+        receipts.forEach((r) => { if (toD(r.d) === t) st += r.q; });
+        if (out && st > 0) { out = false; cur.to = iso(t - DAY); segs.push(cur); cur = null; }
+        st -= (k.avg + (t >= cs ? inc : 0)) / 7;
+        if (st <= 0) { st = 0; if (!out) { out = true; cur = { from: iso(t) }; } }
+      }
+      if (out) { cur.to = null; segs.push(cur); }
+      return { segs: segs, endStock: st };
+    };
+    const segText = (r) => r.segs.length === 0 ? '캠페인 종료일까지 품절 없음' : r.segs.map((g) => md(g.from) + '~' + (g.to ? md(g.to) : '종료일')).join(', ') + ' 품절';
+    const odate = has(s.odate) ? s.odate : TODAY;
+    const earliestNew = (k) => addW(odate, k.lt);
+    // 제안 수량
+    const sugg = (k) => { const target = (k.avg + (P.dem[k.id] || 0)) * k.ssMax; const raw = Math.max(target - k.oh - k.it, 0); return raw === 0 ? 0 : Math.ceil(raw / k.moq) * k.moq; };
+    const base = skus.map((k) => {
+      const exist = [{ d: addW(k.po.date, k.po.lt), q: k.po.qty }];
+      const r0 = simFull(k, exist);
+      const newEta = earliestNew(k);
+      const needNew = r0.segs.some((g) => !g.to || g.to >= newEta || g.from >= newEta);
+      const preNew = r0.segs.filter((g) => g.from < newEta);
+      const rBase = simFull(k, exist, true);
+      return { k: k, exist: exist, r0: r0, newEta: newEta, needNew: needNew, preNew: preNew, baseOut: rBase.segs.filter((g) => g.from < newEta) };
+    });
+    const defOn = {}; base.forEach((b) => { defOn[b.k.id] = b.needNew || sugg(b.k) > 0 && b.r0.segs.length > 0; });
+    const poOn = s.poOn || defOn;
+    const qtyOf = (k) => s.qty[k.id] == null ? String(Math.max(sugg(k), k.moq)) : s.qty[k.id];
+    let anyHard = false, anyNeed = false;
+    const rows = base.map((b) => {
+      const k = b.k, inc = P.dem[k.id] || 0;
+      const cov0 = k.oh / k.avg, cov1 = k.oh / (k.avg + inc);
+      const withNew = b.exist.concat(poOn[k.id] && Number(qtyOf(k)) > 0 ? [{ d: b.newEta, q: Number(qtyOf(k)) }] : []);
+      const r1 = simFull(k, withNew);
+      const hard = r1.segs.length > 0; const need = b.r0.segs.length > 0;
+      if (b.preNew.length) anyHard = true; if (need) anyNeed = true;
+      const v = b.preNew.length ? ['공급 어려움', BAD] : need ? ['추가 발주 필요', WARN] : ['재고로 가능', OK];
+      return { id: k.id, name: k.name, oh: won(k.oh), it: won(k.it), avg: won(k.avg), inc: inc ? '+' + won(inc) : '가정 없음',
+        cov0: cov0.toFixed(1), cov1: cov1.toFixed(1), ss: k.ssMin, ssText: cov1 >= k.ssMin ? '이상' : '미달', covFg: cov1 >= k.ssMin ? '#1e6b3a' : '#9a3412',
+        poId: k.po.id, poQty: won(k.po.qty), poDate: md(k.po.date), poLt: k.po.lt, poEta: md(b.exist[0].d),
+        so0: segText(b.r0), so0Bg: need ? BAD[0] : OK[0], so0Fg: need ? BAD[1] : OK[1],
+        so1: poOn[k.id] ? segText(r1) : '발주안 제외', so1Bg: !poOn[k.id] ? INFO[0] : hard ? WARN[0] : OK[0], so1Fg: !poOn[k.id] ? INFO[1] : hard ? WARN[1] : OK[1],
+        v: v[0], vBg: v[1][0], vFg: v[1][1], _pre: b.preNew, _base: b.baseOut, _eta: b.newEta, _r1: r1 };
+    });
+    const recKey = anyHard ? 'hard' : anyNeed ? 'po' : 'ok';
+    const why = [];
+    rows.forEach((r) => { if (r._pre.length) why.push({ t: r.id + ': 기존 발주 입고(' + r.poEta + ') 전 ' + md(r._pre[0].from) + '부터 품절 — 지금 발주해도 ' + md(r._eta) + ' 입고라 그 전 구간은 못 메웁니다.' + (r._base.length ? ' 캠페인이 없어도 ' + md(r._base[0].from) + '부터 품절입니다.' : '') }); });
+    rows.forEach((r) => { if (!r._pre.length && r.so0Bg === BAD[0]) why.push({ t: r.id + ': 캠페인 기간 중 ' + r.so0 + ' — 추가 발주로 메울 수 있습니다.' }); });
+    if (!why.length) why.push({ t: '모든 SKU가 캠페인 종료일까지 품절 없이 버팁니다.' });
+    if (recKey !== 'ok') why.push({ t: '발주안을 반영하면 품절 구간이 어떻게 바뀌는지 표의 「발주안 반영 후」에서 확인하세요.' });
+    const RECS = { ok: ['재고로 가능', OK, '#b9dcc6'], po: ['추가 발주 필요', WARN, '#f0c98a'], hard: ['공급 어려움 · 조정 요청', BAD, '#f3b8b2'] };
+    const rr = RECS[recKey];
+    const rec = { label: rr[0], fg: rr[1][1], bg: rr[1][0], bd: rr[2], why: why };
+    const OPTS = [['ok', '재고로 가능', '추가 발주 없이 진행'], ['po', '추가 발주 필요', '발주안을 붙여 ③ 재무로'], ['hard', '공급 어려움', '마케팅에 조정 요청 (발주안도 함께 가능)']];
+    const opts = OPTS.map((o) => { const on = s.decision === o[0]; return { label: o[1], desc: o[2], on: on, recTag: o[0] === recKey ? '추천' : '', bd: on ? '#1f5fbf' : '#dde2e8', bg: on ? '#eef4ff' : '#ffffff', pick: () => this.setState({ decision: o[0], done: false }) }; });
+    const differ = has(s.decision) && s.decision !== recKey;
+    const showPo = s.decision === 'po' || s.decision === 'hard' || (!has(s.decision) && recKey !== 'ok');
+    const showAdj = s.decision === 'hard';
+    const ADJ = [['time', '캠페인 시기'], ['qty', '판매량'], ['mix', '상품 구성'], ['prod', '생산계획']];
+    const adjOpts = ADJ.map((a) => { const on = !!s.adj[a[0]]; return { label: a[1], on: on, bd: on ? '#1f5fbf' : '#cfd5dd', toggle: () => this.setState({ adj: Object.assign({}, this.state.adj, { [a[0]]: !this.state.adj[a[0]] }), done: false }) }; });
+    const firstGapEnd = rows.filter((r) => r._pre.length).map((r) => r.poEta).sort().pop();
+    const adjHint = firstGapEnd ? '예: 캠페인 시작을 기존 발주 입고(' + firstGapEnd + ') 이후로 미루면, 입고 전 품절 구간에 캠페인 수요가 겹치지 않습니다.' : '';
+    // 발주안
+    const poRows = base.map((b) => {
+      const k = b.k, on = !!poOn[k.id], q = qtyOf(k), qn = Number(q) || 0, unit = k.po.amt / k.po.qty;
+      const moqOk = qn > 0 && qn % k.moq === 0;
+      return { id: k.id, name: k.name, sugg: won(sugg(k)), moq: won(k.moq), moqRaw: k.moq, lt: k.lt, src: k.src, on: on, off: !on, qty: q, inputId: 'q-' + k.id, unit: won(unit), amt: on ? won(qn * unit) : '—', eta: on ? b.newEta : '—', _amt: on ? qn * unit : 0, _ok: !on || moqOk,
+        bd: on ? '#c9d6ee' : '#e3e7ec', bg: on ? '#ffffff' : '#f6f7f9', qtyBd: on && !moqOk ? '#b42318' : '#cfd5dd',
+        note: !on ? '발주안에서 제외됨' : !moqOk ? 'MOQ(' + won(k.moq) + ') 배수가 아닙니다.' : '입고 ' + md(b.newEta) + ' · 반영 후: ' + segText(simFull(k, b.exist.concat([{ d: b.newEta, q: qn }]))), noteFg: on && !moqOk ? '#b42318' : '#5b6270',
+        toggle: () => { const o = Object.assign({}, this.state.poOn || defOn); o[k.id] = !o[k.id]; this.setState({ poOn: o, done: false }); },
+        onQty: (e) => this.setState({ qty: Object.assign({}, this.state.qty, { [k.id]: e.target.value }), done: false }) };
+    });
+    const included = poRows.filter((p) => p.on);
+    const total = included.reduce((a, p) => a + p._amt, 0);
+    const po = { total: won(total), count: included.length, odate: s.odate, due: s.due };
+    const needPo = s.decision === 'po' || (s.decision === 'hard' && included.length > 0);
+    // 점검
+    const checks = [
+      ['대조 담당자', has(s.owner)], ['SCM 판단 선택', has(s.decision)], [differ ? '사유 (추천과 다른 판단)' : '사유', !differ || has(s.reason)]
+    ].concat(s.decision === 'po' ? [['발주안 1건 이상', included.length > 0]] : [])
+     .concat(needPo ? [['발주 수량이 MOQ 배수', poRows.every((p) => p._ok)], ['발주 예정일 · 지급예정일 (가정)', has(s.odate) && has(s.due)]] : [])
+     .concat(showAdj ? [['조정 요청 1개 이상', Object.keys(s.adj).some((x) => s.adj[x])]] : [])
+     .map((x) => ({ label: x[0], mark: x[1] ? '✓' : '!', bg: x[1] ? OK[0] : WARN[0], fg: x[1] ? OK[1] : WARN[1], text: x[1] ? '#374151' : '#9a3412', ok: x[1] }));
+    const doneCount = checks.filter((x) => x.ok).length, ready = doneCount === checks.length;
+    const st = (ok) => ok ? { mark: '준비', bg: OK[0], fg: OK[1] } : { mark: '누락', bg: WARN[0], fg: WARN[1] };
+    const na = { mark: '없음', bg: INFO[0], fg: INFO[1] }, later = { mark: '기록', bg: INFO[0], fg: INFO[1] };
+    const it = (label, m) => Object.assign({ label: label }, m);
+    const decLabel = has(s.decision) ? OPTS.filter((o) => o[0] === s.decision)[0][1] : '(미선택)';
+    const out = [
+      { to: '③ 재무 금액·승인권한 검토', src: 'W01 BPMN · calculation_definitions 1.2', items: [it('재고·입고 대조표 ' + rows.length + '개 SKU', st(true)), it('SCM 판단: ' + decLabel, st(has(s.decision)))].concat(needPo ? [it('발주안 ' + won(total) + '원 · 입고 ' + included.map((p) => md(p.eta)).filter((v, i, a) => a.indexOf(v) === i).join('·'), st(included.length > 0)), it('지급예정일 ' + (has(s.due) ? s.due : '(미입력)') + ' → 현금 재전망', st(has(s.due)))] : [it('발주안 없음', na)]) },
+      { to: '④ 승인권자', src: 'approval_authority_policy', items: [it('대조표 · SCM 판단 · 발주안 (③을 거쳐)', { mark: '이후', bg: INFO[0], fg: INFO[1] })] },
+      { to: '① 마케팅', src: 'W01 확장 질문 · 보완', items: [it('SCM 판단 결과', st(has(s.decision)))].concat(showAdj ? [it('조정 요청: ' + (ADJ.filter((a) => s.adj[a[0]]).map((a) => a[1]).join(' · ') || '(미선택)'), st(Object.keys(s.adj).some((x) => s.adj[x])))] : [it('조정 요청 없음', na)]) },
+      { to: '대조 이벤트 기록', src: '보완 · W01 「사건 이력이 없다」', items: [it('담당자 ' + (has(s.owner) ? s.owner : '(미입력)'), st(has(s.owner))), it(s.done ? '완료 ' + s.at + ' · v' + s.ver : '완료 시각 · 버전 (전달 시 기록)', later)] }
+    ];
+    const submit = () => { if (!ready) return; const d = new Date(); this.setState({ done: true, ver: this.state.ver + 1, at: TODAY + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0') }); };
+    const dl = Math.round((toD(P.dl) - toD(TODAY)) / DAY);
+    return {
+      owner: s.owner, onOwner: (e) => this.setState({ owner: e.target.value, done: false }),
+      statusChip: s.done ? { text: '전달 완료 v' + s.ver, bg: OK[0], fg: OK[1] } : { text: '대조 중 · 필수 ' + doneCount + '/' + checks.length, bg: WARN[0], fg: WARN[1] },
+      plan: { id: P.id, title: P.title, pl: P.pl, start: P.start, end: P.end, sales: P.sales, media: P.media, dl: P.dl, dlD: 'D-' + dl, author: P.author, asof: P.asof, assumeCount: Object.keys(P.dem).length },
+      rows: rows, rec: rec, opts: opts, reason: s.reason, onReason: (e) => this.setState({ reason: e.target.value, done: false }),
+      reasonReq: differ ? '* 추천과 다른 판단이라 필수' : '(선택)', reasonPh: differ ? '추천(' + rec.label + ')과 다르게 판단한 이유' : '판단 근거 메모',
+      showAdj: showAdj, adjOpts: adjOpts, adjHint: adjHint, showPo: showPo, po: po, poRows: poRows,
+      onOdate: (e) => this.setState({ odate: e.target.value, done: false }), onDue: (e) => this.setState({ due: e.target.value, done: false }),
+      out: out, checks: checks, doneCount: doneCount, totalCount: checks.length, notReady: !ready, submit: submit, done: s.done,
+      submitBg: s.done ? '#1e6b3a' : ready ? '#1f5fbf' : '#9aa3af',
+      submitLabel: s.done ? '전달 완료 · ③ 재무 검토 요청 생성됨' : ready ? '대조 결과 전달' : '필수 항목을 채우면 전달할 수 있습니다',
+      submitNote: s.done ? '수정하면 전달 전 상태로 돌아가고, 다시 전달하면 v' + (s.ver + 1) + '로 기록됩니다.' : '전달하면 ③ 재무에 검토 요청이, ① 마케팅에 판단 결과가 갑니다.'
+    };
+  }
+}
+</script>
+</body>
+</html>

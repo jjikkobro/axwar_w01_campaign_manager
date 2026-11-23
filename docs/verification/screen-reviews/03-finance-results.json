@@ -1,0 +1,14 @@
+{
+  "case_id": "040c4954-26ba-4a95-a799-c316a23e6833",
+  "base": "http://127.0.0.1:8086",
+  "checks": [
+    "non-finance rejected",
+    "stale version rejected",
+    "preview does not save",
+    "unconfirmed cash blocks submit",
+    "persistent packet and approval task, no approval/order",
+    "duplicate submit rejected",
+    "real followup task saved"
+  ],
+  "passed": true
+}

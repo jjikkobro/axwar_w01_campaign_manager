@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>④ 승인 여부 결정 · 평시 승인권자</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1f5fbf}a:hover{color:#174a95}
+</style>
+</helmet>
+<div style="min-height: 2200px; background: #f3f5f8; font-family: 'IBM Plex Sans KR', system-ui, sans-serif; color: #1a1d23; font-size: 14px; line-height: 20px">
+<header style="background: #ffffff; border-bottom: 1px solid #dde2e8">
+<div style="max-width: 1392px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px"><div style="font-size: 16px; font-weight: 700">W01 캠페인 운영</div><nav aria-label="주요 화면" style="display: flex; flex-wrap: wrap; gap: 4px"><a href="#" style="padding: 10px 12px; border-radius: 8px; color: #4b5563; text-decoration: none">캠페인</a><a href="#" aria-current="page" style="padding: 10px 12px; border-radius: 8px; color: #1a1d23; font-weight: 600; text-decoration: none; background: #eef2f8">결재함</a></nav></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px"><span style="font-size: 13px; padding: 4px 10px; border-radius: 999px; background: #1a1d23; color: #ffffff">승인권자</span><span style="font-size: 13px; color: #5b6270">기준일 2026-07-01</span></div>
+</div>
+</header>
+<main style="max-width: 1392px; margin: 0 auto; padding: 20px 24px 40px; display: flex; flex-direction: column; gap: 16px">
+<nav aria-label="현업 절차 단계" style="display: flex; flex-wrap: wrap; gap: 6px">
+<a href="MKT_1_Proposal.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">① 기안 상신</span><span style="font-size: 11px; color: #1e6b3a">마케팅 · 완료</span></a>
+<a href="SCM_1_Check.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">② 재고·입고표 대조</span><span style="font-size: 11px; color: #1e6b3a">SCM · 완료</span></a>
+<a href="FIN_1_Review.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">③ 금액·승인권한 검토</span><span style="font-size: 11px; color: #1e6b3a">재무 · 완료</span></a>
+<a href="APR_2_Normal.dc.html" aria-current="step" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #1a1d23; color: #ffffff; border: 1px solid #1a1d23"><span style="font-size: 12px; font-weight: 700">④ 승인 여부 결정</span><span style="font-size: 11px; color: #d1d5db">승인권자 · 평시 전결</span></a>
+<a href="SCM_3_PO.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑤ 발주서 작성·전달</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="SCM_5_Receipt.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑥ 입고예정 회신 확인</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="MKT_4_Close.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑦ 일정표·발주 기록 정리</span><span style="font-size: 11px; color: #5b6270">마케팅</span></a>
+</nav>
+<section aria-label="결재 머리" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 20px 22px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; padding: 2px 10px; border-radius: 999px; font-weight: 600; background: {{statusChip.bg}}; color: {{statusChip.fg}}">{{statusChip.text}}</span></div><h1 style="margin: 0; font-size: 22px; line-height: 30px; font-weight: 700">승인 여부 결정 · {{headTitle}}</h1></div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px"><div role="group" aria-label="결재자 전환" style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 600">결재자 <span style="font-weight: 400; color: #6b4e00">모의 · 예시 전환</span></span><div style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 10px; background: #eef0f3">
+<sc-for list="{{presets}}" as="k" hint-placeholder-count="3"><button type="button" aria-pressed="{{k.on}}" onClick="{{k.pick}}" style="min-height: 36px; padding: 0 12px; border: 0; border-radius: 8px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; background: {{k.bg}}; color: {{k.fg}}">{{k.label}}</button></sc-for>
+</div></div>
+<div style="display: flex; flex-direction: column; gap: 4px; width: 180px"><label for="a-owner" style="font-size: 12px; font-weight: 600">결재자 <span style="color: #b42318">*</span></label><input id="a-owner" type="text" value="{{owner}}" onChange="{{onOwner}}" placeholder="이름" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+</div>
+</div>
+</section>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start">
+<div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section aria-label="결재 문서" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">상신 보고서 · {{doc.pid}}</h2><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">모의 · ③ 상신 예시</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><a href="MKT_1_Proposal.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; color: #1f5fbf; font-size: 13px; font-weight: 600; text-decoration: none">① 기안</a><a href="SCM_1_Check.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; color: #1f5fbf; font-size: 13px; font-weight: 600; text-decoration: none">② SCM 대조</a><a href="FIN_1_Review.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; color: #1f5fbf; font-size: 13px; font-weight: 600; text-decoration: none">③ 재무 검토</a></div>
+</div>
+<b style="font-size: 15px">{{doc.title}}</b>
+<div role="list" aria-label="결재선" style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{stamps}}" as="t" hint-placeholder-count="4">
+<div role="listitem" style="flex: 1 1 110px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px; border-radius: 10px; border: 1px solid {{t.bd}}; background: {{t.bg}}"><span style="font-size: 11px; color: #5b6270">{{t.role}}</span><b style="font-size: 13px; color: {{t.fg}}">{{t.who}}</b><span style="font-size: 11px; color: {{t.fg}}">{{t.state}}</span></div>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid #dde2e8; border-radius: 10px; overflow: hidden; font-size: 13px; line-height: 19px">
+<sc-for list="{{w5}}" as="r" hint-placeholder-count="6"><div style="display: flex; gap: 10px; padding: 10px 12px; border-bottom: 1px solid #eef0f3"><b style="flex: 0 0 56px; color: #5b6270">{{r.k}}</b><span>{{r.v}}</span></div></sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{facts}}" as="p" hint-placeholder-count="6"><div style="padding: 10px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #5b6270">{{p.label}}</span><b style="font-size: 16px; color: {{p.fg}}">{{p.value}}</b><span style="font-size: 11px; color: #5b6270">{{p.src}}</span></div></sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 10px; background: {{finOp.bg}}"><span style="font-size: 12px; font-weight: 700; color: #374151">③ 재무 의견</span><b style="color: {{finOp.fg}}">{{finOp.label}}</b><span style="font-size: 13px; color: #374151">{{finOp.memo}}</span></div>
+</section>
+<section aria-label="결재선 근거" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">왜 이 결재자인가</h2><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · approval_authority_policy</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<div style="flex: 1 1 200px; padding: 10px 12px; border-radius: 10px; background: #eef4ff; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">적용 규정</span><b style="font-size: 15px; color: #1d4ed8">{{why.rule}}</b><span style="font-size: 11px; color: #5b6270">{{why.ruleNote}}</span></div>
+<div style="flex: 1 1 200px; padding: 10px 12px; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">현금 유출일 · 하회 구간</span><b style="font-size: 15px">{{why.date}} · 구간 7/21~8/29 밖</b><span style="font-size: 11px; color: #5b6270">구간 밖이라 평시 전결 적용</span></div>
+<div style="flex: 1 1 200px; padding: 10px 12px; border-radius: 10px; background: {{why.reBg}}; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">결재 직전 재확인</span><b style="font-size: 15px; color: {{why.reFg}}">{{why.re}}</b><span style="font-size: 11px; color: #5b6270">최신 재전망 기준 · 구간이 늘어 유출일이 걸리면 CEO/이사회로 다시 판정</span></div>
+</div>
+<sc-if value="{{why.hasSibling}}" hint-placeholder-val="{{ true }}"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 10px; background: #f6f7f9; font-size: 13px"><span style="font-size: 12px; font-weight: 700; color: #374151">같은 기안의 다른 결재</span><span>{{why.sibling}}</span></div></sc-if>
+</section>
+<section aria-label="결정" style="background: #ffffff; border: 2px solid #1a1d23; border-radius: 14px; padding: 17px 21px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: #1a1d23; color: #ffffff">작성</span><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">{{decideTitle}}</h2><span style="font-size: 12px; color: #5b6270">{{decideHint}}</span></div>
+<sc-for list="{{items}}" as="d" hint-placeholder-count="3">
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border-radius: 12px; border: 1px solid {{d.bd}}; background: #ffffff">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px"><div style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 15px">{{d.name}}</b><span style="font-size: 12px; color: #5b6270">{{d.sub}}</span></div><span style="font-size: 12px; padding: 2px 8px; border-radius: 999px; font-weight: 600; background: {{d.dlBg}}; color: {{d.dlFg}}">{{d.dl}}</span></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 10px; background: {{d.recBg}}"><span style="font-size: 12px; font-weight: 700; color: #374151">추천</span><b style="color: {{d.recFg}}">{{d.recLabel}}</b><span style="font-size: 13px; color: #374151">{{d.recWhy}}</span></div>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 6px"><legend style="padding: 0; margin-bottom: 6px; font-size: 13px; font-weight: 600">결정 <span style="color: #b42318">*</span></legend>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{d.opts}}" as="o" hint-placeholder-count="3"><label style="flex: 1 1 160px; display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 14px; border-radius: 10px; border: 2px solid {{o.bd}}; background: {{o.bg}}; cursor: pointer"><input type="radio" name="{{d.group}}" checked="{{o.on}}" onChange="{{o.pick}}" style="width: 18px; height: 18px; margin: 0"><span><b>{{o.label}}</b> <span style="font-size: 12px; color: #1d4ed8">{{o.tag}}</span></span></label></sc-for>
+</div></fieldset>
+<sc-if value="{{d.showCond}}" hint-placeholder-val="{{ false }}"><div style="display: flex; flex-direction: column; gap: 6px"><label for="{{d.condId}}" style="font-size: 13px; font-weight: 600">승인 조건 <span style="color: #b42318">*</span></label><input id="{{d.condId}}" type="text" value="{{d.cond}}" onChange="{{d.onCond}}" placeholder="{{d.condPh}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div></sc-if>
+<div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center"><span style="font-size: 13px; font-weight: 600">사유 코드</span>
+<sc-for list="{{d.codes}}" as="c" hint-placeholder-count="5"><label style="display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 10px; border-radius: 999px; border: 1px solid {{c.bd}}; font-size: 13px; cursor: pointer"><input type="checkbox" checked="{{c.on}}" onChange="{{c.toggle}}" style="width: 16px; height: 16px; margin: 0"><span>{{c.label}}</span></label></sc-for>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="{{d.memoId}}" style="font-size: 13px; font-weight: 600">결정 메모 <span style="color: #b42318">{{d.memoReq}}</span></label><input id="{{d.memoId}}" type="text" value="{{d.memo}}" onChange="{{d.onMemo}}" placeholder="{{d.memoPh}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+<sc-if value="{{d.hasWarn}}" hint-placeholder-val="{{ false }}"><div style="padding: 10px 12px; border-radius: 10px; background: #fff1e0; font-size: 13px; color: #7a3d00">{{d.warn}}</div></sc-if>
+</div>
+</sc-for>
+</section>
+</div>
+<aside style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section aria-label="확정 전 점검" style="background: #ffffff; border: 2px solid #1f5fbf; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h2 style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 700">확정 전 점검</h2><span style="font-size: 12px; color: #5b6270">필수 {{doneCount}}/{{totalCount}}</span></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 19px">
+<sc-for list="{{checks}}" as="c" hint-placeholder-count="4"><li style="display: flex; align-items: flex-start; gap: 8px"><span style="flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 999px; font-size: 12px; font-weight: 700; background: {{c.bg}}; color: {{c.fg}}">{{c.mark}}</span><span style="color: {{c.text}}">{{c.label}}</span></li></sc-for>
+</ul>
+<button type="button" onClick="{{submit}}" disabled="{{notReady}}" style="min-height: 48px; padding: 0 18px; border: 0; border-radius: 10px; background: {{submitBg}}; color: #ffffff; font: inherit; font-weight: 700; cursor: pointer">{{submitLabel}}</button>
+<span style="font-size: 12px; color: #5b6270">{{submitNote}}</span>
+<sc-if value="{{done}}" hint-placeholder-val="{{ false }}"><div style="display: flex; flex-direction: column; gap: 6px">
+<sc-for list="{{nexts}}" as="n" hint-placeholder-count="2"><a href="{{n.href}}" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; border: 1px solid {{n.bd}}; color: {{n.fg}}; font-weight: 700; text-decoration: none">{{n.label}}</a></sc-for>
+</div></sc-if>
+</section>
+</aside>
+</div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2200}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.MODE = 'norm';
+    const BAD = ['#fdecea', '#b42318'], WARN = ['#fff1e0', '#9a3412'], OK = ['#e7f4ec', '#1e6b3a'];
+    this.CFG = {
+      ceo: {
+        head: 'CEO/이사회', pid: 'PLAN-026', title: '혜인 기초 캠페인 하반기 확대 집행', approverRole: '결재 · CEO/이사회',
+        finOp: { label: '반려', memo: '참조 캠페인 실질 공헌이익 음수 · 전속계약 갱신 여부와 함께 결정 필요', c: BAD },
+        facts: [['하회 구간', '7/21 ~ 8/29', '#b42318', '③ 재전망 v2 · 합집합'], ['최저 일말 잔액', '8.63억', '#b42318', '발주 반영 · 미반영 14.68억'], ['확정기한 · 통보 기한', '7/17 · D-16', '#9a3412', 'mkt_budget_plan_ms · inf001'],
+          ['실질 ROAS · CMP-0003', '-0.25 · 24/25위', '#b42318', '③ 성과·비용표 (표본)'], ['INF-001 집행 비중 · 실질', '40.6% · 9/10위', '#b42318', '배분이 성과와 반대 방향'], ['반품률 · CMP-0003', '13.0%', '#b42318', '업계 기준 8%']],
+        w5: [['누가', '요청 마케팅 · 대조 SCM · 검토 재무 → 결재 CEO/이사회'], ['무엇을', '캠페인 집행 1건 + 재고 추가 발주 3건(604,800,000원) + 연결 전속계약 갱신 여부'], ['언제', '확정기한·통보 기한 7/17(D-16) 전 결재'], ['어디서', 'Masil 단독 가용현금 (일말 종가, 그룹 지원 제외)'], ['왜', '유출일이 하회 구간 7/21 ~ 8/29 안의 신규 약정 · 전속계약은 연 10억 초과'], ['어떻게', '13주 재전망 4개 시나리오 (발주안 반영) · 성과·비용표 첨부']],
+        items: [
+          { key: 'camp', kind: 'camp', name: '캠페인 집행 · PLAN-026', sub: '요청 15,000,000원(표본) · 정산 7/27 · ③ 판정 CEO/이사회 (평시였다면 Masil 대표 + 그룹 보고)', dl: '확정기한 7/17 · D-16', dlc: WARN, rec: 'no', recSrc: '③ 재무 의견', recWhy: '참조 캠페인 실질 ROAS −0.25(24/25위) · INF-001 배분이 성과와 반대 방향', condPh: '예: 요청액 축소 · 시작일을 입고(8/19) 이후로 · 매체 구성 변경' },
+          { key: 'po', kind: 'po', name: '재고 추가 발주 · 기초 3 SKU', sub: '604,800,000원(실제 규모) · 지급 8/21(가정) · 입고 8/26 · ③ 판정 CEO/이사회 (평시였다면 SCM 전결)', dl: '리드타임 8주 · 늦을수록 입고 지연', dlc: WARN, rec: 'cond', recSrc: '시스템 추천 (계산)', recWhy: '② 대조상 캠페인이 없어도 9월 중순 품절 예상이라 발주는 필요 · 지급일이 구간 밖(8/30 이후)이면 최저 잔액에 영향이 없습니다', condPh: '예: 지급일 8/30 이후로 공급자 협의 (⑥ 회신으로 확인)', condDef: '지급일 8/30 이후로 공급자 협의' },
+          { key: 'ctr', kind: 'ctr', name: 'INF-001 연간 전속계약 갱신 여부', sub: '고정 피 연 28억(풀스케일) · 미통보 시 같은 조건으로 1년 자동 갱신 · 연 10억 초과 → CEO/이사회', dl: '통보 기한 7/17 · D-16', dlc: BAD, rec: 'change', recSrc: '시스템 추천 (계산)', recWhy: '고정 피는 성과와 무관하게 발생 · INF-001 실질 성과 9/10위 — 갱신 전 조건 재협상', condPh: '' }
+        ]
+      },
+      norm: {
+        ceoM: {
+          head: 'Masil 대표', pid: 'PLAN-027', title: '토모카 기초 캠페인 일본 확대 집행', approverRole: '결재 · Masil 대표',
+          finOp: { label: '조건부 승인', memo: '공헌이익은 남지만 낮고 반품률이 기준 초과 · 금액·채널 조건 권고', c: WARN },
+          facts: [['결재선', 'Masil 대표 + 그룹 보고', '#1d4ed8', '건별 1천만 원 초과'], ['정산일', '9/14 · 구간 밖', '#1e6b3a', '하회 구간 7/21 ~ 8/29'], ['확정기한', '8/14 · D-44', '#1a1d23', 'mkt_budget_plan_ms 형식'],
+            ['실질 ROAS · CMP-0009', '0.37 · 14/25위', '#9a3412', '③ 성과·비용표 (표본)'], ['INF-003 집행 비중 · 실질', '13.9% 3위 · 7/10위', '#9a3412', '배분이 성과보다 큼'], ['반품률 · CMP-0009', '8.7%', '#9a3412', '업계 기준 8%']],
+          w5: [['누가', '요청 마케팅 · 대조 SCM · 검토 재무 → 결재 Masil 대표 (승인 후 그룹 보고)'], ['무엇을', '캠페인 집행 1건 (요청 12,000,000원 · 표본)'], ['언제', '확정기한 8/14(D-44) 전 결재'], ['어디서', 'Masil 단독 가용현금 · 구간 밖이라 현금 제약 없음'], ['왜', '유출일이 하회 구간 밖 → 평시 전결: 건별 1천만 원 초과'], ['어떻게', '13주 재전망 재확인 · 성과·비용표 첨부']],
+          why: { rule: '건별 1천만 원 초과 → Masil 대표 승인 + 그룹 보고', ruleNote: '기안 총액 1억 초과도 같은 결재선', date: '정산 9/14', sibling: 'SCM 전결 · 재고 추가 발주 3건 604,800,000원 (지급 9/21 가정) — SCM 팀장 결재 대기' },
+          items: [{ key: 'camp', kind: 'camp', name: '캠페인 집행 · PLAN-027', sub: '요청 12,000,000원(표본) · 정산 9/14 · INF-003 토모카 · 참조 CMP-0009', dl: '확정기한 8/14 · D-44', dlc: ['#eef0f3', '#374151'], rec: 'cond', recSrc: '③ 재무 의견', recWhy: '참조 실질 ROAS 0.37(14/25위) · 반품률 8.7% > 8%', condPh: '예: 요청액 1,000만 원 이하로 조정 · 반품률 점검 후 2차 집행' }]
+        },
+        team: {
+          head: '마케팅팀장 (전결)', pid: 'PLAN-028', title: '초혜핏 선케어 캠페인 가을 확대 집행', approverRole: '결재 · 마케팅팀장',
+          finOp: { label: '승인', memo: '실질 공헌이익 기준 충족 · 성과 대비 배분이 적은 인플루언서', c: OK },
+          facts: [['결재선', '마케팅팀 전결', '#1d4ed8', '건별 1천만 원 이하'], ['정산일', '9/08 · 구간 밖', '#1e6b3a', '하회 구간 7/21 ~ 8/29'], ['확정기한', '9/11 · D-72', '#1a1d23', 'mkt_budget_plan_ms 형식'],
+            ['실질 ROAS · CMP-0005', '2.97 · 4/25위', '#1e6b3a', '③ 성과·비용표 (표본)'], ['INF-002 집행 비중 · 실질', '2.4% 8위 · 1/10위', '#1e6b3a', '성과에 비해 배분이 적음'], ['반품률 · CMP-0005', '3.2%', '#1e6b3a', '업계 기준 8%']],
+          w5: [['누가', '요청 마케팅 · 대조 SCM · 검토 재무 → 결재 마케팅팀장 (전결)'], ['무엇을', '캠페인 집행 1건 (요청 8,000,000원 · 표본)'], ['언제', '확정기한 9/11(D-72) 전 결재'], ['어디서', 'Masil 단독 가용현금 · 구간 밖이라 현금 제약 없음'], ['왜', '유출일이 하회 구간 밖 → 평시 전결: 건별 1천만 원 이하 · 기안 총액 1억 이하'], ['어떻게', '13주 재전망 재확인 · 성과·비용표 첨부']],
+          why: { rule: '건별 1천만 원 이하 · 기안 총액 1억 이하 → 마케팅팀 전결', ruleNote: '기안자(김마케)와 다른 사람이 결재 (내부통제 가정)', date: '정산 9/08', sibling: 'SCM 전결 · 재고 추가 발주 2건 342,720,000원 (지급 9/21 가정) — SCM 팀장 결재 대기' },
+          items: [{ key: 'camp', kind: 'camp', name: '캠페인 집행 · PLAN-028', sub: '요청 8,000,000원(표본) · 정산 9/08 · INF-002 초혜핏 · 참조 CMP-0005', dl: '확정기한 9/11 · D-72', dlc: ['#eef0f3', '#374151'], rec: 'ok', recSrc: '③ 재무 의견', recWhy: '참조 실질 ROAS 2.97(4/25위) · 반품률 3.2%', condPh: '예: 집행 후 반품률 보고' }]
+        },
+        scm: {
+          head: 'SCM 팀장 (발주 전결)', pid: 'PLAN-027', title: '토모카 기초 캠페인 일본 확대 집행 · 재고 추가 발주', approverRole: '결재 · SCM 팀장',
+          finOp: { label: '판정: SCM 전결', memo: '지급 9/21(가정)이 구간 밖 · ⑥ 회신으로 구간 안이 되면 CEO/이사회로 재판정', c: ['#eef4ff', '#1d4ed8'] },
+          facts: [['결재선', 'SCM 전결', '#1d4ed8', '재고 발주 승인은 SCM'], ['지급예정일', '9/21 · 구간 밖', '#1e6b3a', '가정 · ⑥ 회신으로 확정'], ['발주 금액', '604,800,000원', '#1a1d23', '실제 규모 · 기초 3 SKU'],
+            ['입고 예상', '8/26', '#1a1d23', '발주 7/1 + 리드타임 8주'], ['캠페인 없이도', '9월 중순 품절', '#9a3412', '② 대조 (기존 발주 입고 후)'], ['재전망 최저', '14.68억 · 변화 없음', '#1a1d23', '발주 반영 v2']],
+          w5: [['누가', '대조 SCM · 검토 재무 → 결재 SCM 팀장 (전결)'], ['무엇을', '재고 추가 발주 3건 604,800,000원 (SKU-2001·2002·2003)'], ['언제', '빠를수록 · 리드타임 8주 (입고 8/26 예상)'], ['어디서', 'Masil 단독 가용현금 · 지급일이 구간 밖'], ['왜', '② 대조상 9월 품절 예상 · 유출일이 구간 밖 → 평시 SCM 전결'], ['어떻게', '② 일별 재고 예상 · ③ 재전망 v2 재확인']],
+          why: { rule: '재고 발주 → SCM 전결', ruleNote: '평시 재고 발주 승인은 SCM', date: '지급 9/21 (가정)', sibling: 'Masil 대표 · 캠페인 집행 PLAN-027 (요청 12,000,000원) — 결재 대기' },
+          items: [{ key: 'po', kind: 'po', name: '재고 추가 발주 · 기초 3 SKU', sub: '604,800,000원 · 지급 9/21(가정) · 입고 8/26 · 공급 Corevia', dl: '리드타임 8주', dlc: ['#eef0f3', '#374151'], rec: 'ok', recSrc: '시스템 추천 (계산)', recWhy: '캠페인이 없어도 9월 중순 품절 예상 · 지급일이 구간 밖이라 현금 영향 없음', condPh: '예: 지급일이 8/29 이전으로 회신되면 재상신' }]
+        }
+      }
+    };
+    this.state = { pre: 'ceoM', owner: '', dec: {}, cond: {}, codes: {}, memo: {}, done: false, ver: 0, at: '' };
+  }
+  renderVals() {
+    const s = this.state, isCeo = this.MODE === 'ceo';
+    const C = isCeo ? this.CFG.ceo : this.CFG.norm[s.pre];
+    const has = (v) => String(v == null ? '' : v).trim() !== '';
+    const OK = ['#e7f4ec', '#1e6b3a'], WARN = ['#fff1e0', '#9a3412'], BAD = ['#fdecea', '#b42318'], INFO = ['#eef0f3', '#374151'];
+    const LBL = { ok: '승인', cond: '조건부 승인', no: '반려', renew: '갱신 (통보 없음)', change: '조건변경 통보', end: '해지 통보' };
+    const TONE = { ok: OK, cond: WARN, no: BAD, renew: WARN, change: OK, end: BAD };
+    const CODES = ['수익성', '공급', '현금', '일정', '계약', '기타'];
+    const set = (k, key, v) => { const o = Object.assign({}, this.state[k]); o[key] = v; this.setState({ [k]: o, done: false }); };
+    const dec = (key) => s.dec[key] || '';
+    const items = C.items.map((it) => {
+      const keys = it.kind === 'ctr' ? ['renew', 'change', 'end'] : ['ok', 'cond', 'no'];
+      const d = dec(it.key);
+      const differ = has(d) && d !== it.rec;
+      const codeMap = s.codes[it.key] || {};
+      let warn = '';
+      if (isCeo) {
+        const dc = dec('camp'), dp = dec('po'), dt = dec('ctr');
+        if (it.key === 'po' && dp === 'no') warn = '발주를 반려하면 ② 대조상 캠페인이 없어도 9월 중순 품절이 납니다.' + ((dc === 'ok' || dc === 'cond') ? ' 캠페인을 승인하면 수요를 감당할 수 없습니다.' : '');
+        if (it.key === 'ctr' && dt === 'renew' && dc === 'no') warn = '기안만 부결하고 전속계약을 갱신하면 배분 구조는 그대로 유지됩니다 (mkt_meeting_notes_ms · 재무팀).';
+        if (it.key === 'camp' && (dc === 'ok' || dc === 'cond')) warn = '② SCM은 기존 발주 입고(8/18~8/19) 전 8월 초 품절을 확인했습니다. 승인한다면 시작일을 입고 이후로 두는 조건을 검토하세요.';
+      } else if (it.kind === 'po' && d === 'cond') warn = '조건부 승인의 조건이 지급일 변경이라면 ⑥ 회신 후 ③ 재무가 구간을 다시 대조합니다.';
+      const condVal = s.cond[it.key] != null ? s.cond[it.key] : (it.condDef && d === 'cond' ? it.condDef : '');
+      return {
+        name: it.name, sub: it.sub, dl: it.dl, dlBg: it.dlc[0], dlFg: it.dlc[1], group: 'dec-' + it.key, bd: has(d) ? '#c9d6ee' : '#dde2e8',
+        recLabel: LBL[it.rec] + ' · ' + it.recSrc, recWhy: it.recWhy, recBg: TONE[it.rec][0], recFg: TONE[it.rec][1],
+        opts: keys.map((k) => ({ label: LBL[k], tag: k === it.rec ? '추천' : '', on: d === k, bd: d === k ? '#1f5fbf' : '#dde2e8', bg: d === k ? '#eef4ff' : '#ffffff', pick: () => { set('dec', it.key, k); if (k === 'cond' && it.condDef && this.state.cond[it.key] == null) set('cond', it.key, it.condDef); } })),
+        showCond: d === 'cond', condId: 'cond-' + it.key, cond: condVal, condPh: it.condPh, onCond: (e) => set('cond', it.key, e.target.value),
+        codes: CODES.map((c) => ({ label: c, on: !!codeMap[c], bd: codeMap[c] ? '#1f5fbf' : '#cfd5dd', toggle: () => { const o = Object.assign({}, this.state.codes[it.key] || {}); o[c] = !o[c]; set('codes', it.key, o); } })),
+        memoId: 'memo-' + it.key, memo: s.memo[it.key] || '', onMemo: (e) => set('memo', it.key, e.target.value),
+        memoReq: differ ? '* 추천과 다른 결정이라 필수' : '(선택)', memoPh: differ ? LBL[it.rec] + ' 추천과 다르게 결정한 이유' : '결정 근거 메모',
+        hasWarn: warn !== '', warn: warn,
+        _d: d, _differ: differ, _cond: condVal, _codes: Object.keys(codeMap).filter((c) => codeMap[c]), _it: it
+      };
+    });
+    // 결재선 도장
+    const stamps = [['기안 · 마케팅', '김마케', '상신 7/1', OK], ['대조 · SCM', '이SCM', '전달 7/1', OK], ['검토 · 재무', '박재무', '상신 7/1', OK]]
+      .concat([[C.approverRole, has(s.owner) ? s.owner : '(결재자)', s.done ? '결정 ' + s.at.slice(11) : '결재 대기', s.done ? OK : WARN]])
+      .concat(!isCeo && s.pre === 'ceoM' ? [['보고 · 그룹', 'Aurora 그룹', s.done && ['ok', 'cond'].indexOf(dec('camp')) >= 0 ? '보고 생성' : '승인 후', INFO]] : [])
+      .map((x) => ({ role: x[0], who: x[1], state: x[2], bg: x[3][0], fg: x[3][1], bd: x[3] === WARN ? '#f0c98a' : '#dde2e8' }));
+    // 점검
+    const checks = [['결재자', has(s.owner)]]
+      .concat(!isCeo && s.pre === 'team' ? [['결재자 ≠ 기안자(김마케) · 내부통제 가정', has(s.owner) && s.owner.trim() !== '김마케']] : [])
+      .concat(items.map((x) => [x.name.split(' · ')[0] + ' 결정', has(x._d)]))
+      .concat(items.filter((x) => x._d === 'cond').map((x) => [x.name.split(' · ')[0] + ' 승인 조건', has(x._cond)]))
+      .concat(items.filter((x) => x._differ).map((x) => [x.name.split(' · ')[0] + ' 메모 (추천과 다름)', has(s.memo[x._it.key])]))
+      .concat([[isCeo ? '확정기한·통보 기한 7/17 전 (D-16)' : '확정기한 전 결재', true]])
+      .map((x) => ({ label: x[0], mark: x[1] ? '✓' : '!', bg: x[1] ? OK[0] : WARN[0], fg: x[1] ? OK[1] : WARN[1], text: x[1] ? '#374151' : '#9a3412', ok: x[1] }));
+    const doneCount = checks.filter((x) => x.ok).length, ready = doneCount === checks.length;
+    // Output
+    const st = (ok) => ok ? { mark: '전달', bg: OK[0], fg: OK[1] } : { mark: '대기', bg: INFO[0], fg: INFO[1] };
+    const it2 = (label, m) => Object.assign({ label: label }, m);
+    const mk = (d) => d === 'no' ? { mark: '반려', bg: BAD[0], fg: BAD[1] } : d === 'cond' ? { mark: '조건', bg: WARN[0], fg: WARN[1] } : d === 'ok' ? { mark: '승인', bg: OK[0], fg: OK[1] } : { mark: '대기', bg: INFO[0], fg: INFO[1] };
+    const out = []; const nexts = [];
+    const byKey = {}; items.forEach((x) => { byKey[x._it.key] = x; });
+    if (byKey.po) {
+      const d = byKey.po._d;
+      out.push({ to: '⑤ SCM 발주서 작성', src: 'W01 BPMN', items: [it2(d === 'no' ? '발주 반려 → ② SCM 재대조' : d ? '발주서 작성' + (d === 'cond' ? ' · 조건: ' + (byKey.po._cond || '(미입력)') : '') : '결정 대기', mk(d))] });
+      if (d === 'ok' || d === 'cond') nexts.push({ label: '⑤ 발주서 작성으로', href: 'SCM_3_PO.dc.html', bd: '#1f5fbf', fg: '#1f5fbf' });
+      if (d === 'no') nexts.push({ label: '② SCM 재대조로', href: 'SCM_1_Check.dc.html', bd: '#b42318', fg: '#b42318' });
+    }
+    if (byKey.camp) {
+      const d = byKey.camp._d;
+      out.push({ to: '① 마케팅', src: 'W01 BPMN', items: [it2(d === 'no' ? '반려 → 보류·재검토' : d === 'cond' ? '조건 반영 후 집행 · 조건: ' + (byKey.camp._cond || '(미입력)') : d === 'ok' ? '집행 확정 → ⑦ 일정표 정리' : '결정 대기', mk(d))] });
+      if (d === 'no') nexts.push({ label: '보류·재검토 화면으로', href: 'MKT_3_Hold.dc.html', bd: '#b42318', fg: '#b42318' });
+      if (d === 'ok' || d === 'cond') nexts.push({ label: '⑦ 일정표·발주 기록으로', href: 'MKT_4_Close.dc.html', bd: '#1f5fbf', fg: '#1f5fbf' });
+    }
+    if (byKey.ctr) {
+      const d = byKey.ctr._d;
+      out.push({ to: '마케팅본부 → INF-001 에이전시', src: 'inf001_exclusive_contract_notice', items: [it2(d === 'renew' ? '통보 없음 → 7/17 이후 1년 자동 갱신' : d === 'change' ? '조건변경 통보 (7/17까지)' : d === 'end' ? '해지 통보 (7/17까지)' : '결정 대기', d ? { mark: d === 'renew' ? '갱신' : '통보', bg: d === 'renew' ? WARN[0] : OK[0], fg: d === 'renew' ? WARN[1] : OK[1] } : { mark: '대기', bg: INFO[0], fg: INFO[1] })] });
+    }
+    if (!isCeo && s.pre === 'ceoM') { const d = dec('camp'); out.push({ to: 'Aurora 그룹 보고', src: 'approval_authority_policy', items: [it2(d === 'ok' || d === 'cond' ? '승인 결과 · 상신 보고서 첨부해 그룹 보고' : '승인 시 생성', d === 'ok' || d === 'cond' ? { mark: '후속', bg: OK[0], fg: OK[1] } : { mark: '대기', bg: INFO[0], fg: INFO[1] })] }); }
+    if (!isCeo) out.push({ to: '같은 기안의 다른 결재', src: '③ 결재선 판정', items: [it2(C.why.sibling, { mark: '별도', bg: INFO[0], fg: INFO[1] })] });
+    out.push({ to: '③ 재무', src: 'covenant_terms_ms', items: [it2(byKey.po && (byKey.po._d === 'ok' || byKey.po._d === 'cond') ? '승인된 발주를 확정 일정으로 재전망 반영 · 지급일은 ⑥ 회신 후 확정' : '결정 결과 기록 · 다음 주간 재전망에 반영', st(s.done))] });
+    out.push({ to: '결재 이벤트 기록', src: '보완 · W01 「승인·미승인 결과의 사건 이력이 없다」', items: [it2('결재자 ' + (has(s.owner) ? s.owner : '(미입력)') + ' · ' + items.map((x) => (LBL[x._d] || '미정') + (x._codes.length ? '(' + x._codes.join('·') + ')' : '')).join(' / '), st(has(s.owner))), it2(s.done ? '확정 ' + s.at + ' · v' + s.ver : '확정 시각 · 버전 (확정 시 기록)', { mark: '기록', bg: INFO[0], fg: INFO[1] })] });
+    const submit = () => { if (!ready) return; const d = new Date(); this.setState({ done: true, ver: this.state.ver + 1, at: '2026-07-01 ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0') }); };
+    const presets = isCeo ? [] : Object.keys(this.CFG.norm).map((k) => { const on = s.pre === k; return { label: this.CFG.norm[k].head + ' · ' + this.CFG.norm[k].pid, on: String(on), bg: on ? '#ffffff' : 'transparent', fg: on ? '#1a1d23' : '#4b5563', pick: () => this.setState({ pre: k, dec: {}, cond: {}, codes: {}, memo: {}, done: false, ver: 0 }) }; });
+    return {
+      presets: presets, headTitle: C.head, owner: s.owner, onOwner: (e) => this.setState({ owner: e.target.value, done: false }),
+      statusChip: s.done ? { text: '결정 확정 v' + s.ver, bg: OK[0], fg: OK[1] } : { text: '결재 대기 · 필수 ' + doneCount + '/' + checks.length, bg: WARN[0], fg: WARN[1] },
+      doc: { pid: C.pid, title: C.title }, stamps: stamps,
+      w5: C.w5.map((x) => ({ k: x[0], v: x[1] })), facts: C.facts.map((x) => ({ label: x[0], value: x[1], fg: x[2], src: x[3] })),
+      finOp: { label: C.finOp.label, memo: C.finOp.memo, bg: C.finOp.c[0], fg: C.finOp.c[1] },
+      cash: { min: '8.63억 (8/21)', minNote: '발주안 반영 · 미반영 시 14.68억 (7/25)' },
+      why: isCeo ? {} : { rule: C.why.rule, ruleNote: C.why.ruleNote, date: C.why.date, re: '구간 밖 유지 (재전망 v2 · 7/1)', reBg: OK[0], reFg: OK[1], hasSibling: true, sibling: C.why.sibling },
+      decideTitle: isCeo ? '약정별 결정 · 3건' : '결정', decideHint: isCeo ? '세 건은 별개 결정이라 각각 고릅니다' : '이 결재자 몫만 결정합니다',
+      items: items, out: out, checks: checks, doneCount: doneCount, totalCount: checks.length, notReady: !ready, submit: submit, done: s.done, nexts: nexts,
+      submitBg: s.done ? '#1e6b3a' : ready ? '#1f5fbf' : '#9aa3af',
+      submitLabel: s.done ? '결정 확정됨' : ready ? '결정 확정' : '필수 항목을 채우면 확정할 수 있습니다',
+      submitNote: s.done ? '수정하면 확정 전 상태로 돌아가고, 다시 확정하면 v' + (s.ver + 1) + '로 기록됩니다.' : '확정하면 결정 결과가 아래 받는 곳으로 전달됩니다.'
+    };
+  }
+}
+</script>
+</body>
+</html>

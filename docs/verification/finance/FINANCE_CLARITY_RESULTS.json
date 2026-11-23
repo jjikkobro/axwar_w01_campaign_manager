@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "ec4b27e8-0af6-4c64-ad1f-17c961c10946",
+      "preview": false,
+      "rows": 1,
+      "short_copy": [
+        {
+          "label": "재무 확정 전",
+          "desc": "위험일 모두 포함"
+        },
+        {
+          "label": "회수 제외·7/1 지급",
+          "desc": "회수일 미확인"
+        },
+        {
+          "label": "7/1 회수·7/1 지급",
+          "desc": "둘 다 반영한 가정"
+        },
+        {
+          "label": "7/1 회수·지급 제외",
+          "desc": "지급일 미확인"
+        },
+        {
+          "label": "회수·지급 모두 제외",
+          "desc": "두 날짜 모두 미확인"
+        }
+      ]
+    },
+    {
+      "id": "c5709312-0946-496f-b71a-0a37d60d5b25",
+      "preview": true,
+      "rows": 1,
+      "short_copy": [
+        {
+          "label": "재무 확정 전",
+          "desc": "위험일 모두 포함"
+        },
+        {
+          "label": "회수 제외·7/1 지급",
+          "desc": "회수일 미확인"
+        },
+        {
+          "label": "7/1 회수·7/1 지급",
+          "desc": "둘 다 반영한 가정"
+        },
+        {
+          "label": "7/1 회수·지급 제외",
+          "desc": "지급일 미확인"
+        },
+        {
+          "label": "회수·지급 모두 제외",
+          "desc": "두 날짜 모두 미확인"
+        }
+      ]
+    },
+    {
+      "id": "06d6ebb0-cd45-44db-8135-26f6b99315af",
+      "preview": true,
+      "rows": 1,
+      "short_copy": [
+        {
+          "label": "재무 확정 전",
+          "desc": "위험일 모두 포함"
+        },
+        {
+          "label": "회수 제외·7/1 지급",
+          "desc": "회수일 미확인"
+        },
+        {
+          "label": "7/1 회수·7/1 지급",
+          "desc": "둘 다 반영한 가정"
+        },
+        {
+          "label": "7/1 회수·지급 제외",
+          "desc": "지급일 미확인"
+        },
+        {
+          "label": "회수·지급 모두 제외",
+          "desc": "두 날짜 모두 미확인"
+        }
+      ]
+    }
+  ],
+  "browser_errors": [],
+  "preview_read_only": true,
+  "case_versions_unchanged": true,
+  "tests": 116
+}

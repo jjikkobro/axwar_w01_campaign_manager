@@ -1,0 +1,182 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "MKT_1_Proposal.dc.html": {
+      "expand": "fill",
+      "h": 2000,
+      "is_interactive": true,
+      "title": "① 기안 작성·상신",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "SCM_1_Check.dc.html": {
+      "expand": "fill",
+      "h": 2100,
+      "is_interactive": true,
+      "title": "② 재고·입고표 대조",
+      "w": 1440,
+      "x": 0,
+      "y": 2660
+    },
+    "FIN_1_Review.dc.html": {
+      "expand": "fill",
+      "h": 2250,
+      "is_interactive": true,
+      "title": "③ 금액·승인권한 검토",
+      "w": 1440,
+      "x": 0,
+      "y": 5260
+    },
+    "APR_1_CEO.dc.html": {
+      "expand": "fill",
+      "h": 2350,
+      "is_interactive": true,
+      "title": "④ 승인 여부 결정 · CEO/이사회",
+      "w": 1440,
+      "x": 0,
+      "y": 7960
+    },
+    "MKT_3_Hold.dc.html": {
+      "expand": "fill",
+      "h": 1600,
+      "is_interactive": true,
+      "title": "④ 반려 시 → 보류·재검토",
+      "w": 1440,
+      "x": 4560,
+      "y": 0
+    },
+    "SCM_3_PO.dc.html": {
+      "expand": "fill",
+      "h": 2000,
+      "is_interactive": true,
+      "title": "⑤ 발주서 작성·전달",
+      "w": 1440,
+      "x": 3040,
+      "y": 2660
+    },
+    "SCM_5_Receipt.dc.html": {
+      "expand": "fill",
+      "h": 2150,
+      "is_interactive": true,
+      "title": "⑥ 입고예정 회신 확인 · 마케팅 회신",
+      "w": 1440,
+      "x": 6080,
+      "y": 2660
+    },
+    "MKT_4_Close.dc.html": {
+      "expand": "fill",
+      "h": 2200,
+      "is_interactive": true,
+      "title": "⑦ 일정표·발주 기록 정리",
+      "w": 1440,
+      "x": 3040,
+      "y": 0
+    },
+    "APR_2_Normal.dc.html": {
+      "expand": "fill",
+      "h": 2200,
+      "is_interactive": true,
+      "title": "④ 승인 여부 결정 · 평시 승인권자",
+      "w": 1440,
+      "x": 1520,
+      "y": 7960
+    },
+    "MKT_2_Wait.dc.html": {
+      "expand": "fill",
+      "is_interactive": true,
+      "w": 1440,
+      "x": 1520,
+      "y": 0,
+      "h": 1500,
+      "title": "마케팅 · 상신 후 대기 (진행 현황)"
+    },
+    "SCM_2_WaitApproval.dc.html": {
+      "expand": "fill",
+      "is_interactive": true,
+      "w": 1440,
+      "x": 1520,
+      "y": 2660,
+      "h": 1400,
+      "title": "SCM · 대조 후 결재 대기"
+    },
+    "SCM_4_WaitReply.dc.html": {
+      "expand": "fill",
+      "is_interactive": true,
+      "w": 1440,
+      "x": 4560,
+      "y": 2660,
+      "h": 1400,
+      "title": "SCM · 발주 후 회신 대기"
+    },
+    "FIN_2_Wait.dc.html": {
+      "expand": "fill",
+      "is_interactive": true,
+      "w": 1440,
+      "x": 1520,
+      "y": 5260,
+      "h": 1500,
+      "title": "재무 · 상신 후 결재 대기 · 감시"
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-09T08:25:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "row1": {
+      "kind": "title1",
+      "maxW": 6000,
+      "text": "마케팅 · 기안 상신 → 대기 → 일정표 정리 (반려 시 보류·재검토)",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "row2": {
+      "kind": "title1",
+      "maxW": 7520,
+      "text": "SCM · 대조 → 결재 대기 → 발주 → 회신 대기 → 회신 확인",
+      "w": 240,
+      "x": 0,
+      "y": 2400
+    },
+    "row3": {
+      "kind": "title1",
+      "maxW": 2960,
+      "text": "재무 · 검토·상신 → 결재 대기·감시",
+      "w": 240,
+      "x": 0,
+      "y": 5000
+    },
+    "row4": {
+      "kind": "title1",
+      "maxW": 2960,
+      "text": "승인권자 · CEO/이사회 · 평시 승인권자",
+      "w": 240,
+      "x": 0,
+      "y": 7700
+    }
+  },
+  "order": [
+    "MKT_1_Proposal.dc.html",
+    "MKT_2_Wait.dc.html",
+    "MKT_4_Close.dc.html",
+    "MKT_3_Hold.dc.html",
+    "SCM_1_Check.dc.html",
+    "SCM_2_WaitApproval.dc.html",
+    "SCM_3_PO.dc.html",
+    "SCM_4_WaitReply.dc.html",
+    "SCM_5_Receipt.dc.html",
+    "FIN_1_Review.dc.html",
+    "FIN_2_Wait.dc.html",
+    "APR_1_CEO.dc.html",
+    "APR_2_Normal.dc.html"
+  ],
+  "pages": [],
+  "title": "W01 캠페인 수요와 공급 일정 · 역할별 화면"
+}

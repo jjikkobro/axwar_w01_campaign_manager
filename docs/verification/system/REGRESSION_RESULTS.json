@@ -1,0 +1,38 @@
+{
+  "tests_run": 31,
+  "failures": 0,
+  "errors": 0,
+  "preserved_files": 76,
+  "changed_protected_files": [],
+  "cash_regression": {
+    "collect_pay": {
+      "cash_min": 1647835595,
+      "first_breach": "2026-07-21",
+      "last_breach": "2026-08-21"
+    },
+    "collect_exclude": {
+      "cash_min": 2102010710,
+      "first_breach": "2026-07-21",
+      "last_breach": "2026-08-21"
+    },
+    "exclude_pay": {
+      "cash_min": 1467664440,
+      "first_breach": "2026-07-21",
+      "last_breach": "2026-08-28"
+    },
+    "exclude_exclude": {
+      "cash_min": 1921839555,
+      "first_breach": "2026-07-21",
+      "last_breach": "2026-08-21"
+    }
+  },
+  "opening": 5148063540,
+  "purchase_total": 3749760000,
+  "double_counted_ap": 0,
+  "union": [
+    "2026-07-21",
+    "2026-08-28"
+  ],
+  "ai_live_called": false,
+  "browser": "재무 확정·지급일 누락·신규 분류·CEO 경로·초안·작업·모바일 검증 통과"
+}

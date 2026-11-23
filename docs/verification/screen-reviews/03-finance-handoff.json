@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "case_id": "44bce640-a01a-4ec3-a7ad-a9307556ff4e",
+  "checks": [
+    "marketing submit",
+    "SCM handoff",
+    "finance source-performance lookup",
+    "finance submission with separate cash scope",
+    "packet contains calculations and sources",
+    "no approval or order"
+  ]
+}

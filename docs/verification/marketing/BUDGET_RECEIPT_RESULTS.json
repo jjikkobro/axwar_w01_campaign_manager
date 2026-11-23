@@ -1,0 +1,27 @@
+{
+  "marketing_items": {
+    "오프라인 고정비": 10000,
+    "오프라인 기간비": 50000,
+    "별도 마케팅비": 2000
+  },
+  "marketing_subtotal": 62000,
+  "sku": "SKU-3001",
+  "quantity": 12000,
+  "unit_price": 16800,
+  "procurement_subtotal": 201600000,
+  "total": 201662000,
+  "saved_budget": 62000,
+  "saved_items": {
+    "오프라인": {
+      "fixed": 10000,
+      "variable": 50000
+    }
+  },
+  "reload_preserved": true,
+  "formula_adjustment": 6200,
+  "new_total_after_formula": 201668200,
+  "saved_budget_unchanged": true,
+  "mobile_overflow": false,
+  "approval": null,
+  "errors": []
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "unit_tests": 162,
+  "guide_steps": 4,
+  "missing_fields_highlighted": true,
+  "optional_fields_identified": true,
+  "next_missing_field_focus": true,
+  "money": {
+    "campaign_budget": "5,000,000",
+    "expected_gmv": "123,456,789",
+    "unit_price": "12,600",
+    "canonical_api_budget": "5000000",
+    "canonical_api_unit_price": 12600,
+    "typing_across_separator": true
+  },
+  "calculate_scroll_and_focus": "ax-calculation-result",
+  "result_destination_cards": 3,
+  "cost_and_cash_links_focus_correct_targets": true,
+  "quantity_edit_updates_guide_and_hides_stale_results": true,
+  "mobile_overflow": false,
+  "browser_errors": [],
+  "case_versions_unchanged": true,
+  "mode": "별도 테스트 DB 조회·계산 · 기안 저장 없음",
+  "current_preview": {
+    "base": "http://127.0.0.1:8088",
+    "guide_visible": true,
+    "budget_display": "5,000,000",
+    "case_versions_unchanged": true,
+    "browser_errors": []
+  }
+}

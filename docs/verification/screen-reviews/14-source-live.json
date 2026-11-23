@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "case_id": "3ebcc3ba-e8fe-4e4a-82c2-6cf785037c36",
+  "screens": [
+    "MKT_1_Proposal",
+    "MKT_2_Wait",
+    "MKT_3_Hold",
+    "MKT_4_Close",
+    "SCM_1_Check",
+    "SCM_2_WaitApproval",
+    "SCM_3_PO",
+    "SCM_4_WaitReply",
+    "SCM_5_Receipt",
+    "FIN_1_Review",
+    "FIN_2_Wait",
+    "APR_1_CEO",
+    "APR_2_Normal"
+  ],
+  "errors": []
+}

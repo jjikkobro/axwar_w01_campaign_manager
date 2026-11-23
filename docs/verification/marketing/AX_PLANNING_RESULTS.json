@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "unit_tests": 157,
+  "prediction_history": {
+    "from": "2025-01-06",
+    "to": "2026-06-22",
+    "completed_weeks": 77
+  },
+  "observations": 51,
+  "preview_does_not_write": true,
+  "scenarios": {
+    "normal": {
+      "case_id": "a0e99aff-8f2e-4c1c-b10a-d493643800b3",
+      "stages": [
+        2,
+        3,
+        4
+      ],
+      "scm_and_finance_human_confirmations": 2,
+      "final_approval_created": false
+    },
+    "exceptions_unit_tested": [
+      "지급일 미입력 차단",
+      "리드타임 지연·공급 부족 차단",
+      "자료·기안 변경 시 재검토",
+      "역할 우회 차단",
+      "재무 미확정 차단"
+    ]
+  },
+  "ui": {
+    "original_frame_preserved": true,
+    "per_sku_prediction_and_manual_entry": true,
+    "evidence_collapsed": true,
+    "mobile_overflow": false,
+    "browser_errors": [],
+    "forecast_adopt_and_actual_marketing_resubmit": true,
+    "prefilled_evidence_and_per_sku_basis": true,
+    "plan_change_returns_to_scm": true
+  },
+  "existing_cases_unchanged": true,
+  "database": "격리된 로컬 테스트 DB. 실제 8088 캠페인 변경 없음",
+  "ai": "통계 기반 수요 예측·규칙 검산. 신규 LLM 호출 없음",
+  "formula_settings": {
+    "editable_count": 12,
+    "new_formula": "ax_replenishment_gap",
+    "owner": "SCM"
+  },
+  "current_preview": {
+    "base": "http://127.0.0.1:8088",
+    "existing_campaigns": 3,
+    "versions_unchanged": true,
+    "marketing_panel_and_predict_buttons": true,
+    "browser_errors": []
+  }
+}

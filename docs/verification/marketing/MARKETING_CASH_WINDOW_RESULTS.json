@@ -1,0 +1,10 @@
+{
+  "marketing_warning_visible": true,
+  "in_range_gate_passes": true,
+  "predicted_payment_outside_blocks": true,
+  "server_submission_rejected": "캠페인 시작일 2026-11-16은 현금 전망 기간(2026-07-01 ~ 2026-09-28) 밖입니다. 현재 자료로 재무 판정이 불가능하여 신청할 수 없습니다. 일정을 검토하거나 해당 기간 현금 자료와 전망 범위를 갱신하세요.",
+  "unit_tests_passed": 227,
+  "case_versions_unchanged": true,
+  "mobile_overflow": false,
+  "browser_errors": []
+}

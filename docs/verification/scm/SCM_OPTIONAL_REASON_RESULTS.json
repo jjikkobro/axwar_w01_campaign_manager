@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "blank_reason_payload": "",
+  "dialog_reason_optional": true,
+  "browser_errors": [],
+  "case_versions_unchanged": true,
+  "mode": "브라우저 전송 모의 · DB 변경 없음",
+  "unit_tests": 114
+}

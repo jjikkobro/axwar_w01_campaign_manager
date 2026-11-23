@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "case_id": "06d6ebb0-cd45-44db-8135-26f6b99315af",
+  "scm_direction": "재고로 가능",
+  "procurement": "추가 조달 없음",
+  "checks": [
+    {
+      "width": 1440,
+      "campaign_products_shown": true,
+      "unapproved_po_not_created": true
+    },
+    {
+      "width": 390,
+      "campaign_products_shown": true,
+      "unapproved_po_not_created": true
+    }
+  ],
+  "mode": "현재 실제 캠페인 읽기 전용 확인 · 발주/승인 변경 없음"
+}

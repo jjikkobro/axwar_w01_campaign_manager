@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "unit_tests": 142,
+  "editable_formulas": 11,
+  "read_only_control_rules": 8,
+  "role_edit_counts": {
+    "마케팅": 2,
+    "SCM": 7,
+    "재무": 3,
+    "승인권자": 0
+  },
+  "preview_only_does_not_write": true,
+  "unsafe_expression_rejected": true,
+  "wrong_role_rejected": true,
+  "apply_without_preview_rejected": true,
+  "concurrent_version_rejected": true,
+  "browser_apply_and_history": true,
+  "ongoing_cases_returned_to_scm_review": 3,
+  "mobile_overflow": false,
+  "browser_errors": [],
+  "database": "별도 로컬 테스트 DB · 기존 8088 캠페인은 변경하지 않음"
+}

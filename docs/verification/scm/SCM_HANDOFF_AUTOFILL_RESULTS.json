@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "actual_source_files": true,
+  "selected_adjustments_human_labels": true,
+  "unconfirmed_and_mock_distinguished": true,
+  "attachments_not_auto_verified": true,
+  "user_edits_in_payload": true,
+  "case_versions_unchanged": true,
+  "browser_errors": [],
+  "mode": "실제 자료 조회 · 브라우저 모의 전송 · 기존 데이터 무변경"
+}

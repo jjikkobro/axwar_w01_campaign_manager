@@ -1,0 +1,191 @@
+{
+  "screen": "④ 승인 여부 결정",
+  "scope": "정적 시안·원본 규정·③ 출력 인터페이스 검토. 앱·DB·승인 기능 변경 없음.",
+  "authority_checks": [
+    {
+      "id": "campaign-out",
+      "input": {
+        "approval_type": "캠페인집행",
+        "proposal_total": 180803272,
+        "financial_assessment": {
+          "change": "신규 계약",
+          "amount": 18962703,
+          "payment_date": "2026-09-21"
+        }
+      },
+      "result": {
+        "authority": "Masil 대표 승인 + 그룹 보고",
+        "normal": "Masil 대표 승인 + 그룹 보고",
+        "status": "평시 승인 대상",
+        "blocked": false,
+        "reason": [
+          "신규 약정"
+        ],
+        "payment_date": "2026-09-21",
+        "adjusted_payment_date": "2026-09-21",
+        "new_commitment": true,
+        "assessment_confirmed": true,
+        "scenario": "exclude_pay",
+        "provenance": "계산 결과",
+        "classification_provenance": "내부 통제",
+        "rule_version": "W01-2026-11-10.1"
+      },
+      "provenance": "규정 검산용 참가자 가정 + 계산 결과"
+    },
+    {
+      "id": "campaign-in",
+      "input": {
+        "approval_type": "캠페인집행",
+        "proposal_total": 180803272,
+        "financial_assessment": {
+          "change": "신규 계약",
+          "amount": 18962703,
+          "payment_date": "2026-07-27"
+        }
+      },
+      "result": {
+        "authority": "CEO/이사회",
+        "normal": "Masil 대표 승인 + 그룹 보고",
+        "status": "CEO 상신 대상",
+        "blocked": false,
+        "reason": [
+          "신규 약정",
+          "확정 시나리오 하회구간 적용"
+        ],
+        "payment_date": "2026-07-27",
+        "adjusted_payment_date": "2026-07-27",
+        "new_commitment": true,
+        "assessment_confirmed": true,
+        "scenario": "exclude_pay",
+        "provenance": "계산 결과",
+        "classification_provenance": "내부 통제",
+        "rule_version": "W01-2026-11-10.1"
+      },
+      "provenance": "규정 검산용 참가자 가정 + 계산 결과"
+    },
+    {
+      "id": "purchase-out",
+      "input": {
+        "approval_type": "재고발주",
+        "proposal_total": null,
+        "financial_assessment": {
+          "change": "추가발주",
+          "amount": 201600000,
+          "payment_date": "2026-09-21"
+        }
+      },
+      "result": {
+        "authority": "SCM 전결",
+        "normal": "SCM 전결",
+        "status": "평시 승인 대상",
+        "blocked": false,
+        "reason": [
+          "신규 약정"
+        ],
+        "payment_date": "2026-09-21",
+        "adjusted_payment_date": "2026-09-21",
+        "new_commitment": true,
+        "assessment_confirmed": true,
+        "scenario": "exclude_pay",
+        "provenance": "계산 결과",
+        "classification_provenance": "내부 통제",
+        "rule_version": "W01-2026-11-10.1"
+      },
+      "provenance": "규정 검산용 참가자 가정 + 계산 결과"
+    },
+    {
+      "id": "purchase-in",
+      "input": {
+        "approval_type": "재고발주",
+        "proposal_total": null,
+        "financial_assessment": {
+          "change": "추가발주",
+          "amount": 201600000,
+          "payment_date": "2026-08-21"
+        }
+      },
+      "result": {
+        "authority": "CEO/이사회",
+        "normal": "SCM 전결",
+        "status": "CEO 상신 대상",
+        "blocked": false,
+        "reason": [
+          "신규 약정",
+          "확정 시나리오 하회구간 적용"
+        ],
+        "payment_date": "2026-08-21",
+        "adjusted_payment_date": "2026-08-21",
+        "new_commitment": true,
+        "assessment_confirmed": true,
+        "scenario": "exclude_pay",
+        "provenance": "계산 결과",
+        "classification_provenance": "내부 통제",
+        "rule_version": "W01-2026-11-10.1"
+      },
+      "provenance": "규정 검산용 참가자 가정 + 계산 결과"
+    }
+  ],
+  "annual_contract_without_schedule": {
+    "input": {
+      "annual_amount": 2800000000,
+      "payment_date": null
+    },
+    "result": {
+      "authority": "판정 불가",
+      "status": "판정 불가",
+      "blocked": true,
+      "reason": [
+        "유출일 미확인 · 재무 확인요청 필요"
+      ],
+      "normal": "CEO/이사회",
+      "provenance": "계산 결과",
+      "rule_version": "W01-2026-11-10.1"
+    },
+    "note": "연액 기준 필요 권한은 상위이나, 유출일 미확인 상태에서 실제 승인 진행을 허용하는 검산이 아님."
+  },
+  "cash_example": {
+    "scenario": "exclude_pay",
+    "assumptions": {
+      "overdue_ar": "회수 제외",
+      "overdue_ap": "7/1 지급",
+      "weekend_shift": false,
+      "new_po_date": "2026-08-21",
+      "new_po_amount": 201600000,
+      "sample_marketing_budget_in_cash": false
+    },
+    "baseline_min": 1467664440,
+    "proposal_impact_min": 1266064440,
+    "first_impact_min_date": "2026-08-21",
+    "interpretation": "12.66억은 특정 신규 PO 지급 가정의 영향 전망. 현재 승인 결과나 캠페인 확정 손실이 아님."
+  },
+  "sample_performance": {
+    "campaign_id": "CMP-0003",
+    "influencer_id": "INF-001",
+    "gmv": 158022526,
+    "refund": 20588372,
+    "marketing_spend": 123929733,
+    "orders": 1259,
+    "missing_cost": 0,
+    "first_order": "2025-12-30",
+    "last_order": "2026-06-30",
+    "contribution": -30674334.9,
+    "nominal_roas": 1.2750977685072555,
+    "real_roas": -0.24751392710577372,
+    "refund_rate": 0.1302875768483792,
+    "rank": 24,
+    "rank_population": 25
+  },
+  "economic_basis_invalidation_check": {
+    "before_recording_approval": true,
+    "after_only_approval_record_added": false,
+    "finding": "현재 finance_review.basis가 승인/상태 필드도 포함. ④ 구현 때 업무 기록 추가와 경제 전제 변경을 분리해야 자기 승인으로 즉시 재무 근거가 무효화되지 않음."
+  },
+  "source_files": {
+    "web/screens/04.html": "d64618393085ec9e5987968b098688bf178aae5ebeffd169d947ecd9b1c47808",
+    "app/finance_review.py": "3e2f2cf7266ceb200e16103dfbbc3cc727026c1885696929fe2d1376bc228fc0",
+    "01_참가자_배포용/04_원본데이터/00_common/approval_authority_policy.md": "889f7eb5018b455f05e9c934686c4926e97ef7624d5405975a3eedc5b107769d",
+    "01_참가자_배포용/04_원본데이터/02_masil/financials/covenant_terms_ms.md": "2c70e53dd4638935c80e3272b54466084d56c772399d77519b4f18039faf93d5",
+    "01_참가자_배포용/04_원본데이터/02_masil/marketing/inf001_exclusive_contract_notice.md": "dc394fd268c80e3243ae19c64dd989b71beb2982a466ab9e99528a4ba0a19d30",
+    "01_참가자_배포용/세계관_BPMN/W01.bpmn": "1521fe6368afd6b7feb55f3e240453e4024b57bd7fc0c392897059b6b7f44cae"
+  }
+}

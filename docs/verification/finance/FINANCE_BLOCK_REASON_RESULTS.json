@@ -1,0 +1,11 @@
+{
+  "case": "8ebf088a-1740-41c6-94b5-758a0d99cb81",
+  "case_version": 5,
+  "errors": [
+    "캠페인 집행비 지급예정일 2027-01-09은 현금 전망 기간(2026-07-01 ~ 2026-09-28) 밖입니다. 해당 지급일까지 현금 전망·근거 자료를 갱신한 후 다시 상신하세요. 재무 확인만으로 미래 잔액을 확정할 수 없습니다."
+  ],
+  "blocked": true,
+  "unit_tests_passed": 223,
+  "campaign_modified": false,
+  "api_read_only": true
+}

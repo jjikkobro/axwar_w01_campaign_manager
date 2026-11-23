@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:8088",
+  "itemised_receipt": true,
+  "marketing_line_recalculates": true,
+  "existing_case_versions_unchanged": true,
+  "browser_errors": []
+}

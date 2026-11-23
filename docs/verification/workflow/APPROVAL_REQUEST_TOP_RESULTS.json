@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "screen": "APR_2_Normal",
+      "viewport": [
+        1440,
+        900
+      ],
+      "request_visible_without_scroll": true,
+      "redundant_labels_removed": true
+    },
+    {
+      "screen": "APR_2_Normal",
+      "viewport": [
+        390,
+        844
+      ],
+      "request_visible_without_scroll": true,
+      "redundant_labels_removed": true
+    },
+    {
+      "screen": "APR_1_CEO",
+      "viewport": [
+        1440,
+        900
+      ],
+      "request_visible_without_scroll": true,
+      "redundant_labels_removed": true
+    },
+    {
+      "screen": "APR_1_CEO",
+      "viewport": [
+        390,
+        844
+      ],
+      "request_visible_without_scroll": true,
+      "redundant_labels_removed": true
+    }
+  ],
+  "browser_errors": [],
+  "case_versions_unchanged": true
+}

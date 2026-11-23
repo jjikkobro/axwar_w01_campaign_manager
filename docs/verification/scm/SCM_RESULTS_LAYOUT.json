@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "width": 1440,
+      "table_columns": [
+        "SKU",
+        "현재고",
+        "이동 중",
+        "4주 평균/주",
+        "증가 수요/주 (①)",
+        "커버 현재 → 캠페인",
+        "기존 발주 · 입고 예상"
+      ],
+      "summary_before_table": true,
+      "same_calculated_values": true
+    },
+    {
+      "width": 390,
+      "table_columns": [
+        "SKU",
+        "현재고",
+        "이동 중",
+        "4주 평균/주",
+        "증가 수요/주 (①)",
+        "커버 현재 → 캠페인",
+        "기존 발주 · 입고 예상"
+      ],
+      "summary_before_table": true,
+      "same_calculated_values": true
+    }
+  ],
+  "browser_errors": [],
+  "mode": "읽기 전용 화면 검증 · 계산 변경 없음"
+}

@@ -1,0 +1,28 @@
+{
+  "provider": "OpenAI Responses API · 외부 응답 모의",
+  "api_key_never_returned": true,
+  "api_key_not_in_audit": true,
+  "prompt_runtime_applied": true,
+  "scm_regular_under_stock_possible": true,
+  "auto_scm_reason": true,
+  "all_seven_stages": true,
+  "stale_apply_blocked": true,
+  "case_versions_unchanged": true,
+  "mobile_overflow": false,
+  "errors": [],
+  "real_paid_call": false,
+  "unit_tests": {
+    "passed": 221,
+    "failed": 0
+  },
+  "local_preview": {
+    "url": "http://127.0.0.1:8088",
+    "restarted": true,
+    "admin_key_form": true,
+    "key_configured": false,
+    "scm_gpt_panel": true,
+    "case_versions_unchanged": true,
+    "browser_errors": [],
+    "paid_call": false
+  }
+}

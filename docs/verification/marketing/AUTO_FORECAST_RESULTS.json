@@ -1,0 +1,20 @@
+{
+  "date_auto_forecast": {
+    "sku_id": "SKU-3001",
+    "demand_mode": "forecast",
+    "qty_mode": "forecast",
+    "price_mode": "forecast",
+    "qty": 0,
+    "unit_price": 16800,
+    "demand": 21,
+    "payment_date": null
+  },
+  "manual_demand_and_order_survive_date_change": true,
+  "added_sku_auto_forecast": true,
+  "missing_history_left_blank": true,
+  "stale_response_discarded": true,
+  "cleared_date_clears_only_forecast": true,
+  "mobile_overflow": false,
+  "browser_errors": [],
+  "approval_or_purchase_performed": false
+}

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "campaigns": [
+    {
+      "id": "06d6ebb0-cd45-44db-8135-26f6b99315af",
+      "stage": 2,
+      "screen": "MKT_2_Wait",
+      "passed": true
+    },
+    {
+      "id": "c5709312-0946-496f-b71a-0a37d60d5b25",
+      "stage": 3,
+      "screen": "MKT_2_Wait",
+      "passed": true
+    },
+    {
+      "id": "ec4b27e8-0af6-4c64-ad1f-17c961c10946",
+      "stage": 4,
+      "screen": "MKT_2_Wait",
+      "passed": true
+    }
+  ],
+  "browser_errors": [],
+  "case_versions_unchanged": true
+}

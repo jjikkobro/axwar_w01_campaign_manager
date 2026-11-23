@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "unit_tests": 167,
+  "mode": "예상안 신청",
+  "marketing_date_inputs_removed": true,
+  "writing_guide_removed": true,
+  "application_without_dates_saved": true,
+  "finance_planned_dates_still_required_before_approval": true,
+  "stage_flow": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "approvals_are_human": true,
+  "before_po_no_operational_dates": true,
+  "after_po": {
+    "payment_date": "2026-09-21",
+    "available_date": null
+  },
+  "after_confirmed_receipt": {
+    "payment_date": "2026-09-21",
+    "available_date": "2026-08-26"
+  },
+  "original_marketing_fields_not_overwritten": true,
+  "marketing_schedule_populated_from_scm_records": true,
+  "automatic_refresh_on_scm_change": true,
+  "browser_errors": [],
+  "mobile_overflow": false,
+  "database": "격리된 테스트 DB · 실제 8088 데이터 변경 없음",
+  "case_id": "970afcb2-8c7d-43d9-9ab3-c71269ad43a8",
+  "current_preview": {
+    "base": "http://127.0.0.1:8088",
+    "guide_and_marketing_dates_removed": true,
+    "read_only_scm_schedule_visible": true,
+    "campaigns_unchanged": true,
+    "browser_errors": []
+  }
+}

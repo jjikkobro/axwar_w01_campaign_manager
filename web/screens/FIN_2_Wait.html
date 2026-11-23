@@ -1,0 +1,80 @@
+<div style="min-height: 1500px; background: #f3f5f8; font-family: 'IBM Plex Sans KR', system-ui, sans-serif; color: #1a1d23; font-size: 14px; line-height: 20px">
+<header style="background: #ffffff; border-bottom: 1px solid #dde2e8">
+<div style="max-width: 1392px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px"><div style="font-size: 16px; font-weight: 700">Aurora SCM</div><nav aria-label="주요 화면" style="display: flex; flex-wrap: wrap; gap: 4px"><a href="/" class="campaign-list-link">캠페인 목록</a></nav></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px"><span style="font-size: 13px; padding: 4px 10px; border-radius: 999px; background: #1a1d23; color: #ffffff">재무</span><span style="font-size: 13px; color: #5b6270">{{today}}</span></div>
+</div>
+</header>
+<main style="max-width: 1392px; margin: 0 auto; padding: 20px 24px 40px; display: flex; flex-direction: column; gap: 16px">
+<nav aria-label="진행 단계" style="display: flex; flex-wrap: wrap; gap: 6px">
+<a href="MKT_1_Proposal.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">① 기안 상신</span><span style="font-size: 11px; color: #1e6b3a">마케팅 · 완료</span></a>
+<a href="SCM_1_Check.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">② 재고·입고표 대조</span><span style="font-size: 11px; color: #1e6b3a">SCM · 완료</span></a>
+<a href="FIN_1_Review.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #e7f4ec; color: #1e6b3a; border: 1px solid #b7dcc4"><span style="font-size: 12px; font-weight: 700">③ 금액·승인권한 검토</span><span style="font-size: 11px; color: #1e6b3a">재무 · 완료</span></a>
+<a href="APR_1_CEO.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">④ 승인 여부 결정</span><span style="font-size: 11px; color: #5b6270">승인권자</span></a>
+<a href="SCM_3_PO.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑤ 발주서 작성·전달</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="SCM_5_Receipt.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑥ 입고예정 회신 확인</span><span style="font-size: 11px; color: #5b6270">SCM</span></a>
+<a href="MKT_4_Close.dc.html" style="flex: 1 1 130px; min-width: 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: 10px; text-decoration: none; background: #ffffff; color: #374151; border: 1px solid #dde2e8"><span style="font-size: 12px; font-weight: 700">⑦ 일정표·발주 기록 정리</span><span style="font-size: 11px; color: #5b6270">마케팅</span></a>
+</nav>
+
+<section aria-label="대기 상태" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 20px 22px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="align-self: flex-start; font-size: 12px; padding: 2px 10px; border-radius: 999px; font-weight: 600; background: {{hero.bg}}; color: {{hero.fg}}">{{hero.chip}}</span><h1 style="margin: 0; font-size: 22px; line-height: 30px; font-weight: 700">{{hero.title}}</h1><span style="font-size: 14px; color: #374151">{{hero.sub}}</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{clocks}}" as="c" hint-placeholder-count="2"><div style="min-width: 150px; padding: 10px 14px; border-radius: 12px; background: {{c.bg}}; display: flex; flex-direction: column"><span style="font-size: 12px; color: #5b6270">{{c.label}}</span><b style="font-size: 20px; line-height: 28px; color: {{c.fg}}">{{c.value}}</b><span style="font-size: 12px; color: #5b6270">{{c.note}}</span></div></sc-for>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 14px; border-radius: 12px; background: #f6f7f9">
+<span style="font-size: 12px; font-weight: 700; color: #374151">내가 보낸 것</span>
+<sc-for list="{{sent}}" as="s" hint-placeholder-count="3"><span style="font-size: 13px; color: #1a1d23">{{s.t}}</span></sc-for>
+<a href="{{sentHref}}" style="margin-left: auto; font-size: 13px; font-weight: 600">보낸 내용 보기</a>
+</div>
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start">
+<div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section aria-label="진행 현황" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">지금 어디까지 왔나</h2><div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{sims}}" as="m" hint-placeholder-count="2"><button type="button" onClick="{{m.go}}" disabled="{{m.off}}" style="min-height: 36px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; background: #ffffff; color: #374151; font: inherit; font-size: 13px; cursor: pointer">{{m.label}}</button></sc-for></div></div>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<sc-for list="{{stages}}" as="g" hint-placeholder-count="5">
+<li style="display: flex; align-items: stretch; gap: 12px">
+<div style="flex: 0 0 18px; display: flex; flex-direction: column; align-items: center"><span style="width: 2px; flex: 0 0 12px; background: {{g.lineTop}}"></span><span style="width: 14px; height: 14px; border-radius: 999px; border: 2px solid {{g.dotBd}}; background: {{g.dot}}; box-sizing: border-box; flex: 0 0 auto"></span><span style="width: 2px; flex: 1 1 auto; background: {{g.lineBot}}"></span></div>
+<div style="flex: 1 1 auto; min-width: 0; padding: 6px 0 14px; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><b style="font-size: 14px; color: {{g.fg}}">{{g.name}}</b><span style="font-size: 12px; padding: 1px 8px; border-radius: 999px; font-weight: 600; background: {{g.chipBg}}; color: {{g.chipFg}}">{{g.state}}</span><span style="font-size: 12px; color: #5b6270">{{g.who}}</span></div>
+<span style="font-size: 13px; color: #374151">{{g.note}}</span>
+</div>
+</li>
+</sc-for>
+</ol>
+</section>
+<section aria-label="기다리는 동안" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">기다리는 동안 할 수 있는 것</h2>
+<sc-for list="{{acts}}" as="a" hint-placeholder-count="3">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 14px; border-radius: 12px; border: 1px solid #e3e7ec">
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 2px"><b style="font-size: 14px">{{a.label}}</b><span style="font-size: 12px; color: {{a.noteFg}}">{{a.note}}</span></div>
+<button type="button" onClick="{{a.run}}" disabled="{{a.off}}" style="min-height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid {{a.bd}}; background: #ffffff; color: {{a.fg}}; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">{{a.btn}}</button>
+</div>
+</sc-for>
+<sc-if value="{{hasLog}}" hint-placeholder-val="{{ false }}"><ul style="margin: 0; padding: 10px 12px 10px 28px; border-radius: 10px; background: #f6f7f9; font-size: 12px; line-height: 18px; color: #374151"><sc-for list="{{log}}" as="l" hint-placeholder-count="2"><li>{{l.t}}</li></sc-for></ul></sc-if>
+</section>
+</div>
+<aside style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section aria-label="다음 내 차례" style="background: #ffffff; border: 2px solid {{next.bd}}; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h2 style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 700">다음 내 차례</h2><span style="font-size: 12px; padding: 2px 8px; border-radius: 999px; font-weight: 600; background: {{next.chipBg}}; color: {{next.chipFg}}">{{next.chip}}</span></div>
+<sc-for list="{{nexts}}" as="n" hint-placeholder-count="2">
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border-radius: 12px; background: {{n.bg}}">
+<b style="font-size: 14px">{{n.title}}</b><span style="font-size: 12px; color: #374151">{{n.when}}</span>
+<sc-if value="{{n.ready}}" hint-placeholder-val="{{ false }}"><a href="{{n.href}}" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; background: #1f5fbf; color: #ffffff; font-weight: 700; text-decoration: none">{{n.btn}}</a></sc-if>
+<sc-if value="{{n.notReady}}" hint-placeholder-val="{{ true }}"><span style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; background: #eef0f3; color: #5b6270; font-size: 13px; font-weight: 600">{{n.wait}}</span></sc-if>
+</div>
+</sc-for>
+</section>
+<section aria-label="알림 규칙" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 700">이럴 때 알려드립니다</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 13px; line-height: 19px">
+<sc-for list="{{alerts}}" as="r" hint-placeholder-count="3"><li style="display: flex; gap: 8px; align-items: flex-start"><span style="flex: 0 0 auto; width: 8px; height: 8px; margin-top: 6px; border-radius: 999px; background: {{r.dot}}"></span><span><b>{{r.when}}</b> · {{r.what}}</span></li></sc-for>
+</ul>
+</section>
+</aside>
+</div>
+</main>
+</div>

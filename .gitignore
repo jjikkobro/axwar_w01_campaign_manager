@@ -1,0 +1,36 @@
+# 기록 키가 든 설정 — git 에 올리지 않아요
+.claude/settings.local.json
+.codex/hooks.json
+.agents/hooks.json
+
+# axhub import: local agent runtime state
+.axhub/
+.claude/
+.codex/
+
+# Public source export: credentials and local-only state
+.agents/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Explicitly excluded from public portfolio by user request
+/01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_repurchase_ms.csv
+
+# User requested source-and-text-only portfolio publication
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+*.bmp
+*.ico
+*.avif
+*.pdf

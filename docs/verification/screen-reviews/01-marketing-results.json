@@ -1,0 +1,1605 @@
+{
+  "screen": "① 마케팅",
+  "source": "격리 로컬 PostgreSQL 실제 실행 · 외부 업무는 모의",
+  "checks": {
+    "draft_save_and_reload": true,
+    "duplicate_create_replayed": true,
+    "two_skus_and_periods": true,
+    "file_stored_and_downloaded": true,
+    "scm_handoff_after_human_submission": true,
+    "unknown_performance_task": true,
+    "approval_and_assessment_bypass_blocked": true,
+    "stale_version_conflict": true,
+    "draft_has_policy_and_sources_without_approval": true,
+    "original_and_changed_budget_separate": true,
+    "legacy_case_compatible": true,
+    "budget_not_added_to_cash": true
+  },
+  "case": {
+    "end": "2026-07-26",
+    "as_of": "2026-07-01",
+    "start": "2026-07-13",
+    "title": "계획 공유",
+    "sku_id": "SKU-1001",
+    "status": "접수",
+    "replies": [],
+    "routing": {
+      "reason": [
+        "마케팅 계획 공유는 캠페인 집행 또는 발주 승인이 아닙니다.",
+        "예산을 약정 유출액으로 자동 반영하지 않습니다.",
+        "SCM 공급 검토 및 재무 유출일·신규 여부 확인 전 승인·발주를 진행할 수 없습니다."
+      ],
+      "status": "계획 공유 · 승인 미확정",
+      "blocked": true,
+      "scenario": "후속 재무 검토 필요",
+      "authority": "SCM 검토 후 승인 대상 구분",
+      "provenance": "계산 결과",
+      "rule_version": "2026-11-10",
+      "classification_provenance": "내부 통제"
+    },
+    "approval": null,
+    "evidence": "원본 기반 확대 검토",
+    "quantity": 700.0,
+    "marketing": {
+      "end": "2026-07-26",
+      "as_of": "2026-07-01",
+      "items": [
+        {
+          "end": "2026-07-19",
+          "unit": "EA/주",
+          "basis": "주간 순증 가정",
+          "start": "2026-07-13",
+          "demand": 700,
+          "sku_id": "SKU-1001",
+          "overlap": "기존 판매 제외한 순증",
+          "confidence": "보통",
+          "provenance": "참가자 가정",
+          "total_quantity": 700.0,
+          "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+          "conversion_provenance": "계산 결과"
+        },
+        {
+          "end": "2026-07-26",
+          "unit": "EA/기간",
+          "basis": "후반 기간 전체 추가 가정",
+          "start": "2026-07-20",
+          "demand": 100,
+          "sku_id": "SKU-2001",
+          "overlap": "중복 여부 미확인",
+          "confidence": "낮음",
+          "provenance": "참가자 가정",
+          "total_quantity": 100,
+          "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+          "conversion_provenance": "계산 결과"
+        }
+      ],
+      "place": "",
+      "start": "2026-07-13",
+      "title": "계획 공유",
+      "author": "마케팅 담당",
+      "budget": 900,
+      "method": "",
+      "target": "",
+      "country": "",
+      "purpose": "원본 기반 확대 검토",
+      "rule_id": "W01-HUMAN-LED-1",
+      "group_id": "",
+      "position": "",
+      "gmv_basis": "",
+      "reference": {
+        "plan": {
+          "plan_id": "PLAN-001",
+          "campaign_id": "CMP-0003",
+          "settlement_date": "2026-07-27",
+          "expected_gmv_krw": "213330410",
+          "contract_deadline": "2026-07-17",
+          "requested_budget_krw": "18962703"
+        },
+        "sources": {
+          "plans": {
+            "sha256": "c1696151998b68e3d8fa5e38e0d4f8fa91c0b4c45bffd743e4b59fd88cbf9df5",
+            "source": "01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_budget_plan_ms.csv"
+          },
+          "campaigns": {
+            "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+            "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_campaign_ms.csv"
+          }
+        },
+        "campaign": {
+          "country": "국내",
+          "end_date": "2026-06-30",
+          "sns_format": "숏츠",
+          "start_date": "2025-12-30",
+          "campaign_id": "CMP-0003",
+          "sns_channel": "YouTube",
+          "product_line": "기초",
+          "campaign_name": "혜인 기초 캠페인3",
+          "influencer_id": "INF-001",
+          "sales_channel": "라이브",
+          "attribution_window_days": "7"
+        },
+        "provenance": "원본 사실"
+      },
+      "department": "마케팅",
+      "provenance": "참가자 가정",
+      "sns_format": "",
+      "group_basis": "",
+      "group_total": null,
+      "sns_channel": "",
+      "expected_gmv": 213330410,
+      "written_date": "2026-07-01",
+      "influencer_id": "",
+      "sales_channel": "",
+      "settlement_date": null,
+      "contract_deadline": null,
+      "reference_plan_id": "PLAN-001",
+      "performance_status": "미확인",
+      "performance_evidence": "",
+      "expected_contribution": null,
+      "performance_unknown_reason": "비용 범위 담당자 확인 필요"
+    },
+    "created_at": "2026-11-10T01:05:37.327440+00:00",
+    "record_kind": "marketing_plan",
+    "approval_type": null,
+    "demand_status": "가정",
+    "submission_key": "0954ef63-28b7-40e3-8999-28d1f7a85415",
+    "marketing_stage": "SCM 검토 요청",
+    "requested_amount": null,
+    "value_provenance": {
+      "rules": "내부 통제",
+      "request": "참가자 가정",
+      "original_reference": "원본 사실"
+    },
+    "contract_deadline": null,
+    "requested_payment_date": null,
+    "submission_fingerprint": "ee49e6a0ec9c3eaa8b899eb1438745675da4fd1ce905ba4fcf6901a1b7fabbf1",
+    "id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+    "version": 8
+  },
+  "calculation": {
+    "items": [
+      {
+        "sku": "SKU-1001",
+        "weekly": 8320.75,
+        "demand": {
+          "end": "2026-07-19",
+          "unit": "EA/주",
+          "basis": "주간 순증 가정",
+          "start": "2026-07-13",
+          "demand": 700,
+          "sku_id": "SKU-1001",
+          "overlap": "기존 판매 제외한 순증",
+          "confidence": "보통",
+          "provenance": "참가자 가정",
+          "total_quantity": 700.0,
+          "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+          "conversion_provenance": "계산 결과"
+        },
+        "weeks": [
+          "2026-06-01",
+          "2026-06-08",
+          "2026-06-15",
+          "2026-06-22"
+        ]
+      },
+      {
+        "sku": "SKU-2001",
+        "weekly": 4079.25,
+        "demand": {
+          "end": "2026-07-26",
+          "unit": "EA/기간",
+          "basis": "후반 기간 전체 추가 가정",
+          "start": "2026-07-20",
+          "demand": 100,
+          "sku_id": "SKU-2001",
+          "overlap": "중복 여부 미확인",
+          "confidence": "낮음",
+          "provenance": "참가자 가정",
+          "total_quantity": 100,
+          "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+          "conversion_provenance": "계산 결과"
+        },
+        "weeks": [
+          "2026-06-01",
+          "2026-06-08",
+          "2026-06-15",
+          "2026-06-22"
+        ]
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": "cb30e63c-b33d-4954-bb3c-2609ea774a39:marketing:performance",
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "key": "marketing:performance",
+      "role": "마케팅",
+      "title": "기존 실질 성과·비용 범위 확인",
+      "reason": "비용 범위 담당자 확인 필요",
+      "source": "mkt_meeting_notes_ms.md; approval_authority_policy.md",
+      "created_at": "2026-11-10T01:05:37.426752+00:00",
+      "provenance": "내부 통제",
+      "status": "대기"
+    },
+    {
+      "id": "cb30e63c-b33d-4954-bb3c-2609ea774a39:marketing:scm",
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "key": "marketing:scm",
+      "role": "SCM",
+      "title": "캠페인 계획의 재고·입고표 대조",
+      "source": "세계관_BPMN/W01.html · 계획 공유 후 SCM 대조",
+      "created_at": "2026-11-10T01:05:37.426088+00:00",
+      "provenance": "내부 통제",
+      "human_review_required": true,
+      "status": "대기"
+    }
+  ],
+  "events": [
+    {
+      "seq": 62,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "마케팅",
+      "event": "결재선 재판정",
+      "detail": {
+        "at": "2026-11-10T01:05:37.504122+00:00",
+        "after": {
+          "reason": [
+            "마케팅 계획 공유는 캠페인 집행 또는 발주 승인이 아닙니다.",
+            "예산을 약정 유출액으로 자동 반영하지 않습니다.",
+            "SCM 공급 검토 및 재무 유출일·신규 여부 확인 전 승인·발주를 진행할 수 없습니다."
+          ],
+          "status": "계획 공유 · 승인 미확정",
+          "blocked": true,
+          "scenario": "후속 재무 검토 필요",
+          "authority": "SCM 검토 후 승인 대상 구분",
+          "provenance": "계산 결과",
+          "rule_version": "2026-11-10",
+          "classification_provenance": "내부 통제"
+        },
+        "before": null,
+        "reason": "마케팅 기안 저장·공유",
+        "provenance": "계산 결과",
+        "route_changed": false
+      },
+      "at": "2026-11-10 10:05:37.492847+09:00"
+    },
+    {
+      "seq": 61,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "마케팅",
+      "event": "마케팅 계획 SCM 검토 요청",
+      "detail": {
+        "note": "사람의 계획 공유. 승인·발주·지급 아님.",
+        "after": {
+          "end": "2026-07-26",
+          "as_of": "2026-07-01",
+          "start": "2026-07-13",
+          "title": "계획 공유",
+          "sku_id": "SKU-1001",
+          "status": "접수",
+          "replies": [],
+          "approval": null,
+          "evidence": "원본 기반 확대 검토",
+          "quantity": 700.0,
+          "marketing": {
+            "end": "2026-07-26",
+            "as_of": "2026-07-01",
+            "items": [
+              {
+                "end": "2026-07-19",
+                "unit": "EA/주",
+                "basis": "주간 순증 가정",
+                "start": "2026-07-13",
+                "demand": 700,
+                "sku_id": "SKU-1001",
+                "overlap": "기존 판매 제외한 순증",
+                "confidence": "보통",
+                "provenance": "참가자 가정",
+                "total_quantity": 700.0,
+                "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+                "conversion_provenance": "계산 결과"
+              },
+              {
+                "end": "2026-07-26",
+                "unit": "EA/기간",
+                "basis": "후반 기간 전체 추가 가정",
+                "start": "2026-07-20",
+                "demand": 100,
+                "sku_id": "SKU-2001",
+                "overlap": "중복 여부 미확인",
+                "confidence": "낮음",
+                "provenance": "참가자 가정",
+                "total_quantity": 100,
+                "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+                "conversion_provenance": "계산 결과"
+              }
+            ],
+            "place": "",
+            "start": "2026-07-13",
+            "title": "계획 공유",
+            "author": "마케팅 담당",
+            "budget": 900,
+            "method": "",
+            "target": "",
+            "country": "",
+            "purpose": "원본 기반 확대 검토",
+            "rule_id": "W01-HUMAN-LED-1",
+            "group_id": "",
+            "position": "",
+            "gmv_basis": "",
+            "reference": {
+              "plan": {
+                "plan_id": "PLAN-001",
+                "campaign_id": "CMP-0003",
+                "settlement_date": "2026-07-27",
+                "expected_gmv_krw": "213330410",
+                "contract_deadline": "2026-07-17",
+                "requested_budget_krw": "18962703"
+              },
+              "sources": {
+                "plans": {
+                  "sha256": "c1696151998b68e3d8fa5e38e0d4f8fa91c0b4c45bffd743e4b59fd88cbf9df5",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_budget_plan_ms.csv"
+                },
+                "campaigns": {
+                  "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_campaign_ms.csv"
+                }
+              },
+              "campaign": {
+                "country": "국내",
+                "end_date": "2026-06-30",
+                "sns_format": "숏츠",
+                "start_date": "2025-12-30",
+                "campaign_id": "CMP-0003",
+                "sns_channel": "YouTube",
+                "product_line": "기초",
+                "campaign_name": "혜인 기초 캠페인3",
+                "influencer_id": "INF-001",
+                "sales_channel": "라이브",
+                "attribution_window_days": "7"
+              },
+              "provenance": "원본 사실"
+            },
+            "department": "마케팅",
+            "provenance": "참가자 가정",
+            "sns_format": "",
+            "group_basis": "",
+            "group_total": null,
+            "sns_channel": "",
+            "expected_gmv": 213330410,
+            "written_date": "2026-07-01",
+            "influencer_id": "",
+            "sales_channel": "",
+            "settlement_date": null,
+            "contract_deadline": null,
+            "reference_plan_id": "PLAN-001",
+            "performance_status": "미확인",
+            "performance_evidence": "",
+            "expected_contribution": null,
+            "performance_unknown_reason": "비용 범위 담당자 확인 필요"
+          },
+          "created_at": "2026-11-10T01:05:37.327440+00:00",
+          "record_kind": "marketing_plan",
+          "approval_type": null,
+          "demand_status": "가정",
+          "submission_key": "0954ef63-28b7-40e3-8999-28d1f7a85415",
+          "marketing_stage": "SCM 검토 요청",
+          "requested_amount": null,
+          "value_provenance": {
+            "rules": "내부 통제",
+            "request": "참가자 가정",
+            "original_reference": "원본 사실"
+          },
+          "contract_deadline": null,
+          "requested_payment_date": null,
+          "submission_fingerprint": "ee49e6a0ec9c3eaa8b899eb1438745675da4fd1ce905ba4fcf6901a1b7fabbf1"
+        },
+        "author": "마케팅 담당",
+        "before": {
+          "end": "2026-07-26",
+          "as_of": "2026-07-01",
+          "draft": {
+            "mode": "규칙 기반 초안 · AI 미연결",
+            "text": "제품별 검토 패킷 참조 · 대표 SKU SKU-1001 검토. 커버 2.78주, 첫 부족 2026-07-19. 결재선 SCM 검토 후 승인 대상 구분. 재무 의견: 미확인. 대안: 지급일 분할 협의·발주 감량 등은 담당자 확인 필요. 제안 상태: SCM 재고·입고표 대조 요청. 사람의 확인 전 승인·발주·상태 변경 없음. 근거 파일·계산 기간·가정은 아래 패킷에서 확인하세요.",
+            "packet": {
+              "title": "계획 공유",
+              "sku_id": "SKU-1001",
+              "replies": [],
+              "routing": {
+                "reason": [
+                  "마케팅 계획 공유는 캠페인 집행 또는 발주 승인이 아닙니다.",
+                  "예산을 약정 유출액으로 자동 반영하지 않습니다.",
+                  "SCM 공급 검토 및 재무 유출일·신규 여부 확인 전 승인·발주를 진행할 수 없습니다."
+                ],
+                "status": "계획 공유 · 승인 미확정",
+                "blocked": true,
+                "scenario": "후속 재무 검토 필요",
+                "authority": "SCM 검토 후 승인 대상 구분",
+                "provenance": "계산 결과",
+                "rule_version": "2026-11-10",
+                "classification_provenance": "내부 통제"
+              },
+              "breach_end": "2026-08-28",
+              "provenance": "계산 결과",
+              "first_short": "2026-07-19",
+              "stock_cover": 2.78,
+              "alternatives": "지급일 분할 협의·발주 감량 등은 담당자 확인 필요",
+              "breach_start": "2026-07-21",
+              "auto_approved": false,
+              "cash_scenario": "후속 재무 검토 필요",
+              "marketing_plan": {
+                "end": "2026-07-26",
+                "as_of": "2026-07-01",
+                "items": [
+                  {
+                    "end": "2026-07-19",
+                    "unit": "EA/주",
+                    "basis": "주간 순증 가정",
+                    "start": "2026-07-13",
+                    "demand": 700,
+                    "sku_id": "SKU-1001",
+                    "overlap": "기존 판매 제외한 순증",
+                    "confidence": "보통",
+                    "provenance": "참가자 가정",
+                    "total_quantity": 700.0,
+                    "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+                    "conversion_provenance": "계산 결과"
+                  },
+                  {
+                    "end": "2026-07-26",
+                    "unit": "EA/기간",
+                    "basis": "후반 기간 전체 추가 가정",
+                    "start": "2026-07-20",
+                    "demand": 100,
+                    "sku_id": "SKU-2001",
+                    "overlap": "중복 여부 미확인",
+                    "confidence": "낮음",
+                    "provenance": "참가자 가정",
+                    "total_quantity": 100,
+                    "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+                    "conversion_provenance": "계산 결과"
+                  }
+                ],
+                "place": "",
+                "start": "2026-07-13",
+                "title": "계획 공유",
+                "author": "마케팅 담당",
+                "budget": 18962703,
+                "method": "",
+                "target": "",
+                "country": "",
+                "purpose": "원본 기반 확대 검토",
+                "rule_id": "W01-HUMAN-LED-1",
+                "group_id": "",
+                "position": "",
+                "gmv_basis": "",
+                "reference": {
+                  "plan": {
+                    "plan_id": "PLAN-001",
+                    "campaign_id": "CMP-0003",
+                    "settlement_date": "2026-07-27",
+                    "expected_gmv_krw": "213330410",
+                    "contract_deadline": "2026-07-17",
+                    "requested_budget_krw": "18962703"
+                  },
+                  "sources": {
+                    "plans": {
+                      "sha256": "c1696151998b68e3d8fa5e38e0d4f8fa91c0b4c45bffd743e4b59fd88cbf9df5",
+                      "source": "01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_budget_plan_ms.csv"
+                    },
+                    "campaigns": {
+                      "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+                      "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_campaign_ms.csv"
+                    }
+                  },
+                  "campaign": {
+                    "country": "국내",
+                    "end_date": "2026-06-30",
+                    "sns_format": "숏츠",
+                    "start_date": "2025-12-30",
+                    "campaign_id": "CMP-0003",
+                    "sns_channel": "YouTube",
+                    "product_line": "기초",
+                    "campaign_name": "혜인 기초 캠페인3",
+                    "influencer_id": "INF-001",
+                    "sales_channel": "라이브",
+                    "attribution_window_days": "7"
+                  },
+                  "provenance": "원본 사실"
+                },
+                "department": "마케팅",
+                "provenance": "참가자 가정",
+                "sns_format": "",
+                "group_basis": "",
+                "group_total": null,
+                "sns_channel": "",
+                "expected_gmv": 213330410,
+                "written_date": "2026-07-01",
+                "influencer_id": "",
+                "sales_channel": "",
+                "settlement_date": null,
+                "contract_deadline": null,
+                "reference_plan_id": "PLAN-001",
+                "performance_status": "미확인",
+                "performance_evidence": "",
+                "expected_contribution": null,
+                "performance_unknown_reason": "비용 범위 담당자 확인 필요"
+              },
+              "project_policy": {
+                "id": "W01-HUMAN-LED-1",
+                "source": "사용자 확정 지시 · 2026-11-10",
+                "changes": "업무 흐름·권한·필수 입력을 새로 바꾸는 제안은 근거와 영향을 제시하고 사용자 컨펌 후 반영한다.",
+                "version": "2026-11-10",
+                "evidence": "AI는 명확한 출처·계산 기준·가정에 근거해서만 제안한다. 미확인은 확인 요청으로 남기며 수치·규정·회신을 만들어 확정하지 않는다.",
+                "priority": "현업 담당자가 기존에 하던 업무를 더 쉽게 진행하도록 돕는 것을 최우선으로 한다.",
+                "workflow": "W01 원본의 업무 순서·부서 책임·승인권한·데이터 의미를 보존한다. 원본에 없는 편의 기능은 추가 설계로 표시한다.",
+                "human_led": "Human-led: 계획 제출·데이터 수정·시나리오 확정·상신·승인·발주 등 업무 판단과 확정은 담당자가 명시적으로 수행한다.",
+                "provenance": "내부 통제"
+              },
+              "finance_opinion": "미확인",
+              "product_results": [
+                {
+                  "cover": 2.78,
+                  "weeks": [
+                    "2026-06-01",
+                    "2026-06-08",
+                    "2026-06-15",
+                    "2026-06-22"
+                  ],
+                  "demand": {
+                    "end": "2026-07-19",
+                    "unit": "EA/주",
+                    "basis": "주간 순증 가정",
+                    "start": "2026-07-13",
+                    "demand": 700,
+                    "sku_id": "SKU-1001",
+                    "overlap": "기존 판매 제외한 순증",
+                    "confidence": "보통",
+                    "provenance": "참가자 가정",
+                    "total_quantity": 700.0,
+                    "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+                    "conversion_provenance": "계산 결과"
+                  },
+                  "sku_id": "SKU-1001",
+                  "first_short": "2026-07-19"
+                },
+                {
+                  "cover": 6.17,
+                  "weeks": [
+                    "2026-06-01",
+                    "2026-06-08",
+                    "2026-06-15",
+                    "2026-06-22"
+                  ],
+                  "demand": {
+                    "end": "2026-07-26",
+                    "unit": "EA/기간",
+                    "basis": "후반 기간 전체 추가 가정",
+                    "start": "2026-07-20",
+                    "demand": 100,
+                    "sku_id": "SKU-2001",
+                    "overlap": "중복 여부 미확인",
+                    "confidence": "낮음",
+                    "provenance": "참가자 가정",
+                    "total_quantity": 100,
+                    "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+                    "conversion_provenance": "계산 결과"
+                  },
+                  "sku_id": "SKU-2001",
+                  "first_short": null
+                }
+              ],
+              "suggested_state": "SCM 재고·입고표 대조 요청",
+              "evidence_sources": {
+                "ap": {
+                  "source": "04_원본데이터/02_masil/financials/fin_ap_aging_ms.csv",
+                  "version": 1,
+                  "provenance": "원본 사실"
+                },
+                "ar": {
+                  "source": "04_원본데이터/02_masil/financials/fin_ar_aging_ms.csv",
+                  "version": 1,
+                  "provenance": "원본 사실"
+                },
+                "sku": {
+                  "source": "04_원본데이터/02_masil/master/m_sku_ms.csv",
+                  "version": 1,
+                  "provenance": "원본 사실"
+                },
+                "cash": {
+                  "source": "04_원본데이터/02_masil/financials/fin_cash_daily_ms.csv",
+                  "version": 1,
+                  "provenance": "원본 사실"
+                },
+                "sales": {
+                  "source": "04_원본데이터/02_masil/inventory/sku_weekly_sales_ms.csv",
+                  "version": 1,
+                  "provenance": "원본 사실"
+                },
+                "forecast": {
+                  "source": "04_원본데이터/02_masil/financials/fin_cash_forecast_ms.csv",
+                  "version": 1,
+                  "provenance": "부서 주장"
+                },
+                "purchase": {
+                  "source": "04_원본데이터/02_masil/inventory/sc_purchase_orders_ms.csv",
+                  "version": 1,
+                  "provenance": "원본 사실"
+                },
+                "inventory": {
+                  "source": "04_원본데이터/02_masil/inventory/sku_inventory_ms.csv",
+                  "version": 1,
+                  "provenance": "원본 사실"
+                }
+              },
+              "applicable_clause": "approval_authority_policy: 하회 예상 구간 신규 약정 우선 / 승인 유형별 전결",
+              "calculation_basis": {
+                "case_as_of": "2026-07-01",
+                "assumptions": [
+                  "완료된 최근 4주 평균을 일별 균등 수요로 사용",
+                  "캠페인 수량은 기간에 균등 배분",
+                  "예약수량은 원본에 없어 별도 차감하지 않음",
+                  "검토기간 이후의 공급 보장은 하지 않음",
+                  "현금 4개 시나리오를 분리 계산하며 재무 미확정 시 합집합 하회구간으로 판정"
+                ],
+                "sales_weeks": [
+                  "2026-06-01",
+                  "2026-06-08",
+                  "2026-06-15",
+                  "2026-06-22"
+                ],
+                "demand_evidence": "원본 기반 확대 검토"
+              }
+            },
+            "created_at": "2026-11-10T01:05:37.470009+00:00",
+            "provenance": "계산 결과",
+            "finance_version": 1,
+            "dataset_versions": {
+              "ap": 1,
+              "ar": 1,
+              "sku": 1,
+              "cash": 1,
+              "sales": 1,
+              "forecast": 1,
+              "purchase": 1,
+              "inventory": 1
+            },
+            "source_case_version": 5,
+            "human_review_required": true
+          },
+          "start": "2026-07-13",
+          "title": "계획 공유",
+          "sku_id": "SKU-1001",
+          "status": "접수",
+          "replies": [],
+          "routing": {
+            "reason": [
+              "마케팅 계획 공유는 캠페인 집행 또는 발주 승인이 아닙니다.",
+              "예산을 약정 유출액으로 자동 반영하지 않습니다.",
+              "SCM 공급 검토 및 재무 유출일·신규 여부 확인 전 승인·발주를 진행할 수 없습니다."
+            ],
+            "status": "계획 공유 · 승인 미확정",
+            "blocked": true,
+            "scenario": "후속 재무 검토 필요",
+            "authority": "SCM 검토 후 승인 대상 구분",
+            "provenance": "계산 결과",
+            "rule_version": "2026-11-10",
+            "classification_provenance": "내부 통제"
+          },
+          "approval": null,
+          "evidence": "원본 기반 확대 검토",
+          "quantity": 700.0,
+          "marketing": {
+            "end": "2026-07-26",
+            "as_of": "2026-07-01",
+            "items": [
+              {
+                "end": "2026-07-19",
+                "unit": "EA/주",
+                "basis": "주간 순증 가정",
+                "start": "2026-07-13",
+                "demand": 700,
+                "sku_id": "SKU-1001",
+                "overlap": "기존 판매 제외한 순증",
+                "confidence": "보통",
+                "provenance": "참가자 가정",
+                "total_quantity": 700.0,
+                "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+                "conversion_provenance": "계산 결과"
+              },
+              {
+                "end": "2026-07-26",
+                "unit": "EA/기간",
+                "basis": "후반 기간 전체 추가 가정",
+                "start": "2026-07-20",
+                "demand": 100,
+                "sku_id": "SKU-2001",
+                "overlap": "중복 여부 미확인",
+                "confidence": "낮음",
+                "provenance": "참가자 가정",
+                "total_quantity": 100,
+                "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+                "conversion_provenance": "계산 결과"
+              }
+            ],
+            "place": "",
+            "start": "2026-07-13",
+            "title": "계획 공유",
+            "author": "마케팅 담당",
+            "budget": 18962703,
+            "method": "",
+            "target": "",
+            "country": "",
+            "purpose": "원본 기반 확대 검토",
+            "rule_id": "W01-HUMAN-LED-1",
+            "group_id": "",
+            "position": "",
+            "gmv_basis": "",
+            "reference": {
+              "plan": {
+                "plan_id": "PLAN-001",
+                "campaign_id": "CMP-0003",
+                "settlement_date": "2026-07-27",
+                "expected_gmv_krw": "213330410",
+                "contract_deadline": "2026-07-17",
+                "requested_budget_krw": "18962703"
+              },
+              "sources": {
+                "plans": {
+                  "sha256": "c1696151998b68e3d8fa5e38e0d4f8fa91c0b4c45bffd743e4b59fd88cbf9df5",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_budget_plan_ms.csv"
+                },
+                "campaigns": {
+                  "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_campaign_ms.csv"
+                }
+              },
+              "campaign": {
+                "country": "국내",
+                "end_date": "2026-06-30",
+                "sns_format": "숏츠",
+                "start_date": "2025-12-30",
+                "campaign_id": "CMP-0003",
+                "sns_channel": "YouTube",
+                "product_line": "기초",
+                "campaign_name": "혜인 기초 캠페인3",
+                "influencer_id": "INF-001",
+                "sales_channel": "라이브",
+                "attribution_window_days": "7"
+              },
+              "provenance": "원본 사실"
+            },
+            "department": "마케팅",
+            "provenance": "참가자 가정",
+            "sns_format": "",
+            "group_basis": "",
+            "group_total": null,
+            "sns_channel": "",
+            "expected_gmv": 213330410,
+            "written_date": "2026-07-01",
+            "influencer_id": "",
+            "sales_channel": "",
+            "settlement_date": null,
+            "contract_deadline": null,
+            "reference_plan_id": "PLAN-001",
+            "performance_status": "미확인",
+            "performance_evidence": "",
+            "expected_contribution": null,
+            "performance_unknown_reason": "비용 범위 담당자 확인 필요"
+          },
+          "created_at": "2026-11-10T01:05:37.327440+00:00",
+          "record_kind": "marketing_plan",
+          "approval_type": null,
+          "demand_status": "가정",
+          "submission_key": "0954ef63-28b7-40e3-8999-28d1f7a85415",
+          "marketing_stage": "SCM 검토 요청",
+          "requested_amount": null,
+          "value_provenance": {
+            "rules": "내부 통제",
+            "request": "참가자 가정",
+            "original_reference": "원본 사실"
+          },
+          "contract_deadline": null,
+          "requested_payment_date": null,
+          "submission_fingerprint": "ee49e6a0ec9c3eaa8b899eb1438745675da4fd1ce905ba4fcf6901a1b7fabbf1"
+        },
+        "rule_id": "W01-HUMAN-LED-1"
+      },
+      "at": "2026-11-10 10:05:37.492847+09:00"
+    },
+    {
+      "seq": 60,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "마케팅",
+      "event": "상신 패킷 초안 생성 · 상태변경 없음",
+      "detail": {
+        "mode": "규칙 기반 초안 · AI 미연결",
+        "text": "제품별 검토 패킷 참조 · 대표 SKU SKU-1001 검토. 커버 2.78주, 첫 부족 2026-07-19. 결재선 SCM 검토 후 승인 대상 구분. 재무 의견: 미확인. 대안: 지급일 분할 협의·발주 감량 등은 담당자 확인 필요. 제안 상태: SCM 재고·입고표 대조 요청. 사람의 확인 전 승인·발주·상태 변경 없음. 근거 파일·계산 기간·가정은 아래 패킷에서 확인하세요.",
+        "packet": {
+          "title": "계획 공유",
+          "sku_id": "SKU-1001",
+          "replies": [],
+          "routing": {
+            "reason": [
+              "마케팅 계획 공유는 캠페인 집행 또는 발주 승인이 아닙니다.",
+              "예산을 약정 유출액으로 자동 반영하지 않습니다.",
+              "SCM 공급 검토 및 재무 유출일·신규 여부 확인 전 승인·발주를 진행할 수 없습니다."
+            ],
+            "status": "계획 공유 · 승인 미확정",
+            "blocked": true,
+            "scenario": "후속 재무 검토 필요",
+            "authority": "SCM 검토 후 승인 대상 구분",
+            "provenance": "계산 결과",
+            "rule_version": "2026-11-10",
+            "classification_provenance": "내부 통제"
+          },
+          "breach_end": "2026-08-28",
+          "provenance": "계산 결과",
+          "first_short": "2026-07-19",
+          "stock_cover": 2.78,
+          "alternatives": "지급일 분할 협의·발주 감량 등은 담당자 확인 필요",
+          "breach_start": "2026-07-21",
+          "auto_approved": false,
+          "cash_scenario": "후속 재무 검토 필요",
+          "marketing_plan": {
+            "end": "2026-07-26",
+            "as_of": "2026-07-01",
+            "items": [
+              {
+                "end": "2026-07-19",
+                "unit": "EA/주",
+                "basis": "주간 순증 가정",
+                "start": "2026-07-13",
+                "demand": 700,
+                "sku_id": "SKU-1001",
+                "overlap": "기존 판매 제외한 순증",
+                "confidence": "보통",
+                "provenance": "참가자 가정",
+                "total_quantity": 700.0,
+                "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+                "conversion_provenance": "계산 결과"
+              },
+              {
+                "end": "2026-07-26",
+                "unit": "EA/기간",
+                "basis": "후반 기간 전체 추가 가정",
+                "start": "2026-07-20",
+                "demand": 100,
+                "sku_id": "SKU-2001",
+                "overlap": "중복 여부 미확인",
+                "confidence": "낮음",
+                "provenance": "참가자 가정",
+                "total_quantity": 100,
+                "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+                "conversion_provenance": "계산 결과"
+              }
+            ],
+            "place": "",
+            "start": "2026-07-13",
+            "title": "계획 공유",
+            "author": "마케팅 담당",
+            "budget": 18962703,
+            "method": "",
+            "target": "",
+            "country": "",
+            "purpose": "원본 기반 확대 검토",
+            "rule_id": "W01-HUMAN-LED-1",
+            "group_id": "",
+            "position": "",
+            "gmv_basis": "",
+            "reference": {
+              "plan": {
+                "plan_id": "PLAN-001",
+                "campaign_id": "CMP-0003",
+                "settlement_date": "2026-07-27",
+                "expected_gmv_krw": "213330410",
+                "contract_deadline": "2026-07-17",
+                "requested_budget_krw": "18962703"
+              },
+              "sources": {
+                "plans": {
+                  "sha256": "c1696151998b68e3d8fa5e38e0d4f8fa91c0b4c45bffd743e4b59fd88cbf9df5",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_budget_plan_ms.csv"
+                },
+                "campaigns": {
+                  "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_campaign_ms.csv"
+                }
+              },
+              "campaign": {
+                "country": "국내",
+                "end_date": "2026-06-30",
+                "sns_format": "숏츠",
+                "start_date": "2025-12-30",
+                "campaign_id": "CMP-0003",
+                "sns_channel": "YouTube",
+                "product_line": "기초",
+                "campaign_name": "혜인 기초 캠페인3",
+                "influencer_id": "INF-001",
+                "sales_channel": "라이브",
+                "attribution_window_days": "7"
+              },
+              "provenance": "원본 사실"
+            },
+            "department": "마케팅",
+            "provenance": "참가자 가정",
+            "sns_format": "",
+            "group_basis": "",
+            "group_total": null,
+            "sns_channel": "",
+            "expected_gmv": 213330410,
+            "written_date": "2026-07-01",
+            "influencer_id": "",
+            "sales_channel": "",
+            "settlement_date": null,
+            "contract_deadline": null,
+            "reference_plan_id": "PLAN-001",
+            "performance_status": "미확인",
+            "performance_evidence": "",
+            "expected_contribution": null,
+            "performance_unknown_reason": "비용 범위 담당자 확인 필요"
+          },
+          "project_policy": {
+            "id": "W01-HUMAN-LED-1",
+            "source": "사용자 확정 지시 · 2026-11-10",
+            "changes": "업무 흐름·권한·필수 입력을 새로 바꾸는 제안은 근거와 영향을 제시하고 사용자 컨펌 후 반영한다.",
+            "version": "2026-11-10",
+            "evidence": "AI는 명확한 출처·계산 기준·가정에 근거해서만 제안한다. 미확인은 확인 요청으로 남기며 수치·규정·회신을 만들어 확정하지 않는다.",
+            "priority": "현업 담당자가 기존에 하던 업무를 더 쉽게 진행하도록 돕는 것을 최우선으로 한다.",
+            "workflow": "W01 원본의 업무 순서·부서 책임·승인권한·데이터 의미를 보존한다. 원본에 없는 편의 기능은 추가 설계로 표시한다.",
+            "human_led": "Human-led: 계획 제출·데이터 수정·시나리오 확정·상신·승인·발주 등 업무 판단과 확정은 담당자가 명시적으로 수행한다.",
+            "provenance": "내부 통제"
+          },
+          "finance_opinion": "미확인",
+          "product_results": [
+            {
+              "cover": 2.78,
+              "weeks": [
+                "2026-06-01",
+                "2026-06-08",
+                "2026-06-15",
+                "2026-06-22"
+              ],
+              "demand": {
+                "end": "2026-07-19",
+                "unit": "EA/주",
+                "basis": "주간 순증 가정",
+                "start": "2026-07-13",
+                "demand": 700,
+                "sku_id": "SKU-1001",
+                "overlap": "기존 판매 제외한 순증",
+                "confidence": "보통",
+                "provenance": "참가자 가정",
+                "total_quantity": 700.0,
+                "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+                "conversion_provenance": "계산 결과"
+              },
+              "sku_id": "SKU-1001",
+              "first_short": "2026-07-19"
+            },
+            {
+              "cover": 6.17,
+              "weeks": [
+                "2026-06-01",
+                "2026-06-08",
+                "2026-06-15",
+                "2026-06-22"
+              ],
+              "demand": {
+                "end": "2026-07-26",
+                "unit": "EA/기간",
+                "basis": "후반 기간 전체 추가 가정",
+                "start": "2026-07-20",
+                "demand": 100,
+                "sku_id": "SKU-2001",
+                "overlap": "중복 여부 미확인",
+                "confidence": "낮음",
+                "provenance": "참가자 가정",
+                "total_quantity": 100,
+                "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+                "conversion_provenance": "계산 결과"
+              },
+              "sku_id": "SKU-2001",
+              "first_short": null
+            }
+          ],
+          "suggested_state": "SCM 재고·입고표 대조 요청",
+          "evidence_sources": {
+            "ap": {
+              "source": "04_원본데이터/02_masil/financials/fin_ap_aging_ms.csv",
+              "version": 1,
+              "provenance": "원본 사실"
+            },
+            "ar": {
+              "source": "04_원본데이터/02_masil/financials/fin_ar_aging_ms.csv",
+              "version": 1,
+              "provenance": "원본 사실"
+            },
+            "sku": {
+              "source": "04_원본데이터/02_masil/master/m_sku_ms.csv",
+              "version": 1,
+              "provenance": "원본 사실"
+            },
+            "cash": {
+              "source": "04_원본데이터/02_masil/financials/fin_cash_daily_ms.csv",
+              "version": 1,
+              "provenance": "원본 사실"
+            },
+            "sales": {
+              "source": "04_원본데이터/02_masil/inventory/sku_weekly_sales_ms.csv",
+              "version": 1,
+              "provenance": "원본 사실"
+            },
+            "forecast": {
+              "source": "04_원본데이터/02_masil/financials/fin_cash_forecast_ms.csv",
+              "version": 1,
+              "provenance": "부서 주장"
+            },
+            "purchase": {
+              "source": "04_원본데이터/02_masil/inventory/sc_purchase_orders_ms.csv",
+              "version": 1,
+              "provenance": "원본 사실"
+            },
+            "inventory": {
+              "source": "04_원본데이터/02_masil/inventory/sku_inventory_ms.csv",
+              "version": 1,
+              "provenance": "원본 사실"
+            }
+          },
+          "applicable_clause": "approval_authority_policy: 하회 예상 구간 신규 약정 우선 / 승인 유형별 전결",
+          "calculation_basis": {
+            "case_as_of": "2026-07-01",
+            "assumptions": [
+              "완료된 최근 4주 평균을 일별 균등 수요로 사용",
+              "캠페인 수량은 기간에 균등 배분",
+              "예약수량은 원본에 없어 별도 차감하지 않음",
+              "검토기간 이후의 공급 보장은 하지 않음",
+              "현금 4개 시나리오를 분리 계산하며 재무 미확정 시 합집합 하회구간으로 판정"
+            ],
+            "sales_weeks": [
+              "2026-06-01",
+              "2026-06-08",
+              "2026-06-15",
+              "2026-06-22"
+            ],
+            "demand_evidence": "원본 기반 확대 검토"
+          }
+        },
+        "created_at": "2026-11-10T01:05:37.470009+00:00",
+        "provenance": "계산 결과",
+        "finance_version": 1,
+        "dataset_versions": {
+          "ap": 1,
+          "ar": 1,
+          "sku": 1,
+          "cash": 1,
+          "sales": 1,
+          "forecast": 1,
+          "purchase": 1,
+          "inventory": 1
+        },
+        "source_case_version": 5,
+        "human_review_required": true
+      },
+      "at": "2026-11-10 10:05:37.463314+09:00"
+    },
+    {
+      "seq": 59,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "marketing:performance",
+        "role": "마케팅",
+        "title": "기존 실질 성과·비용 범위 확인",
+        "reason": "비용 범위 담당자 확인 필요",
+        "source": "mkt_meeting_notes_ms.md; approval_authority_policy.md",
+        "task_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39:marketing:performance",
+        "created_at": "2026-11-10T01:05:37.426752+00:00",
+        "provenance": "내부 통제"
+      },
+      "at": "2026-11-10 10:05:37.408089+09:00"
+    },
+    {
+      "seq": 58,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "시스템",
+      "event": "확인요청 작업 생성",
+      "detail": {
+        "key": "marketing:scm",
+        "role": "SCM",
+        "title": "캠페인 계획의 재고·입고표 대조",
+        "source": "세계관_BPMN/W01.html · 계획 공유 후 SCM 대조",
+        "task_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39:marketing:scm",
+        "created_at": "2026-11-10T01:05:37.426088+00:00",
+        "provenance": "내부 통제",
+        "human_review_required": true
+      },
+      "at": "2026-11-10 10:05:37.408089+09:00"
+    },
+    {
+      "seq": 57,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "마케팅",
+      "event": "결재선 재판정",
+      "detail": {
+        "at": "2026-11-10T01:05:37.419212+00:00",
+        "after": {
+          "reason": [
+            "마케팅 계획 공유는 캠페인 집행 또는 발주 승인이 아닙니다.",
+            "예산을 약정 유출액으로 자동 반영하지 않습니다.",
+            "SCM 공급 검토 및 재무 유출일·신규 여부 확인 전 승인·발주를 진행할 수 없습니다."
+          ],
+          "status": "계획 공유 · 승인 미확정",
+          "blocked": true,
+          "scenario": "후속 재무 검토 필요",
+          "authority": "SCM 검토 후 승인 대상 구분",
+          "provenance": "계산 결과",
+          "rule_version": "2026-11-10",
+          "classification_provenance": "내부 통제"
+        },
+        "before": null,
+        "reason": "마케팅 기안 저장·공유",
+        "provenance": "계산 결과",
+        "route_changed": false
+      },
+      "at": "2026-11-10 10:05:37.408089+09:00"
+    },
+    {
+      "seq": 56,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "마케팅",
+      "event": "마케팅 계획 SCM 검토 요청",
+      "detail": {
+        "note": "사람의 계획 공유. 승인·발주·지급 아님.",
+        "after": {
+          "end": "2026-07-26",
+          "as_of": "2026-07-01",
+          "start": "2026-07-13",
+          "title": "계획 공유",
+          "sku_id": "SKU-1001",
+          "status": "접수",
+          "replies": [],
+          "approval": null,
+          "evidence": "원본 기반 확대 검토",
+          "quantity": 700.0,
+          "marketing": {
+            "end": "2026-07-26",
+            "as_of": "2026-07-01",
+            "items": [
+              {
+                "end": "2026-07-19",
+                "unit": "EA/주",
+                "basis": "주간 순증 가정",
+                "start": "2026-07-13",
+                "demand": 700,
+                "sku_id": "SKU-1001",
+                "overlap": "기존 판매 제외한 순증",
+                "confidence": "보통",
+                "provenance": "참가자 가정",
+                "total_quantity": 700.0,
+                "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+                "conversion_provenance": "계산 결과"
+              },
+              {
+                "end": "2026-07-26",
+                "unit": "EA/기간",
+                "basis": "후반 기간 전체 추가 가정",
+                "start": "2026-07-20",
+                "demand": 100,
+                "sku_id": "SKU-2001",
+                "overlap": "중복 여부 미확인",
+                "confidence": "낮음",
+                "provenance": "참가자 가정",
+                "total_quantity": 100,
+                "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+                "conversion_provenance": "계산 결과"
+              }
+            ],
+            "place": "",
+            "start": "2026-07-13",
+            "title": "계획 공유",
+            "author": "마케팅 담당",
+            "budget": 18962703,
+            "method": "",
+            "target": "",
+            "country": "",
+            "purpose": "원본 기반 확대 검토",
+            "rule_id": "W01-HUMAN-LED-1",
+            "group_id": "",
+            "position": "",
+            "gmv_basis": "",
+            "reference": {
+              "plan": {
+                "plan_id": "PLAN-001",
+                "campaign_id": "CMP-0003",
+                "settlement_date": "2026-07-27",
+                "expected_gmv_krw": "213330410",
+                "contract_deadline": "2026-07-17",
+                "requested_budget_krw": "18962703"
+              },
+              "sources": {
+                "plans": {
+                  "sha256": "c1696151998b68e3d8fa5e38e0d4f8fa91c0b4c45bffd743e4b59fd88cbf9df5",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_budget_plan_ms.csv"
+                },
+                "campaigns": {
+                  "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_campaign_ms.csv"
+                }
+              },
+              "campaign": {
+                "country": "국내",
+                "end_date": "2026-06-30",
+                "sns_format": "숏츠",
+                "start_date": "2025-12-30",
+                "campaign_id": "CMP-0003",
+                "sns_channel": "YouTube",
+                "product_line": "기초",
+                "campaign_name": "혜인 기초 캠페인3",
+                "influencer_id": "INF-001",
+                "sales_channel": "라이브",
+                "attribution_window_days": "7"
+              },
+              "provenance": "원본 사실"
+            },
+            "department": "마케팅",
+            "provenance": "참가자 가정",
+            "sns_format": "",
+            "group_basis": "",
+            "group_total": null,
+            "sns_channel": "",
+            "expected_gmv": 213330410,
+            "written_date": "2026-07-01",
+            "influencer_id": "",
+            "sales_channel": "",
+            "settlement_date": null,
+            "contract_deadline": null,
+            "reference_plan_id": "PLAN-001",
+            "performance_status": "미확인",
+            "performance_evidence": "",
+            "expected_contribution": null,
+            "performance_unknown_reason": "비용 범위 담당자 확인 필요"
+          },
+          "created_at": "2026-11-10T01:05:37.327440+00:00",
+          "record_kind": "marketing_plan",
+          "approval_type": null,
+          "demand_status": "가정",
+          "submission_key": "0954ef63-28b7-40e3-8999-28d1f7a85415",
+          "marketing_stage": "SCM 검토 요청",
+          "requested_amount": null,
+          "value_provenance": {
+            "rules": "내부 통제",
+            "request": "참가자 가정",
+            "original_reference": "원본 사실"
+          },
+          "contract_deadline": null,
+          "requested_payment_date": null,
+          "submission_fingerprint": "ee49e6a0ec9c3eaa8b899eb1438745675da4fd1ce905ba4fcf6901a1b7fabbf1"
+        },
+        "author": "마케팅 담당",
+        "before": {
+          "end": "2026-07-26",
+          "as_of": "2026-07-01",
+          "start": "2026-07-13",
+          "title": "계획 공유",
+          "sku_id": "SKU-1001",
+          "status": "접수",
+          "replies": [],
+          "routing": {
+            "reason": [
+              "마케팅 계획 공유는 캠페인 집행 또는 발주 승인이 아닙니다.",
+              "예산을 약정 유출액으로 자동 반영하지 않습니다.",
+              "SCM 공급 검토 및 재무 유출일·신규 여부 확인 전 승인·발주를 진행할 수 없습니다."
+            ],
+            "status": "계획 공유 · 승인 미확정",
+            "blocked": true,
+            "scenario": "후속 재무 검토 필요",
+            "authority": "SCM 검토 후 승인 대상 구분",
+            "provenance": "계산 결과",
+            "rule_version": "2026-11-10",
+            "classification_provenance": "내부 통제"
+          },
+          "approval": null,
+          "evidence": "원본 기반 확대 검토",
+          "quantity": 700.0,
+          "marketing": {
+            "end": "2026-07-26",
+            "as_of": "2026-07-01",
+            "items": [
+              {
+                "end": "2026-07-19",
+                "unit": "EA/주",
+                "basis": "주간 순증 가정",
+                "start": "2026-07-13",
+                "demand": 700,
+                "sku_id": "SKU-1001",
+                "overlap": "기존 판매 제외한 순증",
+                "confidence": "보통",
+                "provenance": "참가자 가정",
+                "total_quantity": 700.0,
+                "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+                "conversion_provenance": "계산 결과"
+              },
+              {
+                "end": "2026-07-26",
+                "unit": "EA/기간",
+                "basis": "후반 기간 전체 추가 가정",
+                "start": "2026-07-20",
+                "demand": 100,
+                "sku_id": "SKU-2001",
+                "overlap": "중복 여부 미확인",
+                "confidence": "낮음",
+                "provenance": "참가자 가정",
+                "total_quantity": 100,
+                "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+                "conversion_provenance": "계산 결과"
+              }
+            ],
+            "place": "",
+            "start": "2026-07-13",
+            "title": "계획 공유",
+            "author": "마케팅 담당",
+            "budget": 18962703,
+            "method": "",
+            "target": "",
+            "country": "",
+            "purpose": "원본 기반 확대 검토",
+            "rule_id": "W01-HUMAN-LED-1",
+            "group_id": "",
+            "position": "",
+            "gmv_basis": "",
+            "reference": {
+              "plan": {
+                "plan_id": "PLAN-001",
+                "campaign_id": "CMP-0003",
+                "settlement_date": "2026-07-27",
+                "expected_gmv_krw": "213330410",
+                "contract_deadline": "2026-07-17",
+                "requested_budget_krw": "18962703"
+              },
+              "sources": {
+                "plans": {
+                  "sha256": "c1696151998b68e3d8fa5e38e0d4f8fa91c0b4c45bffd743e4b59fd88cbf9df5",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_budget_plan_ms.csv"
+                },
+                "campaigns": {
+                  "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_campaign_ms.csv"
+                }
+              },
+              "campaign": {
+                "country": "국내",
+                "end_date": "2026-06-30",
+                "sns_format": "숏츠",
+                "start_date": "2025-12-30",
+                "campaign_id": "CMP-0003",
+                "sns_channel": "YouTube",
+                "product_line": "기초",
+                "campaign_name": "혜인 기초 캠페인3",
+                "influencer_id": "INF-001",
+                "sales_channel": "라이브",
+                "attribution_window_days": "7"
+              },
+              "provenance": "원본 사실"
+            },
+            "department": "마케팅",
+            "provenance": "참가자 가정",
+            "sns_format": "",
+            "group_basis": "",
+            "group_total": null,
+            "sns_channel": "",
+            "expected_gmv": 213330410,
+            "written_date": "2026-07-01",
+            "influencer_id": "",
+            "sales_channel": "",
+            "settlement_date": null,
+            "contract_deadline": null,
+            "reference_plan_id": "PLAN-001",
+            "performance_status": "미확인",
+            "performance_evidence": "",
+            "expected_contribution": null,
+            "performance_unknown_reason": "비용 범위 담당자 확인 필요"
+          },
+          "created_at": "2026-11-10T01:05:37.327440+00:00",
+          "record_kind": "marketing_plan",
+          "approval_type": null,
+          "demand_status": "가정",
+          "submission_key": "0954ef63-28b7-40e3-8999-28d1f7a85415",
+          "marketing_stage": "작성 중",
+          "requested_amount": null,
+          "value_provenance": {
+            "rules": "내부 통제",
+            "request": "참가자 가정",
+            "original_reference": "원본 사실"
+          },
+          "contract_deadline": null,
+          "requested_payment_date": null,
+          "submission_fingerprint": "ee49e6a0ec9c3eaa8b899eb1438745675da4fd1ce905ba4fcf6901a1b7fabbf1"
+        },
+        "rule_id": "W01-HUMAN-LED-1"
+      },
+      "at": "2026-11-10 10:05:37.408089+09:00"
+    },
+    {
+      "seq": 55,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "마케팅",
+      "event": "근거 파일 첨부",
+      "detail": {
+        "name": "marketing-evidence.txt",
+        "note": "파일 내용은 자동 추출·검증하지 않습니다.",
+        "provenance": "모의 회신",
+        "document_id": "12c9f9ce-4bd5-4353-bb79-961b674455e6"
+      },
+      "at": "2026-11-10 10:05:37.369442+09:00"
+    },
+    {
+      "seq": 54,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "마케팅",
+      "event": "결재선 재판정",
+      "detail": {
+        "at": "2026-11-10T01:05:37.334270+00:00",
+        "after": {
+          "reason": [
+            "마케팅 계획 공유는 캠페인 집행 또는 발주 승인이 아닙니다.",
+            "예산을 약정 유출액으로 자동 반영하지 않습니다.",
+            "SCM 공급 검토 및 재무 유출일·신규 여부 확인 전 승인·발주를 진행할 수 없습니다."
+          ],
+          "status": "계획 공유 · 승인 미확정",
+          "blocked": true,
+          "scenario": "후속 재무 검토 필요",
+          "authority": "SCM 검토 후 승인 대상 구분",
+          "provenance": "계산 결과",
+          "rule_version": "2026-11-10",
+          "classification_provenance": "내부 통제"
+        },
+        "before": null,
+        "reason": "마케팅 기안 저장·공유",
+        "provenance": "계산 결과",
+        "route_changed": false
+      },
+      "at": "2026-11-10 10:05:37.321532+09:00"
+    },
+    {
+      "seq": 50,
+      "case_id": "cb30e63c-b33d-4954-bb3c-2609ea774a39",
+      "role": "마케팅",
+      "event": "마케팅 기안 저장",
+      "detail": {
+        "note": "사람의 계획 공유. 승인·발주·지급 아님.",
+        "after": {
+          "end": "2026-07-26",
+          "as_of": "2026-07-01",
+          "start": "2026-07-13",
+          "title": "계획 공유",
+          "sku_id": "SKU-1001",
+          "status": "접수",
+          "replies": [],
+          "approval": null,
+          "evidence": "원본 기반 확대 검토",
+          "quantity": 700.0,
+          "marketing": {
+            "end": "2026-07-26",
+            "as_of": "2026-07-01",
+            "items": [
+              {
+                "end": "2026-07-19",
+                "unit": "EA/주",
+                "basis": "주간 순증 가정",
+                "start": "2026-07-13",
+                "demand": 700,
+                "sku_id": "SKU-1001",
+                "overlap": "기존 판매 제외한 순증",
+                "confidence": "보통",
+                "provenance": "참가자 가정",
+                "total_quantity": 700.0,
+                "conversion_basis": "기간에 균등 배분 · EA/주 × 적용일수 ÷ 7",
+                "conversion_provenance": "계산 결과"
+              },
+              {
+                "end": "2026-07-26",
+                "unit": "EA/기간",
+                "basis": "후반 기간 전체 추가 가정",
+                "start": "2026-07-20",
+                "demand": 100,
+                "sku_id": "SKU-2001",
+                "overlap": "중복 여부 미확인",
+                "confidence": "낮음",
+                "provenance": "참가자 가정",
+                "total_quantity": 100,
+                "conversion_basis": "기간 전체 EA를 적용일수에 균등 배분",
+                "conversion_provenance": "계산 결과"
+              }
+            ],
+            "place": "",
+            "start": "2026-07-13",
+            "title": "계획 공유",
+            "author": "마케팅 담당",
+            "budget": 18962703,
+            "method": "",
+            "target": "",
+            "country": "",
+            "purpose": "원본 기반 확대 검토",
+            "rule_id": "W01-HUMAN-LED-1",
+            "group_id": "",
+            "position": "",
+            "gmv_basis": "",
+            "reference": {
+              "plan": {
+                "plan_id": "PLAN-001",
+                "campaign_id": "CMP-0003",
+                "settlement_date": "2026-07-27",
+                "expected_gmv_krw": "213330410",
+                "contract_deadline": "2026-07-17",
+                "requested_budget_krw": "18962703"
+              },
+              "sources": {
+                "plans": {
+                  "sha256": "c1696151998b68e3d8fa5e38e0d4f8fa91c0b4c45bffd743e4b59fd88cbf9df5",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/marketing/mkt_budget_plan_ms.csv"
+                },
+                "campaigns": {
+                  "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+                  "source": "01_참가자_배포용/04_원본데이터/02_masil/master/m_campaign_ms.csv"
+                }
+              },
+              "campaign": {
+                "country": "국내",
+                "end_date": "2026-06-30",
+                "sns_format": "숏츠",
+                "start_date": "2025-12-30",
+                "campaign_id": "CMP-0003",
+                "sns_channel": "YouTube",
+                "product_line": "기초",
+                "campaign_name": "혜인 기초 캠페인3",
+                "influencer_id": "INF-001",
+                "sales_channel": "라이브",
+                "attribution_window_days": "7"
+              },
+              "provenance": "원본 사실"
+            },
+            "department": "마케팅",
+            "provenance": "참가자 가정",
+            "sns_format": "",
+            "group_basis": "",
+            "group_total": null,
+            "sns_channel": "",
+            "expected_gmv": 213330410,
+            "written_date": "2026-07-01",
+            "influencer_id": "",
+            "sales_channel": "",
+            "settlement_date": null,
+            "contract_deadline": null,
+            "reference_plan_id": "PLAN-001",
+            "performance_status": "미확인",
+            "performance_evidence": "",
+            "expected_contribution": null,
+            "performance_unknown_reason": "비용 범위 담당자 확인 필요"
+          },
+          "created_at": "2026-11-10T01:05:37.327440+00:00",
+          "record_kind": "marketing_plan",
+          "approval_type": null,
+          "demand_status": "가정",
+          "submission_key": "0954ef63-28b7-40e3-8999-28d1f7a85415",
+          "marketing_stage": "작성 중",
+          "requested_amount": null,
+          "value_provenance": {
+            "rules": "내부 통제",
+            "request": "참가자 가정",
+            "original_reference": "원본 사실"
+          },
+          "contract_deadline": null,
+          "requested_payment_date": null,
+          "submission_fingerprint": "ee49e6a0ec9c3eaa8b899eb1438745675da4fd1ce905ba4fcf6901a1b7fabbf1"
+        },
+        "author": "마케팅 담당",
+        "before": null,
+        "rule_id": "W01-HUMAN-LED-1"
+      },
+      "at": "2026-11-10 10:05:37.321532+09:00"
+    }
+  ]
+}

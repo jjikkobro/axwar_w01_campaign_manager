@@ -1,0 +1,189 @@
+{
+  "source_package_files": 22,
+  "source_files_unchanged": true,
+  "fixture_discrepancies": [
+    {
+      "sku": "SKU-1001",
+      "screen_fixture_average": 7910.5,
+      "system_completed_4_week_average": 8320.75,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-1002",
+      "screen_fixture_average": 7222.0,
+      "system_completed_4_week_average": 7480.5,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-1003",
+      "screen_fixture_average": 3782.25,
+      "system_completed_4_week_average": 4011.0,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-1004",
+      "screen_fixture_average": 6499.0,
+      "system_completed_4_week_average": 6543.0,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-2001",
+      "screen_fixture_average": 4448.5,
+      "system_completed_4_week_average": 4079.25,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-2002",
+      "screen_fixture_average": 3928.0,
+      "system_completed_4_week_average": 4319.0,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-2003",
+      "screen_fixture_average": 3840.5,
+      "system_completed_4_week_average": 3911.25,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-3001",
+      "screen_fixture_average": 882.5,
+      "system_completed_4_week_average": 852.75,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-3002",
+      "screen_fixture_average": 869.25,
+      "system_completed_4_week_average": 931.5,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-3003",
+      "screen_fixture_average": 4279.75,
+      "system_completed_4_week_average": 4231.25,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-4001",
+      "screen_fixture_average": 3936.75,
+      "system_completed_4_week_average": 3837.25,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-4002",
+      "screen_fixture_average": 3820.5,
+      "system_completed_4_week_average": 4012.75,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-5001",
+      "screen_fixture_average": 4362.25,
+      "system_completed_4_week_average": 4460.75,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    },
+    {
+      "sku": "SKU-5002",
+      "screen_fixture_average": 3503.75,
+      "system_completed_4_week_average": 3583.5,
+      "weeks": [
+        "2026-06-01",
+        "2026-06-08",
+        "2026-06-15",
+        "2026-06-22"
+      ],
+      "decision": "화면 상수를 사용하지 않고 완료 4주 원본 계산을 표시"
+    }
+  ],
+  "fixture_policy": "내장 JSON은 원본 스냅샷/계산 참고 자료. 서버 자료를 덮어쓰거나 미래 가정을 확정하지 않음.",
+  "overrides": [
+    {
+      "source": "SCM MOQ 배수",
+      "applied": "원본에 근거한 MOQ 최소량. 배수 강제 없음."
+    },
+    {
+      "source": "CEO 예시 하회종료 8/29, 최저 8.63억",
+      "applied": "선택 시나리오와 같은 입력에서 재계산. 원본 기본 합집합 영업일 종료 8/28."
+    },
+    {
+      "source": "조건부 승인 후 발주 예시",
+      "applied": "조건 충족 증빙과 사람 재승인 전 전달 차단."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "status_words_removed": true,
+  "per_sku_order_import_removed": true,
+  "single_apply_button": true,
+  "applied_fields": [
+    {
+      "id": "SKU-3001",
+      "qty": 12000,
+      "price": 16800
+    },
+    {
+      "id": "SKU-3002",
+      "qty": 12000,
+      "price": 16800
+    },
+    {
+      "id": "SKU-3003",
+      "qty": 48458,
+      "price": 16800
+    }
+  ],
+  "procurement_cost": 1217294400,
+  "campaign_budget_preserved": true,
+  "money_comma_display": true,
+  "mobile_overflow": false,
+  "browser_errors": [],
+  "case_versions_unchanged": true,
+  "mode": "로컬 미리보기에서 저장하지 않은 3개 SKU 계산·일괄 적용 검증"
+}

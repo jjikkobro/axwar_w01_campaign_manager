@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-12",
+  "url": "http://127.0.0.1:8088",
+  "health_ok": true,
+  "tests": 191,
+  "baseline_datasets": 8,
+  "campaigns": 0,
+  "previous_runtime_present": false,
+  "previous_campaigns_restored": false,
+  "database_storage": "프로젝트 .axhub/local-runtime/postgresql · 기존 gitignore 적용",
+  "checks": [
+    "홈 화면",
+    "새 캠페인 작성",
+    "담당자 자동 입력",
+    "시스템 관리자"
+  ],
+  "browser_errors": [],
+  "external_deployment": false
+}

@@ -1,0 +1,115 @@
+{
+  "screens": [
+    {
+      "screen": "MKT_1_Proposal",
+      "owner": null,
+      "author": "마케팅 담당자 (시연)",
+      "role": "마케팅",
+      "actor": "마케팅 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "MKT_2_Wait",
+      "owner": null,
+      "author": null,
+      "role": "마케팅",
+      "actor": "마케팅 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "MKT_3_Hold",
+      "owner": "마케팅 담당자 (시연)",
+      "author": null,
+      "role": "마케팅",
+      "actor": "마케팅 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "MKT_4_Close",
+      "owner": "마케팅 담당자 (시연)",
+      "author": null,
+      "role": "마케팅",
+      "actor": "마케팅 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "SCM_1_Check",
+      "owner": "SCM 담당자 (시연)",
+      "author": null,
+      "role": "SCM",
+      "actor": "SCM 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "SCM_2_WaitApproval",
+      "owner": null,
+      "author": null,
+      "role": "SCM",
+      "actor": "SCM 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "SCM_3_PO",
+      "owner": "SCM 담당자 (시연)",
+      "author": null,
+      "role": "SCM",
+      "actor": "SCM 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "SCM_4_WaitReply",
+      "owner": null,
+      "author": null,
+      "role": "SCM",
+      "actor": "SCM 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "SCM_5_Receipt",
+      "owner": "SCM 담당자 (시연)",
+      "author": null,
+      "role": "SCM",
+      "actor": "SCM 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "FIN_1_Review",
+      "owner": "재무 담당자 (시연)",
+      "author": null,
+      "role": "재무",
+      "actor": "재무 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "FIN_2_Wait",
+      "owner": null,
+      "author": null,
+      "role": "재무",
+      "actor": "재무 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "APR_1_CEO",
+      "owner": "승인권자 담당자 (시연)",
+      "author": null,
+      "role": "승인권자",
+      "actor": "승인권자 담당자 (시연)",
+      "error": null
+    },
+    {
+      "screen": "APR_2_Normal",
+      "owner": "승인권자 담당자 (시연)",
+      "author": null,
+      "role": "승인권자",
+      "actor": "승인권자 담당자 (시연)",
+      "error": null
+    }
+  ],
+  "scm_handoff_enabled_after_required_decision": true,
+  "manual_edit_preserved": true,
+  "handoff_modal_prefill": true,
+  "admin_prefill": true,
+  "configured_profile_used": true,
+  "database_writes": 0,
+  "errors": []
+}

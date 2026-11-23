@@ -1,0 +1,27 @@
+{
+  "case_id": "a7c20832-e490-4fcd-b077-bb8249e82730",
+  "predicted_procurement_qty": 0,
+  "predicted_procurement_budget": 0,
+  "applied_budget_field": "0",
+  "empty_field_not_ready": true,
+  "zero_field_ready": true,
+  "saved_budget": 0,
+  "state": "SCM 검토 요청",
+  "reload_preserves_zero": true,
+  "invalid_requests_rejected": [
+    {
+      "input": null,
+      "error": "캠페인 집행 예산을 입력하세요. 추가 비용이 없으면 0원을 입력할 수 있습니다."
+    },
+    {
+      "input": "",
+      "error": "캠페인 집행 예산을 입력하세요. 추가 비용이 없으면 0원을 입력할 수 있습니다."
+    },
+    {
+      "input": -1,
+      "error": "캠페인 집행 예산: 0 이상의 정수를 입력하세요."
+    }
+  ],
+  "approval": null,
+  "errors": []
+}

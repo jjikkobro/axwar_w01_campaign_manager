@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "source_reference_hashes": [
+    {
+      "file": "02_masil/inventory/sku_weekly_sales_ms.csv",
+      "sha256": "a3fa428c227708fffaf78a52155a991b65d05075f8de04b85f944bd59cbaf54a",
+      "provenance": "원본 사실",
+      "matches_original": true
+    },
+    {
+      "file": "02_masil/master/m_campaign_ms.csv",
+      "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+      "provenance": "원본 사실",
+      "matches_original": true
+    }
+  ],
+  "original_screen_hashes": {
+    "W01_screens/README.md": true,
+    "W01_screens/data/campaign_attributed_share.json": true,
+    "W01_screens/data/campaign_influencer_plan.json": true,
+    "W01_screens/data/campaign_media_mix.json": true,
+    "W01_screens/data/cash_events_forecast.json": true,
+    "W01_screens/data/contribution_profit.json": true,
+    "W01_screens/data/influencer_attributed_share.json": true,
+    "W01_screens/data/sku_inventory_po.json": true,
+    "W01_screens/screens/APR_1_CEO.dc.html": true,
+    "W01_screens/screens/APR_2_Normal.dc.html": true,
+    "W01_screens/screens/FIN_1_Review.dc.html": true,
+    "W01_screens/screens/FIN_2_Wait.dc.html": true,
+    "W01_screens/screens/MKT_1_Proposal.dc.html": true,
+    "W01_screens/screens/MKT_2_Wait.dc.html": true,
+    "W01_screens/screens/MKT_3_Hold.dc.html": true,
+    "W01_screens/screens/MKT_4_Close.dc.html": true,
+    "W01_screens/screens/SCM_1_Check.dc.html": true,
+    "W01_screens/screens/SCM_2_WaitApproval.dc.html": true,
+    "W01_screens/screens/SCM_3_PO.dc.html": true,
+    "W01_screens/screens/SCM_4_WaitReply.dc.html": true,
+    "W01_screens/screens/SCM_5_Receipt.dc.html": true,
+    "W01_screens/screens/canvas.json": true
+  },
+  "protected_tracked_changes": [],
+  "check_ignore": [
+    ".claude/settings.local.json",
+    ".codex/hooks.json",
+    ".agents/hooks.json"
+  ],
+  "raw_original_files": 72,
+  "note": "원본 참조 SHA와 원본 시안 22개 해시 일치. 보호 경로는 HEAD 대비 변경 없음. 커밋/배포 미실행."
+}

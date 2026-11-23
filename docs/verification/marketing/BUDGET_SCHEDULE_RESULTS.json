@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "unit_tests": 162,
+  "product_name_and_id_visible": true,
+  "sku_review_required_for_calculation": true,
+  "calculate_button_focuses_sku_review": true,
+  "procurement_budget": 201600000,
+  "campaign_budget_preserved": 5000000,
+  "past_leadtime_deadline_not_adopted": true,
+  "adopted_schedule_with_zero_new_order": {
+    "settlement": "2026-08-18",
+    "contract_proposal_deadline": "2026-07-08",
+    "offset_days": 30,
+    "review_business_days": 3
+  },
+  "assumptions_persisted_to_db": true,
+  "browser_errors": [],
+  "mobile_overflow": false,
+  "database": "별도 테스트 DB · 8088 캠페인 변경 없음"
+}

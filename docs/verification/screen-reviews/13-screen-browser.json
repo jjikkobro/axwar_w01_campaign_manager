@@ -1,0 +1,86 @@
+{
+  "base": "http://127.0.0.1:8087",
+  "screens": [
+    {
+      "id": "MKT_1_Proposal",
+      "role": "마케팅",
+      "passed": true,
+      "sections": 6
+    },
+    {
+      "id": "MKT_2_Wait",
+      "role": "마케팅",
+      "passed": true,
+      "sections": 6
+    },
+    {
+      "id": "MKT_3_Hold",
+      "role": "마케팅",
+      "passed": true,
+      "sections": 6
+    },
+    {
+      "id": "MKT_4_Close",
+      "role": "마케팅",
+      "passed": true,
+      "sections": 7
+    },
+    {
+      "id": "SCM_1_Check",
+      "role": "SCM",
+      "passed": true,
+      "sections": 7
+    },
+    {
+      "id": "SCM_2_WaitApproval",
+      "role": "SCM",
+      "passed": true,
+      "sections": 6
+    },
+    {
+      "id": "SCM_3_PO",
+      "role": "SCM",
+      "passed": true,
+      "sections": 6
+    },
+    {
+      "id": "SCM_4_WaitReply",
+      "role": "SCM",
+      "passed": true,
+      "sections": 6
+    },
+    {
+      "id": "SCM_5_Receipt",
+      "role": "SCM",
+      "passed": true,
+      "sections": 7
+    },
+    {
+      "id": "FIN_1_Review",
+      "role": "재무",
+      "passed": true,
+      "sections": 13
+    },
+    {
+      "id": "FIN_2_Wait",
+      "role": "재무",
+      "passed": true,
+      "sections": 6
+    },
+    {
+      "id": "APR_1_CEO",
+      "role": "승인권자",
+      "passed": true,
+      "sections": 6
+    },
+    {
+      "id": "APR_2_Normal",
+      "role": "승인권자",
+      "passed": true,
+      "sections": 6
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "mobile_screens": 13
+}

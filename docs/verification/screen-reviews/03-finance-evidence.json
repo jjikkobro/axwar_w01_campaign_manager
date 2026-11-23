@@ -1,0 +1,720 @@
+{
+  "review_date": "2026-11-10",
+  "method": "Independent CSV integer arithmetic; 2026-07-01..09-28; Monday-Friday; no holiday or weekend shift; no new commitments; overdue collect/pay are assumptions",
+  "sources": {
+    "01_참가자_배포용/04_원본데이터/02_masil/financials/fin_cash_daily_ms.csv": {
+      "sha256": "6dd0d9f8ef3af047460ffaaea2d82a5eddd4a2fae74596507e7953809805129f"
+    },
+    "01_참가자_배포용/04_원본데이터/02_masil/financials/fin_ar_aging_ms.csv": {
+      "sha256": "242e9d3d8805d29903fb1d6c269ea841489e7ed3d1a9ad54732732ab6bae1437"
+    },
+    "01_참가자_배포용/04_원본데이터/02_masil/financials/fin_ap_aging_ms.csv": {
+      "sha256": "851c1d108caaad3c28a558a596f67459b520bc6828a00ca6e3bc3287017c4e11"
+    },
+    "01_참가자_배포용/04_원본데이터/02_masil/inventory/sc_purchase_orders_ms.csv": {
+      "sha256": "2686b7e51395ff487b5cb37d7fe1a6f2f20c4ff77acea8164bee5e32918ebd44"
+    },
+    "01_참가자_배포용/04_원본데이터/02_masil/financials/fin_cash_forecast_ms.csv": {
+      "sha256": "cd123e0a442745006348a4b6026e5c168336ababf2b8434df60ef4121095eca3"
+    }
+  },
+  "opening": 5148063540,
+  "po_july21": 3749760000,
+  "linked_ap_excluded": 14,
+  "overdue_ar": [
+    {
+      "ar_id": "MAR-0003",
+      "channel_id": "CH-02",
+      "invoice_date": "2026-04-06",
+      "due_date": "2026-04-09",
+      "amount_krw": "217210975",
+      "outstanding_krw": "50863021",
+      "aging_days": "82"
+    },
+    {
+      "ar_id": "MAR-0009",
+      "channel_id": "CH-04",
+      "invoice_date": "2026-05-06",
+      "due_date": "2026-06-05",
+      "amount_krw": "165344863",
+      "outstanding_krw": "32228936",
+      "aging_days": "25"
+    },
+    {
+      "ar_id": "MAR-0012",
+      "channel_id": "CH-05",
+      "invoice_date": "2026-04-01",
+      "due_date": "2026-04-08",
+      "amount_krw": "130365832",
+      "outstanding_krw": "27566352",
+      "aging_days": "83"
+    },
+    {
+      "ar_id": "MAR-0015",
+      "channel_id": "CH-06",
+      "invoice_date": "2026-04-06",
+      "due_date": "2026-04-13",
+      "amount_krw": "296641487",
+      "outstanding_krw": "39630868",
+      "aging_days": "78"
+    },
+    {
+      "ar_id": "MAR-0018",
+      "channel_id": "CH-07",
+      "invoice_date": "2026-05-11",
+      "due_date": "2026-05-18",
+      "amount_krw": "155863397",
+      "outstanding_krw": "23448398",
+      "aging_days": "43"
+    },
+    {
+      "ar_id": "MAR-0021",
+      "channel_id": "CH-08",
+      "invoice_date": "2026-05-14",
+      "due_date": "2026-05-19",
+      "amount_krw": "124257009",
+      "outstanding_krw": "6433580",
+      "aging_days": "42"
+    }
+  ],
+  "overdue_operating_ap": [
+    {
+      "ap_id": "MAP-0021",
+      "supplier_id": "V-EXT",
+      "po_id": "NONE",
+      "invoice_date": "2026-05-07",
+      "payment_due_date": "2026-06-06",
+      "amount_krw": "72715670",
+      "aging_days": "24"
+    },
+    {
+      "ap_id": "MAP-0022",
+      "supplier_id": "V-EXT",
+      "po_id": "NONE",
+      "invoice_date": "2026-05-07",
+      "payment_due_date": "2026-06-06",
+      "amount_krw": "142036027",
+      "aging_days": "24"
+    },
+    {
+      "ap_id": "MAP-0023",
+      "supplier_id": "V-EXT",
+      "po_id": "NONE",
+      "invoice_date": "2026-05-11",
+      "payment_due_date": "2026-06-10",
+      "amount_krw": "128631878",
+      "aging_days": "20"
+    },
+    {
+      "ap_id": "MAP-0024",
+      "supplier_id": "V-EXT",
+      "po_id": "NONE",
+      "invoice_date": "2026-05-11",
+      "payment_due_date": "2026-06-10",
+      "amount_krw": "110791540",
+      "aging_days": "20"
+    }
+  ],
+  "scenarios": {
+    "collect_True_pay_True": {
+      "first_breach": "2026-07-21",
+      "last_breach": "2026-08-21",
+      "business_min": 1647835595,
+      "weekly": [
+        {
+          "week": "2026-07-06",
+          "observations": 5,
+          "business_min": 5427793258,
+          "last_observed": {
+            "date": "2026-07-10",
+            "closing": 5427793258,
+            "business": true
+          },
+          "official": 5468884369
+        },
+        {
+          "week": "2026-07-13",
+          "observations": 5,
+          "business_min": 5427793258,
+          "last_observed": {
+            "date": "2026-07-17",
+            "closing": 5667505999,
+            "business": true
+          },
+          "official": 5881606616
+        },
+        {
+          "week": "2026-07-20",
+          "observations": 5,
+          "business_min": 1745889413,
+          "last_observed": {
+            "date": "2026-07-24",
+            "closing": 1745889413,
+            "business": true
+          },
+          "official": 6091722355
+        },
+        {
+          "week": "2026-07-27",
+          "observations": 5,
+          "business_min": 1647835595,
+          "last_observed": {
+            "date": "2026-07-31",
+            "closing": 1647835595,
+            "business": true
+          },
+          "official": 6136050378
+        },
+        {
+          "week": "2026-08-03",
+          "observations": 5,
+          "business_min": 1647835595,
+          "last_observed": {
+            "date": "2026-08-07",
+            "closing": 1647835595,
+            "business": true
+          },
+          "official": 6229754096
+        },
+        {
+          "week": "2026-08-10",
+          "observations": 5,
+          "business_min": 1647835595,
+          "last_observed": {
+            "date": "2026-08-14",
+            "closing": 1647835595,
+            "business": true
+          },
+          "official": 6636836205
+        },
+        {
+          "week": "2026-08-17",
+          "observations": 5,
+          "business_min": 1647835595,
+          "last_observed": {
+            "date": "2026-08-21",
+            "closing": 1647835595,
+            "business": true
+          },
+          "official": 6825284247
+        },
+        {
+          "week": "2026-08-24",
+          "observations": 5,
+          "business_min": 3054579451,
+          "last_observed": {
+            "date": "2026-08-28",
+            "closing": 3054579451,
+            "business": true
+          },
+          "official": 7108078432
+        },
+        {
+          "week": "2026-08-31",
+          "observations": 5,
+          "business_min": 4646094684,
+          "last_observed": {
+            "date": "2026-09-04",
+            "closing": 4646094684,
+            "business": true
+          },
+          "official": 7501099433
+        },
+        {
+          "week": "2026-09-07",
+          "observations": 5,
+          "business_min": 6049141342,
+          "last_observed": {
+            "date": "2026-09-11",
+            "closing": 6049141342,
+            "business": true
+          },
+          "official": 7644362414
+        },
+        {
+          "week": "2026-09-14",
+          "observations": 5,
+          "business_min": 6049141342,
+          "last_observed": {
+            "date": "2026-09-18",
+            "closing": 6049141342,
+            "business": true
+          },
+          "official": 7501108694
+        },
+        {
+          "week": "2026-09-21",
+          "observations": 5,
+          "business_min": 6049141342,
+          "last_observed": {
+            "date": "2026-09-25",
+            "closing": 6049141342,
+            "business": true
+          },
+          "official": 7930058460
+        },
+        {
+          "week": "2026-09-28",
+          "observations": 1,
+          "business_min": 6049141342,
+          "last_observed": {
+            "date": "2026-09-28",
+            "closing": 6049141342,
+            "business": true
+          },
+          "official": 8201637153
+        }
+      ]
+    },
+    "collect_True_pay_False": {
+      "first_breach": "2026-07-21",
+      "last_breach": "2026-08-21",
+      "business_min": 2102010710,
+      "weekly": [
+        {
+          "week": "2026-07-06",
+          "observations": 5,
+          "business_min": 5881968373,
+          "last_observed": {
+            "date": "2026-07-10",
+            "closing": 5881968373,
+            "business": true
+          },
+          "official": 5468884369
+        },
+        {
+          "week": "2026-07-13",
+          "observations": 5,
+          "business_min": 5881968373,
+          "last_observed": {
+            "date": "2026-07-17",
+            "closing": 6121681114,
+            "business": true
+          },
+          "official": 5881606616
+        },
+        {
+          "week": "2026-07-20",
+          "observations": 5,
+          "business_min": 2200064528,
+          "last_observed": {
+            "date": "2026-07-24",
+            "closing": 2200064528,
+            "business": true
+          },
+          "official": 6091722355
+        },
+        {
+          "week": "2026-07-27",
+          "observations": 5,
+          "business_min": 2102010710,
+          "last_observed": {
+            "date": "2026-07-31",
+            "closing": 2102010710,
+            "business": true
+          },
+          "official": 6136050378
+        },
+        {
+          "week": "2026-08-03",
+          "observations": 5,
+          "business_min": 2102010710,
+          "last_observed": {
+            "date": "2026-08-07",
+            "closing": 2102010710,
+            "business": true
+          },
+          "official": 6229754096
+        },
+        {
+          "week": "2026-08-10",
+          "observations": 5,
+          "business_min": 2102010710,
+          "last_observed": {
+            "date": "2026-08-14",
+            "closing": 2102010710,
+            "business": true
+          },
+          "official": 6636836205
+        },
+        {
+          "week": "2026-08-17",
+          "observations": 5,
+          "business_min": 2102010710,
+          "last_observed": {
+            "date": "2026-08-21",
+            "closing": 2102010710,
+            "business": true
+          },
+          "official": 6825284247
+        },
+        {
+          "week": "2026-08-24",
+          "observations": 5,
+          "business_min": 3508754566,
+          "last_observed": {
+            "date": "2026-08-28",
+            "closing": 3508754566,
+            "business": true
+          },
+          "official": 7108078432
+        },
+        {
+          "week": "2026-08-31",
+          "observations": 5,
+          "business_min": 5100269799,
+          "last_observed": {
+            "date": "2026-09-04",
+            "closing": 5100269799,
+            "business": true
+          },
+          "official": 7501099433
+        },
+        {
+          "week": "2026-09-07",
+          "observations": 5,
+          "business_min": 6503316457,
+          "last_observed": {
+            "date": "2026-09-11",
+            "closing": 6503316457,
+            "business": true
+          },
+          "official": 7644362414
+        },
+        {
+          "week": "2026-09-14",
+          "observations": 5,
+          "business_min": 6503316457,
+          "last_observed": {
+            "date": "2026-09-18",
+            "closing": 6503316457,
+            "business": true
+          },
+          "official": 7501108694
+        },
+        {
+          "week": "2026-09-21",
+          "observations": 5,
+          "business_min": 6503316457,
+          "last_observed": {
+            "date": "2026-09-25",
+            "closing": 6503316457,
+            "business": true
+          },
+          "official": 7930058460
+        },
+        {
+          "week": "2026-09-28",
+          "observations": 1,
+          "business_min": 6503316457,
+          "last_observed": {
+            "date": "2026-09-28",
+            "closing": 6503316457,
+            "business": true
+          },
+          "official": 8201637153
+        }
+      ]
+    },
+    "collect_False_pay_True": {
+      "first_breach": "2026-07-21",
+      "last_breach": "2026-08-28",
+      "business_min": 1467664440,
+      "weekly": [
+        {
+          "week": "2026-07-06",
+          "observations": 5,
+          "business_min": 5247622103,
+          "last_observed": {
+            "date": "2026-07-10",
+            "closing": 5247622103,
+            "business": true
+          },
+          "official": 5468884369
+        },
+        {
+          "week": "2026-07-13",
+          "observations": 5,
+          "business_min": 5247622103,
+          "last_observed": {
+            "date": "2026-07-17",
+            "closing": 5487334844,
+            "business": true
+          },
+          "official": 5881606616
+        },
+        {
+          "week": "2026-07-20",
+          "observations": 5,
+          "business_min": 1565718258,
+          "last_observed": {
+            "date": "2026-07-24",
+            "closing": 1565718258,
+            "business": true
+          },
+          "official": 6091722355
+        },
+        {
+          "week": "2026-07-27",
+          "observations": 5,
+          "business_min": 1467664440,
+          "last_observed": {
+            "date": "2026-07-31",
+            "closing": 1467664440,
+            "business": true
+          },
+          "official": 6136050378
+        },
+        {
+          "week": "2026-08-03",
+          "observations": 5,
+          "business_min": 1467664440,
+          "last_observed": {
+            "date": "2026-08-07",
+            "closing": 1467664440,
+            "business": true
+          },
+          "official": 6229754096
+        },
+        {
+          "week": "2026-08-10",
+          "observations": 5,
+          "business_min": 1467664440,
+          "last_observed": {
+            "date": "2026-08-14",
+            "closing": 1467664440,
+            "business": true
+          },
+          "official": 6636836205
+        },
+        {
+          "week": "2026-08-17",
+          "observations": 5,
+          "business_min": 1467664440,
+          "last_observed": {
+            "date": "2026-08-21",
+            "closing": 1467664440,
+            "business": true
+          },
+          "official": 6825284247
+        },
+        {
+          "week": "2026-08-24",
+          "observations": 5,
+          "business_min": 2874408296,
+          "last_observed": {
+            "date": "2026-08-28",
+            "closing": 2874408296,
+            "business": true
+          },
+          "official": 7108078432
+        },
+        {
+          "week": "2026-08-31",
+          "observations": 5,
+          "business_min": 4465923529,
+          "last_observed": {
+            "date": "2026-09-04",
+            "closing": 4465923529,
+            "business": true
+          },
+          "official": 7501099433
+        },
+        {
+          "week": "2026-09-07",
+          "observations": 5,
+          "business_min": 5868970187,
+          "last_observed": {
+            "date": "2026-09-11",
+            "closing": 5868970187,
+            "business": true
+          },
+          "official": 7644362414
+        },
+        {
+          "week": "2026-09-14",
+          "observations": 5,
+          "business_min": 5868970187,
+          "last_observed": {
+            "date": "2026-09-18",
+            "closing": 5868970187,
+            "business": true
+          },
+          "official": 7501108694
+        },
+        {
+          "week": "2026-09-21",
+          "observations": 5,
+          "business_min": 5868970187,
+          "last_observed": {
+            "date": "2026-09-25",
+            "closing": 5868970187,
+            "business": true
+          },
+          "official": 7930058460
+        },
+        {
+          "week": "2026-09-28",
+          "observations": 1,
+          "business_min": 5868970187,
+          "last_observed": {
+            "date": "2026-09-28",
+            "closing": 5868970187,
+            "business": true
+          },
+          "official": 8201637153
+        }
+      ]
+    },
+    "collect_False_pay_False": {
+      "first_breach": "2026-07-21",
+      "last_breach": "2026-08-21",
+      "business_min": 1921839555,
+      "weekly": [
+        {
+          "week": "2026-07-06",
+          "observations": 5,
+          "business_min": 5701797218,
+          "last_observed": {
+            "date": "2026-07-10",
+            "closing": 5701797218,
+            "business": true
+          },
+          "official": 5468884369
+        },
+        {
+          "week": "2026-07-13",
+          "observations": 5,
+          "business_min": 5701797218,
+          "last_observed": {
+            "date": "2026-07-17",
+            "closing": 5941509959,
+            "business": true
+          },
+          "official": 5881606616
+        },
+        {
+          "week": "2026-07-20",
+          "observations": 5,
+          "business_min": 2019893373,
+          "last_observed": {
+            "date": "2026-07-24",
+            "closing": 2019893373,
+            "business": true
+          },
+          "official": 6091722355
+        },
+        {
+          "week": "2026-07-27",
+          "observations": 5,
+          "business_min": 1921839555,
+          "last_observed": {
+            "date": "2026-07-31",
+            "closing": 1921839555,
+            "business": true
+          },
+          "official": 6136050378
+        },
+        {
+          "week": "2026-08-03",
+          "observations": 5,
+          "business_min": 1921839555,
+          "last_observed": {
+            "date": "2026-08-07",
+            "closing": 1921839555,
+            "business": true
+          },
+          "official": 6229754096
+        },
+        {
+          "week": "2026-08-10",
+          "observations": 5,
+          "business_min": 1921839555,
+          "last_observed": {
+            "date": "2026-08-14",
+            "closing": 1921839555,
+            "business": true
+          },
+          "official": 6636836205
+        },
+        {
+          "week": "2026-08-17",
+          "observations": 5,
+          "business_min": 1921839555,
+          "last_observed": {
+            "date": "2026-08-21",
+            "closing": 1921839555,
+            "business": true
+          },
+          "official": 6825284247
+        },
+        {
+          "week": "2026-08-24",
+          "observations": 5,
+          "business_min": 3328583411,
+          "last_observed": {
+            "date": "2026-08-28",
+            "closing": 3328583411,
+            "business": true
+          },
+          "official": 7108078432
+        },
+        {
+          "week": "2026-08-31",
+          "observations": 5,
+          "business_min": 4920098644,
+          "last_observed": {
+            "date": "2026-09-04",
+            "closing": 4920098644,
+            "business": true
+          },
+          "official": 7501099433
+        },
+        {
+          "week": "2026-09-07",
+          "observations": 5,
+          "business_min": 6323145302,
+          "last_observed": {
+            "date": "2026-09-11",
+            "closing": 6323145302,
+            "business": true
+          },
+          "official": 7644362414
+        },
+        {
+          "week": "2026-09-14",
+          "observations": 5,
+          "business_min": 6323145302,
+          "last_observed": {
+            "date": "2026-09-18",
+            "closing": 6323145302,
+            "business": true
+          },
+          "official": 7501108694
+        },
+        {
+          "week": "2026-09-21",
+          "observations": 5,
+          "business_min": 6323145302,
+          "last_observed": {
+            "date": "2026-09-25",
+            "closing": 6323145302,
+            "business": true
+          },
+          "official": 7930058460
+        },
+        {
+          "week": "2026-09-28",
+          "observations": 1,
+          "business_min": 6323145302,
+          "last_observed": {
+            "date": "2026-09-28",
+            "closing": 6323145302,
+            "business": true
+          },
+          "official": 8201637153
+        }
+      ]
+    }
+  }
+}

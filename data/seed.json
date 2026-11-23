@@ -1,0 +1,1311 @@
+{
+  "sku": {
+    "source": "04_원본데이터/02_masil/master/m_sku_ms.csv",
+    "provenance": "원본 사실",
+    "rows": [
+      {
+        "sku_id": "SKU-1001",
+        "sku_name": "더마 리페어 세럼",
+        "category": "더마",
+        "product_id": "PL-02",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "24000",
+        "lead_time_weeks": "12"
+      },
+      {
+        "sku_id": "SKU-1002",
+        "sku_name": "더마 카밍 크림",
+        "category": "더마",
+        "product_id": "PL-02",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "24000",
+        "lead_time_weeks": "12"
+      },
+      {
+        "sku_id": "SKU-1003",
+        "sku_name": "더마 배리어 로션",
+        "category": "더마",
+        "product_id": "PL-02",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "20000",
+        "lead_time_weeks": "12"
+      },
+      {
+        "sku_id": "SKU-1004",
+        "sku_name": "더마 시카 앰플",
+        "category": "더마",
+        "product_id": "PL-02",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "20000",
+        "lead_time_weeks": "12"
+      },
+      {
+        "sku_id": "SKU-2001",
+        "sku_name": "기초 토너 대용량",
+        "category": "기초",
+        "product_id": "PL-01",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "16000",
+        "lead_time_weeks": "8"
+      },
+      {
+        "sku_id": "SKU-2002",
+        "sku_name": "기초 에센스",
+        "category": "기초",
+        "product_id": "PL-01",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "16000",
+        "lead_time_weeks": "8"
+      },
+      {
+        "sku_id": "SKU-2003",
+        "sku_name": "기초 수분크림",
+        "category": "기초",
+        "product_id": "PL-01",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "16000",
+        "lead_time_weeks": "8"
+      },
+      {
+        "sku_id": "SKU-3001",
+        "sku_name": "색조 벨벳 립",
+        "category": "색조",
+        "product_id": "PL-04",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "12000",
+        "lead_time_weeks": "6"
+      },
+      {
+        "sku_id": "SKU-3002",
+        "sku_name": "색조 글로우 쿠션",
+        "category": "색조",
+        "product_id": "PL-04",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "12000",
+        "lead_time_weeks": "6"
+      },
+      {
+        "sku_id": "SKU-3003",
+        "sku_name": "색조 아이팔레트",
+        "category": "색조",
+        "product_id": "PL-04",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "10000",
+        "lead_time_weeks": "6"
+      },
+      {
+        "sku_id": "SKU-4001",
+        "sku_name": "선케어 데일리 선스틱",
+        "category": "선케어",
+        "product_id": "PL-03",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "12000",
+        "lead_time_weeks": "8"
+      },
+      {
+        "sku_id": "SKU-4002",
+        "sku_name": "선케어 톤업 선크림",
+        "category": "선케어",
+        "product_id": "PL-03",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "12000",
+        "lead_time_weeks": "8"
+      },
+      {
+        "sku_id": "SKU-5001",
+        "sku_name": "헤어 리페어 샴푸",
+        "category": "헤어",
+        "product_id": "PL-05",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "16000",
+        "lead_time_weeks": "8"
+      },
+      {
+        "sku_id": "SKU-5002",
+        "sku_name": "바디 모이스처 워시",
+        "category": "바디",
+        "product_id": "PL-06",
+        "source_company": "Corevia",
+        "safety_stock_weeks_min": "4",
+        "safety_stock_weeks_max": "6",
+        "moq": "16000",
+        "lead_time_weeks": "8"
+      }
+    ]
+  },
+  "inventory": {
+    "source": "04_원본데이터/02_masil/inventory/sku_inventory_ms.csv",
+    "provenance": "원본 사실",
+    "rows": [
+      {
+        "sku_id": "SKU-1001",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "23123",
+        "in_transit_qty": "15821",
+        "stock_cover_weeks": "2.9"
+      },
+      {
+        "sku_id": "SKU-1002",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "21111",
+        "in_transit_qty": "14444",
+        "stock_cover_weeks": "2.9"
+      },
+      {
+        "sku_id": "SKU-1003",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "16210",
+        "in_transit_qty": "598",
+        "stock_cover_weeks": "4.3"
+      },
+      {
+        "sku_id": "SKU-1004",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "14359",
+        "in_transit_qty": "12998",
+        "stock_cover_weeks": "2.2"
+      },
+      {
+        "sku_id": "SKU-2001",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "25170",
+        "in_transit_qty": "1823",
+        "stock_cover_weeks": "5.7"
+      },
+      {
+        "sku_id": "SKU-2002",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "19382",
+        "in_transit_qty": "1089",
+        "stock_cover_weeks": "4.9"
+      },
+      {
+        "sku_id": "SKU-2003",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "22755",
+        "in_transit_qty": "2459",
+        "stock_cover_weeks": "5.9"
+      },
+      {
+        "sku_id": "SKU-3001",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "14016",
+        "in_transit_qty": "16",
+        "stock_cover_weeks": "15.9"
+      },
+      {
+        "sku_id": "SKU-3002",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "15496",
+        "in_transit_qty": "857",
+        "stock_cover_weeks": "17.8"
+      },
+      {
+        "sku_id": "SKU-3003",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "21413",
+        "in_transit_qty": "3079",
+        "stock_cover_weeks": "5.0"
+      },
+      {
+        "sku_id": "SKU-4001",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "16668",
+        "in_transit_qty": "3129",
+        "stock_cover_weeks": "4.2"
+      },
+      {
+        "sku_id": "SKU-4002",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "18803",
+        "in_transit_qty": "3473",
+        "stock_cover_weeks": "4.9"
+      },
+      {
+        "sku_id": "SKU-5001",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "22819",
+        "in_transit_qty": "1779",
+        "stock_cover_weeks": "5.2"
+      },
+      {
+        "sku_id": "SKU-5002",
+        "snapshot_date": "2026-06-30",
+        "on_hand_qty": "18227",
+        "in_transit_qty": "3382",
+        "stock_cover_weeks": "5.2"
+      }
+    ]
+  },
+  "sales": {
+    "source": "04_원본데이터/02_masil/inventory/sku_weekly_sales_ms.csv",
+    "provenance": "원본 사실",
+    "rows": [
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-1001",
+        "sold_qty": "8463"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-1001",
+        "sold_qty": "8973"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-1001",
+        "sold_qty": "8065"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-1001",
+        "sold_qty": "7782"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-1001",
+        "sold_qty": "6822"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-1002",
+        "sold_qty": "8018"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-1002",
+        "sold_qty": "7162"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-1002",
+        "sold_qty": "7926"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-1002",
+        "sold_qty": "6816"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-1002",
+        "sold_qty": "6984"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-1003",
+        "sold_qty": "4414"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-1003",
+        "sold_qty": "4125"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-1003",
+        "sold_qty": "3572"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-1003",
+        "sold_qty": "3933"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-1003",
+        "sold_qty": "3499"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-1004",
+        "sold_qty": "6439"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-1004",
+        "sold_qty": "5983"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-1004",
+        "sold_qty": "8137"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-1004",
+        "sold_qty": "5613"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-1004",
+        "sold_qty": "6263"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-2001",
+        "sold_qty": "3276"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-2001",
+        "sold_qty": "3864"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-2001",
+        "sold_qty": "4591"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-2001",
+        "sold_qty": "4586"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-2001",
+        "sold_qty": "4753"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-2002",
+        "sold_qty": "4724"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-2002",
+        "sold_qty": "4791"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-2002",
+        "sold_qty": "4266"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-2002",
+        "sold_qty": "3495"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-2002",
+        "sold_qty": "3160"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-2003",
+        "sold_qty": "4157"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-2003",
+        "sold_qty": "3502"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-2003",
+        "sold_qty": "4333"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-2003",
+        "sold_qty": "3653"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-2003",
+        "sold_qty": "3874"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-3001",
+        "sold_qty": "727"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-3001",
+        "sold_qty": "743"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-3001",
+        "sold_qty": "1166"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-3001",
+        "sold_qty": "775"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-3001",
+        "sold_qty": "846"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-3002",
+        "sold_qty": "975"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-3002",
+        "sold_qty": "974"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-3002",
+        "sold_qty": "919"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-3002",
+        "sold_qty": "858"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-3002",
+        "sold_qty": "726"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-3003",
+        "sold_qty": "3335"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-3003",
+        "sold_qty": "4491"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-3003",
+        "sold_qty": "4584"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-3003",
+        "sold_qty": "4515"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-3003",
+        "sold_qty": "3529"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-4001",
+        "sold_qty": "4306"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-4001",
+        "sold_qty": "3764"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-4001",
+        "sold_qty": "3376"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-4001",
+        "sold_qty": "3903"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-4001",
+        "sold_qty": "4704"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-4002",
+        "sold_qty": "4461"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-4002",
+        "sold_qty": "4952"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-4002",
+        "sold_qty": "3394"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-4002",
+        "sold_qty": "3244"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-4002",
+        "sold_qty": "3692"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-5001",
+        "sold_qty": "3582"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-5001",
+        "sold_qty": "4634"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-5001",
+        "sold_qty": "4899"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-5001",
+        "sold_qty": "4728"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-5001",
+        "sold_qty": "3188"
+      },
+      {
+        "week": "2026-06-01",
+        "sku_id": "SKU-5002",
+        "sold_qty": "4347"
+      },
+      {
+        "week": "2026-06-08",
+        "sku_id": "SKU-5002",
+        "sold_qty": "3475"
+      },
+      {
+        "week": "2026-06-15",
+        "sku_id": "SKU-5002",
+        "sold_qty": "3446"
+      },
+      {
+        "week": "2026-06-22",
+        "sku_id": "SKU-5002",
+        "sold_qty": "3066"
+      },
+      {
+        "week": "2026-06-29",
+        "sku_id": "SKU-5002",
+        "sold_qty": "4028"
+      }
+    ]
+  },
+  "purchase": {
+    "source": "04_원본데이터/02_masil/inventory/sc_purchase_orders_ms.csv",
+    "provenance": "원본 사실",
+    "rows": [
+      {
+        "po_id": "SPO-0001",
+        "sku_id": "SKU-1001",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-26",
+        "order_qty": "24000",
+        "moq": "24000",
+        "lead_time_weeks": "12",
+        "amount_krw": "524160000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0002",
+        "sku_id": "SKU-1002",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-23",
+        "order_qty": "24000",
+        "moq": "24000",
+        "lead_time_weeks": "12",
+        "amount_krw": "524160000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0003",
+        "sku_id": "SKU-1003",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-22",
+        "order_qty": "20000",
+        "moq": "20000",
+        "lead_time_weeks": "12",
+        "amount_krw": "436800000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0004",
+        "sku_id": "SKU-1004",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-23",
+        "order_qty": "20000",
+        "moq": "20000",
+        "lead_time_weeks": "12",
+        "amount_krw": "436800000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0005",
+        "sku_id": "SKU-2001",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-23",
+        "order_qty": "16000",
+        "moq": "16000",
+        "lead_time_weeks": "8",
+        "amount_krw": "201600000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0006",
+        "sku_id": "SKU-2002",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-24",
+        "order_qty": "16000",
+        "moq": "16000",
+        "lead_time_weeks": "8",
+        "amount_krw": "201600000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0007",
+        "sku_id": "SKU-2003",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-24",
+        "order_qty": "16000",
+        "moq": "16000",
+        "lead_time_weeks": "8",
+        "amount_krw": "201600000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0008",
+        "sku_id": "SKU-3001",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-22",
+        "order_qty": "12000",
+        "moq": "12000",
+        "lead_time_weeks": "6",
+        "amount_krw": "201600000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0009",
+        "sku_id": "SKU-3002",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-24",
+        "order_qty": "12000",
+        "moq": "12000",
+        "lead_time_weeks": "6",
+        "amount_krw": "201600000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0010",
+        "sku_id": "SKU-3003",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-25",
+        "order_qty": "10000",
+        "moq": "10000",
+        "lead_time_weeks": "6",
+        "amount_krw": "168000000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0011",
+        "sku_id": "SKU-4001",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-24",
+        "order_qty": "12000",
+        "moq": "12000",
+        "lead_time_weeks": "8",
+        "amount_krw": "171360000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0012",
+        "sku_id": "SKU-4002",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-25",
+        "order_qty": "12000",
+        "moq": "12000",
+        "lead_time_weeks": "8",
+        "amount_krw": "171360000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0013",
+        "sku_id": "SKU-5001",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-22",
+        "order_qty": "16000",
+        "moq": "16000",
+        "lead_time_weeks": "8",
+        "amount_krw": "147840000",
+        "payment_due_date": "2026-07-21"
+      },
+      {
+        "po_id": "SPO-0014",
+        "sku_id": "SKU-5002",
+        "supplier_id": "Corevia",
+        "order_date": "2026-06-25",
+        "order_qty": "16000",
+        "moq": "16000",
+        "lead_time_weeks": "8",
+        "amount_krw": "161280000",
+        "payment_due_date": "2026-07-21"
+      }
+    ]
+  },
+  "cash": {
+    "source": "04_원본데이터/02_masil/financials/fin_cash_daily_ms.csv",
+    "provenance": "원본 사실",
+    "rows": [
+      {
+        "date": "2026-06-30",
+        "opening_balance": "5050971372",
+        "inflow_krw": "412770807",
+        "outflow_krw": "315678639",
+        "closing_balance": "5148063540",
+        "covenant_min_krw": "3000000000",
+        "breach_flag": "False"
+      }
+    ]
+  },
+  "ar": {
+    "source": "04_원본데이터/02_masil/financials/fin_ar_aging_ms.csv",
+    "provenance": "원본 사실",
+    "rows": [
+      {
+        "ar_id": "MAR-0001",
+        "channel_id": "CH-02",
+        "invoice_date": "2026-06-30",
+        "due_date": "2026-07-03",
+        "amount_krw": "275408316",
+        "outstanding_krw": "275408316",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0002",
+        "channel_id": "CH-02",
+        "invoice_date": "2026-06-29",
+        "due_date": "2026-07-02",
+        "amount_krw": "253155246",
+        "outstanding_krw": "253155246",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0003",
+        "channel_id": "CH-02",
+        "invoice_date": "2026-04-06",
+        "due_date": "2026-04-09",
+        "amount_krw": "217210975",
+        "outstanding_krw": "50863021",
+        "aging_days": "82"
+      },
+      {
+        "ar_id": "MAR-0004",
+        "channel_id": "CH-03",
+        "invoice_date": "2026-05-25",
+        "due_date": "2026-08-23",
+        "amount_krw": "1406743856",
+        "outstanding_krw": "1406743856",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0005",
+        "channel_id": "CH-03",
+        "invoice_date": "2026-06-01",
+        "due_date": "2026-08-30",
+        "amount_krw": "1591515233",
+        "outstanding_krw": "1591515233",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0006",
+        "channel_id": "CH-03",
+        "invoice_date": "2026-06-08",
+        "due_date": "2026-09-06",
+        "amount_krw": "1403046658",
+        "outstanding_krw": "1403046658",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0007",
+        "channel_id": "CH-04",
+        "invoice_date": "2026-06-17",
+        "due_date": "2026-07-17",
+        "amount_krw": "132546688",
+        "outstanding_krw": "132546688",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0008",
+        "channel_id": "CH-04",
+        "invoice_date": "2026-06-15",
+        "due_date": "2026-07-15",
+        "amount_krw": "107166053",
+        "outstanding_krw": "107166053",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0009",
+        "channel_id": "CH-04",
+        "invoice_date": "2026-05-06",
+        "due_date": "2026-06-05",
+        "amount_krw": "165344863",
+        "outstanding_krw": "32228936",
+        "aging_days": "25"
+      },
+      {
+        "ar_id": "MAR-0010",
+        "channel_id": "CH-05",
+        "invoice_date": "2026-06-24",
+        "due_date": "2026-07-01",
+        "amount_krw": "87497819",
+        "outstanding_krw": "87497819",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0011",
+        "channel_id": "CH-05",
+        "invoice_date": "2026-06-29",
+        "due_date": "2026-07-06",
+        "amount_krw": "86054342",
+        "outstanding_krw": "86054342",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0012",
+        "channel_id": "CH-05",
+        "invoice_date": "2026-04-01",
+        "due_date": "2026-04-08",
+        "amount_krw": "130365832",
+        "outstanding_krw": "27566352",
+        "aging_days": "83"
+      },
+      {
+        "ar_id": "MAR-0013",
+        "channel_id": "CH-06",
+        "invoice_date": "2026-06-26",
+        "due_date": "2026-07-03",
+        "amount_krw": "67421128",
+        "outstanding_krw": "67421128",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0014",
+        "channel_id": "CH-06",
+        "invoice_date": "2026-06-30",
+        "due_date": "2026-07-07",
+        "amount_krw": "63700643",
+        "outstanding_krw": "63700643",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0015",
+        "channel_id": "CH-06",
+        "invoice_date": "2026-04-06",
+        "due_date": "2026-04-13",
+        "amount_krw": "296641487",
+        "outstanding_krw": "39630868",
+        "aging_days": "78"
+      },
+      {
+        "ar_id": "MAR-0016",
+        "channel_id": "CH-07",
+        "invoice_date": "2026-06-29",
+        "due_date": "2026-07-06",
+        "amount_krw": "42723919",
+        "outstanding_krw": "42723919",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0017",
+        "channel_id": "CH-07",
+        "invoice_date": "2026-06-24",
+        "due_date": "2026-07-01",
+        "amount_krw": "48349771",
+        "outstanding_krw": "48349771",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0018",
+        "channel_id": "CH-07",
+        "invoice_date": "2026-05-11",
+        "due_date": "2026-05-18",
+        "amount_krw": "155863397",
+        "outstanding_krw": "23448398",
+        "aging_days": "43"
+      },
+      {
+        "ar_id": "MAR-0019",
+        "channel_id": "CH-08",
+        "invoice_date": "2026-06-29",
+        "due_date": "2026-07-04",
+        "amount_krw": "38438200",
+        "outstanding_krw": "38438200",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0020",
+        "channel_id": "CH-08",
+        "invoice_date": "2026-06-29",
+        "due_date": "2026-07-04",
+        "amount_krw": "32208508",
+        "outstanding_krw": "32208508",
+        "aging_days": "0"
+      },
+      {
+        "ar_id": "MAR-0021",
+        "channel_id": "CH-08",
+        "invoice_date": "2026-05-14",
+        "due_date": "2026-05-19",
+        "amount_krw": "124257009",
+        "outstanding_krw": "6433580",
+        "aging_days": "42"
+      }
+    ]
+  },
+  "ap": {
+    "source": "04_원본데이터/02_masil/financials/fin_ap_aging_ms.csv",
+    "provenance": "원본 사실",
+    "rows": [
+      {
+        "ap_id": "MAP-0001",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0001",
+        "invoice_date": "2026-06-26",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "524160000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0002",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0002",
+        "invoice_date": "2026-06-23",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "524160000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0003",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0003",
+        "invoice_date": "2026-06-22",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "436800000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0004",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0004",
+        "invoice_date": "2026-06-23",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "436800000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0005",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0005",
+        "invoice_date": "2026-06-23",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "201600000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0006",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0006",
+        "invoice_date": "2026-06-24",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "201600000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0007",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0007",
+        "invoice_date": "2026-06-24",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "201600000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0008",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0008",
+        "invoice_date": "2026-06-22",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "201600000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0009",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0009",
+        "invoice_date": "2026-06-24",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "201600000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0010",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0010",
+        "invoice_date": "2026-06-25",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "168000000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0011",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0011",
+        "invoice_date": "2026-06-24",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "171360000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0012",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0012",
+        "invoice_date": "2026-06-25",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "171360000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0013",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0013",
+        "invoice_date": "2026-06-22",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "147840000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0014",
+        "supplier_id": "Corevia",
+        "po_id": "SPO-0014",
+        "invoice_date": "2026-06-25",
+        "payment_due_date": "2026-07-21",
+        "amount_krw": "161280000",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0015",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-06-24",
+        "payment_due_date": "2026-07-24",
+        "amount_krw": "90700018",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0016",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-06-25",
+        "payment_due_date": "2026-07-25",
+        "amount_krw": "98053818",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0017",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-06-08",
+        "payment_due_date": "2026-07-08",
+        "amount_krw": "110169099",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0018",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-06-05",
+        "payment_due_date": "2026-07-05",
+        "amount_krw": "168726999",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0019",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-06-10",
+        "payment_due_date": "2026-07-10",
+        "amount_krw": "162328116",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0020",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-06-22",
+        "payment_due_date": "2026-07-22",
+        "amount_krw": "81156568",
+        "aging_days": "0"
+      },
+      {
+        "ap_id": "MAP-0021",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-05-07",
+        "payment_due_date": "2026-06-06",
+        "amount_krw": "72715670",
+        "aging_days": "24"
+      },
+      {
+        "ap_id": "MAP-0022",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-05-07",
+        "payment_due_date": "2026-06-06",
+        "amount_krw": "142036027",
+        "aging_days": "24"
+      },
+      {
+        "ap_id": "MAP-0023",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-05-11",
+        "payment_due_date": "2026-06-10",
+        "amount_krw": "128631878",
+        "aging_days": "20"
+      },
+      {
+        "ap_id": "MAP-0024",
+        "supplier_id": "V-EXT",
+        "po_id": "NONE",
+        "invoice_date": "2026-05-11",
+        "payment_due_date": "2026-06-10",
+        "amount_krw": "110791540",
+        "aging_days": "20"
+      }
+    ]
+  },
+  "forecast": {
+    "rows": [
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-07-06",
+        "projected_inflow_krw": "1729945389",
+        "projected_outflow_krw": "1409124560",
+        "projected_closing_krw": "5468884369"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-07-13",
+        "projected_inflow_krw": "1859842642",
+        "projected_outflow_krw": "1447120395",
+        "projected_closing_krw": "5881606616"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-07-20",
+        "projected_inflow_krw": "1878168998",
+        "projected_outflow_krw": "1668053259",
+        "projected_closing_krw": "6091722355"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-07-27",
+        "projected_inflow_krw": "1582964716",
+        "projected_outflow_krw": "1538636693",
+        "projected_closing_krw": "6136050378"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-08-03",
+        "projected_inflow_krw": "1401607949",
+        "projected_outflow_krw": "1307904231",
+        "projected_closing_krw": "6229754096"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-08-10",
+        "projected_inflow_krw": "1715653707",
+        "projected_outflow_krw": "1308571598",
+        "projected_closing_krw": "6636836205"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-08-17",
+        "projected_inflow_krw": "1836129706",
+        "projected_outflow_krw": "1647681664",
+        "projected_closing_krw": "6825284247"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-08-24",
+        "projected_inflow_krw": "1599674346",
+        "projected_outflow_krw": "1316880161",
+        "projected_closing_krw": "7108078432"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-08-31",
+        "projected_inflow_krw": "1868590505",
+        "projected_outflow_krw": "1475569504",
+        "projected_closing_krw": "7501099433"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-09-07",
+        "projected_inflow_krw": "1539946296",
+        "projected_outflow_krw": "1396683315",
+        "projected_closing_krw": "7644362414"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-09-14",
+        "projected_inflow_krw": "1526089652",
+        "projected_outflow_krw": "1669343372",
+        "projected_closing_krw": "7501108694"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-09-21",
+        "projected_inflow_krw": "1739630759",
+        "projected_outflow_krw": "1310680993",
+        "projected_closing_krw": "7930058460"
+      },
+      {
+        "forecast_date": "2026-06-30",
+        "week": "2026-09-28",
+        "projected_inflow_krw": "1658642416",
+        "projected_outflow_krw": "1387063723",
+        "projected_closing_krw": "8201637153"
+      }
+    ],
+    "source": "04_원본데이터/02_masil/financials/fin_cash_forecast_ms.csv",
+    "provenance": "부서 주장"
+  }
+}

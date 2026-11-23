@@ -1,0 +1,290 @@
+{
+  "case_id": "4774d5b9-980c-456c-919b-d520870a6410",
+  "before": {
+    "version": 4,
+    "state": "SCM 검토 요청",
+    "demand_ready": false
+  },
+  "planning": {
+    "policy": {
+      "id": "SCM-REPLENISH-2",
+      "source": "Business_Process_Map.md §2.2; calculation_definitions.md §1.3; m_sku_ms",
+      "provenance": "참가자 가정 / 계산 결과",
+      "review_interval_days": 7,
+      "assumptions": [
+        "7일마다 보충 검토 · 원본에 주기 명시 없음",
+        "최근 완료 4주 평균 판매 유지 · 일별 균등 배분",
+        "리드타임+1주 후 예상 재고가 최소 안전재고 이하이면 이번 주 발주안 생성 · 사용자 지정 가정. 리드타임+최대 안전재고까지 보충, MOQ 최소량 적용",
+        "기존 미확인 발주는 발주일+리드타임을 예상 입고일로만 사용. 실제 판매가능일 미확인",
+        "공급능력·견적·지급일 미확인. 승인·확정 입고·현금 전망에 자동 합산하지 않음"
+      ]
+    },
+    "recommendation": "정기 보충·추가 발주 검토 가능",
+    "items": [
+      {
+        "sku_id": "SKU-3001",
+        "regular_qty": 0,
+        "incremental_qty": 0,
+        "regular_orders": [
+          {
+            "id": "DRAFT-SKU-3001-2026-11-18",
+            "order_date": "2026-11-18",
+            "date": "2026-12-30",
+            "qty": 12000,
+            "lead_plus_week_stock": 2991.75,
+            "trigger_checkpoint": "2027-01-06",
+            "safety_qty": 3411.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          }
+        ],
+        "pipeline_assumptions": [
+          {
+            "id": "SPO-0008",
+            "date": "2026-08-03",
+            "qty": 12000.0,
+            "kind": "기존 발주 예상 입고 · 미확인",
+            "source": "sc_purchase_orders_ms",
+            "provenance": "참가자 가정"
+          }
+        ],
+        "pre_campaign_gap": null,
+        "feasible": true
+      },
+      {
+        "sku_id": "SKU-3002",
+        "regular_qty": 0,
+        "incremental_qty": 0,
+        "regular_orders": [
+          {
+            "id": "DRAFT-SKU-3002-2026-11-11",
+            "order_date": "2026-11-11",
+            "date": "2026-12-23",
+            "qty": 12000,
+            "lead_plus_week_stock": 3277.0,
+            "trigger_checkpoint": "2026-12-30",
+            "safety_qty": 3726.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          }
+        ],
+        "pipeline_assumptions": [
+          {
+            "id": "SPO-0009",
+            "date": "2026-08-05",
+            "qty": 12000.0,
+            "kind": "기존 발주 예상 입고 · 미확인",
+            "source": "sc_purchase_orders_ms",
+            "provenance": "참가자 가정"
+          }
+        ],
+        "pre_campaign_gap": null,
+        "feasible": true
+      },
+      {
+        "sku_id": "SKU-3003",
+        "regular_qty": 79362,
+        "incremental_qty": 0,
+        "regular_orders": [
+          {
+            "id": "DRAFT-SKU-3003-2026-07-01",
+            "order_date": "2026-07-01",
+            "date": "2026-08-12",
+            "qty": 19362,
+            "lead_plus_week_stock": 1794.25,
+            "trigger_checkpoint": "2026-08-19",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          },
+          {
+            "id": "DRAFT-SKU-3003-2026-07-08",
+            "order_date": "2026-07-08",
+            "date": "2026-08-19",
+            "qty": 10000,
+            "lead_plus_week_stock": 16925.0,
+            "trigger_checkpoint": "2026-08-26",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          },
+          {
+            "id": "DRAFT-SKU-3003-2026-07-29",
+            "order_date": "2026-07-29",
+            "date": "2026-09-09",
+            "qty": 10000,
+            "lead_plus_week_stock": 14231.25,
+            "trigger_checkpoint": "2026-09-16",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          },
+          {
+            "id": "DRAFT-SKU-3003-2026-08-12",
+            "order_date": "2026-08-12",
+            "date": "2026-09-23",
+            "qty": 10000,
+            "lead_plus_week_stock": 15768.75,
+            "trigger_checkpoint": "2026-09-30",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          },
+          {
+            "id": "DRAFT-SKU-3003-2026-09-02",
+            "order_date": "2026-09-02",
+            "date": "2026-10-14",
+            "qty": 10000,
+            "lead_plus_week_stock": 13075.0,
+            "trigger_checkpoint": "2026-10-21",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          },
+          {
+            "id": "DRAFT-SKU-3003-2026-09-16",
+            "order_date": "2026-09-16",
+            "date": "2026-10-28",
+            "qty": 10000,
+            "lead_plus_week_stock": 14612.5,
+            "trigger_checkpoint": "2026-11-04",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          },
+          {
+            "id": "DRAFT-SKU-3003-2026-09-30",
+            "order_date": "2026-09-30",
+            "date": "2026-11-11",
+            "qty": 10000,
+            "lead_plus_week_stock": 16150.0,
+            "trigger_checkpoint": "2026-11-18",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          },
+          {
+            "id": "DRAFT-SKU-3003-2026-10-21",
+            "order_date": "2026-10-21",
+            "date": "2026-12-02",
+            "qty": 10000,
+            "lead_plus_week_stock": 13456.25,
+            "trigger_checkpoint": "2026-12-09",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          },
+          {
+            "id": "DRAFT-SKU-3003-2026-11-04",
+            "order_date": "2026-11-04",
+            "date": "2026-12-16",
+            "qty": 10000,
+            "lead_plus_week_stock": 14993.75,
+            "trigger_checkpoint": "2026-12-23",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          },
+          {
+            "id": "DRAFT-SKU-3003-2026-11-18",
+            "order_date": "2026-11-18",
+            "date": "2026-12-30",
+            "qty": 10000,
+            "lead_plus_week_stock": 16531.25,
+            "trigger_checkpoint": "2027-01-06",
+            "safety_qty": 16925.0,
+            "kind": "정기 보충 계산안",
+            "provenance": "참가자 가정 / 계산 결과"
+          }
+        ],
+        "pipeline_assumptions": [
+          {
+            "id": "SPO-0010",
+            "date": "2026-08-06",
+            "qty": 10000.0,
+            "kind": "기존 발주 예상 입고 · 미확인",
+            "source": "sc_purchase_orders_ms",
+            "provenance": "참가자 가정"
+          }
+        ],
+        "pre_campaign_gap": "2026-08-05",
+        "feasible": true
+      }
+    ]
+  },
+  "failed_handoff": {
+    "error": {
+      "error": "재고로 가능 방향은 모든 SKU의 가능 판단이 필요합니다."
+    },
+    "version_unchanged": true,
+    "demand_not_committed": true,
+    "history_unchanged": true
+  },
+  "after": {
+    "version": 6,
+    "state": "재무 검토 요청",
+    "demand_ready": true,
+    "reason_optional": true,
+    "approval": null,
+    "orders": [],
+    "history": [
+      {
+        "event": "수요 근거 확인 · SCM 인계와 동시 기록",
+        "role": "SCM"
+      },
+      {
+        "event": "SCM 검토 완료 · 재무 인계",
+        "role": "SCM"
+      },
+      {
+        "event": "업무 단계 전이",
+        "role": "SCM 담당자 (시연)"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      },
+      {
+        "event": "확인요청 작업 생성",
+        "role": "시스템"
+      }
+    ]
+  },
+  "browser": {
+    "errors": [],
+    "no_hub_navigation": true,
+    "mobile_overflow": false
+  }
+}

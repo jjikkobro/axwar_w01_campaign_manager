@@ -1,0 +1,192 @@
+{
+  "source": "W01_screens",
+  "screens": [
+    {
+      "id": "MKT_1_Proposal",
+      "role": "마케팅",
+      "title": "캠페인 기안 작성·상신",
+      "sections": [
+        "기안 머리",
+        "시작 방법",
+        "기안 작성",
+        "SKU 수요 가정",
+        "제출 전 점검"
+      ]
+    },
+    {
+      "id": "MKT_2_Wait",
+      "role": "마케팅",
+      "title": "마케팅 · 상신 후 진행 현황",
+      "sections": [
+        "대기 상태",
+        "진행 현황",
+        "기다리는 동안",
+        "다음 내 차례",
+        "알림 규칙"
+      ]
+    },
+    {
+      "id": "MKT_3_Hold",
+      "role": "마케팅",
+      "title": "④ 반려 → 보류·재검토 (마케팅)",
+      "sections": [
+        "보류 머리",
+        "반려 내용",
+        "기한 처리",
+        "재검토 결정",
+        "확정 전 점검"
+      ]
+    },
+    {
+      "id": "MKT_4_Close",
+      "role": "마케팅",
+      "title": "⑦ 마케팅 일정표·발주 기록 정리",
+      "sections": [
+        "정리 머리",
+        "받은 결과",
+        "캠페인 일정 확정",
+        "일정표",
+        "연결 기록",
+        "종료 전 점검"
+      ]
+    },
+    {
+      "id": "SCM_1_Check",
+      "role": "SCM",
+      "title": "② SCM 재고·입고표 대조",
+      "sections": [
+        "대조 머리",
+        "받은 기안",
+        "재고 입고 대조표",
+        "SCM 판단",
+        "발주안",
+        "전달 전 점검"
+      ]
+    },
+    {
+      "id": "SCM_2_WaitApproval",
+      "role": "SCM",
+      "title": "SCM · 대조 후 결재 대기",
+      "sections": [
+        "대기 상태",
+        "진행 현황",
+        "기다리는 동안",
+        "다음 내 차례",
+        "알림 규칙"
+      ]
+    },
+    {
+      "id": "SCM_3_PO",
+      "role": "SCM",
+      "title": "⑤ SCM 발주서 작성·전달",
+      "sections": [
+        "발주 머리",
+        "받은 승인",
+        "발주서",
+        "발주서 미리보기",
+        "전달 전 점검"
+      ]
+    },
+    {
+      "id": "SCM_4_WaitReply",
+      "role": "SCM",
+      "title": "SCM · 발주 후 회신 대기",
+      "sections": [
+        "대기 상태",
+        "진행 현황",
+        "기다리는 동안",
+        "다음 내 차례",
+        "알림 규칙"
+      ]
+    },
+    {
+      "id": "SCM_5_Receipt",
+      "role": "SCM",
+      "title": "⑥ SCM 입고예정 회신 확인",
+      "sections": [
+        "회신 머리",
+        "대상 발주",
+        "공급처 회신 입력",
+        "일정 영향",
+        "판단과 마케팅 회신",
+        "회신 전 점검"
+      ]
+    },
+    {
+      "id": "FIN_1_Review",
+      "role": "재무",
+      "title": "③ 재무 금액·승인권한 검토",
+      "sections": [
+        "검토 머리",
+        "받은 내용",
+        "현금 재전망",
+        "결재선 판정",
+        "성과 비용표",
+        "상신 의견",
+        "상신 전 점검"
+      ]
+    },
+    {
+      "id": "FIN_2_Wait",
+      "role": "재무",
+      "title": "재무 · 상신 후 결재 대기 · 감시",
+      "sections": [
+        "대기 상태",
+        "진행 현황",
+        "기다리는 동안",
+        "다음 내 차례",
+        "알림 규칙"
+      ]
+    },
+    {
+      "id": "APR_1_CEO",
+      "role": "승인권자",
+      "title": "④ 승인 여부 결정 · CEO/이사회",
+      "sections": [
+        "결재 머리",
+        "결재 문서",
+        "현금 영향",
+        "결정",
+        "확정 전 점검"
+      ]
+    },
+    {
+      "id": "APR_2_Normal",
+      "role": "승인권자",
+      "title": "④ 승인 여부 결정 · 평시 승인권자",
+      "sections": [
+        "결재 머리",
+        "결재 문서",
+        "결재선 근거",
+        "결정",
+        "확정 전 점검"
+      ]
+    }
+  ],
+  "files": {
+    "W01_screens/README.md": "3e2dd3bda526fc162a66c6e3aff6314e92525992ed2d5c82e288d6f77f32a7dd",
+    "W01_screens/data/campaign_attributed_share.json": "80e3b35e3758d56e522f4fd1f56e37e5f19d99d9acfad815d7adb209f8c55fee",
+    "W01_screens/data/campaign_influencer_plan.json": "2edd76e8c9d7b297bc4ac49ab73900e1cf2909f69b2d8ebd3febd2fa6244c7f2",
+    "W01_screens/data/campaign_media_mix.json": "e47b9751b6329d24103babcf75c8ba4fe79021945c6c56825ea44197fd37ddad",
+    "W01_screens/data/cash_events_forecast.json": "1d6af553ed76cc67b93901b3ba91ddc85fe92d3ee54f1374026347ec1c7cc6ff",
+    "W01_screens/data/contribution_profit.json": "8dfe533e9b682d74a2eccff56eef4b23690a136c6a718730d0998d18d6cf8a35",
+    "W01_screens/data/influencer_attributed_share.json": "dff7e2590d2ff4577521a63e5aaf99a27213e5999faadfef971970dea1ed891c",
+    "W01_screens/data/sku_inventory_po.json": "f6c54792326ddc4afc0f1872ea9bb7913b20dd0bb13e143d3c0ce77b2fb5ff6f",
+    "W01_screens/screens/APR_1_CEO.dc.html": "81ae4a40d097e1506edf00e2745687a8e49dd61a91e0ce9a4ee0c43ebd1f027e",
+    "W01_screens/screens/APR_2_Normal.dc.html": "6d321ef1e52511316036e070808fa76148662b07d622dc72fee8558ae00fbe7e",
+    "W01_screens/screens/FIN_1_Review.dc.html": "7ca678ace8abee639a9808f1984e933256f77b5c6d889e2a7bfd5c8f860cb5f0",
+    "W01_screens/screens/FIN_2_Wait.dc.html": "018dac61dc45509e5c91e23e2fe7afca2d65bfc1940539ccf1fd834573dcacd6",
+    "W01_screens/screens/MKT_1_Proposal.dc.html": "087c59b9cc73d7e0301c0d615a9ec2bf4df93ffa89c122a30fde394aab26444a",
+    "W01_screens/screens/MKT_2_Wait.dc.html": "2af6a8aba233c47522f0076281fe2d58ea4b080081cecbd8bce17b44cefbd09c",
+    "W01_screens/screens/MKT_3_Hold.dc.html": "cc7f5c167fa2d1c71dd1d7a19b7d44d94d3f6613856a58342e8bf1034adf28f8",
+    "W01_screens/screens/MKT_4_Close.dc.html": "7cb5f7318a3b4ab05af164dd5597004883c489ebf15766ed168cedd6dd2b45b4",
+    "W01_screens/screens/SCM_1_Check.dc.html": "5c3eb0b2837294192a43c1d5f88f9c2a9dd720cbb71d5650bf32e743ee8237cf",
+    "W01_screens/screens/SCM_2_WaitApproval.dc.html": "14ec1b08d0a557cb5f4d108f1e2e2cd9a8cd34a37d53d251c74af0b009e57af6",
+    "W01_screens/screens/SCM_3_PO.dc.html": "aa9bd36ba9e6c495f432955567e5d7ef33d9256b2194923809b7453e17a406ea",
+    "W01_screens/screens/SCM_4_WaitReply.dc.html": "b9d69a388672b5d447151aa9528f7ba456699dda931e735d1d155435f2280b88",
+    "W01_screens/screens/SCM_5_Receipt.dc.html": "28cf0396c1815243d4b1e4f7304bfe08f7785afb934e7ff9266cd046458b1b82",
+    "W01_screens/screens/canvas.json": "6bdd23abc78c51e79377044924bba4a3502d7c6ce276581934ba02402d69fc9f"
+  },
+  "presentation": "original-markup-and-component-logic",
+  "font": "IBM Plex Sans KR"
+}

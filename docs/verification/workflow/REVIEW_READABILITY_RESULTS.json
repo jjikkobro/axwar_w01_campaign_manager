@@ -1,0 +1,28 @@
+{
+  "screens": [
+    "MKT_1_Proposal",
+    "MKT_2_Wait",
+    "SCM_1_Check",
+    "SCM_2_WaitApproval",
+    "FIN_1_Review",
+    "FIN_2_Wait",
+    "APR_1_CEO",
+    "APR_2_Normal",
+    "SCM_3_PO",
+    "SCM_4_WaitReply",
+    "SCM_5_Receipt",
+    "MKT_3_Hold",
+    "MKT_4_Close"
+  ],
+  "screen_count": 13,
+  "scm_data_table": true,
+  "conditional_and_confirmed_supply_separate": true,
+  "readonly_original_evidence_preserved": true,
+  "full_evidence_expandable": true,
+  "gpt_grouped_sections": 5,
+  "html_escaped": true,
+  "mobile_overflow": false,
+  "case_versions_unchanged": true,
+  "no_paid_gpt_calls": true,
+  "browser_errors": []
+}

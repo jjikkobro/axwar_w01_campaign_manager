@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "tab": "queue",
+      "passed": true
+    },
+    {
+      "tab": "portfolio",
+      "passed": true
+    },
+    {
+      "tab": "demand",
+      "passed": true
+    },
+    {
+      "tab": "comparison",
+      "passed": true
+    },
+    {
+      "tab": "consult",
+      "passed": true
+    },
+    {
+      "tab": "history",
+      "passed": true
+    },
+    {
+      "tab": "assistant",
+      "passed": true
+    },
+    {
+      "test": "반사실 비교 토글은 실제 승인/시나리오를 변경하지 않음",
+      "passed": true
+    },
+    {
+      "test": "수요 확인 → 보조 제안 → 사람 채택 → 담당 작업/회신, 자동 승인 없음",
+      "passed": true,
+      "mode": "규칙 기반 초안 · AI 미연결"
+    }
+  ],
+  "browser_errors": [],
+  "base": "http://127.0.0.1:8088",
+  "mode": "실제 로컬 DB 입력 · 외부 승인/회신은 모의"
+}

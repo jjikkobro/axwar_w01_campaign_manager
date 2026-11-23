@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:8088",
+  "rows": [
+    {
+      "screen": "MKT_1_Proposal",
+      "outside": []
+    },
+    {
+      "screen": "MKT_2_Wait",
+      "outside": []
+    },
+    {
+      "screen": "MKT_3_Hold",
+      "outside": []
+    },
+    {
+      "screen": "MKT_4_Close",
+      "outside": []
+    },
+    {
+      "screen": "SCM_1_Check",
+      "outside": []
+    },
+    {
+      "screen": "SCM_2_WaitApproval",
+      "outside": []
+    },
+    {
+      "screen": "SCM_3_PO",
+      "outside": []
+    },
+    {
+      "screen": "SCM_4_WaitReply",
+      "outside": []
+    },
+    {
+      "screen": "SCM_5_Receipt",
+      "outside": []
+    },
+    {
+      "screen": "FIN_1_Review",
+      "outside": []
+    },
+    {
+      "screen": "FIN_2_Wait",
+      "outside": []
+    },
+    {
+      "screen": "APR_1_CEO",
+      "outside": []
+    },
+    {
+      "screen": "APR_2_Normal",
+      "outside": []
+    },
+    {
+      "screen": "hub-queue",
+      "outside": []
+    },
+    {
+      "screen": "hub-consult",
+      "outside": []
+    },
+    {
+      "screen": "hub-history",
+      "outside": []
+    },
+    {
+      "screen": "hub-comparison",
+      "outside": []
+    },
+    {
+      "screen": "operations-finance",
+      "outside": []
+    }
+  ],
+  "browser_errors": [],
+  "invariants": {
+    "raw_unchanged": true,
+    "cash_scenarios_unchanged": true,
+    "overdue_still_in_raw": true,
+    "overdue_not_in_view": true,
+    "annual_not_in_review": true,
+    "annual_not_in_approval": true,
+    "hidden_target_preserved": true,
+    "no_implicit_decision": true
+  },
+  "mode": "브라우저 읽기 전용 · DB 변경 없음"
+}

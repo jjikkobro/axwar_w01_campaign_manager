@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>캠페인 기안 작성·상신</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1f5fbf}a:hover{color:#174a95}
+</style>
+</helmet>
+<div style="min-height: 2000px; background: #f3f5f8; font-family: 'IBM Plex Sans KR', system-ui, sans-serif; color: #1a1d23; font-size: 14px; line-height: 20px">
+<header style="background: #ffffff; border-bottom: 1px solid #dde2e8">
+<div style="max-width: 1392px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px"><div style="font-size: 16px; font-weight: 700">W01 캠페인 운영</div>
+<nav aria-label="주요 화면" style="display: flex; flex-wrap: wrap; gap: 4px"><a href="#" style="padding: 10px 12px; border-radius: 8px; color: #4b5563; text-decoration: none">내 할 일</a><a href="#" aria-current="page" style="padding: 10px 12px; border-radius: 8px; color: #1a1d23; font-weight: 600; text-decoration: none; background: #eef2f8">새 기안</a><a href="#" style="padding: 10px 12px; border-radius: 8px; color: #4b5563; text-decoration: none">캠페인</a><a href="#" style="padding: 10px 12px; border-radius: 8px; color: #4b5563; text-decoration: none">결재함</a></nav></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px"><span style="font-size: 13px; padding: 4px 10px; border-radius: 999px; background: #1a1d23; color: #ffffff">마케팅</span><span style="font-size: 13px; color: #5b6270">기준일 2026-07-01</span></div>
+</div>
+</header>
+<main style="max-width: 1392px; margin: 0 auto; padding: 20px 24px 40px; display: flex; flex-direction: column; gap: 16px">
+
+<section aria-label="기안 머리" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 20px 22px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px 16px">
+<div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; padding: 2px 10px; border-radius: 999px; background: {{statusChip.bg}}; color: {{statusChip.fg}}; font-weight: 600">{{statusChip.text}}</span></div>
+<label for="p-title" style="font-size: 13px; font-weight: 600">기안 제목 <span style="color: #b42318">*</span></label>
+<input id="p-title" type="text" value="{{f.title}}" onChange="{{on.title}}" placeholder="예: 혜인 기초 캠페인 하반기 확대 집행" style="width: 100%; box-sizing: border-box; min-height: 52px; padding: 0 14px; border: 1px solid #cfd5dd; border-radius: 10px; font: inherit; font-size: 20px; font-weight: 700; color: #1a1d23; background: #ffffff">
+</div>
+<div style="flex: 1 1 180px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><label for="p-author" style="font-size: 13px; font-weight: 600">작성자 <span style="color: #b42318">*</span></label><input id="p-author" type="text" value="{{f.author}}" onChange="{{on.author}}" placeholder="이름" style="width: 100%; box-sizing: border-box; min-height: 52px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 10px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+<div style="flex: 1 1 140px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 600">소속 · 기안 ID</span><div style="box-sizing: border-box; min-height: 52px; padding: 0 12px; border: 1px solid #e3e7ec; border-radius: 10px; background: #f6f7f9; display: flex; flex-direction: column; justify-content: center; font-size: 13px; line-height: 18px"><span>마케팅본부</span><span style="color: #5b6270">{{planIdText}}</span></div></div>
+</div>
+
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start">
+<div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+
+<section aria-label="시작 방법" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">어떻게 시작할까요?</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" onClick="{{openCmp}}" aria-pressed="{{modeRef}}" style="flex: 1 1 260px; min-height: 72px; padding: 12px 16px; border-radius: 12px; border: 2px solid {{btnRef.bd}}; background: {{btnRef.bg}}; font: inherit; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 2px"><b style="font-size: 15px; color: #1a1d23">이전 캠페인 불러오기</b><span style="font-size: 13px; color: #4b5563">기본 정보를 채운 뒤 필요한 것만 고칩니다</span></button>
+<button type="button" onClick="{{startNew}}" aria-pressed="{{modeNew}}" style="flex: 1 1 260px; min-height: 72px; padding: 12px 16px; border-radius: 12px; border: 2px solid {{btnNew.bd}}; background: {{btnNew.bg}}; font: inherit; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 2px"><b style="font-size: 15px; color: #1a1d23">새 캠페인 작성</b><span style="font-size: 13px; color: #4b5563">빈 양식에서 처음부터 씁니다</span></button>
+</div>
+<sc-if value="{{hasRef}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; border-radius: 10px; background: #f4f7fd; border: 1px solid #c9d6ee">
+<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 13px"><b>참조 캠페인</b> {{ref.id}} · {{ref.name}}</span><span style="font-size: 12px; color: {{diff.fg}}">{{diff.text}}</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><button type="button" onClick="{{openCmp}}" style="min-height: 36px; padding: 0 12px; border: 1px solid #1f5fbf; border-radius: 8px; background: #ffffff; color: #1f5fbf; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">다른 캠페인</button><button type="button" onClick="{{revert}}" style="min-height: 36px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; background: #ffffff; color: #374151; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">불러온 값으로 되돌리기</button></div>
+</div>
+</sc-if>
+
+<sc-if value="{{modalCmp}}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-modal="true" aria-labelledby="cm-title" style="position: fixed; inset: 0; z-index: 50; background: rgba(17, 24, 39, 0.45); display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box">
+<div style="width: 100%; max-width: 860px; max-height: 88vh; box-sizing: border-box; background: #ffffff; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; overflow: hidden; box-shadow: 0 20px 48px rgba(17, 24, 39, 0.25)">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h3 id="cm-title" style="margin: 0; font-size: 18px; line-height: 26px; font-weight: 700">이전 캠페인 불러오기</h3><button type="button" onClick="{{closeCmp}}" aria-label="닫기" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 0; border-radius: 10px; background: #f3f5f8; cursor: pointer"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" style="fill: none; stroke: #374151; stroke-width: 2; stroke-linecap: round"><path d="M4 4 L14 14 M14 4 L4 14"></path></svg></button></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px"><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · m_campaign_ms</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · m_influencer_ms</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">계산 · 명목 ROAS 순위 (표본)</span></div>
+<label for="cm-q" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">캠페인 검색</label>
+<input id="cm-q" type="search" value="{{cq}}" onChange="{{onCq}}" placeholder="캠페인명, 인플루언서, 국가, 제품라인 검색" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px">
+<div style="border: 1px solid #e3e7ec; border-radius: 10px; max-height: 56vh; overflow-y: auto">
+<sc-for list="{{cmpList}}" as="k" hint-placeholder-count="6">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 10px 14px; border-bottom: 1px solid #eef0f3; background: {{k.rowBg}}">
+<span style="flex: 1 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 2px"><b style="font-size: 14px">{{k.name}}</b><span style="font-size: 12px; color: #5b6270">{{k.id}} · {{k.inf}} · {{k.country}} · {{k.sns}} {{k.fmt}} · {{k.sales}}</span></span>
+<span style="flex: 0 0 auto; font-size: 12px; color: #5b6270">{{k.pl}} · {{k.period}}</span>
+<span style="flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; font-size: 12px; background: #eef0f3; color: #374151">ROAS 순위 {{k.rk}}/25</span>
+<button type="button" onClick="{{k.load}}" aria-label="{{k.id}} 불러오기" style="min-height: 36px; padding: 0 14px; border-radius: 8px; border: 1px solid #1f5fbf; background: #1f5fbf; color: #ffffff; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">불러오기</button>
+</div>
+</sc-for>
+<sc-if value="{{noCmpResult}}" hint-placeholder-val="{{ false }}"><div style="padding: 14px; font-size: 13px; color: #5b6270">검색 결과가 없습니다.</div></sc-if>
+</div>
+<span style="font-size: 12px; color: #5b6270">캠페인 기본 정보와 집행 매체만 채워집니다. 기간·요청액·정산일·확정기한·예상 GMV는 새 제안이라 새로 입력하고, 이전 값은 참고로만 보입니다.</span>
+</div>
+</div>
+</sc-if>
+</section>
+
+<section aria-label="기안 작성" style="background: #ffffff; border: 2px solid #1a1d23; border-radius: 14px; padding: 17px 21px; display: flex; flex-wrap: wrap; gap: 18px; align-items: stretch">
+
+<div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: #1a1d23; color: #ffffff">작성</span><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">캠페인 정보</h2><span style="font-size: 12px; color: #5b6270">{{formHint}}</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px 16px">
+<div style="flex: 1 1 100%; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 6px"><label for="f-name" style="font-size: 13px; font-weight: 600">캠페인명 <span style="color: #b42318">*</span></label><span style="font-size: 12px; color: #1d4ed8">{{mark.name}}</span></div><input id="f-name" type="text" value="{{f.name}}" onChange="{{on.name}}" placeholder="예: 혜인 기초 캠페인4" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{bd.name}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+<fieldset style="flex: 1 1 100%; min-width: 0; margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 6px">
+<legend style="padding: 0; margin-bottom: 6px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px"><span style="font-size: 13px; font-weight: 600">집행 매체 <span style="color: #b42318">*</span></span><span style="font-size: 12px; color: #1d4ed8">{{mark.media}}</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · mkt_ad_spend_ms media · Business_Process_Map</span></legend>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{mediaOpts}}" as="m" hint-placeholder-count="4">
+<label style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid {{m.bd}}; background: {{m.bg}}; font-size: 14px; cursor: pointer"><input type="checkbox" checked="{{m.on}}" onChange="{{m.toggle}}" style="width: 18px; height: 18px; margin: 0"><span>{{m.label}}</span></label>
+</sc-for>
+</div>
+<span style="font-size: 12px; color: #5b6270">{{mediaNote}}</span>
+</fieldset>
+<sc-if value="{{showInf}}" hint-placeholder-val="{{ true }}">
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 6px"><label for="f-inf" style="font-size: 13px; font-weight: 600">인플루언서 <span style="color: #b42318">*</span></label><span style="font-size: 12px; color: #1d4ed8">{{mark.inf}}</span></div><select id="f-inf" value="{{f.inf}}" onChange="{{on.inf}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{bd.inf}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><option value="">선택</option><sc-for list="{{optInf}}" as="o" hint-placeholder-count="5"><option value="{{o.v}}">{{o.t}}</option></sc-for></select></div>
+</sc-if>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 6px"><label for="f-country" style="font-size: 13px; font-weight: 600">국가 <span style="color: #b42318">*</span></label><span style="font-size: 12px; color: #1d4ed8">{{mark.country}}</span></div><select id="f-country" value="{{f.country}}" onChange="{{on.country}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{bd.country}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><option value="">선택</option><sc-for list="{{optCountry}}" as="o" hint-placeholder-count="4"><option value="{{o.v}}">{{o.t}}</option></sc-for></select></div>
+<sc-if value="{{showSns}}" hint-placeholder-val="{{ true }}">
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 6px"><label for="f-sns" style="font-size: 13px; font-weight: 600">SNS 채널 <span style="color: #b42318">*</span></label><span style="font-size: 12px; color: #1d4ed8">{{mark.sns}}</span></div><select id="f-sns" value="{{f.sns}}" onChange="{{on.sns}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{bd.sns}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><option value="">선택</option><sc-for list="{{optSns}}" as="o" hint-placeholder-count="3"><option value="{{o.v}}">{{o.t}}</option></sc-for></select></div>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 6px"><label for="f-fmt" style="font-size: 13px; font-weight: 600">포맷 <span style="color: #b42318">*</span></label><span style="font-size: 12px; color: #1d4ed8">{{mark.fmt}}</span></div><select id="f-fmt" value="{{f.fmt}}" onChange="{{on.fmt}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{bd.fmt}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><option value="">선택</option><sc-for list="{{optFmt}}" as="o" hint-placeholder-count="5"><option value="{{o.v}}">{{o.t}}</option></sc-for></select></div>
+</sc-if>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 6px"><label for="f-sales" style="font-size: 13px; font-weight: 600">판매채널 <span style="color: #b42318">*</span></label><span style="font-size: 12px; color: #1d4ed8">{{mark.sales}}</span></div><select id="f-sales" value="{{f.sales}}" onChange="{{on.sales}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{bd.sales}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><option value="">선택</option><sc-for list="{{optSales}}" as="o" hint-placeholder-count="4"><option value="{{o.v}}">{{o.t}}</option></sc-for></select></div>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 6px"><label for="f-pl" style="font-size: 13px; font-weight: 600">제품라인 <span style="color: #b42318">*</span></label><span style="font-size: 12px; color: #1d4ed8">{{mark.pl}}</span></div><select id="f-pl" value="{{f.pl}}" onChange="{{on.pl}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{bd.pl}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><option value="">선택</option><sc-for list="{{optPl}}" as="o" hint-placeholder-count="6"><option value="{{o.v}}">{{o.t}}</option></sc-for></select></div>
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 6px"><label for="f-start" style="font-size: 13px; font-weight: 600">시작일 <span style="color: #b42318">*</span></label><span style="font-size: 12px; color: #5b6270">새로 입력</span></div><input id="f-start" type="date" min="{{minDate}}" value="{{f.start}}" onChange="{{on.start}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{bd.start}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 6px"><label for="f-end" style="font-size: 13px; font-weight: 600">종료일 <span style="color: #b42318">*</span></label><span style="font-size: 12px; color: #5b6270">새로 입력</span></div><input id="f-end" type="date" min="{{minEnd}}" value="{{f.end}}" onChange="{{on.end}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid {{bd.end}}; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+<span style="flex: 1 1 100%; font-size: 12px; color: {{periodNote.fg}}">{{periodNote.text}}</span>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding-top: 14px; border-top: 1px solid #e3e7ec"><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">예산 · 일정</h2><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 형식 · mkt_budget_plan_ms</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px 16px">
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px"><label for="f-req" style="font-size: 13px; font-weight: 600">요청액 (원) <span style="color: #b42318">*</span></label><sc-if value="{{reqChip.show}}" hint-placeholder-val="{{ false }}"><span style="font-size: 12px; padding: 1px 8px; border-radius: 999px; background: #e6eefc; color: #1d4ed8; font-weight: 600">건별 1천만 원 초과</span></sc-if></div><input id="f-req" type="number" min="0" value="{{f.req}}" onChange="{{on.req}}" placeholder="원" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><span style="font-size: 12px; color: #5b6270">{{prev.req}}</span></div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><label for="f-gmv" style="font-size: 13px; font-weight: 600; color: #374151">예상 GMV (원) · 참고</label><input id="f-gmv" type="number" min="0" value="{{f.gmv}}" onChange="{{on.gmv}}" placeholder="원" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><span style="font-size: 12px; color: #5b6270">{{prev.gmv}}</span></div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><label for="f-settle" style="font-size: 13px; font-weight: 600">정산일 (현금 유출일) <span style="color: #b42318">*</span></label><input id="f-settle" type="date" min="{{minDate}}" value="{{f.settle}}" onChange="{{on.settle}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><span style="font-size: 12px; color: #5b6270">{{prev.settle}}</span></div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px"><label for="f-dl" style="font-size: 13px; font-weight: 600">계약 확정기한 <span style="color: #b42318">*</span></label><sc-if value="{{dlChip.show}}" hint-placeholder-val="{{ false }}"><span style="font-size: 12px; padding: 1px 8px; border-radius: 999px; background: {{dlChip.bg}}; color: {{dlChip.fg}}; font-weight: 600">{{dlChip.text}}</span></sc-if></div><input id="f-dl" type="date" min="{{minDate}}" value="{{f.dl}}" onChange="{{on.dl}}" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"><span style="font-size: 12px; color: #5b6270">{{prev.dl}}</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #5b6270">
+<span>정산일은 ③ 재무가 현금 하회구간과 대조하는 날짜입니다. 계약 확정기한이 지나면 자동 확정되어 철회할 수 없습니다.</span>
+<span>예상 GMV는 쿠폰·반품·광고비·물류비 차감 전 값이라 승인 근거가 되지 않습니다. 승인은 실질 공헌이익 기준입니다.</span>
+</div>
+</div>
+
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 12px; background: #f4f7fd; border: 1px solid #c9d6ee">
+<div style="display: flex; align-items: center; gap: 8px"><b style="font-size: 14px">참조 정보</b></div>
+<sc-if value="{{hasRef}}" hint-placeholder-val="{{ false }}">
+<div style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px"><b style="font-size: 13px">참조 캠페인 원본</b><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · m_campaign_ms</span></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 10px; font-size: 13px">
+<span style="color: #5b6270">캠페인</span><span>{{ref.name}}</span>
+<span style="color: #5b6270">채널 · 포맷</span><span>{{ref.sns}} · {{ref.fmt}}</span>
+<span style="color: #5b6270">국가 · 판매채널</span><span>{{ref.country}} · {{ref.sales}}</span>
+<span style="color: #5b6270">제품라인</span><span>{{ref.pl}}</span>
+<span style="color: #5b6270">이전 기간 (참고)</span><span>{{ref.start}} ~ {{ref.end}}</span>
+<span style="color: #5b6270">매체별 지출 구성</span><span>{{ref.mix}}</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<div style="flex: 1 1 80px; padding: 6px 8px; border-radius: 8px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 11px; color: #5b6270">GMV 비중</span><b>{{refPerf.gs}}%</b></div>
+<div style="flex: 1 1 80px; padding: 6px 8px; border-radius: 8px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 11px; color: #5b6270">광고비 비중</span><b>{{refPerf.ss}}%</b></div>
+<div style="flex: 1 1 80px; padding: 6px 8px; border-radius: 8px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 11px; color: #5b6270">명목 ROAS</span><b>{{refPerf.rk}}/25위</b></div>
+</div>
+<span style="font-size: 11px; color: #5b6270">mkt_orders_ms · mkt_ad_spend_ms 표본 비중</span>
+</div>
+</sc-if>
+<sc-if value="{{hasInf}}" hint-placeholder-val="{{ false }}">
+<div style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px"><b style="font-size: 13px">인플루언서 {{inf.name}}</b><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · m_influencer_ms</span></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 10px; font-size: 13px">
+<span style="color: #5b6270">등급 · 활동 국가</span><span>{{inf.tier}} · {{inf.country}}</span>
+<span style="color: #5b6270">플랫폼 · 보수</span><span>{{inf.platform}} · {{inf.fee}}</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<div style="flex: 1 1 80px; padding: 6px 8px; border-radius: 8px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 11px; color: #5b6270">GMV 비중</span><b>{{infPerf.gs}}%</b></div>
+<div style="flex: 1 1 80px; padding: 6px 8px; border-radius: 8px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 11px; color: #5b6270">광고비 비중</span><b>{{infPerf.ss}}%</b></div>
+<div style="flex: 1 1 80px; padding: 6px 8px; border-radius: 8px; background: #f6f7f9; display: flex; flex-direction: column"><span style="font-size: 11px; color: #5b6270">명목 ROAS</span><b>{{infPerf.rk}}/10위</b></div>
+</div>
+<span style="font-size: 11px; color: #5b6270">이 인플루언서의 전체 캠페인 합산 · 표본 비중 · attributed GMV 기준</span>
+</div>
+</sc-if>
+<sc-if value="{{linked}}" hint-placeholder-val="{{ false }}">
+<div style="background: #fff8ec; border: 1px solid #f0c98a; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px">
+<b style="font-size: 13px; color: #7a3d00">연결 계약 · INF-001 연간 전속계약</b>
+<span style="font-size: 13px; color: #374151">통보 기한 <b>2026-07-17</b> · 미통보 시 1년 자동 갱신 · 고정 피 연 28억 원(풀스케일)</span>
+<span style="font-size: 12px; color: #5b6270">별개 결정이라 이 기안에 연결 계약으로 표시되어 함께 넘어갑니다.</span>
+<span style="font-size: 11px; color: #5b6270">inf001_exclusive_contract_notice</span>
+</div>
+</sc-if>
+<sc-if value="{{noRefInfo}}" hint-placeholder-val="{{ true }}"><div style="padding: 14px; border: 1px dashed #9aa3af; border-radius: 10px; font-size: 13px; color: #374151; background: #ffffff">이전 캠페인을 불러오거나 인플루언서를 고르면 참고할 정보가 여기에 나옵니다.</div></sc-if>
+<div style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px">
+<b style="font-size: 13px">고정 규칙</b>
+<span style="font-size: 12px; color: #374151">기간·정산일·확정기한은 기준일(2026-07-01) 이후 · 성과 귀속창 7일 · 건별 1천만 원 초과 또는 기안 총액 1억 원 초과 시 마케팅팀 전결 범위 밖 · 최종 결재선은 ③ 재무가 확정</span>
+<span style="font-size: 11px; color: #5b6270">data_dictionary · approval_authority_policy</span>
+</div>
+</div>
+</section>
+
+<section aria-label="SKU 수요 가정" style="background: #ffffff; border: 1px solid #dde2e8; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: #fdf3d7; color: #6b4e00">보완 입력</span><h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 700">{{pidLabel}} SKU 수요 가정 (선택)</h2><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">보완 데이터 · W01 안내 「캠페인별 SKU 수요 가정표」</span></div>
+<button type="button" onClick="{{openSku}}" disabled="{{noPl}}" style="min-height: 44px; padding: 0 16px; border: 1px solid #1f5fbf; border-radius: 10px; background: #ffffff; color: #1f5fbf; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">+ 제품 추가</button>
+</div>
+<span style="font-size: 13px; color: #374151">원본 기안에는 SKU별 수요가 없습니다. 넣으면 ② SCM이 재고·입고표와 바로 대조하고, 비워 두면 SCM이 제품라인 기준으로 확인합니다. 작성자 <b>{{authorShown}}</b> · 기준시점 2026-07-01로 함께 기록됩니다.</span>
+<span style="font-size: 12px; color: {{lineWarn.fg}}">{{lineWarn.text}}</span>
+<sc-for list="{{sel}}" as="x" hint-placeholder-count="3">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 12px 14px; border: 1px solid #e3e7ec; border-radius: 10px">
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 2px"><b style="font-size: 14px">{{x.id}} {{x.name}}</b><span style="font-size: 12px; color: #5b6270">현재고 {{x.oh}}EA · 최근 4주 평균 {{x.avg}}EA/주 · 안전재고 {{x.ss}}주</span></div>
+<div style="flex: 0 1 180px; min-width: 0; display: flex; flex-direction: column; gap: 4px"><label for="{{x.inputId}}" style="font-size: 12px; font-weight: 600">주당 증가 수요 (EA)</label><input id="{{x.inputId}}" type="number" min="0" value="{{x.demand}}" onChange="{{x.onDemand}}" placeholder="EA/주" style="width: 100%; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px; color: #1a1d23; background: #ffffff"></div>
+<div style="flex: 0 1 190px; min-width: 0; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 600">예상 재고 커버</span><span style="display: inline-flex; align-items: center; min-height: 32px; padding: 0 10px; border-radius: 999px; font-size: 13px; font-weight: 600; background: {{x.bg}}; color: {{x.fg}}">{{x.text}}</span></div>
+<button type="button" onClick="{{x.remove}}" aria-label="{{x.id}} 제거" style="min-height: 36px; padding: 0 12px; border: 1px solid #b42318; border-radius: 8px; background: #ffffff; color: #b42318; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">제거</button>
+</div>
+</sc-for>
+<sc-if value="{{noSel}}" hint-placeholder-val="{{ false }}"><div style="padding: 14px; border: 1px dashed #cfd5dd; border-radius: 10px; font-size: 13px; color: #374151">SKU 수요 가정 없음 — 제품라인 기준으로 ② SCM에 넘어갑니다.</div></sc-if>
+<span style="font-size: 12px; color: #5b6270">재고 커버 = 현재고 ÷ (최근 4주 평균 주간 판매 + 증가 수요). 이동 중 재고는 빼고 계산합니다 (calculation_definitions).</span>
+
+<sc-if value="{{modalSku}}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-modal="true" aria-labelledby="pm-title" style="position: fixed; inset: 0; z-index: 50; background: rgba(17, 24, 39, 0.45); display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box">
+<div style="width: 100%; max-width: 760px; max-height: 88vh; box-sizing: border-box; background: #ffffff; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; overflow: hidden; box-shadow: 0 20px 48px rgba(17, 24, 39, 0.25)">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h3 id="pm-title" style="margin: 0; font-size: 18px; line-height: 26px; font-weight: 700">제품 추가 · {{pidLabel}}</h3><button type="button" onClick="{{closeSku}}" aria-label="닫기" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 0; border-radius: 10px; background: #f3f5f8; cursor: pointer"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" style="fill: none; stroke: #374151; stroke-width: 2; stroke-linecap: round"><path d="M4 4 L14 14 M14 4 L4 14"></path></svg></button></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px"><span style="font-size: 13px; font-weight: 600">제품 DB</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · m_sku_ms</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">원본 · sku_inventory_ms</span><span style="font-size: 11px; line-height: 16px; padding: 0 5px; border: 1px solid #c5ccd6; border-radius: 4px; color: #374151; white-space: nowrap">계산 · 최근 4주 판매</span></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<label for="p-q" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">제품 검색</label>
+<input id="p-q" type="search" value="{{q}}" onChange="{{onQ}}" placeholder="제품명 또는 SKU 검색" style="flex: 1 1 220px; min-width: 0; box-sizing: border-box; min-height: 44px; padding: 0 12px; border: 1px solid #cfd5dd; border-radius: 8px; font: inherit; font-size: 14px">
+<div role="group" aria-label="제품군 필터" style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{cats}}" as="c" hint-placeholder-count="7">
+<button type="button" aria-pressed="{{c.on}}" onClick="{{c.pick}}" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border-radius: 999px; font: inherit; font-size: 13px; cursor: pointer; border: 1px solid {{c.bd}}; background: {{c.bg}}; color: {{c.fg}}; font-weight: {{c.w}}">{{c.label}}</button>
+</sc-for>
+</div>
+</div>
+<div style="border: 1px solid #e3e7ec; border-radius: 10px; max-height: 52vh; overflow-y: auto">
+<sc-for list="{{list}}" as="p" hint-placeholder-count="6">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 10px 14px; border-bottom: 1px solid #eef0f3; background: {{p.rowBg}}">
+<span style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 2px"><b style="font-size: 14px">{{p.name}}</b><span style="font-size: 12px; color: #5b6270">{{p.id}} · {{p.cat}} ({{p.pl}}) · 공급 {{p.src}}</span></span>
+<span style="flex: 0 0 auto; font-size: 12px; color: #5b6270">리드타임 {{p.lt}}주 · MOQ {{p.moq}}</span>
+<span style="flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; background: {{p.bg}}; color: {{p.fg}}">현재 커버 {{p.cover}}주</span>
+<button type="button" onClick="{{p.toggle}}" aria-label="{{p.btnAria}}" style="min-height: 36px; min-width: 64px; padding: 0 14px; border-radius: 8px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid {{p.btnBd}}; background: {{p.btnBg}}; color: {{p.btnFg}}">{{p.btnLabel}}</button>
+</div>
+</sc-for>
+<sc-if value="{{noResult}}" hint-placeholder-val="{{ false }}"><div style="padding: 14px; font-size: 13px; color: #5b6270">검색 결과가 없습니다.</div></sc-if>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px"><span style="font-size: 13px; color: #374151">추가된 제품 {{selCount}}개</span><button type="button" onClick="{{closeSku}}" style="min-height: 44px; padding: 0 20px; border: 0; border-radius: 10px; background: #1f5fbf; color: #ffffff; font: inherit; font-weight: 700; cursor: pointer">완료</button></div>
+</div>
+</div>
+</sc-if>
+</section>
+</div>
+
+<aside style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+
+<section aria-label="제출 전 점검" style="background: #ffffff; border: 2px solid #1f5fbf; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h2 style="margin: 0; font-size: 15px; line-height: 22px; font-weight: 700">제출 전 점검</h2><span style="font-size: 12px; color: #5b6270">필수 {{doneCount}}/{{totalCount}}</span></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 19px">
+<sc-for list="{{checks}}" as="c" hint-placeholder-count="6">
+<li style="display: flex; align-items: flex-start; gap: 8px"><span style="flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 999px; font-size: 12px; font-weight: 700; background: {{c.bg}}; color: {{c.fg}}">{{c.mark}}</span><span style="color: {{c.text}}">{{c.label}}</span></li>
+</sc-for>
+</ul>
+<button type="button" onClick="{{submit}}" disabled="{{notReady}}" style="min-height: 48px; padding: 0 18px; border: 0; border-radius: 10px; background: {{submitBg}}; color: #ffffff; font: inherit; font-weight: 700; cursor: pointer">{{submitLabel}}</button>
+<span style="font-size: 12px; color: #5b6270">{{submitNote}}</span>
+<sc-if value="{{submittedFlag}}" hint-placeholder-val="{{ false }}"><a href="MKT_2_Wait.dc.html" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 10px; background: #1f5fbf; color: #ffffff; border: 0; font-weight: 700; text-decoration: none">상신 후 진행 현황 보기 (대기)</a></sc-if>
+</section>
+
+</aside>
+</div>
+</main>
+</div>
+</x-dc>
+
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2000}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.D = {"C":[["CMP-0001","혜인 색조 캠페인1","INF-001","국내","YouTube","롱폼","대형파트너","색조","2025-01-01","2025-07-01",7],["CMP-0002","혜인 색조 캠페인2","INF-001","국내","YouTube","숏츠","마켓플레이스","색조","2025-07-01","2025-12-30",7],["CMP-0003","혜인 기초 캠페인3","INF-001","국내","YouTube","숏츠","라이브","기초","2025-12-30","2026-06-30",7],["CMP-0004","초혜핏 선케어 캠페인1","INF-002","국내","Instagram","피드","자사몰","선케어","2025-01-01","2025-07-01",7],["CMP-0005","초혜핏 선케어 캠페인2","INF-002","국내","Instagram","피드","자사몰","선케어","2025-07-01","2025-12-30",7],["CMP-0006","초혜핏 색조 캠페인3","INF-002","국내","Instagram","피드","자사몰","색조","2025-12-30","2026-06-30",7],["CMP-0007","토모카 기초 캠페인1","INF-003","일본","Instagram","릴스","마켓플레이스","기초","2025-01-01","2025-07-01",7],["CMP-0008","토모카 색조 캠페인2","INF-003","일본","Instagram","피드","마켓플레이스","색조","2025-07-01","2025-12-30",7],["CMP-0009","토모카 기초 캠페인3","INF-003","일본","Instagram","피드","마켓플레이스","기초","2025-12-30","2026-06-30",7],["CMP-0010","유키뷰티 색조 캠페인1","INF-004","일본","YouTube","숏츠","마켓플레이스","색조","2025-01-01","2025-09-30",7],["CMP-0011","유키뷰티 기초 캠페인2","INF-004","일본","YouTube","숏츠","마켓플레이스","기초","2025-09-30","2026-06-30",7],["CMP-0012","Ava Glow 선케어 캠페인1","INF-005","미국","TikTok","틱톡","마켓플레이스","선케어","2025-01-01","2025-07-01",7],["CMP-0013","Ava Glow 기초 캠페인2","INF-005","미국","TikTok","틱톡","마켓플레이스","기초","2025-07-01","2025-12-30",7],["CMP-0014","Ava Glow 선케어 캠페인3","INF-005","미국","TikTok","틱톡","마켓플레이스","선케어","2025-12-30","2026-06-30",7],["CMP-0015","Mia Skin 색조 캠페인1","INF-006","미국","Instagram","피드","마켓플레이스","색조","2025-01-01","2025-09-30",7],["CMP-0016","Mia Skin 선케어 캠페인2","INF-006","미국","Instagram","피드","마켓플레이스","선케어","2025-09-30","2026-06-30",7],["CMP-0017","Lila SEA 기초 캠페인1","INF-007","동남아","TikTok","틱톡","마켓플레이스","기초","2025-01-01","2025-07-01",7],["CMP-0018","Lila SEA 더마 캠페인2","INF-007","동남아","TikTok","틱톡","마켓플레이스","더마","2025-07-01","2025-12-30",7],["CMP-0019","Lila SEA 선케어 캠페인3","INF-007","동남아","TikTok","틱톡","마켓플레이스","선케어","2025-12-30","2026-06-30",7],["CMP-0020","Nara Beauty 선케어 캠페인1","INF-008","동남아","Instagram","릴스","마켓플레이스","선케어","2025-01-01","2025-09-30",7],["CMP-0021","Nara Beauty 색조 캠페인2","INF-008","동남아","Instagram","피드","마켓플레이스","색조","2025-09-30","2026-06-30",7],["CMP-0022","보미 색조 캠페인1","INF-009","국내","Instagram","릴스","자사몰","색조","2025-01-01","2025-09-30",7],["CMP-0023","보미 색조 캠페인2","INF-009","국내","Instagram","피드","자사몰","색조","2025-09-30","2026-06-30",7],["CMP-0024","코코라운지 색조 캠페인1","INF-010","국내","YouTube","롱폼","자사몰","색조","2025-01-01","2025-09-30",7],["CMP-0025","코코라운지 기초 캠페인2","INF-010","국내","YouTube","숏츠","자사몰","기초","2025-09-30","2026-06-30",7]],"I":{"INF-001":["혜인","대형","국내","YouTube","고정+성과"],"INF-002":["초혜핏","중형","국내","Instagram","성과"],"INF-003":["토모카","대형","일본","Instagram","고정"],"INF-004":["유키뷰티","중형","일본","YouTube","혼합"],"INF-005":["Ava Glow","대형","미국","TikTok","고정+성과"],"INF-006":["Mia Skin","중형","미국","Instagram","성과"],"INF-007":["Lila SEA","대형","동남아","TikTok","고정"],"INF-008":["Nara Beauty","마이크로","동남아","Instagram","성과"],"INF-009":["보미","마이크로","국내","Instagram","성과"],"INF-010":["코코라운지","중형","국내","YouTube","혼합"]},"P":[["PLAN-001","CMP-0003","18962703","213330410","2026-07-27","2026-07-17"],["PLAN-002","CMP-0002","16801646","189018519","2026-08-06","2026-07-17"],["PLAN-003","CMP-0001","14926612","167924383","2026-08-17","2026-07-17"],["PLAN-004","CMP-0009","10180328","114528685","2026-08-28","2026-07-17"],["PLAN-005","CMP-0014","10031001","112848761","2026-09-08","2026-07-17"],["PLAN-006","CMP-0008","9016502","93921896","2026-09-21","2026-08-14"],["PLAN-007","CMP-0013","8838528","92067998","2026-07-17","2026-08-14"],["PLAN-008","CMP-0007","8132039","84708740","2026-07-28","2026-08-14"],["PLAN-009","CMP-0012","7836774","81633058","2026-08-10","2026-08-14"],["PLAN-010","CMP-0019","7483054","77948479","2026-08-19","2026-08-14"],["PLAN-011","CMP-0018","6785231","70679488","2026-08-31","2026-08-14"],["PLAN-012","CMP-0017","6116688","63715505","2026-09-10","2026-08-14"],["PLAN-013","CMP-0011","5624379","58587278","2026-09-21","2026-08-14"],["PLAN-014","CMP-0006","5414940","56405621","2026-07-20","2026-08-14"],["PLAN-015","CMP-0016","5375042","55990019","2026-07-30","2026-08-14"],["PLAN-016","CMP-0025","5228580","54464371","2026-08-10","2026-08-14"],["PLAN-017","CMP-0010","4882982","50864399","2026-08-21","2026-08-14"],["PLAN-018","CMP-0015","4834768","50362162","2026-09-01","2026-09-11"],["PLAN-019","CMP-0005","4807921","50082515","2026-09-14","2026-09-11"],["PLAN-020","CMP-0024","4711056","49073501","2026-09-23","2026-09-11"],["PLAN-021","CMP-0004","4378322","40134615","2026-07-21","2026-09-11"],["PLAN-022","CMP-0023","2815033","25804469","2026-08-03","2026-09-11"],["PLAN-023","CMP-0021","2727770","25004559","2026-08-12","2026-09-11"],["PLAN-024","CMP-0022","2476699","22703076","2026-08-24","2026-09-11"],["PLAN-025","CMP-0020","2414674","22134516","2026-09-03","2026-09-11"]]};
+    this.PERF = {"CMP-0001":{"gs":8.3,"ss":12.8,"rk":24},"CMP-0002":{"gs":9.3,"ss":11.6,"rk":20},"CMP-0003":{"gs":10.5,"ss":16.2,"rk":23},"CMP-0004":{"gs":2.4,"ss":0.7,"rk":3},"CMP-0005":{"gs":2.7,"ss":1.0,"rk":5},"CMP-0006":{"gs":3.0,"ss":0.8,"rk":1},"CMP-0007":{"gs":4.5,"ss":4.5,"rk":19},"CMP-0008":{"gs":5.0,"ss":4.3,"rk":15},"CMP-0009":{"gs":5.6,"ss":5.1,"rk":16},"CMP-0010":{"gs":2.7,"ss":1.4,"rk":11},"CMP-0011":{"gs":3.1,"ss":1.4,"rk":7},"CMP-0012":{"gs":4.3,"ss":5.6,"rk":21},"CMP-0013":{"gs":4.9,"ss":7.5,"rk":22},"CMP-0014":{"gs":5.5,"ss":9.0,"rk":25},"CMP-0015":{"gs":2.7,"ss":1.4,"rk":10},"CMP-0016":{"gs":3.0,"ss":1.4,"rk":8},"CMP-0017":{"gs":3.4,"ss":3.2,"rk":18},"CMP-0018":{"gs":3.8,"ss":2.9,"rk":14},"CMP-0019":{"gs":4.1,"ss":3.8,"rk":17},"CMP-0020":{"gs":1.3,"ss":0.6,"rk":6},"CMP-0021":{"gs":1.5,"ss":0.7,"rk":9},"CMP-0022":{"gs":1.4,"ss":0.4,"rk":2},"CMP-0023":{"gs":1.6,"ss":0.5,"rk":4},"CMP-0024":{"gs":2.6,"ss":1.5,"rk":12},"CMP-0025":{"gs":2.9,"ss":1.7,"rk":13}};
+    this.PINF = {"INF-001":{"gs":28.0,"ss":40.6,"rk":9},"INF-002":{"gs":8.1,"ss":2.4,"rk":1},"INF-003":{"gs":15.1,"ss":13.9,"rk":8},"INF-004":{"gs":5.8,"ss":2.9,"rk":4},"INF-005":{"gs":14.8,"ss":22.1,"rk":10},"INF-006":{"gs":5.6,"ss":2.8,"rk":5},"INF-007":{"gs":11.3,"ss":9.9,"rk":7},"INF-008":{"gs":2.8,"ss":1.4,"rk":3},"INF-009":{"gs":2.9,"ss":0.9,"rk":2},"INF-010":{"gs":5.5,"ss":3.2,"rk":6}};
+    this.SKU = [{"id":"SKU-1001","name":"더마 리페어 세럼","cat":"더마","pl":"PL-02","src":"Corevia","ss":4,"moq":24000,"lt":12,"oh":23123,"avg":7910},{"id":"SKU-1002","name":"더마 카밍 크림","cat":"더마","pl":"PL-02","src":"Corevia","ss":4,"moq":24000,"lt":12,"oh":21111,"avg":7222},{"id":"SKU-1003","name":"더마 배리어 로션","cat":"더마","pl":"PL-02","src":"Corevia","ss":4,"moq":20000,"lt":12,"oh":16210,"avg":3782},{"id":"SKU-1004","name":"더마 시카 앰플","cat":"더마","pl":"PL-02","src":"Corevia","ss":4,"moq":20000,"lt":12,"oh":14359,"avg":6499},{"id":"SKU-2001","name":"기초 토너 대용량","cat":"기초","pl":"PL-01","src":"Corevia","ss":4,"moq":16000,"lt":8,"oh":25170,"avg":4448},{"id":"SKU-2002","name":"기초 에센스","cat":"기초","pl":"PL-01","src":"Corevia","ss":4,"moq":16000,"lt":8,"oh":19382,"avg":3928},{"id":"SKU-2003","name":"기초 수분크림","cat":"기초","pl":"PL-01","src":"Corevia","ss":4,"moq":16000,"lt":8,"oh":22755,"avg":3840},{"id":"SKU-3001","name":"색조 벨벳 립","cat":"색조","pl":"PL-04","src":"Corevia","ss":4,"moq":12000,"lt":6,"oh":14016,"avg":882},{"id":"SKU-3002","name":"색조 글로우 쿠션","cat":"색조","pl":"PL-04","src":"Corevia","ss":4,"moq":12000,"lt":6,"oh":15496,"avg":869},{"id":"SKU-3003","name":"색조 아이팔레트","cat":"색조","pl":"PL-04","src":"Corevia","ss":4,"moq":10000,"lt":6,"oh":21413,"avg":4280},{"id":"SKU-4001","name":"선케어 데일리 선스틱","cat":"선케어","pl":"PL-03","src":"Corevia","ss":4,"moq":12000,"lt":8,"oh":16668,"avg":3937},{"id":"SKU-4002","name":"선케어 톤업 선크림","cat":"선케어","pl":"PL-03","src":"Corevia","ss":4,"moq":12000,"lt":8,"oh":18803,"avg":3820},{"id":"SKU-5001","name":"헤어 리페어 샴푸","cat":"헤어","pl":"PL-05","src":"Corevia","ss":4,"moq":16000,"lt":8,"oh":22819,"avg":4362},{"id":"SKU-5002","name":"바디 모이스처 워시","cat":"바디","pl":"PL-06","src":"Corevia","ss":4,"moq":16000,"lt":8,"oh":18227,"avg":3504}];
+    this.MIX = {"CMP-0001":[52,38,10],"CMP-0002":[52,38,10],"CMP-0003":[52,38,10],"CMP-0004":[52,38,10],"CMP-0005":[52,38,10],"CMP-0006":[52,38,10],"CMP-0007":[52,38,10],"CMP-0008":[52,38,10],"CMP-0009":[52,38,10],"CMP-0010":[52,38,10],"CMP-0011":[52,38,10],"CMP-0012":[52,38,10],"CMP-0013":[52,38,10],"CMP-0014":[52,38,10],"CMP-0015":[52,38,10],"CMP-0016":[52,38,10],"CMP-0017":[52,38,10],"CMP-0018":[52,38,10],"CMP-0019":[52,38,10],"CMP-0020":[52,38,10],"CMP-0021":[52,38,10],"CMP-0022":[52,38,10],"CMP-0023":[52,38,10],"CMP-0024":[52,38,10],"CMP-0025":[52,38,10]};
+    this.state = { f: this.blank({ title: '', author: '' }), ref: '', mode: '', pick: null, dem: {}, modalCmp: false, modalSku: false, cq: '', q: '', cat: '전체', submitted: false, ver: 0, at: '' };
+  }
+  blank(keep) { return { title: keep.title, author: keep.author, name: '', media: [], inf: '', country: '', sns: '', fmt: '', sales: '', pl: '', start: '', end: '', req: '', gmv: '', settle: '', dl: '' }; }
+  fromCmp(c) { const m = this.MIX[c[0]] || [0, 0, 0]; return { name: c[1], media: ['인플루언서', '퍼포먼스', '오프라인'].filter((x, i) => m[i] > 0), inf: c[2], country: c[3], sns: c[4], fmt: c[5], sales: c[6], pl: c[7] }; }
+  renderVals() {
+    const s = this.state, D = this.D, f = s.f;
+    const TODAY = '2026-07-01';
+    const won = (n) => Math.round(Number(n) || 0).toLocaleString('ko-KR');
+    const has = (v) => String(v == null ? '' : v).trim() !== '';
+    const dnum = (t) => { const a = t.split('-'), b = TODAY.split('-'); return Math.round((Date.UTC(+a[0], +a[1] - 1, +a[2]) - Date.UTC(+b[0], +b[1] - 1, +b[2])) / 86400000); };
+    const OK = ['#e7f4ec', '#1e6b3a'], WARN = ['#fff1e0', '#9a3412'], BAD = ['#fdecea', '#b42318'], INFO = ['#eef0f3', '#374151'];
+    const C = {}; D.C.forEach((c) => { C[c[0]] = c; });
+    const PLAN = {}; D.P.forEach((p) => { PLAN[p[1]] = p; });
+    const ref = s.ref ? C[s.ref] : null;
+    const refF = ref ? this.fromCmp(ref) : null;
+    const FIELDS = [['name', '캠페인명'], ['media', '집행 매체'], ['inf', '인플루언서'], ['country', '국가'], ['sns', 'SNS 채널'], ['fmt', '포맷'], ['sales', '판매채널'], ['pl', '제품라인']];
+    const val = (o, k) => k === 'media' ? o.media.slice().sort().join(',') : o[k];
+    const changed = refF ? FIELDS.filter((x) => val(f, x[0]) !== val(refF, x[0])) : [];
+    const mark = {}, bd = {};
+    FIELDS.forEach((x) => { const k = x[0]; const ch = refF && val(f, k) !== val(refF, k); mark[k] = refF ? (ch ? '수정됨' : '불러옴') : ''; bd[k] = ch ? '#1d4ed8' : '#cfd5dd'; });
+    bd.start = has(f.start) && f.start <= TODAY ? '#b42318' : '#cfd5dd'; bd.end = has(f.end) && has(f.start) && f.end < f.start ? '#b42318' : '#cfd5dd';
+    const set = (k) => (e) => { const v = e.target.value; const o = { f: Object.assign({}, this.state.f, { [k]: v }), submitted: false }; if (k === 'pl') o.pick = null; this.setState(o); };
+    const on = {}; Object.keys(f).forEach((k) => { on[k] = set(k); });
+    const load = (c) => { const cur = this.state.f; const nf = Object.assign({}, cur, this.fromCmp(c)); if (!has(cur.title)) nf.title = c[1] + ' 확대 집행'; this.setState({ f: nf, ref: c[0], mode: 'ref', pick: null, dem: {}, modalCmp: false, submitted: false }); };
+    const startNew = () => this.setState({ f: this.blank(this.state.f), ref: '', mode: 'new', pick: null, dem: {}, submitted: false });
+    const revert = () => { if (ref) this.setState({ f: Object.assign({}, this.state.f, this.fromCmp(ref)), pick: null, submitted: false }); };
+    const MEDIA = [['인플루언서', '인플루언서'], ['퍼포먼스', '퍼포먼스 광고'], ['오프라인', '오프라인'], ['쿠폰·프로모션', '쿠폰·프로모션']];
+    const showInf = f.media.indexOf('인플루언서') >= 0;
+    const showSns = showInf || f.media.indexOf('퍼포먼스') >= 0;
+    const mediaOpts = MEDIA.map((m) => { const onv = f.media.indexOf(m[0]) >= 0; return { label: m[1], on: onv, bd: onv ? '#1f5fbf' : '#cfd5dd', bg: onv ? '#eef4ff' : '#ffffff',
+      toggle: () => { const cur = this.state.f; const list = cur.media.indexOf(m[0]) >= 0 ? cur.media.filter((x) => x !== m[0]) : cur.media.concat([m[0]]); const nf = Object.assign({}, cur, { media: list }); if (m[0] === '인플루언서' && list.indexOf('인플루언서') < 0) nf.inf = ''; this.setState({ f: nf, submitted: false }); } }; });
+    const mediaNote = f.media.length === 0 ? '하나 이상 고르세요. 인플루언서를 고르면 인플루언서, 인플루언서·퍼포먼스 광고를 고르면 SNS 채널·포맷 칸이 열립니다.' : '고른 매체: ' + f.media.join(' · ') + (showInf ? '' : ' — 인플루언서 없는 캠페인') + (showSns ? '' : ' · SNS 채널·포맷 해당 없음');
+    const uniq = (i) => Array.from(new Set(D.C.map((c) => c[i]))).map((v) => ({ v: v, t: v }));
+    const optInf = Object.keys(D.I).map((id) => ({ v: id, t: id + ' · ' + D.I[id][0] + ' (' + D.I[id][1] + ' · ' + D.I[id][3] + ')' }));
+    const optPl = ['더마', '기초', '색조', '선케어', '헤어', '바디'].map((v) => ({ v: v, t: v }));
+    const cq = s.cq.trim().toLowerCase();
+    const cmpList = D.C.filter((c) => !cq || [c[0], c[1], D.I[c[2]][0], c[3], c[7], c[6]].join(' ').toLowerCase().indexOf(cq) >= 0).map((c) => ({ id: c[0], name: c[1], inf: D.I[c[2]][0], country: c[3], sns: c[4], fmt: c[5], sales: c[6], pl: c[7], period: c[8] + ' ~ ' + c[9], rk: this.PERF[c[0]] ? this.PERF[c[0]].rk : '—', rowBg: c[0] === s.ref ? '#eef4ff' : '#ffffff', load: () => load(c) }));
+    const infRow = showInf && has(f.inf) ? D.I[f.inf] : null;
+    const inf = infRow ? { name: infRow[0] + ' (' + f.inf + ')', tier: infRow[1], country: infRow[2], platform: infRow[3], fee: infRow[4] } : { name: '', tier: '', country: '', platform: '', fee: '' };
+    const infPerf = infRow && this.PINF[f.inf] ? this.PINF[f.inf] : { gs: '—', ss: '—', rk: '—' };
+    const refPerf = ref && this.PERF[ref[0]] ? this.PERF[ref[0]] : { gs: '—', ss: '—', rk: '—' };
+    const linked = showInf && f.inf === 'INF-001';
+    const pp = ref ? PLAN[ref[0]] : null;
+    const prev = pp ? { req: '이전 기안 ' + pp[0] + ': ' + won(pp[2]) + '원', gmv: '이전 기안: ' + won(pp[3]) + '원', settle: '이전 기안: ' + pp[4], dl: '이전 기안: ' + pp[5] } : { req: '', gmv: '', settle: '', dl: '' };
+    const periodOk = has(f.start) && has(f.end) && f.start > TODAY && f.end >= f.start;
+    let periodNote = { text: '새 캠페인 기간을 입력하세요. 기준일(2026-07-01) 이후 날짜만 됩니다.', fg: '#5b6270' };
+    if (has(f.start) && f.start <= TODAY) periodNote = { text: '새로 제안하는 캠페인이라 시작일은 기준일(2026-07-01) 이후여야 합니다.', fg: '#b42318' };
+    else if (has(f.start) && has(f.end)) {
+      if (f.end < f.start) periodNote = { text: '종료일이 시작일보다 앞섭니다.', fg: '#b42318' };
+      else periodNote = { text: '집행 기간 ' + (dnum(f.end) - dnum(f.start) + 1) + '일', fg: '#1e6b3a' };
+    }
+    const n = Number(f.req) || 0;
+    const reqChip = { show: n > 10000000 };
+    const dlChip = !has(f.dl) ? { show: false, text: '', bg: '#eef0f3', fg: '#374151' } : dnum(f.dl) < 0 ? { show: true, text: '기한 경과 · 이미 자동 확정', bg: BAD[0], fg: BAD[1] } : { show: true, text: 'D-' + dnum(f.dl) + ' · 이 날까지 승인 필요', bg: dnum(f.dl) <= 21 ? WARN[0] : INFO[0], fg: dnum(f.dl) <= 21 ? WARN[1] : INFO[1] };
+    // SKU 수요 가정 (보완)
+    const SKU = this.SKU; const pl = f.pl;
+    const pk = s.pick ? s.pick : (() => { const o = {}; SKU.filter((k) => k.cat === pl).forEach((k) => { o[k.id] = true; }); return o; })();
+    const setPick = (o) => this.setState({ pick: o, submitted: false });
+    const tone = (ok) => ok ? OK : WARN;
+    const sel = SKU.filter((k) => pk[k.id]).map((k) => {
+      const raw = s.dem[k.id] == null ? '' : s.dem[k.id]; const inc = Number(raw) || 0; const cov = k.oh / (k.avg + inc); const t = tone(cov >= k.ss);
+      return { id: k.id, name: k.name, oh: won(k.oh), avg: won(k.avg), ss: k.ss, demand: raw, inputId: 'dem-' + k.id,
+        text: (raw === '' ? '현재 ' : '') + cov.toFixed(1) + '주 · ' + (cov >= k.ss ? '안전재고 이상' : '안전재고 미달'), bg: t[0], fg: t[1],
+        onDemand: (ev) => this.setState({ dem: Object.assign({}, this.state.dem, { [k.id]: ev.target.value }), submitted: false }),
+        remove: () => { const o = Object.assign({}, pk); delete o[k.id]; setPick(o); } };
+    });
+    const selCats = Array.from(new Set(SKU.filter((k) => pk[k.id]).map((k) => k.cat)));
+    const lineWarn = !has(pl) ? { text: '제품라인을 고르면 해당 SKU가 들어옵니다.', fg: '#5b6270' } : sel.length === 0 ? { text: '', fg: '#5b6270' } : selCats.length === 1 && selCats[0] === pl ? { text: '제품라인(' + pl + ')의 SKU를 불러왔습니다.', fg: '#1e6b3a' } : { text: '제품라인(' + pl + ')과 다른 제품 포함: ' + selCats.join(', ') + ' — ② SCM 대조 시 확인', fg: '#9a3412' };
+    const qq = s.q.trim().toLowerCase();
+    const list = SKU.filter((k) => (s.cat === '전체' || k.cat === s.cat) && (!qq || k.name.toLowerCase().indexOf(qq) >= 0 || k.id.toLowerCase().indexOf(qq) >= 0)).map((k) => {
+      const cov = k.oh / k.avg; const t = tone(cov >= k.ss); const onv = !!pk[k.id];
+      return Object.assign({}, k, { moq: won(k.moq), cover: cov.toFixed(1), bg: t[0], fg: t[1], rowBg: onv ? '#f2f7ff' : '#ffffff', btnLabel: onv ? '제거' : '추가', btnAria: k.id + (onv ? ' 제거' : ' 추가'), btnBg: onv ? '#ffffff' : '#1f5fbf', btnFg: onv ? '#b42318' : '#ffffff', btnBd: onv ? '#b42318' : '#1f5fbf',
+        toggle: () => { const o = Object.assign({}, pk); if (o[k.id]) delete o[k.id]; else o[k.id] = true; setPick(o); } });
+    });
+    const cats = ['전체', '더마', '기초', '색조', '선케어', '헤어', '바디'].map((x) => { const onv = s.cat === x; return { label: x, on: String(onv), pick: () => this.setState({ cat: x }), bg: onv ? '#1a1d23' : '#ffffff', fg: onv ? '#ffffff' : '#374151', bd: onv ? '#1a1d23' : '#cfd5dd', w: onv ? '600' : '400' }; });
+    const assumed = sel.filter((x) => has(x.demand)).length;
+    // 점검 · Output
+    const attrKeys = showSns ? ['country', 'sns', 'fmt', 'sales', 'pl'] : ['country', 'sales', 'pl'];
+    const attrsOk = attrKeys.every((k) => has(f[k]));
+    const datesOk = has(f.settle) && has(f.dl) && f.settle > TODAY && f.dl >= TODAY;
+    const late = has(f.dl) && f.dl < TODAY;
+    const checks = [
+      ['기안 제목', has(f.title)], ['작성자', has(f.author)], ['캠페인명', has(f.name)], ['집행 매체 1개 이상', f.media.length > 0]].concat(showInf ? [['인플루언서', has(f.inf)]] : []).concat([[showSns ? '국가 · SNS 채널 · 포맷 · 판매채널 · 제품라인' : '국가 · 판매채널 · 제품라인', attrsOk],
+      ['캠페인 기간 (기준일 이후 시작, 종료일 ≥ 시작일)', periodOk], ['요청액', n > 0], ['정산일 · 계약 확정기한 (기준일 이후)' + (late ? ' — 확정기한 경과' : ''), datesOk]])
+    .map((x) => ({ label: x[0], mark: x[1] ? '✓' : '!', bg: x[1] ? OK[0] : WARN[0], fg: x[1] ? OK[1] : WARN[1], text: x[1] ? '#374151' : '#9a3412', ok: x[1] }));
+    const done = checks.filter((x) => x.ok).length; const ready = done === checks.length;
+    const st = (ok) => ok ? { mark: '준비', bg: OK[0], fg: OK[1] } : { mark: '누락', bg: WARN[0], fg: WARN[1] };
+    const opt = { mark: '선택', bg: '#fdf3d7', fg: '#6b4e00' }, later = { mark: '이후', bg: INFO[0], fg: INFO[1] }, info = { mark: '표시', bg: INFO[0], fg: INFO[1] };
+    const it = (label, m) => Object.assign({ label: label }, m);
+    const pid = 'PLAN-026';
+    const out = [
+      { to: '② SCM 재고·입고표 대조', src: 'W01 BPMN', items: [it('제품라인 · 캠페인 기간', st(has(f.pl) && periodOk)), it('SKU 수요 가정 ' + assumed + '/' + sel.length + '개 SKU (보완)', opt)] },
+      { to: '③ 재무 금액·승인권한 검토', src: 'W01 BPMN · 결재 규정', items: [it('요청액' + (n > 0 ? ' ' + won(n) + '원' : ''), st(n > 0)), it('정산일 · 계약 확정기한', st(has(f.settle) && has(f.dl))), it('캠페인명 · 집행 매체' + (f.media.length ? ' (' + f.media.join('·') + ')' : ''), st(has(f.name) && f.media.length > 0)), it(showInf ? '인플루언서' + (infRow ? ' ' + infRow[0] + ' (' + f.inf + ')' : '') : '인플루언서 해당 없음', showInf ? st(!!infRow) : { mark: '해당 없음', bg: INFO[0], fg: INFO[1] }), it(ref ? '참조 캠페인 ' + ref[0] + ' · 수정 ' + changed.length + '개 항목' : '참조 없음 · 신규 작성', info)].concat(linked ? [it('연결 계약 · INF-001 연간 전속계약', info)] : []) },
+      { to: '④ 승인권자', src: 'approval_authority_policy', items: [it('위 전체 + ③ 재무가 붙이는 성과·비용표', later)] },
+      { to: '상신 이벤트 기록', src: '보완 · W01·W02 안내', items: [it('작성자 ' + (has(f.author) ? f.author : '(미입력)'), st(has(f.author))), it(s.submitted ? pid + ' · 제출 ' + s.at + ' · v' + s.ver : '기안 ID · 제출 시각 · 버전 (제출 시 기록)', s.submitted ? st(true) : later)] }
+    ];
+    const submit = () => { if (!ready) return; const d = new Date(); const hh = String(d.getHours()).padStart(2, '0'), mm = String(d.getMinutes()).padStart(2, '0'); this.setState({ submitted: true, ver: this.state.ver + 1, at: TODAY + ' ' + hh + ':' + mm }); };
+    const pressed = (onv) => ({ bd: onv ? '#1f5fbf' : '#dde2e8', bg: onv ? '#eef4ff' : '#ffffff' });
+    return {
+      f: f, on: on, mark: mark, bd: bd,
+      statusChip: s.submitted ? { text: '상신 완료 v' + s.ver, bg: OK[0], fg: OK[1] } : { text: (s.ver ? '수정 중 · v' + s.ver + ' 이후' : '작성 중') + ' · 필수 ' + done + '/' + checks.length, bg: WARN[0], fg: WARN[1] },
+      planIdText: s.submitted ? pid : pid + ' (상신 시 부여)',
+      openCmp: () => this.setState({ modalCmp: true }), closeCmp: () => this.setState({ modalCmp: false }), startNew: startNew, revert: revert,
+      modeRef: String(s.mode === 'ref'), modeNew: String(s.mode === 'new'), btnRef: pressed(s.mode === 'ref'), btnNew: pressed(s.mode === 'new'),
+      modalCmp: s.modalCmp, cq: s.cq, onCq: (e) => this.setState({ cq: e.target.value }), cmpList: cmpList, noCmpResult: cmpList.length === 0,
+      hasRef: !!ref, ref: ref ? { id: ref[0], name: ref[1], sns: ref[4], fmt: ref[5], country: ref[3], sales: ref[6], pl: ref[7], start: ref[8], end: ref[9], mix: (() => { const m = this.MIX[ref[0]] || [0, 0, 0]; return '인플루언서 ' + m[0] + '% · 퍼포먼스 ' + m[1] + '% · 오프라인 ' + m[2] + '%'; })() } : { id: '', name: '', sns: '', fmt: '', country: '', sales: '', pl: '', start: '', end: '', mix: '' },
+      diff: !ref ? { text: '', fg: '#5b6270' } : changed.length ? { text: '불러온 값에서 ' + changed.length + '개 수정: ' + changed.map((x) => x[1]).join(', '), fg: '#1d4ed8' } : { text: '불러온 값 그대로입니다. 바꿀 항목을 고치세요.', fg: '#5b6270' },
+      formHint: ref ? '불러온 값이 채워졌습니다 · 모든 항목 수정 가능' : '처음부터 작성합니다',
+      mediaOpts: mediaOpts, mediaNote: mediaNote, showInf: showInf, showSns: showSns, minDate: '2026-07-02', minEnd: has(f.start) ? f.start : '2026-07-02',
+      optInf: optInf, optCountry: uniq(3), optSns: uniq(4), optFmt: uniq(5), optSales: uniq(6), optPl: optPl,
+      periodNote: periodNote, reqChip: reqChip, dlChip: dlChip, prev: prev,
+      hasInf: !!infRow, inf: inf, infPerf: infPerf, refPerf: refPerf, linked: linked, noRefInfo: !ref && !infRow,
+      pidLabel: pid, sel: sel, selCount: sel.length, noSel: has(pl) && sel.length === 0, noPl: !has(pl), lineWarn: lineWarn, list: list, noResult: list.length === 0, cats: cats,
+      modalSku: s.modalSku, openSku: () => { if (has(this.state.f.pl)) this.setState({ modalSku: true }); }, closeSku: () => this.setState({ modalSku: false }), q: s.q, onQ: (e) => this.setState({ q: e.target.value }),
+      authorShown: has(f.author) ? f.author : '(작성자 미입력)',
+      out: out, checks: checks, doneCount: done, totalCount: checks.length, notReady: !ready, submit: submit,
+      submitBg: s.submitted ? '#1e6b3a' : ready ? '#1f5fbf' : '#9aa3af',
+      submitLabel: s.submitted ? '상신 완료 · ② SCM 대조 요청 생성됨' : ready ? '기안 상신' : '필수 항목을 채우면 상신할 수 있습니다',
+      submittedFlag: s.submitted,
+      submitNote: s.submitted ? '수정하면 상신 전 상태로 돌아가고, 다시 상신하면 v' + (s.ver + 1) + '로 기록됩니다.' : '상신하면 ② SCM 대조 요청이 만들어지고 ③ 재무 검토 → ④ 승인권자 순서로 진행됩니다.'
+    };
+  }
+}
+</script>
+</body>
+</html>

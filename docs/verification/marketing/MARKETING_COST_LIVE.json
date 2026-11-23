@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:8088",
+  "health_ok": true,
+  "marketing_reference_budget": 18683,
+  "procurement_budget": 0,
+  "formulas_registered": [
+    "marketing_fixed_budget",
+    "marketing_variable_budget",
+    "marketing_execution_budget",
+    "campaign_total_requirement"
+  ],
+  "case_versions_unchanged": true,
+  "note": "읽기·계산만 확인. 실제 캠페인 예산·승인·발주 변경 없음."
+}

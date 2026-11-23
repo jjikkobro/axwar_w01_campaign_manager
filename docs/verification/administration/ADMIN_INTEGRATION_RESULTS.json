@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "unit_tests": 149,
+  "marketing_home": {
+    "todo": 0,
+    "processed": 3,
+    "schedule_stage_7_returns_to_todo": "단위 테스트 및 메모리 화면 픽스처 확인"
+  },
+  "dataset_update": {
+    "datasets": 8,
+    "preview_no_write": true,
+    "save_version_increment": true,
+    "wrong_role_and_bad_csv_rejected": true
+  },
+  "formula_embedded_in_admin": true,
+  "legacy_settings_redirect": true,
+  "prompt_drafts": {
+    "stages": 7,
+    "runtime_applied": false,
+    "save_does_not_change_finance_or_case_versions": true,
+    "wrong_role_and_activation_rejected": true,
+    "version_conflict_rejected": true
+  },
+  "finance_separate_work_under_reference_data": true,
+  "mobile_overflow": false,
+  "browser_errors": [],
+  "database": "별도 로컬 검증 DB · 기존 8088 데이터 변경 없음",
+  "current_preview": {
+    "base": "http://127.0.0.1:8088",
+    "marketing_todo": 0,
+    "marketing_processed": 3,
+    "datasets": 8,
+    "formulas": 11,
+    "prompt_stages": 7,
+    "read_only_check": true,
+    "browser_errors": []
+  }
+}

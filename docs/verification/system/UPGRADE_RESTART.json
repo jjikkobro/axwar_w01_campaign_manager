@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "at": "2026-11-10T08:16:22.022245+00:00",
+  "base": "http://127.0.0.1:8088",
+  "check": "서버 프로세스 종료·동일 PostgreSQL DB 재시작 후 6건 본문·버전·전체 이력 해시·수요 약속 동일",
+  "before": {
+    "A": {
+      "id": "bcf7f369-bf11-492e-b0d0-92a4c63a1599",
+      "version": 20,
+      "case_sha256": "fab5df27f15f2bfc56683fb8719a10fc3d78dd990f787d8aca913b73e6c9ff34",
+      "history_count": 48,
+      "history_sha256": "727e94f54ee731400b27198fe0e32ee3dd9d1c1c6c82bc674915dc7e8756508a",
+      "reservation_status": "active"
+    },
+    "B": {
+      "id": "7bcd0f65-eb0b-461e-a4f9-8f3f06af6aea",
+      "version": 24,
+      "case_sha256": "e85551c2068be25e5d6ec613efb24107bc21083ce601cdcb75ac9ecfbd4441d6",
+      "history_count": 66,
+      "history_sha256": "da4b6809001b1f952ab8057b56d80888bfdaa685f1b6534ef738731291c6978c",
+      "reservation_status": "active"
+    },
+    "C": {
+      "id": "e988ea3d-9e37-438d-a41b-5adce9addaa5",
+      "version": 28,
+      "case_sha256": "c2985009778bcdef90982a92e1639c31de054959966e45df085e432123faaac3",
+      "history_count": 70,
+      "history_sha256": "24eb69dc25d02a53879b24534bd7c6d752d8042dade4a81206cf19fd7be617e2",
+      "reservation_status": "active"
+    },
+    "D": {
+      "id": "5ec8a55a-693f-4f57-867a-ac14058e7ecc",
+      "version": 19,
+      "case_sha256": "493162f79db23ad6ed3434dd326a9fdc0ac5d8c0dcc81fd9467d21ca2bbc80df",
+      "history_count": 40,
+      "history_sha256": "68f8a38fdaca1062474879a7050117fc89d37af08667162995518bc550fff1c0",
+      "reservation_status": "active"
+    },
+    "E": {
+      "id": "857da3fd-4342-4507-8d4f-35a1e9157ffc",
+      "version": 12,
+      "case_sha256": "2a92a855de5e6892dc6cd4a0766058d95bb1688a3f68ee4ff6ed14c2c7c30b95",
+      "history_count": 28,
+      "history_sha256": "150988e020f23c15ea1da77453d9104ac4f2acbc33fff13b81746538c835afad",
+      "reservation_status": null
+    },
+    "F": {
+      "id": "a0640a11-1d74-4cf4-9bce-fc76b065840c",
+      "version": 9,
+      "case_sha256": "65f78c174f174ac9ecc4290ad68ba79033eadf726032aaaee1b890cf8d3342bd",
+      "history_count": 16,
+      "history_sha256": "df958f73deb6e7876cced61d452ad9aaa3f58e5689a136b7782d35317936a058",
+      "reservation_status": null
+    }
+  },
+  "after": {
+    "A": {
+      "id": "bcf7f369-bf11-492e-b0d0-92a4c63a1599",
+      "version": 20,
+      "case_sha256": "fab5df27f15f2bfc56683fb8719a10fc3d78dd990f787d8aca913b73e6c9ff34",
+      "history_count": 48,
+      "history_sha256": "727e94f54ee731400b27198fe0e32ee3dd9d1c1c6c82bc674915dc7e8756508a",
+      "reservation_status": "active"
+    },
+    "B": {
+      "id": "7bcd0f65-eb0b-461e-a4f9-8f3f06af6aea",
+      "version": 24,
+      "case_sha256": "e85551c2068be25e5d6ec613efb24107bc21083ce601cdcb75ac9ecfbd4441d6",
+      "history_count": 66,
+      "history_sha256": "da4b6809001b1f952ab8057b56d80888bfdaa685f1b6534ef738731291c6978c",
+      "reservation_status": "active"
+    },
+    "C": {
+      "id": "e988ea3d-9e37-438d-a41b-5adce9addaa5",
+      "version": 28,
+      "case_sha256": "c2985009778bcdef90982a92e1639c31de054959966e45df085e432123faaac3",
+      "history_count": 70,
+      "history_sha256": "24eb69dc25d02a53879b24534bd7c6d752d8042dade4a81206cf19fd7be617e2",
+      "reservation_status": "active"
+    },
+    "D": {
+      "id": "5ec8a55a-693f-4f57-867a-ac14058e7ecc",
+      "version": 19,
+      "case_sha256": "493162f79db23ad6ed3434dd326a9fdc0ac5d8c0dcc81fd9467d21ca2bbc80df",
+      "history_count": 40,
+      "history_sha256": "68f8a38fdaca1062474879a7050117fc89d37af08667162995518bc550fff1c0",
+      "reservation_status": "active"
+    },
+    "E": {
+      "id": "857da3fd-4342-4507-8d4f-35a1e9157ffc",
+      "version": 12,
+      "case_sha256": "2a92a855de5e6892dc6cd4a0766058d95bb1688a3f68ee4ff6ed14c2c7c30b95",
+      "history_count": 28,
+      "history_sha256": "150988e020f23c15ea1da77453d9104ac4f2acbc33fff13b81746538c835afad",
+      "reservation_status": null
+    },
+    "F": {
+      "id": "a0640a11-1d74-4cf4-9bce-fc76b065840c",
+      "version": 9,
+      "case_sha256": "65f78c174f174ac9ecc4290ad68ba79033eadf726032aaaee1b890cf8d3342bd",
+      "history_count": 16,
+      "history_sha256": "df958f73deb6e7876cced61d452ad9aaa3f58e5689a136b7782d35317936a058",
+      "reservation_status": null
+    }
+  }
+}

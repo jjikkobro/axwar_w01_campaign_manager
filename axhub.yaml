@@ -1,0 +1,17 @@
+version: axhub/v1
+name: jung-jung-hoon-w1-001245
+metadata:
+  name: 정정훈_W1-001245
+build:
+  deploy_method: docker
+  dockerfile: Dockerfile
+runtime:
+  port: 8080
+  health_path: /healthz
+database:
+  engine: postgres
+env:
+  required:
+    - name: PUBLIC_ACCESS
+    - name: AI_API_KEY
+    - name: SESSION_SECRET

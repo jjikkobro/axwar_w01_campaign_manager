@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "errors": [],
+  "desktop_overflow": false,
+  "mobile_overflow": false,
+  "checks": [
+    "real render",
+    "persistent form save and reload",
+    "preview",
+    "desktop and mobile overflow"
+  ]
+}

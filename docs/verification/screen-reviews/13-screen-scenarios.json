@@ -1,0 +1,1210 @@
+{
+  "base_url": "http://127.0.0.1:8087",
+  "passed": true,
+  "scope": "별도 로컬 PostgreSQL · 모든 전달/회신/승인은 모의",
+  "scenarios": [
+    {
+      "name": "정상·평시·분할 회신·회차 종료",
+      "case_id": "8b6fc9f2-9c19-41ae-b8d7-8ca7cfe205f0",
+      "projection": {
+        "stage": 7,
+        "status": "회차 종료",
+        "targets": [
+          {
+            "id": "campaign",
+            "kind": "캠페인집행",
+            "basis": "단독 기안·표본",
+            "change": "신규 계약",
+            "sku_id": null,
+            "deadline": null,
+            "payments": [
+              {
+                "date": "2026-09-21",
+                "amount": 5000000
+              }
+            ],
+            "cash_scope": "표본·현금 합산 제외",
+            "reference_po": null,
+            "annual_amount": null,
+            "proposal_total": 5000000,
+            "authority": "마케팅팀 전결",
+            "routes": [
+              {
+                "id": "campaign",
+                "installment": 1,
+                "kind": "캠페인집행",
+                "payment": {
+                  "date": "2026-09-21",
+                  "amount": 5000000
+                },
+                "route": {
+                  "authority": "마케팅팀 전결",
+                  "normal": "마케팅팀 전결",
+                  "status": "평시 승인 대상",
+                  "blocked": false,
+                  "reason": [
+                    "신규 약정"
+                  ],
+                  "payment_date": "2026-09-21",
+                  "adjusted_payment_date": "2026-09-21",
+                  "new_commitment": true,
+                  "assessment_confirmed": true,
+                  "scenario": "exclude_pay",
+                  "provenance": "계산 결과",
+                  "classification_provenance": "내부 통제",
+                  "rule_version": "W01-2026-11-10.1"
+                },
+                "basis": "단독 기안·표본",
+                "cash_scope": "표본·현금 합산 제외"
+              }
+            ],
+            "decision": {
+              "at": "2026-11-10T06:41:09.222344+00:00",
+              "scope": {
+                "id": "campaign",
+                "kind": "캠페인집행",
+                "change": "신규 계약",
+                "sku_id": null,
+                "payments": [
+                  {
+                    "date": "2026-09-21",
+                    "amount": 5000000
+                  }
+                ]
+              },
+              "reason": "역할 흐름 검증",
+              "decision": "승인",
+              "evidence": "격리 DB 모의 회신",
+              "authority": "마케팅팀 전결",
+              "condition": "",
+              "packet_key": "f723c1fe29135347d923067f18846407a10fd56b3c5dd694e35037246b75695a",
+              "provenance": "모의 회신",
+              "group_report": false,
+              "decision_maker": "승인권자 검증 담당",
+              "condition_evidence": ""
+            },
+            "current": true
+          },
+          {
+            "id": "po-SKU-2002",
+            "kind": "재고발주",
+            "basis": "모의 수량·단가·지급일 확인",
+            "change": "추가발주",
+            "sku_id": "SKU-2002",
+            "deadline": null,
+            "payments": [
+              {
+                "date": "2026-09-21",
+                "amount": 201600000
+              }
+            ],
+            "cash_scope": "전사 현금 반영 확인",
+            "reference_po": null,
+            "annual_amount": null,
+            "proposal_total": null,
+            "authority": "SCM 전결",
+            "routes": [
+              {
+                "id": "po-SKU-2002",
+                "installment": 1,
+                "kind": "재고발주",
+                "payment": {
+                  "date": "2026-09-21",
+                  "amount": 201600000
+                },
+                "route": {
+                  "authority": "SCM 전결",
+                  "normal": "SCM 전결",
+                  "status": "평시 승인 대상",
+                  "blocked": false,
+                  "reason": [
+                    "신규 약정"
+                  ],
+                  "payment_date": "2026-09-21",
+                  "adjusted_payment_date": "2026-09-21",
+                  "new_commitment": true,
+                  "assessment_confirmed": true,
+                  "scenario": "exclude_pay",
+                  "provenance": "계산 결과",
+                  "classification_provenance": "내부 통제",
+                  "rule_version": "W01-2026-11-10.1"
+                },
+                "basis": "모의 수량·단가·지급일 확인",
+                "cash_scope": "전사 현금 반영 확인"
+              }
+            ],
+            "decision": {
+              "at": "2026-11-10T06:41:09.792901+00:00",
+              "scope": {
+                "id": "po-SKU-2002",
+                "kind": "재고발주",
+                "change": "추가발주",
+                "sku_id": "SKU-2002",
+                "payments": [
+                  {
+                    "date": "2026-09-21",
+                    "amount": 201600000
+                  }
+                ]
+              },
+              "reason": "역할 흐름 검증",
+              "decision": "승인",
+              "evidence": "격리 DB 모의 회신",
+              "authority": "SCM 전결",
+              "condition": "",
+              "packet_key": "f723c1fe29135347d923067f18846407a10fd56b3c5dd694e35037246b75695a",
+              "provenance": "모의 회신",
+              "group_report": false,
+              "decision_maker": "승인권자 검증 담당",
+              "condition_evidence": ""
+            },
+            "current": true
+          }
+        ],
+        "finance_valid": true,
+        "orders": [
+          {
+            "at": "2026-11-10T06:41:10.339800+00:00",
+            "po_id": "W01-8b6fc9f2-1",
+            "reason": "역할 흐름 검증",
+            "sku_id": "SKU-2002",
+            "channel": "이메일 모의",
+            "approval": {
+              "at": "2026-11-10T06:41:09.792901+00:00",
+              "scope": {
+                "id": "po-SKU-2002",
+                "kind": "재고발주",
+                "change": "추가발주",
+                "sku_id": "SKU-2002",
+                "payments": [
+                  {
+                    "date": "2026-09-21",
+                    "amount": 201600000
+                  }
+                ]
+              },
+              "reason": "역할 흐름 검증",
+              "decision": "승인",
+              "evidence": "격리 DB 모의 회신",
+              "authority": "SCM 전결",
+              "condition": "",
+              "packet_key": "f723c1fe29135347d923067f18846407a10fd56b3c5dd694e35037246b75695a",
+              "provenance": "모의 회신",
+              "group_report": false,
+              "decision_maker": "승인권자 검증 담당",
+              "condition_evidence": ""
+            },
+            "evidence": "격리 DB 모의 회신",
+            "supplier": "Corevia",
+            "order_qty": 16000,
+            "target_id": "po-SKU-2002",
+            "amount_krw": 201600000,
+            "order_date": "2026-07-01",
+            "provenance": "모의 회신",
+            "unit_price": 12600,
+            "wanted_date": "2026-07-14",
+            "transmission": "모의 전달",
+            "decision_maker": "SCM 검증 담당",
+            "reply_deadline": "2026-07-06",
+            "payment_due_date": "2026-09-21"
+          }
+        ],
+        "receipt": {
+          "at": "2026-11-10T06:41:10.970183+00:00",
+          "clear": true,
+          "lines": [
+            {
+              "po_id": "W01-8b6fc9f2-1",
+              "sku_id": "SKU-2002",
+              "delayed": true,
+              "shipments": [
+                {
+                  "qty": 8000,
+                  "available_date": "2026-07-14"
+                },
+                {
+                  "qty": 8000,
+                  "available_date": "2026-07-16"
+                }
+              ],
+              "payment_date": "2026-09-21",
+              "quantity_mismatch": false
+            }
+          ],
+          "reason": "역할 흐름 검증",
+          "message": "분할 회신 확인 · 기간 공급 가능",
+          "evidence": "격리 DB 모의 회신",
+          "judgment": "캠페인 유지 제안",
+          "provenance": "모의 회신",
+          "decision_maker": "SCM 검증 담당"
+        },
+        "closed": {
+          "at": "2026-11-10T06:41:11.510900+00:00",
+          "end": "2026-07-19",
+          "note": "검토 회차 종료. 실제 판매·입고·지급 완료가 아닙니다.",
+          "start": "2026-07-13",
+          "stock": [
+            {
+              "sku_id": "SKU-2002",
+              "minimum": 11346.714285714286,
+              "provenance": "계산 결과"
+            }
+          ],
+          "budget": 5000000,
+          "reason": "역할 흐름 검증",
+          "sku_ids": [
+            "SKU-2002"
+          ],
+          "evidence": "격리 DB 모의 회신",
+          "notified": true,
+          "provenance": "모의 회신",
+          "decision_maker": "마케팅 검증 담당"
+        },
+        "notes": [],
+        "rework": null,
+        "withdrawn": null
+      },
+      "history": [
+        {
+          "role": "마케팅",
+          "event": "마케팅 계획 SCM 검토 요청",
+          "at": "2026-11-10 15:41:07.560755+09:00"
+        },
+        {
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "at": "2026-11-10 15:41:07.560755+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:07.560755+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:07.560755+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:07.560755+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "SCM 검토 완료 · 재무 인계",
+          "at": "2026-11-10 15:41:08.062999+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:08.062999+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:08.062999+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:08.062999+09:00"
+        },
+        {
+          "role": "재무",
+          "event": "재무 검토 submit",
+          "at": "2026-11-10 15:41:08.616546+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:08.616546+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:08.616546+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 종료(재검토)",
+          "at": "2026-11-10 15:41:08.616546+09:00"
+        },
+        {
+          "role": "승인권자",
+          "event": "역할별 업무 decide",
+          "at": "2026-11-10 15:41:09.218843+09:00"
+        },
+        {
+          "role": "승인권자",
+          "event": "역할별 업무 decide",
+          "at": "2026-11-10 15:41:09.789848+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:09.789848+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:09.789848+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "역할별 업무 order",
+          "at": "2026-11-10 15:41:10.336791+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:10.336791+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:10.336791+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "역할별 업무 receipt",
+          "at": "2026-11-10 15:41:10.966771+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:10.966771+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:10.966771+09:00"
+        },
+        {
+          "role": "마케팅",
+          "event": "역할별 업무 close",
+          "at": "2026-11-10 15:41:11.507377+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:11.507377+09:00"
+        }
+      ]
+    },
+    {
+      "name": "CEO 경로·조건부 발주 차단",
+      "case_id": "78d64984-2fe5-437b-ba02-2744a3a36b25",
+      "projection": {
+        "stage": 4,
+        "status": "조건 이행·재승인 대기",
+        "targets": [
+          {
+            "id": "campaign",
+            "kind": "캠페인집행",
+            "basis": "단독 기안·표본",
+            "change": "신규 계약",
+            "sku_id": null,
+            "deadline": null,
+            "payments": [
+              {
+                "date": "2026-09-21",
+                "amount": 5000000
+              }
+            ],
+            "cash_scope": "표본·현금 합산 제외",
+            "reference_po": null,
+            "annual_amount": null,
+            "proposal_total": 5000000,
+            "authority": "마케팅팀 전결",
+            "routes": [
+              {
+                "id": "campaign",
+                "installment": 1,
+                "kind": "캠페인집행",
+                "payment": {
+                  "date": "2026-09-21",
+                  "amount": 5000000
+                },
+                "route": {
+                  "authority": "마케팅팀 전결",
+                  "normal": "마케팅팀 전결",
+                  "status": "평시 승인 대상",
+                  "blocked": false,
+                  "reason": [
+                    "신규 약정"
+                  ],
+                  "payment_date": "2026-09-21",
+                  "adjusted_payment_date": "2026-09-21",
+                  "new_commitment": true,
+                  "assessment_confirmed": true,
+                  "scenario": "exclude_pay",
+                  "provenance": "계산 결과",
+                  "classification_provenance": "내부 통제",
+                  "rule_version": "W01-2026-11-10.1"
+                },
+                "basis": "단독 기안·표본",
+                "cash_scope": "표본·현금 합산 제외"
+              }
+            ],
+            "decision": null,
+            "current": false
+          },
+          {
+            "id": "po-SKU-2002",
+            "kind": "재고발주",
+            "basis": "모의 수량·단가·지급일 확인",
+            "change": "추가발주",
+            "sku_id": "SKU-2002",
+            "deadline": null,
+            "payments": [
+              {
+                "date": "2026-08-21",
+                "amount": 201600000
+              }
+            ],
+            "cash_scope": "전사 현금 반영 확인",
+            "reference_po": null,
+            "annual_amount": null,
+            "proposal_total": null,
+            "authority": "CEO/이사회",
+            "routes": [
+              {
+                "id": "po-SKU-2002",
+                "installment": 1,
+                "kind": "재고발주",
+                "payment": {
+                  "date": "2026-08-21",
+                  "amount": 201600000
+                },
+                "route": {
+                  "authority": "CEO/이사회",
+                  "normal": "SCM 전결",
+                  "status": "CEO 상신 대상",
+                  "blocked": false,
+                  "reason": [
+                    "신규 약정",
+                    "확정 시나리오 하회구간 적용"
+                  ],
+                  "payment_date": "2026-08-21",
+                  "adjusted_payment_date": "2026-08-21",
+                  "new_commitment": true,
+                  "assessment_confirmed": true,
+                  "scenario": "exclude_pay",
+                  "provenance": "계산 결과",
+                  "classification_provenance": "내부 통제",
+                  "rule_version": "W01-2026-11-10.1"
+                },
+                "basis": "모의 수량·단가·지급일 확인",
+                "cash_scope": "전사 현금 반영 확인"
+              }
+            ],
+            "decision": {
+              "at": "2026-11-10T06:41:13.869157+00:00",
+              "scope": {
+                "id": "po-SKU-2002",
+                "kind": "재고발주",
+                "change": "추가발주",
+                "sku_id": "SKU-2002",
+                "payments": [
+                  {
+                    "date": "2026-08-21",
+                    "amount": 201600000
+                  }
+                ]
+              },
+              "reason": "역할 흐름 검증",
+              "decision": "조건부 승인",
+              "evidence": "격리 DB 모의 회신",
+              "authority": "CEO/이사회",
+              "condition": "지급 협의 근거 보완",
+              "packet_key": "0335e7ef768e31877e466fc0f7c32e7ef15ad8614b18bcaa1ed48ff3eb4485c1",
+              "provenance": "모의 회신",
+              "group_report": false,
+              "decision_maker": "승인권자 검증 담당",
+              "condition_evidence": ""
+            },
+            "current": true
+          }
+        ],
+        "finance_valid": true,
+        "orders": [],
+        "receipt": null,
+        "closed": null,
+        "notes": [],
+        "rework": null,
+        "withdrawn": null
+      },
+      "history": [
+        {
+          "role": "마케팅",
+          "event": "마케팅 계획 SCM 검토 요청",
+          "at": "2026-11-10 15:41:12.049023+09:00"
+        },
+        {
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "at": "2026-11-10 15:41:12.049023+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:12.049023+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:12.049023+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:12.049023+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "SCM 검토 완료 · 재무 인계",
+          "at": "2026-11-10 15:41:12.593355+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:12.593355+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:12.593355+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:12.593355+09:00"
+        },
+        {
+          "role": "재무",
+          "event": "재무 검토 submit",
+          "at": "2026-11-10 15:41:13.190549+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:13.190549+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:13.190549+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 종료(재검토)",
+          "at": "2026-11-10 15:41:13.190549+09:00"
+        },
+        {
+          "role": "승인권자",
+          "event": "역할별 업무 decide",
+          "at": "2026-11-10 15:41:13.865628+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:13.865628+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:13.865628+09:00"
+        }
+      ]
+    },
+    {
+      "name": "반려·통보·재작성",
+      "case_id": "486acec4-977f-4083-8122-f69e96c3ed0d",
+      "projection": {
+        "stage": 2,
+        "status": "SCM 검토",
+        "targets": [],
+        "finance_valid": false,
+        "orders": [],
+        "receipt": null,
+        "closed": null,
+        "notes": [
+          {
+            "at": "2026-11-10T06:41:17.518955+00:00",
+            "role": "SCM",
+            "type": "문의",
+            "reason": "역할 흐름 검증",
+            "to_role": "재무",
+            "evidence": "격리 DB 모의 회신",
+            "provenance": "모의 회신",
+            "decision_maker": "SCM 검증 담당"
+          }
+        ],
+        "rework": null,
+        "withdrawn": null
+      },
+      "history": [
+        {
+          "role": "마케팅",
+          "event": "마케팅 계획 SCM 검토 요청",
+          "at": "2026-11-10 15:41:14.451969+09:00"
+        },
+        {
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "at": "2026-11-10 15:41:14.451969+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:14.451969+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:14.451969+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:14.451969+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "SCM 검토 완료 · 재무 인계",
+          "at": "2026-11-10 15:41:15.026840+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:15.026840+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:15.026840+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:15.026840+09:00"
+        },
+        {
+          "role": "재무",
+          "event": "재무 검토 submit",
+          "at": "2026-11-10 15:41:15.625274+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:15.625274+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:15.625274+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 종료(재검토)",
+          "at": "2026-11-10 15:41:15.625274+09:00"
+        },
+        {
+          "role": "승인권자",
+          "event": "역할별 업무 decide",
+          "at": "2026-11-10 15:41:16.245989+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:16.245989+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:16.245989+09:00"
+        },
+        {
+          "role": "마케팅",
+          "event": "역할별 업무 rework",
+          "at": "2026-11-10 15:41:16.897063+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:16.897063+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "역할별 업무 note",
+          "at": "2026-11-10 15:41:17.515367+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:17.515367+09:00"
+        },
+        {
+          "role": "마케팅",
+          "event": "마케팅 계획 SCM 검토 요청",
+          "at": "2026-11-10 15:41:18.116032+09:00"
+        },
+        {
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "at": "2026-11-10 15:41:18.116032+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:18.116032+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 재개",
+          "at": "2026-11-10 15:41:18.116032+09:00"
+        }
+      ]
+    },
+    {
+      "name": "지급일 변경·재무 재판정·CEO 재승인",
+      "case_id": "7ea79a62-dc87-4b11-af69-4695c6a38be6",
+      "projection": {
+        "stage": 7,
+        "status": "마케팅 정리 대기",
+        "targets": [
+          {
+            "id": "campaign",
+            "kind": "캠페인집행",
+            "basis": "단독 기안·표본",
+            "change": "신규 계약",
+            "sku_id": null,
+            "deadline": null,
+            "payments": [
+              {
+                "date": "2026-09-21",
+                "amount": 5000000
+              }
+            ],
+            "cash_scope": "표본·현금 합산 제외",
+            "reference_po": null,
+            "annual_amount": null,
+            "proposal_total": 5000000,
+            "authority": "마케팅팀 전결",
+            "routes": [
+              {
+                "id": "campaign",
+                "installment": 1,
+                "kind": "캠페인집행",
+                "payment": {
+                  "date": "2026-09-21",
+                  "amount": 5000000
+                },
+                "route": {
+                  "authority": "마케팅팀 전결",
+                  "normal": "마케팅팀 전결",
+                  "status": "평시 승인 대상",
+                  "blocked": false,
+                  "reason": [
+                    "신규 약정"
+                  ],
+                  "payment_date": "2026-09-21",
+                  "adjusted_payment_date": "2026-09-21",
+                  "new_commitment": true,
+                  "assessment_confirmed": true,
+                  "scenario": "exclude_pay",
+                  "provenance": "계산 결과",
+                  "classification_provenance": "내부 통제",
+                  "rule_version": "W01-2026-11-10.1"
+                },
+                "basis": "단독 기안·표본",
+                "cash_scope": "표본·현금 합산 제외"
+              }
+            ],
+            "decision": {
+              "at": "2026-11-10T06:41:23.837156+00:00",
+              "scope": {
+                "id": "campaign",
+                "kind": "캠페인집행",
+                "change": "신규 계약",
+                "sku_id": null,
+                "payments": [
+                  {
+                    "date": "2026-09-21",
+                    "amount": 5000000
+                  }
+                ]
+              },
+              "reason": "역할 흐름 검증",
+              "decision": "승인",
+              "evidence": "격리 DB 모의 회신",
+              "authority": "마케팅팀 전결",
+              "condition": "",
+              "packet_key": "cdb933386255f23a2453893d8f95d4a34755cfa77338854f613c71a3da4056c6",
+              "provenance": "모의 회신",
+              "group_report": false,
+              "decision_maker": "승인권자 검증 담당",
+              "condition_evidence": ""
+            },
+            "current": true
+          },
+          {
+            "id": "po-SKU-2002",
+            "kind": "재고발주",
+            "basis": "모의 수량·단가·지급일 확인",
+            "change": "추가발주",
+            "sku_id": "SKU-2002",
+            "deadline": null,
+            "payments": [
+              {
+                "date": "2026-08-21",
+                "amount": 201600000
+              }
+            ],
+            "cash_scope": "전사 현금 반영 확인",
+            "reference_po": null,
+            "annual_amount": null,
+            "proposal_total": null,
+            "authority": "CEO/이사회",
+            "routes": [
+              {
+                "id": "po-SKU-2002",
+                "installment": 1,
+                "kind": "재고발주",
+                "payment": {
+                  "date": "2026-08-21",
+                  "amount": 201600000
+                },
+                "route": {
+                  "authority": "CEO/이사회",
+                  "normal": "SCM 전결",
+                  "status": "CEO 상신 대상",
+                  "blocked": false,
+                  "reason": [
+                    "신규 약정",
+                    "확정 시나리오 하회구간 적용"
+                  ],
+                  "payment_date": "2026-08-21",
+                  "adjusted_payment_date": "2026-08-21",
+                  "new_commitment": true,
+                  "assessment_confirmed": true,
+                  "scenario": "exclude_pay",
+                  "provenance": "계산 결과",
+                  "classification_provenance": "내부 통제",
+                  "rule_version": "W01-2026-11-10.1"
+                },
+                "basis": "모의 수량·단가·지급일 확인",
+                "cash_scope": "전사 현금 반영 확인"
+              }
+            ],
+            "decision": {
+              "at": "2026-11-10T06:41:24.450098+00:00",
+              "scope": {
+                "id": "po-SKU-2002",
+                "kind": "재고발주",
+                "change": "추가발주",
+                "sku_id": "SKU-2002",
+                "payments": [
+                  {
+                    "date": "2026-08-21",
+                    "amount": 201600000
+                  }
+                ]
+              },
+              "reason": "역할 흐름 검증",
+              "decision": "승인",
+              "evidence": "격리 DB 모의 회신",
+              "authority": "CEO/이사회",
+              "condition": "",
+              "packet_key": "cdb933386255f23a2453893d8f95d4a34755cfa77338854f613c71a3da4056c6",
+              "provenance": "모의 회신",
+              "group_report": false,
+              "decision_maker": "승인권자 검증 담당",
+              "condition_evidence": ""
+            },
+            "current": true
+          }
+        ],
+        "finance_valid": true,
+        "orders": [
+          {
+            "at": "2026-11-10T06:41:21.825711+00:00",
+            "po_id": "W01-7ea79a62-1",
+            "reason": "역할 흐름 검증",
+            "sku_id": "SKU-2002",
+            "channel": "이메일 모의",
+            "approval": {
+              "at": "2026-11-10T06:41:21.181445+00:00",
+              "scope": {
+                "id": "po-SKU-2002",
+                "kind": "재고발주",
+                "change": "추가발주",
+                "sku_id": "SKU-2002",
+                "payments": [
+                  {
+                    "date": "2026-09-21",
+                    "amount": 201600000
+                  }
+                ]
+              },
+              "reason": "역할 흐름 검증",
+              "decision": "승인",
+              "evidence": "격리 DB 모의 회신",
+              "authority": "SCM 전결",
+              "condition": "",
+              "packet_key": "a6fc80435399c9150ba7283f5fdb8112588cc630f436c3ce4d4b0bf419ee56c6",
+              "provenance": "모의 회신",
+              "group_report": false,
+              "decision_maker": "승인권자 검증 담당",
+              "condition_evidence": ""
+            },
+            "evidence": "격리 DB 모의 회신",
+            "supplier": "Corevia",
+            "order_qty": 16000,
+            "target_id": "po-SKU-2002",
+            "amount_krw": 201600000,
+            "order_date": "2026-07-01",
+            "provenance": "모의 회신",
+            "unit_price": 12600,
+            "wanted_date": "2026-07-14",
+            "transmission": "모의 전달",
+            "decision_maker": "SCM 검증 담당",
+            "reply_deadline": "2026-07-06",
+            "payment_due_date": "2026-09-21"
+          }
+        ],
+        "receipt": {
+          "at": "2026-11-10T06:41:22.460977+00:00",
+          "clear": true,
+          "lines": [
+            {
+              "po_id": "W01-7ea79a62-1",
+              "sku_id": "SKU-2002",
+              "delayed": true,
+              "shipments": [
+                {
+                  "qty": 8000,
+                  "available_date": "2026-07-14"
+                },
+                {
+                  "qty": 8000,
+                  "available_date": "2026-07-16"
+                }
+              ],
+              "payment_date": "2026-08-21",
+              "quantity_mismatch": false
+            }
+          ],
+          "reason": "역할 흐름 검증",
+          "message": "분할 회신 확인 · 기간 공급 가능",
+          "evidence": "격리 DB 모의 회신",
+          "judgment": "캠페인 유지 제안",
+          "provenance": "모의 회신",
+          "decision_maker": "SCM 검증 담당",
+          "finance_confirmation": {
+            "at": "2026-11-10T06:41:25.076412+00:00",
+            "reason": "역할 흐름 검증",
+            "evidence": "격리 DB 모의 회신",
+            "provenance": "모의 회신",
+            "decision_maker": "재무 검증 담당"
+          }
+        },
+        "closed": null,
+        "notes": [
+          {
+            "at": "2026-11-10T06:41:25.715432+00:00",
+            "role": "SCM",
+            "type": "문의",
+            "answer": {
+              "at": "2026-11-10T06:41:26.406927+00:00",
+              "reason": "역할 흐름 검증",
+              "evidence": "격리 DB 모의 회신",
+              "provenance": "모의 회신",
+              "decision_maker": "재무 검증 담당"
+            },
+            "reason": "재무 확인 요청",
+            "to_role": "재무",
+            "evidence": "모의 문의 기록",
+            "provenance": "모의 회신",
+            "decision_maker": "SCM 검증"
+          }
+        ],
+        "rework": null,
+        "withdrawn": null
+      },
+      "history": [
+        {
+          "role": "마케팅",
+          "event": "마케팅 계획 SCM 검토 요청",
+          "at": "2026-11-10 15:41:18.715137+09:00"
+        },
+        {
+          "role": "마케팅",
+          "event": "결재선 재판정",
+          "at": "2026-11-10 15:41:18.715137+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:18.715137+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:18.715137+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:18.715137+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "SCM 검토 완료 · 재무 인계",
+          "at": "2026-11-10 15:41:19.303947+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:19.303947+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:19.303947+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:19.303947+09:00"
+        },
+        {
+          "role": "재무",
+          "event": "재무 검토 submit",
+          "at": "2026-11-10 15:41:19.921405+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:19.921405+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:19.921405+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 종료(재검토)",
+          "at": "2026-11-10 15:41:19.921405+09:00"
+        },
+        {
+          "role": "승인권자",
+          "event": "역할별 업무 decide",
+          "at": "2026-11-10 15:41:20.553494+09:00"
+        },
+        {
+          "role": "승인권자",
+          "event": "역할별 업무 decide",
+          "at": "2026-11-10 15:41:21.177980+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:21.177980+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:21.177980+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "역할별 업무 order",
+          "at": "2026-11-10 15:41:21.822293+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:21.822293+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:21.822293+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "역할별 업무 receipt",
+          "at": "2026-11-10 15:41:22.457976+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:22.457976+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 재개",
+          "at": "2026-11-10 15:41:22.457976+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:22.457976+09:00"
+        },
+        {
+          "role": "재무",
+          "event": "재무 검토 submit",
+          "at": "2026-11-10 15:41:23.201042+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 종료(재검토)",
+          "at": "2026-11-10 15:41:23.201042+09:00"
+        },
+        {
+          "role": "승인권자",
+          "event": "역할별 업무 decide",
+          "at": "2026-11-10 15:41:23.833906+09:00"
+        },
+        {
+          "role": "승인권자",
+          "event": "역할별 업무 decide",
+          "at": "2026-11-10 15:41:24.447057+09:00"
+        },
+        {
+          "role": "재무",
+          "event": "역할별 업무 clear_receipt",
+          "at": "2026-11-10 15:41:25.073439+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 갱신",
+          "at": "2026-11-10 15:41:25.073439+09:00"
+        },
+        {
+          "role": "SCM",
+          "event": "역할별 업무 note",
+          "at": "2026-11-10 15:41:25.711878+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 생성",
+          "at": "2026-11-10 15:41:25.711878+09:00"
+        },
+        {
+          "role": "재무",
+          "event": "역할별 업무 answer",
+          "at": "2026-11-10 15:41:26.403357+09:00"
+        },
+        {
+          "role": "시스템",
+          "event": "확인요청 작업 완료",
+          "at": "2026-11-10 15:41:26.403357+09:00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "screens": [
+    {
+      "screen": "MKT_1_Proposal",
+      "modal_checkboxes": 0
+    },
+    {
+      "screen": "SCM_1_Check",
+      "modal_checkboxes": 0
+    },
+    {
+      "screen": "FIN_1_Review",
+      "modal_checkboxes": 0
+    },
+    {
+      "screen": "APR_2_Normal",
+      "modal_checkboxes": 0
+    },
+    {
+      "screen": "SCM_3_PO",
+      "modal_checkboxes": 0
+    },
+    {
+      "screen": "SCM_5_Receipt",
+      "modal_checkboxes": 0
+    },
+    {
+      "screen": "MKT_4_Close",
+      "modal_checkboxes": 0
+    }
+  ],
+  "scm_submit_without_checks": true,
+  "submit_request_intercepted_no_save": true,
+  "case_versions_unchanged": true,
+  "browser_errors": []
+}

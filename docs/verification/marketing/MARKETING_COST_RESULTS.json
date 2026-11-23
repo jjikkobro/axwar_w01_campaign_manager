@@ -1,0 +1,126 @@
+{
+  "case_id": "aeff0e3c-50e3-4e73-94ef-bd792b34ff13",
+  "procurement_cost": 0,
+  "recommended_marketing_budget": 18683,
+  "saved_campaign_budget": 18683,
+  "scope_confirmation_saved": true,
+  "manual_zero_saved": true,
+  "formula_setting_keys": [
+    "marketing_fixed_budget",
+    "marketing_variable_budget",
+    "marketing_execution_budget",
+    "campaign_total_requirement"
+  ],
+  "updated_recommendation": 22420,
+  "adopted_budget_not_overwritten": true,
+  "comparables": [
+    {
+      "media": "오프라인",
+      "available": true,
+      "campaign_count": 6,
+      "reference_fixed": 0,
+      "reference_daily": 3736.6830300846696,
+      "fixed_budget": 0,
+      "variable_budget": 18683,
+      "subtotal": 18683,
+      "observations": [
+        {
+          "campaign_id": "CMP-0001",
+          "start": "2025-01-01",
+          "end": "2025-07-01",
+          "duration_days": 182,
+          "cost": 9766002,
+          "included_fee": 0,
+          "spend_ids": [
+            "AD-000007",
+            "AD-000008",
+            "AD-000009"
+          ]
+        },
+        {
+          "campaign_id": "CMP-0002",
+          "start": "2025-07-01",
+          "end": "2025-12-30",
+          "duration_days": 183,
+          "cost": 8838588,
+          "included_fee": 0,
+          "spend_ids": [
+            "AD-000016",
+            "AD-000017",
+            "AD-000018"
+          ]
+        },
+        {
+          "campaign_id": "CMP-0006",
+          "start": "2025-12-30",
+          "end": "2026-06-30",
+          "duration_days": 183,
+          "cost": 589512,
+          "included_fee": 0,
+          "spend_ids": [
+            "AD-000052",
+            "AD-000053",
+            "AD-000054"
+          ]
+        },
+        {
+          "campaign_id": "CMP-0022",
+          "start": "2025-01-01",
+          "end": "2025-09-30",
+          "duration_days": 273,
+          "cost": 270852,
+          "included_fee": 0,
+          "spend_ids": [
+            "AD-000196",
+            "AD-000197",
+            "AD-000198"
+          ]
+        },
+        {
+          "campaign_id": "CMP-0023",
+          "start": "2025-09-30",
+          "end": "2026-06-30",
+          "duration_days": 274,
+          "cost": 403383,
+          "included_fee": 0,
+          "spend_ids": [
+            "AD-000205",
+            "AD-000206",
+            "AD-000207"
+          ]
+        },
+        {
+          "campaign_id": "CMP-0024",
+          "start": "2025-01-01",
+          "end": "2025-09-30",
+          "duration_days": 273,
+          "cost": 1160793,
+          "included_fee": 0,
+          "spend_ids": [
+            "AD-000214",
+            "AD-000215",
+            "AD-000216"
+          ]
+        }
+      ],
+      "confidence": "참고 비교 가능"
+    }
+  ],
+  "sources": [
+    {
+      "file": "02_masil/master/m_campaign_ms.csv",
+      "sha256": "91425e5078416e2168452441d398e72484a9b5882dc990a7cfc88d3104b4c4ce",
+      "provenance": "원본 사실"
+    },
+    {
+      "file": "02_masil/marketing/mkt_ad_spend_ms.csv",
+      "sha256": "203d09a779358ad73d28631a193724313af54fb1634293f8018c3d766e36b870",
+      "provenance": "원본 사실"
+    }
+  ],
+  "cash_scope": "표본 기반 마케팅 가정은 전사 현금에 자동 합산하지 않음",
+  "approval": null,
+  "orders": [],
+  "mobile_overflow": false,
+  "errors": []
+}
